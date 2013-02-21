@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration> <!-- This will give you some valuable info about logback config upon runtime. 
+      Remove this for production. -->
+
+   <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+      <encoder>
+         <pattern>%d{HH:mm:ss.SSS} %-5level %logger{36} - %msg%n
+         </pattern>
+      </encoder>
+   </appender>
+
+   <root level="INFO">
+      <appender-ref ref="STDOUT" />
+   </root>
+
+   <logger name="com.github.datatables4j" level="DEBUG" />
+   <logger name="com.github.datatables4j.plugins" level="DEBUG" />
+   <logger name="org.thymeleaf" level="DEBUG" />
+
+</configuration>

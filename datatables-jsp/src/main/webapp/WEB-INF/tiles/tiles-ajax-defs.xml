@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+   
+   <!-- Basic layout -->
+   <definition name="ajaxLayout" extends="mainLayout">
+      <put-attribute name="sidebar" value="/WEB-INF/views/jsp/common/sidebarAjax.jsp" cascade="true" />
+   </definition>
+   
+   <definition name="ajax.*" extends="ajaxLayout">
+      <put-attribute name="tabAjax" value="active" />
+      <put-attribute name="title" value="Ajax - DataTables4j" />
+      <put-attribute name="content" value="/WEB-INF/views/jsp/ajax/{1}.jsp" />
+   </definition>
+
+</tiles-definitions>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout"
+   layout:decorator="common/layout/mainLayout">
+
+<body>
+
+   <div layout:fragment="sidebar">
+
+      <div class="span2 bs-docs-sidebar">
+         <ul class="nav nav-list bs-docs-sidenav affix">
+            <li><a th:href="@{/ajax/ajaxsource}"><i class="icon-chevron-right"></i> AJAX source</a></li>
+            <li><a th:href="@{/ajax/nullvalue}"><i class="icon-chevron-right"></i> Handling null values</a></li>
+            <li><a th:href="@{/ajax/serverside}"><i class="icon-chevron-right"></i> Server-side processing</a></li>
+            <li><a th:href="@{/ajax/pipeliningdata}"><i class="icon-chevron-right"></i> Pipelining data</a></li>
+         </ul>
+      </div>
+
+   </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+
+    <!-- Theme layout -->
+    <definition name="themeLayout" extends="mainLayout">
+        <put-attribute name="sidebar" value="/WEB-INF/views/jsp/common/sidebarTheme.jsp" cascade="true"/>
+    </definition>
+
+    <definition name="emptyLayout" extends="mainLayout">
+        <put-attribute name="sidebar" value="/WEB-INF/views/jsp/common/sidebarTheme.jsp" cascade="true"/>
+        <put-attribute name="assets" value="" cascade="true"/>
+    </definition>
+
+    <definition name="themes.bootstrap2*" extends="emptyLayout">
+        <put-attribute name="tabThemes" value="active"/>
+        <put-attribute name="title" value="Themes - DataTables4j"/>
+        <put-attribute name="content" value="/WEB-INF/views/jsp/themes/bootstrap2.jsp"/>
+    </definition>
+
+    <definition name="themes.jqui*" template="/WEB-INF/views/jsp/themes/jqui{1}.jsp"/>
+
+    <definition name="themes.*" extends="themeLayout">
+        <put-attribute name="tabThemes" value="active"/>
+        <put-attribute name="title" value="Themes - DataTables4j"/>
+        <put-attribute name="content" value="/WEB-INF/views/jsp/themes/{1}.jsp"/>
+    </definition>
+
+
+</tiles-definitions>

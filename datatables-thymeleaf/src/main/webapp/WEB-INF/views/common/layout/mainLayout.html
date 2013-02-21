@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout">
+
+<head layout:fragment="header">
+
+<title>DataTables4j Thymeleaf demo</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+<link th:href="@{/css/font-awesome.min.css}" rel="stylesheet" />
+<link th:href="@{/css/custom.css}" rel="stylesheet" />
+<link href="//ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css" rel="stylesheet" />
+<link th:href="@{/css/prettify.css}" rel="stylesheet" />
+
+<script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.3.min.js"></script>
+<script th:src="@{/js/bootstrap.min.js}"></script>
+<script src="//ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.js"></script>
+<script th:src="@{/js/ga.js}"></script>
+<script th:src="@{/js/custom.js}"></script>
+<script th:src="@{/js/prettify.js}"></script>
+
+</head>
+
+<body>
+   <div layout:fragment="navbar">
+
+      <a href="https://github.com/datatables4j/datatables4j-demo-thymeleaf"><img
+         style="position: fixed; top: 0; right: 0; border: 0; z-index: 1500;"
+         src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"
+      /></a>
+      <div class="navbar navbar-fixed-top">
+         <div class="navbar-inner">
+            <div class="container">
+               <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+               </a> <a class="brand" th:href="@{/}">DataTables4j Thymeleaf Demo</a>
+               <div class="nav-collapse collapse">
+                  <ul class="nav">
+                     <li><a th:href="@{/basic/home}"><i class="icon-leaf"></i> Basic examples</a></li>
+                     <li><a th:href="@{/advanced/home}"><i class="icon-certificate"></i> Advanced examples</a></li>
+                     <li><a th:href="@{/ajax/home}"><i class="icon-refresh"></i> AJAX examples</a></li>
+                     <li><a th:href="@{/features/home}"><i class="icon-th-large"></i> Features</a></li>
+                     <li><a th:href="@{/themes/home}"><i class="icon-magic"></i> Themes</a></li>
+                     <li><a th:href="@{/plugins/home}"><i class="icon-plus"></i> Plugins</a></li>
+                  </ul>
+                  <ul class="nav pull-right">
+                     <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-search"></i> Help <b
+                           class="caret"
+                        ></b></a>
+                        <ul class="dropdown-menu">
+                           <li><a href="https://github.com/datatables4j/issues/issues">Issues / Enhancements</a></li>
+                           <li><a href="http://datatables.net/forums/discussion/10138/">DataTables forum</a></li>
+                           <li class="divider"></li>
+                           <li><a href="http://datatables4j.github.com/docs/">DataTables4j home</a></li>
+                           <li><a href="http://datatables.net/">DataTables home</a></li>
+                        </ul></li>
+                  </ul>
+               </div>
+               <!--/.nav-collapse -->
+            </div>
+         </div>
+      </div>
+
+   </div>
+
+   <div class="container-fluid">
+      <div class="row-fluid">
+         <div layout:fragment="sidebar"></div>
+         <div class="span10" style="min-height: 550px;">
+            <div layout:fragment="content"></div>
+         </div>
+      </div>
+
+      <hr />
+      <footer>
+         <ul>
+            <li><a href="http://datatables4j.github.com/docs" class="btn btn-small btn-info">Documentation</a></li>
+         </ul>
+         <ul class="pull-right">
+            <li><a href="https://twitter.com/share" class="twitter-share-button" data-text="Check the DataTables4j Thymeleaf demo !"
+               data-via="DataTables4j"
+            >Tweet</a> <script>
+													!function(d, s, id) {
+														var js, fjs = d
+																.getElementsByTagName(s)[0];
+														if (!d
+																.getElementById(id)) {
+															js = d
+																	.createElement(s);
+															js.id = id;
+															js.src = "//platform.twitter.com/widgets.js";
+															fjs.parentNode
+																	.insertBefore(
+																			js,
+																			fjs);
+														}
+													}(document, "script",
+															"twitter-wjs");
+												</script></li>
+            <li><a href="https://twitter.com/DataTables4j" class="twitter-follow-button" style="float: right;" data-show-count="false">Follow
+                  @DataTables4j</a> <script>
+																			!function(
+																					d,
+																					s,
+																					id) {
+																				var js, fjs = d
+																						.getElementsByTagName(s)[0];
+																				if (!d
+																						.getElementById(id)) {
+																					js = d
+																							.createElement(s);
+																					js.id = id;
+																					js.src = "//platform.twitter.com/widgets.js";
+																					fjs.parentNode
+																							.insertBefore(
+																									js,
+																									fjs);
+																				}
+																			}
+																					(
+																							document,
+																							"script",
+																							"twitter-wjs");
+																		</script></li>
+         </ul>
+         <div style="clear: both;"></div>
+         <a href="http://www.cloudbees.com"><img th:src="@{/img/logo_Powered-by-CB.png}" width="100px" height="40px"
+            style="float: right; margin-right: 15px;"
+         /></a>
+      </footer>
+   </div>
+</body>
+</html>

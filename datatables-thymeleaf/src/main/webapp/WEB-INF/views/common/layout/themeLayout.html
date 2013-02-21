@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout"
+   layout:decorator="common/layout/mainLayout">
+
+<body>
+
+   <div layout:fragment="sidebar">
+
+      <div class="span2 bs-docs-sidebar">
+         <ul class="nav nav-list bs-docs-sidenav affix">
+            <li><a th:href="@{/themes/bootstrap2}"><i class="icon-chevron-right"></i> Bootstrap 2 theme</a></li>
+         </ul>
+      </div>
+
+   </div>
+</body>
+</html>

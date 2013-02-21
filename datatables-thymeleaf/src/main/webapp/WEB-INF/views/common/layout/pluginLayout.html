@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout"
+   layout:decorator="common/layout/mainLayout">
+
+<body>
+
+   <div layout:fragment="sidebar">
+
+      <div class="span2 bs-docs-sidebar">
+         <ul class="nav nav-list bs-docs-sidenav affix">
+            <li><a th:href="@{/plugins/colreorder}"><i class="icon-chevron-right"></i> ColReorder</a></li>
+            <li><a th:href="@{/plugins/scroller}"><i class="icon-chevron-right"></i> Scroller</a></li>
+            <li><a th:href="@{/plugins/fixedheader}"><i class="icon-chevron-right"></i> FixedHeader</a></li>
+         </ul>
+      </div>
+
+   </div>
+</body>
+</html>

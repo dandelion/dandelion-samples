@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout" layout:decorator="common/layout/mainLayout">
+
+<body>
+
+   <div layout:fragment="sidebar">
+
+      <div class="span2 bs-docs-sidebar">
+         <ul class="nav nav-list bs-docs-sidenav affix">
+            <li><a th:href="@{/basic/default}"><i class="icon-chevron-right"></i> Default configuration</a></li>
+            <li><a th:href="@{/basic/appear}"><i class="icon-chevron-right"></i> Changing the appearance</a></li>
+            <li><a th:href="@{/basic/info}"><i class="icon-chevron-right"></i> Display table informations</a></li>
+            <li><a th:href="@{/basic/sorting}"><i class="icon-chevron-right"></i> Table sorting</a></li>
+            <li><a th:href="@{/basic/filtering}"><i class="icon-chevron-right"></i> Table filtering</a></li>
+            <li><a th:href="@{/basic/cdn}"><i class="icon-chevron-right"></i> Using CDN</a></li>
+            <li><a th:href="@{/basic/defaultcontent}"><i class="icon-chevron-right"></i> Default content</a></li>
+            <li><a th:href="@{/basic/implicitObject}"><i class="icon-chevron-right"></i> Using implicit object</a></li>
+            <li><a th:href="@{/basic/customcontent}"><i class="icon-chevron-right"></i> Custom column content</a></li>
+            <li><a th:href="@{/basic/customheader}"><i class="icon-chevron-right"></i> Custom column head</a></li>
+         </ul>
+      </div>
+
+   </div>
+</body>
+</html>

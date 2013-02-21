@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout"
+   layout:decorator="common/layout/mainLayout">
+
+<body>
+
+   <div layout:fragment="sidebar">
+
+      <div class="span2 bs-docs-sidebar">
+         <ul class="nav nav-list bs-docs-sidenav affix">
+            <li><a th:href="@{/advanced/rowid}"><i class="icon-chevron-right"></i> Row id</a></li>
+            <li><a th:href="@{/advanced/i18n}"><i class="icon-chevron-right"></i> Internationalisation</a></li>
+         </ul>
+      </div>
+
+   </div>
+</body>
+</html>

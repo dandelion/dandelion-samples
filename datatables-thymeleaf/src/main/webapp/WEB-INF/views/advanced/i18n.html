@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout"
+   xmlns:dt="http://www.thymeleaf.org/datatables4jdialect" layout:decorator="common/layout/advancedLayout">
+
+<head>
+<title>Advanced example - Internationalisation</title>
+</head>
+
+<body>
+
+   <div layout:fragment="content">
+
+      <div class="row-fluid">
+         <div class="span12">
+            <h3>Internationalisation</h3>
+            <br />
+         </div>
+      </div>
+
+      <div class="row-fluid">
+         <div class="span12">
+
+            <table id="myTableId" dt:table="true" dt:labels="/js/datatables.labels.fr.json">
+               <thead>
+                  <tr>
+                     <th>Id</th>
+                     <th>Prenom</th>
+                     <th>Nom</th>
+                     <th>Ville</th>
+                     <th>Mail</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr th:each="person : ${persons}">
+                     <td th:text="${person.id}">1</td>
+                     <td th:text="${person.firstName}">John</td>
+                     <td th:text="${person.lastName}">Doe</td>
+                     <td th:text="${person.address != null and person.address.town != null} ? ${person.address.town.name} : ''">Nobody knows !</td>
+                     <td th:text="${person.mail}">john@doe.com</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div>
+   </div>
+</body>
+</html>
