@@ -1,0 +1,21 @@
+{
+    "scope": "scope1",
+    "assets": [
+        {
+            "name": "asset1",
+            "version": "1",
+            "type": "js",
+            "locations": {
+                "local": "js/asset1.js"
+            }
+        },
+        {
+            "name": "asset2",
+            "version": "2",
+            "type": "js",
+            "locations": {
+                "local": "js/asset2.js"
+            }
+        }
+    ]
+}

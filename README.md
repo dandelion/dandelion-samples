@@ -1,4 +1,2 @@
-samples
-=======
+# Dandelion Samples
 
-Sample applications
