@@ -15,6 +15,11 @@
 <td>dandelion-core, dandelion-jsp</td>
 </tr>
 <tr>
+<td>assets-thymeleaf</td>
+<td>Usage of Thymeleaf Dialect for 'assets' feature of Dandelion</td>
+<td>dandelion-core, dandelion-thymeleaf</td>
+</tr>
+<tr>
 <td colspan="3">...</td>
 </tr>
 </tbody>
