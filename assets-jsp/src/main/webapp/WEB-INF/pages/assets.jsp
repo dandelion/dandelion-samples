@@ -11,7 +11,7 @@
 <body>
 <b>This page load scopes "scope1, scope2 and scope3" but without "asset3".</b>
 <br/><br/>
-You muste see some alert from loaded js assets :
+You must see some alert from loaded js assets :
 <ul>
     <li>I am the Asset1 from Scope1</li>
     <li>I am the Asset2 from Scope1</li>
