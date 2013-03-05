@@ -6,37 +6,14 @@
    <parent>
       <groupId>com.github.dandelion</groupId>
       <artifactId>dandelion-samples</artifactId>
-      <version>0.8.4-SNAPSHOT</version>
+      <version>0.8.6</version>
    </parent>
 
    <groupId>com.github.dandelion</groupId>
    <artifactId>demo-datatables-thymeleaf</artifactId>
-   <version>0.8.4</version>
    <packaging>war</packaging>
 
-   <name>Dandelion :: Samples :: Dandelion-datatables Thymeleaf</name>
-
-   <properties>
-      <!-- Configuration -->
-      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
-      <!-- Dependencies -->
-      <dandelion.datatables.version>0.8.4-SNAPSHOT</dandelion.datatables.version>
-      <dandelion.datatables.compressor.version>0.3.6-SNAPSHOT</dandelion.datatables.compressor.version>
-      <dandelion.datatables.export.poi.version>0.1.4-SNAPSHOT</dandelion.datatables.export.poi.version>
-      <dandelion.datatables.export.itext.version>0.1.4-SNAPSHOT</dandelion.datatables.export.itext.version>
-      <spring.version>3.2.0.RELEASE</spring.version>
-      <hibernate.version>4.1.9.Final</hibernate.version>
-      <thymeleaf.version>2.0.15</thymeleaf.version>
-      <thymeleaf.layout.version>1.0.5</thymeleaf.layout.version>
-      <hibernate.version>4.1.9.Final</hibernate.version>
-      <spring.version>3.2.0.RELEASE</spring.version>
-      <slf4j.version>1.6.4</slf4j.version>
-      <logback.version>1.0.7</logback.version>
-
-      <!-- Maven plugins -->
-      <maven-compiler-plugin.version>2.3.2</maven-compiler-plugin.version>
-   </properties>
+   <name>Dandelion :: Samples :: Datatables Thymeleaf</name>
 
    <dependencies>
       <!-- DataTables4j -->
@@ -53,22 +30,22 @@
       <dependency>
          <groupId>com.github.dandelion</groupId>
          <artifactId>datatables-compression-yui</artifactId>
-         <version>${dandelion.datatables.compressor.version}</version>
+         <version>${dandelion.datatables.version}</version>
       </dependency>
       <dependency>
          <groupId>com.github.dandelion</groupId>
          <artifactId>datatables-export-poi</artifactId>
-         <version>${dandelion.datatables.export.poi.version}</version>
+         <version>${dandelion.datatables.version}</version>
       </dependency>
       <dependency>
          <groupId>com.github.dandelion</groupId>
          <artifactId>datatables-export-poi-ooxml</artifactId>
-         <version>${dandelion.datatables.export.poi.version}</version>
+         <version>${dandelion.datatables.version}</version>
       </dependency>
       <dependency>
          <groupId>com.github.dandelion</groupId>
          <artifactId>datatables-export-itext</artifactId>
-         <version>${dandelion.datatables.export.itext.version}</version>
+         <version>${dandelion.datatables.version}</version>
       </dependency>
 
       <!-- Spring -->
@@ -170,34 +147,4 @@
          <version>1.1.1</version>
       </dependency>
    </dependencies>
-
-   <build>
-      <plugins>
-         <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <version>${maven-compiler-plugin.version}</version>
-            <configuration>
-               <source>1.6</source>
-               <target>1.6</target>
-            </configuration>
-         </plugin>
-         <plugin>
-            <groupId>org.mortbay.jetty</groupId>
-            <artifactId>jetty-maven-plugin</artifactId>
-            <version>8.1.5.v20120716</version>
-            <configuration>
-               <scanIntervalSeconds>0</scanIntervalSeconds>
-               <stopKey>jetty-stop</stopKey>
-               <stopPort>9998</stopPort>
-            </configuration>
-         </plugin>
-      </plugins>
-   </build>
-
-   <scm>
-      <connection>scm:git:git://github.com/datatables4j/datatables4j-demo-thymeleaf.git</connection>
-      <developerConnection>scm:git:git@github.com:datatables4j/datatables4j-demo-thymeleaf.git</developerConnection>
-      <url>http://github.com/datatables4j/datatables4j-demo-thymeleaf</url>
-   </scm>
 </project>
