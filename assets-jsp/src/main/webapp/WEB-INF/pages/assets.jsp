@@ -2,6 +2,7 @@
 
 <!-- configure the dandelion taglib -->
 <%@ taglib prefix="dandelion" uri="http://github.com/dandelion" %>
+<%@ taglib prefix="webanalytics" uri="http://github.com/dandelion/webanalytics" %>
 
 <!DOCTYPE html>
 <html>
@@ -18,6 +19,8 @@ You must see some alert from loaded js assets :
     <li>I am the Asset4 from Scope2</li>
     <li>I am the Asset5 from Scope3</li>
 </ul>
+<!-- setup a tracker for google analytics -->
+<webanalytics:tracker provider="google" token="UA-33818546-8"/>
 <!--
 add 'scope3' to the context but exclude 'asset3' during rendering
 and render the assets from context

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html xmlns:ddl="http://www.thymeleaf.org/dandelion"
-      ddl:assets-scopes="scope3" ddl:assets-excludedAssets="asset3">
+    <html xmlns:ddl="http://www.thymeleaf.org/dandelion"
+	  xmlns:wa="http://www.thymeleaf.org/dandelion/webanalytics"
+	  wa:provider="google" wa:token="UA-33818546-8">
+<!-- setup a tracker for google analytics -->
 <head>
     <title>Dandelion Assets on Thymeleaf</title>
 </head>
@@ -8,11 +10,11 @@
 add 'scope3' to the context but exclude 'asset3' during rendering
 and render the assets from context
 -->
-<body>
+<body ddl:assets-scopes="scope3">
 <b>This page load scopes "scope1, scope2 and scope3" but without "asset3".</b>
 <br/><br/>
 You must see some alert from loaded js assets :
-<ul>
+<ul ddl:assets-excludedAssets="asset3">
     <li>I am the Asset1 from Scope1</li>
     <li>I am the Asset2 from Scope1</li>
     <li>I am the Asset4 from Scope2</li>

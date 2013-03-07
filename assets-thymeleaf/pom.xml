@@ -21,6 +21,7 @@
 
     <properties>
         <dandelion.version>0.1.0-SNAPSHOT</dandelion.version>
+	<dandelion.webanalytics.version>0.1.0-SNAPSHOT</dandelion.webanalytics.version>
     </properties>
 
     <dependencies>
@@ -30,6 +31,11 @@
             <version>${dandelion.version}</version>
         </dependency>
         <dependency>
+	    <groupId>com.github.dandelion</groupId>
+	    <artifactId>webanalytics-thymeleaf</artifactId>
+	    <version>${dandelion.webanalytics.version}</version>
+	</dependency>
+	<dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
             <version>1.0.9</version>

@@ -1,4 +1,5 @@
 import com.github.dandelion.thymeleaf.dialect.DandelionDialect;
+import com.github.dandelion.webanalytics.thymeleaf.dialect.DandelionWebAnalyticsDialect;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.templateresolver.ServletContextTemplateResolver;
 
@@ -23,6 +24,7 @@ public class AssetsThymeleafApplication {
 
         // add dandelion dialect
         templateEngine.addDialect(new DandelionDialect());
+	templateEngine.addDialect(new DandelionWebAnalyticsDialect());
     }
 
     public static TemplateEngine getTemplateEngine() {
