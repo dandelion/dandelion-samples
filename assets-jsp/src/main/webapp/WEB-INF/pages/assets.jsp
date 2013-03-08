@@ -19,6 +19,10 @@ You must see some alert from loaded js assets :
     <li>I am the Asset4 from Scope2</li>
     <li>I am the Asset5 from Scope3</li>
 </ul>
+And <span class="color-red">this text must be in red</span><br/>
+And in the source, you can see an usage of <b>template</b> asset with google analytics script,<br/>
+And an usage of <b>delegate content</b> asset is setup in this sample, the result is an alert with the "x-forwarded-for" header.
+
 <!-- setup a tracker for google analytics -->
 <webanalytics:tracker provider="google" token="UA-33818546-8"/>
 <!--

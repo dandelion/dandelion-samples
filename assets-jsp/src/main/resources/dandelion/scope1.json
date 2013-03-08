@@ -10,6 +10,14 @@
             }
         },
         {
+            "name": "color",
+            "version": "1",
+            "type": "css",
+            "locations": {
+                "local": "css/color-red.css"
+            }
+        },
+        {
             "name": "asset2",
             "version": "2",
             "type": "js",

@@ -1,4 +1,5 @@
 import com.github.dandelion.core.asset.AssetsRequestContext;
+import com.github.dandelion.core.asset.delegate.DelegateLocationWrapper;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.WebContext;
 
@@ -15,7 +16,10 @@ public class AssetsThymeleafServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         // add to assets request context the scope1 and scope2
-        AssetsRequestContext.get(req).addScopes("scope1,scope2");
+        AssetsRequestContext.get(req)
+                .addScopes("scope1,scope2")
+                .addScopes("delegateContentIP")
+                .addParameter("ip", DelegateLocationWrapper.DELEGATE_CONTENT_PARAM, new AlertIPDelegateContent());
 
         resp.setContentType("text/html;charset=UTF-8");
         resp.setHeader("Pragma", "no-cache");
