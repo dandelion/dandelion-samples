@@ -1,50 +1,12 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout"
-   xmlns:dt="http://www.thymeleaf.org/datatables4jdialect" layout:decorator="common/layout/mainLayout"
->
+   xmlns:dt="http://www.thymeleaf.org/datatables4jdialect" layout:decorator="common/layout/mainLayout">
 
 <body>
 <div th:fragment="footer">
    <ul>
-      <li><a href="http://datatables4j.github.com/docs" class="btn btn-small btn-info">Documentation</a></li>
+      <li><a href="http://dandelion.github.com/datatables" class="btn btn-small btn-info">Documentation</a></li>
    </ul>
-   <ul class="pull-right">
-      <li><a href="https://twitter.com/share" class="twitter-share-button" data-text="Check the Dandelion-datatables taglib demo !"
-         data-via="dandelion_proj"
-      >Tweet</a> <script>
-							!function(d, s, id) {
-								var js, fjs = d.getElementsByTagName(s)[0];
-								if (!d.getElementById(id)) {
-									js = d.createElement(s);
-									js.id = id;
-									js.src = "//platform.twitter.com/widgets.js";
-									fjs.parentNode.insertBefore(js, fjs);
-								}
-							}(document, "script", "twitter-wjs");
-						</script></li>
-      <li><a href="https://twitter.com/dandelion_proj" class="twitter-follow-button" style="float: right;" data-show-count="true">Follow
-            @Dandelion_proj</a> <script>
-													!function(d, s, id) {
-														var js, fjs = d
-																.getElementsByTagName(s)[0];
-														if (!d
-																.getElementById(id)) {
-															js = d
-																	.createElement(s);
-															js.id = id;
-															js.src = "//platform.twitter.com/widgets.js";
-															fjs.parentNode
-																	.insertBefore(
-																			js,
-																			fjs);
-														}
-													}(document, "script",
-															"twitter-wjs");
-												</script></li>
-   </ul>
-   <div style="clear: both;"></div>
-   <a href="http://www.cloudbees.com"><img th:src="@{/img/logo_Powered-by-CB.png}" width="100px" height="40px" style="float: right;
-      margin-right: 15px;" /></a>
 </div>
 </body>
 </html>
