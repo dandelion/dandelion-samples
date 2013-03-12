@@ -14,7 +14,7 @@
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
       <!-- Dependencies -->
-      <dandelion.datatables.version>0.8.6</dandelion.datatables.version>
+      <dandelion.datatables.version>0.8.7-SNAPSHOT</dandelion.datatables.version>
       <spring.version>3.2.0.RELEASE</spring.version>
       <hibernate.version>4.1.9.Final</hibernate.version>
 
@@ -140,19 +140,26 @@
       <!-- Logging -->
       <dependency>
          <groupId>org.slf4j</groupId>
+         <artifactId>slf4j-api</artifactId>
+         <version>1.7.2</version>
+      </dependency>
+      <dependency>
+         <groupId>org.slf4j</groupId>
          <artifactId>jcl-over-slf4j</artifactId>
          <version>1.6.4</version>
       </dependency>
       <dependency>
          <groupId>ch.qos.logback</groupId>
          <artifactId>logback-classic</artifactId>
-         <version>1.0.7</version>
+         <version>1.0.9</version>
       </dependency>
       <dependency>
          <groupId>ch.qos.logback</groupId>
          <artifactId>logback-access</artifactId>
-         <version>1.0.7</version>
+         <version>1.0.9</version>
       </dependency>
+      
+      <!-- Needed by Cloudbees -->
       <dependency>
          <groupId>commons-logging</groupId>
          <artifactId>commons-logging</artifactId>
