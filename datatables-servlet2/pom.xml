@@ -1,20 +1,28 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
    <modelVersion>4.0.0</modelVersion>
-   
-   <parent>
-      <groupId>com.github.dandelion</groupId>
-      <artifactId>dandelion-samples</artifactId>
-      <version>0.8.6</version>
-   </parent>
-   
+
    <groupId>com.github.dandelion</groupId>
    <artifactId>demo-datatables-servlet2</artifactId>
+   <version>0.8.7-SNAPSHOT</version>
    <packaging>war</packaging>
 
    <name>Dandelion :: Samples :: Datatables Servlet2</name>
-
    <description>Dandelion-datatables demo using the backward compatibility module for Servlet 2.x</description>
+
+   <properties>
+      <!-- Configuration -->
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+      <!-- Dependencies -->
+      <dandelion.datatables.version>0.8.7-SNAPSHOT</dandelion.datatables.version>
+      <spring.version>3.2.0.RELEASE</spring.version>
+      <hibernate.version>4.1.9.Final</hibernate.version>
+
+      <!-- Maven plugins -->
+      <maven-compiler-plugin.version>2.3.2</maven-compiler-plugin.version>
+   </properties>
+
 
    <dependencies>
       <!-- DataTables4j -->
