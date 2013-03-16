@@ -4,25 +4,7 @@
 <div class="row-fluid">
    <div class="span12">
       <h3>Using implicit object</h3>
-      <p>
-         <strong>DataTables4j</strong> make some implicit objects available inside the
-         <code>datatables:table</code>
-         tag. This way, you can configure the column's content as you wish.
-      </p>
-      <p>
-         Thanks to the
-         <code>row</code>
-         table attribute, you will be able to give a name for the current iterated object of the collection. Then, you
-         can access it using
-         <code>&#36;{givenName.beanProperty}</code>
-         inside the
-         <code>column</code>
-         tags.
-      </p>
-      <p>
-         In the example below,
-         <code>mailto</code>
-         links have been generated to directly access the person's mail. <br />
+      <br />
    </div>
 </div>
 

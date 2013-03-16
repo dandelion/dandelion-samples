@@ -11,7 +11,7 @@
 <c:url value="/features" var="features" />
 <c:url value="/plugins" var="plugins" />
 
-<a href="https://github.com/datatables4j/datatables4j-live-demo"><img style="position: fixed; top: 0; right: 0; border: 0; z-index: 1500;"
+<a href="https://github.com/dandelion/dandelion-samples"><img style="position: fixed; top: 0; right: 0; border: 0; z-index: 1500;"
    src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"
 /></a>
 <div class="navbar navbar-fixed-top">
@@ -19,7 +19,7 @@
       <div class="container">
          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-         </a> <a class="brand" href="${home}">DataTables4j Live Demo</a>
+         </a> <a class="brand" href="${home}">Dandelion-DataTables JSP Demo</a>
          <div class="nav-collapse collapse">
             <ul class="nav">
                <li><a href="${basic}/home"><i class="icon-leaf"></i> Basic</a></li>
@@ -34,11 +34,8 @@
                      class="caret"
                   ></b></a>
                   <ul class="dropdown-menu">
-                     <li><a href="https://github.com/datatables4j/issues/issues">Issues / Enhancements</a></li>
-                     <li><a href="http://datatables4j.github.com/docs/">DataTables4j home</a></li>
-                     <li><a href="http://demo.thymeleaf.datatables4j.cloudbees.net/">Thymeleaf Live Demo</a></li>
-                     <li class="divider"></li>
-                     <li><a href="http://datatables.net/">DataTables home</a></li>
+                     <li><a href="https://github.com/dandelion/issues/issues">Issues / Enhancements</a></li>
+                     <li><a href="http://dandelion.github.com/datatables/">Dandelion-DataTables</a></li>
                   </ul></li>
             </ul>
          </div>

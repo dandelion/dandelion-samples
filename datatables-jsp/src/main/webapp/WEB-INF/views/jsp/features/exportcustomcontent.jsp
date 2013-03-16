@@ -21,13 +21,6 @@
    <hr />
    <div class="tab-content">
       <div class="tab-pane active" id="example1">
-         <p>
-            In this example, the table header doesn't appear in export thanks to the
-            <code>includeHeader</code>
-            export attribute, set to
-            <code>false</code>
-            .
-         </p>
          <tab:tab>
             <tab:demo>
                <datatables:table id="myFirstTableId" data="${persons}" row="person" export="csv">
@@ -63,11 +56,6 @@
          </tab:tab>
       </div>
       <div class="tab-pane" id="example2">
-         <p>
-            For XLS and XLSX export formats, you can tell DataTables4j to auto-size columns using the
-            <code>autoSize</code>
-            export attribute.
-         </p>
          <tab:tab>
             <tab:demo>
                <datatables:table id="mySecondTableId" data="${persons}" row="person" export="xls">
@@ -102,13 +90,6 @@
          </tab:tab>
       </div>
       <div class="tab-pane" id="example3">
-         <p>
-            The
-            <code>display</code>
-            column attribute allows you to configure different exported content for a column. By default, all columns
-            are exported in all formats but you can specify that a column will only appear in a few formats.
-         </p>
-         <p>In the following example, the "City" column only appears in HTML, not in exports.</p>
          <tab:tab>
             <tab:demo>
                <datatables:table id="myThirdTableId" data="${persons}" row="person" export="xls">
@@ -145,12 +126,6 @@
          </tab:tab>
       </div>
       <div class="tab-pane" id="example4">
-         <p>
-            Thanks to the
-            <code>display</code>
-            column attribute, you can choose what content to appear in different formats.
-         </p>
-         <p>In the following example, we don't want HTML code to be displayed in the exported "Mail" column.</p>
          <tab:tab>
             <tab:demo>
                <datatables:table id="myFourthTableId" data="${persons}" row="person" export="pdf">

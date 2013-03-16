@@ -4,17 +4,6 @@
 <div class="row-fluid">
    <div class="span12">
       <h3>Handling null/default values</h3>
-      <p>
-         Using JSP with AJAX sources, null values are handled in the same way than for DOM sources. By default, an empty
-         string will be displayed. You can also use the
-         <code>default</code>
-         column attribute to replace the empty string by any string you want.
-      </p>
-      <p>
-         Using Thymeleaf, this is quite similar. Just use the
-         <code>dt:default</code>
-         TH attribute to override the default empty string.
-      </p>
       <br />
    </div>
 </div>

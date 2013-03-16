@@ -4,21 +4,11 @@
 <div class="row-fluid">
    <div class="span12">
       <h3>Changing the appearance</h3>
-      <p>By default, when the table has finished loading, it is displayed using a <a href="http://api.jquery.com/fadeIn/">jQuery fadeIn()</a> animation (with default parameter).</p>
-      <p>
-         This behaviour can be changed using the <code>appear</code> / <code>dt:appear</code> table attribute (JSP/Thymeleaf)
-      </p>
       <br />
    </div>
 </div>
 
 <tab:tab>
-   <p>
-      In the following example, a duration of 1500 milliseconds has been set to the fadeIn animation instead of the
-      default 400 milliseconds but you cal also set the
-      <code>block</code>
-      value to trigger the <a href="http://api.jquery.com/show/">jQuery show()</a> function.
-   </p>
    <tab:demo>
       <datatables:table id="myTableId" data="${persons}" appear="fadein,1500">
          <datatables:column title="Id" property="id" />

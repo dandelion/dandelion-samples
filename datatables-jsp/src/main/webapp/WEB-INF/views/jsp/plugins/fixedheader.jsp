@@ -4,18 +4,6 @@
 <div class="row-fluid">
    <div class="span12">
       <h3>FixedHeader</h3>
-      <p>
-         <a href="http://www.datatables.net/extras/fixedheader/" class="btn btn-success" style="float: right;">See
-            the plugin home</a> This plugin allows you to fixed the table header by scrolling.
-      </p>
-      <p>
-         You just need to set the
-         <code>fixedheader</code>
-         table attribute to
-         <tt>true</tt>
-         to activate the plugin.
-      </p>
-      <p>Then, try to scroll down !</p>
       <br />
    </div>
 </div>

@@ -4,11 +4,6 @@
 <div class="row-fluid">
    <div class="span12">
       <h3>Table paging</h3>
-      <p>
-         By default, pagination is enabled but you can disable it using the
-         <code>paginate</code>
-         table attribute.
-      </p>
       <hr />
    </div>
 </div>

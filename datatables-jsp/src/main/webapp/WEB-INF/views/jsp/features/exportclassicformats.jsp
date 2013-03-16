@@ -4,11 +4,6 @@
 <div class="row-fluid">
    <div class="span12">
       <h3>Export</h3>
-      <p>
-         With <strong>DataTables4j</strong>, you can export your table in multiple formats.
-      </p>
-      <p>All plain text exports (as CSV or XML) don't require any additional dependency whereas binary ones do (as
-         PDF or XLS). In this latter case, make sure the right dependency is present in the classpath.</p>
       <br />
    </div>
 </div>

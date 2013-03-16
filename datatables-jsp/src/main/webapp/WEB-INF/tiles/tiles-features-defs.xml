@@ -9,7 +9,7 @@
    
    <definition name="features.*" extends="featureLayout">
       <put-attribute name="tabFeatures" value="active" />
-      <put-attribute name="title" value="Features - DataTables4j" />
+      <put-attribute name="title" value="Features - Dandelion-DataTables" />
       <put-attribute name="content" value="/WEB-INF/views/jsp/features/{1}.jsp" />
    </definition>
 

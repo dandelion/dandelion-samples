@@ -4,33 +4,6 @@
 <div class="row-fluid">
    <div class="span12">
       <h3>Custom column header</h3>
-      <p>A classic use case the "master" checkbox in a column's head.</p>
-      <p>
-         Well, this can be done using the
-         <code>datatables:columnHead</code>
-         tag and a specific attribute :
-         <code>uid</code>
-         .
-      </p>
-      <p>
-         As soon as you need to customize a column's head, you will have to set the
-         <code>uid</code>
-         attribute both on the
-         <code>datatables:columnHead</code>
-         and on the corresponding
-         <code>datatables:column</code>
-         tags. This way, the first will be used to generate the column's head whereas the latter will be used for the
-         corresponding column's cells.
-      </ul>
-      </p>
-      <div class="alert alert-warn">
-         <strong>Warning !</strong><br /> As soon as the
-         <code>datatables:columnHead</code>
-         is used , the
-         <code>title</code>
-         column attribute will be ignored !
-      </div>
-      <p>In the example below, a "master checkbox" has been added in the head.</p>
       <br />
    </div>
 </div>

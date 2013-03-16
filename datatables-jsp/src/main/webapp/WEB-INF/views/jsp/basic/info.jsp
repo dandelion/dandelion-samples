@@ -4,7 +4,6 @@
 <div class="row-fluid">
    <div class="span12">
       <h3>Table informations</h3>
-      <p>By default, table informations (at bottom left) are displayed but you may need to hide them.</p>
       <br />
    </div>
 </div>
@@ -20,14 +19,6 @@
       </datatables:table>
    </tab:demo>
    <tab:taglib>
-
-      <p>
-         You can do it setting the
-         <code>info</code>
-         table attribute to
-         <code>false</code>
-         .
-      </p>
       <tab:code>
 <datatables:table id="myTableId" data="${persons}" info="false">
    <datatables:column title="Id" property="id" />
@@ -38,13 +29,6 @@
 </datatables:table></tab:code>
    </tab:taglib>
    <tab:thymeleaf>
-      <p>
-         You can do it setting the
-         <code>dt:info</code>
-         table attribute to
-         <code>false</code>
-         .
-      </p>
       <tab:code>
 <table id="myTable" dt:table="true" dt:info="false">
    <thead>

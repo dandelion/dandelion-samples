@@ -4,31 +4,6 @@
 <div class="row-fluid">
    <div class="span12">
       <h3>Using extra configuration</h3>
-      <p>
-         As for the
-         <code>datatables:extraFile</code>
-         tag, extra configuration allows you to add DataTables configuration which are not supported by the tag
-         attributes, e.g. <a href="http://datatables.net/release-datatables/examples/advanced_init/column_render.html">custom
-            column rendering</a> or <a
-            href="http://datatables.net/release-datatables/examples/advanced_init/row_callback.html">specific events</a>.
-      </p>
-      <p>
-         This is almost the same principle as for the
-         <code>datatables:extraFile</code>
-         but here, the
-         <code>datatables:extraConf</code>
-         tag allows you to specify the location of a file containing DataTables extra configuration to merge with the
-         generated one. So this file must contain a javascript JSON-formatted object.
-      </p>
-      <p>
-         Internally, <strong>DataTables4j</strong> will generate a jQuery AJAX synchronous call to merge the DataTables
-         configuration before initializing the table.
-      </p>
-      <p class="alert alert-info">
-         <strong>Info !</strong> <br />The fill can contain non-valid JSON content (e.g.
-         <code>function</code>
-         ).
-      </p>
       <br />
    </div>
 </div>

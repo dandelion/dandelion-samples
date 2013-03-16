@@ -4,12 +4,7 @@
 <div class="row-fluid">
    <div class="span12">
       <h3>Plugins combo using aggregation</h3>
-      <hr />
-      <p>Aggregation become very relevant when you use several plugins in the same table.</p>
-      <p>
-         <strong>ColReorder</strong> and <strong>Scroller</strong> have been activated in the following table.
-         Aggregation too. Take a look at the generated web resources to see what changed.
-      </p>
+      <br />
    </div>
 </div>
 

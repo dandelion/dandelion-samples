@@ -4,19 +4,6 @@
 <div class="row-fluid">
    <div class="span12">
       <h3>Column custom content</h3>
-      <p>
-         <code>datatables:column</code>
-         tag can either have a body or not.
-      </p>
-      <ul>
-         <li>Using the <code>property</code> attribute, the column's content will be filled with the <code>property</code>
-            of the current bean of the iterated collection. In this case, you do not need to set a body for the tag.
-         </li>
-         <li>Or you can set a body with plain text, HTML code or any other JSP tags. In this case, you do not need
-            the <code>property</code> attribute.
-         </li>
-      </ul>
-      <p>In the example below, an Actions column has been added with some links !</p>
       <br />
    </div>
 </div>

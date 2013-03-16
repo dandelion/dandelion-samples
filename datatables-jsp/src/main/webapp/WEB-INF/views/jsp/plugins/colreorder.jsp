@@ -4,18 +4,6 @@
 <div class="row-fluid">
    <div class="span12">
       <h3>ColReorder</h3>
-      <p>
-         <a href="http://www.datatables.net/extras/colreorder/" class="btn btn-success" style="float: right;">See
-            the plugin home</a> This plugin allows you to reorder columns using drag'n'drop.
-      </p>
-      <p>
-         You just need to set the
-         <code>colreorder</code>
-         table attribute to
-         <tt>true</tt>
-         to activate the ColReorder plugin.
-      </p>
-      <p>Then, try to drag'n'drop column's heads !</p>
       <br />
    </div>
 </div>

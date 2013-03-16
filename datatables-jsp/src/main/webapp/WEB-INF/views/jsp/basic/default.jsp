@@ -4,7 +4,6 @@
 <div class="row-fluid">
    <div class="span12">
       <h3>Default configuration</h3>
-      <p>Using the default configuration, basic features are allways activated : filtering, paging, sorting, ...</p>
       <br />
    </div>
 </div>
@@ -20,12 +19,6 @@
       </datatables:table>
    </tab:demo>
    <tab:taglib>
-      <p>
-         Just set the minimum required table attributes :
-         <code>id</code>
-         and
-         <code>data</code>
-      </p>
       <tab:code>
 <datatables:table id="myTableId" data="${persons}">
    <datatables:column title="Id" property="id" />

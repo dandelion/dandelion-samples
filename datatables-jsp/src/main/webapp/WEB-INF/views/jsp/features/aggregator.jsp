@@ -4,8 +4,6 @@
 <div class="row-fluid">
    <div class="span12">
       <h3>Aggregation</h3>
-      <p>In the following example, aggregation has been locally activated.</p>
-      <p>Take a look at the generated files to see aggregation in action !</p>
       <br />
    </div>
 </div>

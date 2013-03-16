@@ -15,7 +15,7 @@
 
     <definition name="themes.bootstrap2*" extends="emptyLayout">
         <put-attribute name="tabThemes" value="active"/>
-        <put-attribute name="title" value="Themes - DataTables4j"/>
+        <put-attribute name="title" value="Themes - Dandelion-DataTables"/>
         <put-attribute name="content" value="/WEB-INF/views/jsp/themes/bootstrap2.jsp"/>
     </definition>
 

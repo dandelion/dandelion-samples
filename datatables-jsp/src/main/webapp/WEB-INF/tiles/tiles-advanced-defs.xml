@@ -9,7 +9,7 @@
    
    <definition name="advanced.*" extends="advancedLayout">
       <put-attribute name="tabAdvanced" value="active" />
-      <put-attribute name="title" value="Advanced - DataTables4j" />
+      <put-attribute name="title" value="Advanced - Dandelion-DataTables" />
       <put-attribute name="content" value="/WEB-INF/views/jsp/advanced/{1}.jsp" />
    </definition>
 

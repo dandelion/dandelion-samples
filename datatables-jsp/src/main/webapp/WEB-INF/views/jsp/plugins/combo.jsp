@@ -4,15 +4,7 @@
 <div class="row-fluid">
    <div class="span12">
       <h3>Plugins combo</h3>
-      <hr />
-      <p>You can combine several plugins in the same table. Just set the right tag attributes for the activation.</p>
-      <p>
-         <strong>ColReorder</strong> and <strong>Scroller</strong> have been activated in the following table.
-      </p>
-      <div class="alert">
-         <strong>Warning!</strong> <br />Some limitations due to DataTables plugin's compatibility may appear. For
-         instance, Scroller and FixedHeader plugins are still not compatibles.
-      </div>
+      <br />
    </div>
 </div>
 

@@ -4,22 +4,6 @@
 <div class="row-fluid">
    <div class="span12">
       <h3>Scroller</h3>
-      <p>
-         <a href="http://www.datatables.net/extras/scroller/" class="btn btn-success" style="float: right;">See the
-            plugin home</a> This plugin allows you to scroll inside the table data.
-      </p>
-      <p>
-         You just need to set the
-         <code>scroller</code>
-         table attribute to
-         <tt>true</tt>
-         to activate the Scroller plugin.
-      </p>
-      <p>
-         By default, the height is 300px but you can configure it with the
-         <code>scrollY</code>
-         table attribute.
-      </p>
       <br />
    </div>
 </div>

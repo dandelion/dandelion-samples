@@ -4,11 +4,6 @@
 <div class="row-fluid">
    <div class="span12">
       <h3>Table length changing</h3>
-      <p>
-         You can enable or disable the capability to change the number of result per page using the
-         <code>lengthChange</code>
-         table attribute.
-      </p>
       <br />
    </div>
 </div>

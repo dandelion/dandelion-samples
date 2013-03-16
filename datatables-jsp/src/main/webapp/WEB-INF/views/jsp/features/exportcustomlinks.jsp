@@ -4,7 +4,6 @@
 <div class="row-fluid">
    <div class="span12">
       <h3>Customizing export links</h3>
-      <p>By defaut, export links are a bit ugly but you can of course customize them to fit your needs.</p>
       <br />
    </div>
 </div>
@@ -30,12 +29,6 @@
                </datatables:table>
             </tab:demo>
             <tab:taglib>
-               <p>
-                  You can use the
-                  <code>datatables:export</code>
-                  tag to customize the export links. This tag allows you to configure one type of export.
-               </p>
-               <p>Using this tag, you can for instance add CSS classes to the links or change the link's label</p>
                <tab:code>
 <datatables:table id="myFirstTableId" data="${persons}" export="csv,xml">
    <datatables:column title="Id" property="id" />
@@ -68,12 +61,6 @@
                </datatables:table>
             </tab:demo>
             <tab:taglib>
-               <p>
-                  Depending on your needs, you may want to move links around the table. You can do it using the
-                  <code>exportLinks</code>
-                  table attribute.
-               </p>
-               <p>This attribute makes reading data easier by repeating links at different positions.</p>
                <tab:code>
 <datatables:table id="mySecondTableId" data="${persons}" export="csv,xml" exportLinks="top_right,bottom_right">
    <datatables:column title="Id" property="id" />

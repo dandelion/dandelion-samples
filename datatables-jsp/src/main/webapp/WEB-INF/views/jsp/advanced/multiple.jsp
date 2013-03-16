@@ -4,10 +4,6 @@
 <div class="row-fluid">
    <div class="span12">
       <h3>Multiple tables</h3>
-      <p>
-         <strong>DataTables4j</strong> can handle multiple tables on the same page.
-      </p>
-      <p>Just ensure to give a unique ID to each table !</p>
       <br />
    </div>
 </div>

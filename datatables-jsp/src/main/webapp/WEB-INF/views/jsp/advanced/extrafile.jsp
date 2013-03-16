@@ -4,35 +4,6 @@
 <div class="row-fluid">
    <div class="span12">
       <h3>Using extra file</h3>
-      <p>
-         There are so many possibilities with <a href="http://datatables.net">DataTables</a> it would be too bad to
-         limit its configuration with the taglib attributes.
-      </p>
-      <p>
-         That's why
-         <code>datatables:extraFile</code>
-         and
-         <code>extraConf</code>
-         tags exist and provide extension points.. Let's focus on extra file here.
-      </p>
-      <p>
-         The
-         <code>datatables:extraFile</code>
-         tag allows you to specify the location of a file containing Javascript code, which will be simply appended in
-         the main generated Javascript file. <br /> Depending on what you need to do, the code can be inserted at
-         different locations, using the
-         <code>insert</code>
-         extraFile attribute. See the <a href="http://datatables4j.github.com/docs/advanced.extrafile.html">documentation</a>
-         for further details.
-      </p>
-      <p class="alert alert-info">
-         <strong>Info !</strong><br /> As many
-         <code>extraFile</code>
-         tags can be added inside the
-         <code>datatables:table</code>
-         tag.
-
-      </p>
       <br />
    </div>
 </div>

@@ -4,14 +4,6 @@
 <div class="row-fluid">
    <div class="span12">
       <h3>Using CDN</h3>
-      <p>You can decide to load the required Datatables web resources (JS, CSS, images) using the Microsoft's CDN.</p>
-      <p>
-         <code>link</code>
-         and
-         <code>script</code>
-         HTML tags will be generated and will wrap the table.
-      </p>
-      <p>Take a look at the generated HTML code !</p>
       <br />
    </div>
 </div>

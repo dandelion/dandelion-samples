@@ -9,7 +9,7 @@
    
    <definition name="plugins.*" extends="pluginLayout">
       <put-attribute name="tabPlugins" value="active" />
-      <put-attribute name="title" value="Plugins - DataTables4j" />
+      <put-attribute name="title" value="Plugins - Dandelion-DataTables" />
       <put-attribute name="content" value="/WEB-INF/views/jsp/plugins/{1}.jsp" />
    </definition>
 

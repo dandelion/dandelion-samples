@@ -4,16 +4,6 @@
 <div class="row-fluid">
    <div class="span12">
       <h3>Default content</h3>
-      <p>
-         By default, <strong>DataTables4j</strong> displays an empty string when the bean's value is null.
-      </p>
-      <p>
-         You can override the empty string using the
-         <code>default</code> attribute.
-      </p>
-      <p>
-         Using Thymeleaf, just use a conditionnal operator !
-      </p>
       <br />
    </div>
 </div>
