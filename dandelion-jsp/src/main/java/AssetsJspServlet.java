@@ -13,12 +13,12 @@ public class AssetsJspServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        // add to assets request context the scope1 and scope2
-        AssetsRequestContext.get(req)
-                .addScopes("scope1,scope2")
-                .addScopes("delegateContentIP")
-                .addParameter("ip", DelegateLocationWrapper.DELEGATE_CONTENT_PARAM, new AlertIPDelegateContent());
-        // go to the jsp
-        getServletContext().getRequestDispatcher("/WEB-INF/pages/assets.jsp").forward(req, resp);
+	// add to assets request context the scope1 and scope2
+	AssetsRequestContext.get(req)
+		.addScopes("scope1,scope2")
+		.addScopes("delegateContentIP")
+		.addParameter("ip", DelegateLocationWrapper.DELEGATE_CONTENT_PARAM, new AlertIPDelegateContent());
+	// go to the jsp
+	getServletContext().getRequestDispatcher("/WEB-INF/pages/assets.jsp").forward(req, resp);
     }
 }

@@ -1,4 +1,4 @@
-# Sample :: Assets JSP
+# Dandelion :: Sample :: JSP
 
 This sample is based on a simple servlet3.x webapp
 

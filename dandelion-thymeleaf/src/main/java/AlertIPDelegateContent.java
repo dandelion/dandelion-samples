@@ -35,6 +35,6 @@ import javax.servlet.http.HttpServletRequest;
 public class AlertIPDelegateContent implements DelegateContent {
     @Override
     public String getContent(HttpServletRequest request) {
-        return "alert('x-forwarded-for=" + request.getHeader("x-forwarded-for") + "');";
+	return "alert('x-forwarded-for=" + request.getHeader("x-forwarded-for") + "');";
     }
 }

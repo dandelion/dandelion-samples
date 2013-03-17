@@ -1,4 +1,4 @@
-# Sample :: Assets Thymeleaf
+# Dandelion :: Sample :: Thymeleaf
 
 This sample is based on a simple servlet3.x webapp
 
