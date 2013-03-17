@@ -28,13 +28,29 @@
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-import com.github.dandelion.core.asset.delegate.DelegateContent;
+package com.github.dandelion.jsp;
 
+import com.github.dandelion.core.asset.AssetsRequestContext;
+import com.github.dandelion.core.asset.delegate.DelegateLocationWrapper;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 
-public class AlertIPDelegateContent implements DelegateContent {
+@WebServlet(urlPatterns = "/assets-jsp", loadOnStartup = 1)
+public class AssetsJspServlet extends HttpServlet {
+
     @Override
-    public String getContent(HttpServletRequest request) {
-	return "alert('x-forwarded-for=" + request.getHeader("x-forwarded-for") + "');";
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+	// add to assets request context the scope1 and scope2
+	AssetsRequestContext.get(req)
+		.addScopes("scope1,scope2")
+		.addScopes("delegateContentIP")
+		.addParameter("ip", DelegateLocationWrapper.DELEGATE_CONTENT_PARAM, new AlertIPDelegateContent());
+	// go to the jsp
+	getServletContext().getRequestDispatcher("/WEB-INF/pages/assets.jsp").forward(req, resp);
     }
 }
