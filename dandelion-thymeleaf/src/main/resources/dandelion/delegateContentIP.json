@@ -1,14 +1,14 @@
 {
-    "scope": "delegateContentIP",
-    "parent": "scope1",
     "assets": [
-	{
-	    "name": "ip",
-	    "version": "latest",
-	    "type": "js",
-	    "locations": {
-		"delegate": "your-ip.js"
-	    }
-	}
-    ]
+        {
+            "locations": {
+                "delegate": "your-ip.js"
+            }, 
+            "name": "ip", 
+            "type": "js", 
+            "version": "latest"
+        }
+    ], 
+    "parent": "scope1", 
+    "scope": "delegateContentIP"
 }
