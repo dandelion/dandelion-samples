@@ -61,18 +61,18 @@
       <dependency>
          <groupId>org.slf4j</groupId>
          <artifactId>slf4j-api</artifactId>
-         <version>${slf4j.version}</version>
+         <version>1.7.2</version>
          <scope>compile</scope>
       </dependency>
       <dependency>
          <groupId>ch.qos.logback</groupId>
          <artifactId>logback-classic</artifactId>
-         <version>${logback.version}</version>
+         <version>1.0.9</version>
       </dependency>
       <dependency>
          <groupId>ch.qos.logback</groupId>
          <artifactId>logback-access</artifactId>
-         <version>${logback.version}</version>
+         <version>1.0.9</version>
       </dependency>
    </dependencies>
 </project>
