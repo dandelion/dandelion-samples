@@ -3,7 +3,7 @@
    xmlns:dt="http://www.thymeleaf.org/dandelion/datatables" layout:decorator="common/layout/featureLayout">
 
 <head>
-<title>Customed export links (CSS)</title>
+<title>Customed export file names</title>
 </head>
 
 <body>
@@ -12,7 +12,7 @@
 
       <div class="row-fluid">
          <div class="span12">
-            <h3>Customed export links (CSS)</h3>
+            <h3>Customed export file names</h3>
             <br />
             <br />
          </div>
@@ -21,7 +21,7 @@
       <div class="row-fluid">
          <div class="span12">
 
-            <table id="myTable" dt:table="true" dt:export="pdf,xls,csv">
+            <table id="myTable" dt:table="true" dt:export="xls,csv">
                <thead>
                   <tr>
                      <th>Id</th>
@@ -31,7 +31,7 @@
                      <th>Mail</th>
                   </tr>
                </thead>
-               <tbody dt:csv:class="btn btn-success" dt:xls:class="btn btn-info" dt:pdf:class="btn btn-warning">
+               <tbody dt:csv:class="btn" dt:xls:class="btn" dt:csv:filename="my_CSV_export">
                   <tr th:each="person : ${persons}">
                      <td th:text="${person.id}">1</td>
                      <td th:text="${person.firstName}">John</td>
