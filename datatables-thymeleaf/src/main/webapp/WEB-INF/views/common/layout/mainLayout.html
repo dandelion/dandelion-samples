@@ -30,10 +30,10 @@
       /></a>
       <div class="navbar navbar-fixed-top">
          <div class="navbar-inner">
-            <div class="container">
+            <div class="container-fluid">
                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
-               </a> <a class="brand" th:href="@{/}">DataTables4j Thymeleaf Demo</a>
+               </a> <a class="brand" th:href="@{/}">Dandelion-DataTables Thymeleaf Demo</a>
                <div class="nav-collapse collapse">
                   <ul class="nav">
                      <li><a th:href="@{/basic/home}"><i class="icon-leaf"></i> Basic examples</a></li>
@@ -42,18 +42,6 @@
                      <li><a th:href="@{/features/home}"><i class="icon-th-large"></i> Features</a></li>
                      <li><a th:href="@{/themes/home}"><i class="icon-magic"></i> Themes</a></li>
                      <li><a th:href="@{/plugins/home}"><i class="icon-plus"></i> Plugins</a></li>
-                  </ul>
-                  <ul class="nav pull-right">
-                     <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-search"></i> Help <b
-                           class="caret"
-                        ></b></a>
-                        <ul class="dropdown-menu">
-                           <li><a href="https://github.com/datatables4j/issues/issues">Issues / Enhancements</a></li>
-                           <li><a href="http://datatables.net/forums/discussion/10138/">DataTables forum</a></li>
-                           <li class="divider"></li>
-                           <li><a href="http://datatables4j.github.com/docs/">DataTables4j home</a></li>
-                           <li><a href="http://datatables.net/">DataTables home</a></li>
-                        </ul></li>
                   </ul>
                </div>
                <!--/.nav-collapse -->
@@ -74,59 +62,8 @@
       <hr />
       <footer>
          <ul>
-            <li><a href="http://datatables4j.github.com/docs" class="btn btn-small btn-info">Documentation</a></li>
+            <li><a href="http://dandelion.github.com/datatables" class="btn btn-small">Documentation</a></li>
          </ul>
-         <ul class="pull-right">
-            <li><a href="https://twitter.com/share" class="twitter-share-button" data-text="Check the DataTables4j Thymeleaf demo !"
-               data-via="DataTables4j"
-            >Tweet</a> <script>
-													!function(d, s, id) {
-														var js, fjs = d
-																.getElementsByTagName(s)[0];
-														if (!d
-																.getElementById(id)) {
-															js = d
-																	.createElement(s);
-															js.id = id;
-															js.src = "//platform.twitter.com/widgets.js";
-															fjs.parentNode
-																	.insertBefore(
-																			js,
-																			fjs);
-														}
-													}(document, "script",
-															"twitter-wjs");
-												</script></li>
-            <li><a href="https://twitter.com/DataTables4j" class="twitter-follow-button" style="float: right;" data-show-count="false">Follow
-                  @DataTables4j</a> <script>
-																			!function(
-																					d,
-																					s,
-																					id) {
-																				var js, fjs = d
-																						.getElementsByTagName(s)[0];
-																				if (!d
-																						.getElementById(id)) {
-																					js = d
-																							.createElement(s);
-																					js.id = id;
-																					js.src = "//platform.twitter.com/widgets.js";
-																					fjs.parentNode
-																							.insertBefore(
-																									js,
-																									fjs);
-																				}
-																			}
-																					(
-																							document,
-																							"script",
-																							"twitter-wjs");
-																		</script></li>
-         </ul>
-         <div style="clear: both;"></div>
-         <a href="http://www.cloudbees.com"><img th:src="@{/img/logo_Powered-by-CB.png}" width="100px" height="40px"
-            style="float: right; margin-right: 15px;"
-         /></a>
       </footer>
    </div>
 </body>

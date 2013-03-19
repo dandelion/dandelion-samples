@@ -2,5 +2,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <ul>
-   <li><a href="http://dandelion.github.com/datatables" class="btn btn-small btn-info">Documentation</a></li>
+   <li><a href="http://dandelion.github.com/datatables" class="btn btn-small">Documentation</a></li>
 </ul>

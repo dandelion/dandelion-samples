@@ -36,6 +36,11 @@ public class DemoController {
 		return personService.findLimited(200);
 	}
 
+	@ModelAttribute("testAttr")
+	public String populateTest() {
+		return "ceciestuntest";
+	}
+	
 	@RequestMapping(value = "/basic/{page}")
 	public String goToBasicExample(@PathVariable String page) {
 		return "basic/" + page;
