@@ -4,7 +4,7 @@
 
    <groupId>com.github.dandelion</groupId>
    <artifactId>demo-datatables-thymeleaf</artifactId>
-   <version>0.8.7</version>
+   <version>0.8.9-SNAPSHOT</version>
    <packaging>war</packaging>
 
    <name>Dandelion :: Samples :: Datatables Thymeleaf</name>
@@ -14,7 +14,7 @@
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
       <!-- Dependencies -->
-      <dandelion.datatables.version>0.8.8-SNAPSHOT</dandelion.datatables.version>
+      <dandelion.datatables.version>0.8.9-SNAPSHOT</dandelion.datatables.version>
       <thymeleaf.version>2.0.16</thymeleaf.version>
       <thymeleaf.layout.version>1.0.5</thymeleaf.layout.version>
       <spring.version>3.2.2.RELEASE</spring.version>
