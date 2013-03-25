@@ -9,11 +9,11 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 
-import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Repository;
 
 import com.github.dandelion.datatables.core.ajax.ColumnDef;
 import com.github.dandelion.datatables.core.ajax.DatatablesCriterias;
+import com.github.dandelion.datatables.dao.util.DaoUtils;
 import com.github.dandelion.datatables.entity.Person;
 
 /**
@@ -63,32 +63,14 @@ public class PersonDao {
 	public List<Person> findPersonWithDatatablesCriterias(DatatablesCriterias criterias) {
 
 		StringBuilder queryBuilder = new StringBuilder("SELECT p FROM Person p");
-		List<String> paramList = new ArrayList<String>();
 
 		/**
-		 * 1st step : filtering
+		 * 1st step : global and individual column filtering
 		 */
-		if (StringUtils.isNotBlank(criterias.getSearch()) && criterias.hasOneFilterableColumn()) {
-			queryBuilder.append(" WHERE ");
-
-			for (ColumnDef columnDef : criterias.getColumnDefs()) {
-				if (columnDef.isFilterable()) {
-					paramList.add(" LOWER(p." + columnDef.getName()
-							+ ") LIKE '%?%'".replace("?", criterias.getSearch().toLowerCase()));
-				}
-			}
-
-			Iterator<String> itr = paramList.iterator();
-			while (itr.hasNext()) {
-				queryBuilder.append(itr.next());
-				if (itr.hasNext()) {
-					queryBuilder.append(" OR ");
-				}
-			}
-		}
-
+		queryBuilder.append(DaoUtils.getFilterQuery(criterias));
+		
 		/**
-		 * 2nd step : sorting
+		 * 3rd step : sorting
 		 */
 		if (criterias.hasOneSortedColumn()) {
 
@@ -110,7 +92,7 @@ public class PersonDao {
 		TypedQuery<Person> query = entityManager.createQuery(queryBuilder.toString(), Person.class);
 
 		/**
-		 * 3rd step : paging
+		 * 4th step : paging
 		 */
 		query.setFirstResult(criterias.getDisplayStart());
 		query.setMaxResults(criterias.getDisplaySize());
@@ -130,27 +112,8 @@ public class PersonDao {
 	public Long getFilteredCount(DatatablesCriterias criterias) {
 
 		StringBuilder queryBuilder = new StringBuilder("SELECT p FROM Person p");
-		List<String> paramList = new ArrayList<String>();
 
-		// Filtering
-		if (StringUtils.isNotBlank(criterias.getSearch()) && criterias.hasOneFilterableColumn()) {
-			queryBuilder.append(" WHERE ");
-
-			for (ColumnDef field : criterias.getColumnDefs()) {
-				if (field.isFilterable()) {
-					paramList.add(" LOWER(p." + field.getName()
-							+ ") LIKE '%?%'".replace("?", criterias.getSearch().toLowerCase()));
-				}
-			}
-
-			Iterator<String> itr = paramList.iterator();
-			while (itr.hasNext()) {
-				queryBuilder.append(itr.next());
-				if (itr.hasNext()) {
-					queryBuilder.append(" OR ");
-				}
-			}
-		}
+		queryBuilder.append(DaoUtils.getFilterQuery(criterias));
 
 		Query query = entityManager.createQuery(queryBuilder.toString());
 		return Long.parseLong(String.valueOf(query.getResultList().size()));
