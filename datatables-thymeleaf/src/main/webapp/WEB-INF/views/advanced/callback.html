@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout"
-   xmlns:dt="http://www.thymeleaf.org/dandelion/datatables" layout:decorator="common/layout/featureLayout">
+   xmlns:dt="http://www.thymeleaf.org/dandelion/datatables" layout:decorator="common/layout/advancedLayout">
 
 <head>
-<title>Customed export links (CSS)</title>
+<title>Advanced example - Using callbacks</title>
 </head>
 
 <body>
 
    <div layout:fragment="content">
-
+      <script th:inline="javascript">
+         /*<![CDATA[*/
+         function callbackCreatedRow(nRow, aData, iDataIndex) {
+         	$('td:eq(4)', nRow).css({
+         		'font-weight' : 'bold'
+         	});
+         }
+         
+         function callbackInit(oSettings, json) {
+         	alert('DataTables has finished its initialisation.');
+         }
+         /*]]>*/
+		</script>
+      
       <div class="row-fluid">
          <div class="span12">
-            <h3>Customed export links (CSS)</h3>
-            <br />
+            <h3>Using DataTables callbacks</h3>
             <br />
          </div>
       </div>
@@ -21,7 +33,7 @@
       <div class="row-fluid">
          <div class="span12">
 
-            <table id="myTable" dt:table="true" dt:export="pdf,xls,csv" dt:exportLinks="top_right,bottom_right">
+            <table id="myTableId" dt:table="true">
                <thead>
                   <tr>
                      <th>Id</th>
@@ -31,15 +43,13 @@
                      <th>Mail</th>
                   </tr>
                </thead>
-               <tbody dt:csv:class="btn btn-success" dt:xls:class="btn btn-info" dt:pdf:class="btn btn-warning">
-                  <tr th:each="person : ${persons}">
+               <tbody dt:cbk:createdrow="callbackCreatedRow" dt:cbk:init="callbackInit">
+                  <tr th:each="person : ${persons}" th:attr="id=${'person_' + person.id}">
                      <td th:text="${person.id}">1</td>
                      <td th:text="${person.firstName}">John</td>
                      <td th:text="${person.lastName}">Doe</td>
                      <td th:text="${person.address != null and person.address.town != null} ? ${person.address.town.name} : ''">Nobody knows !</td>
-                     <td dt:csv="'csv'+${person.mail}" dt:xls="'xls'+${person.mail}">
-                        <a th:href="${'mailto:' + person.mail}" th:text="${person.mail}">john@doe.com</a>
-                     </td>
+                     <td th:text="${person.mail}">john@doe.com</td>
                   </tr>
                </tbody>
             </table>
