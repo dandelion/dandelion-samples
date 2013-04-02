@@ -54,4 +54,15 @@ public class SpringMvcAjaxController {
 		DataSet<Person> dataSet = personService.findPersonsWithDatatablesCriterias(criterias);
 		return DatatablesResponse.build(dataSet, criterias);
 	}
+	
+	@RequestMapping(value = "/persons3", method = RequestMethod.GET)
+	public @ResponseBody
+	DatatablesResponse<Person> findAllForDataTablesWithAdditionalParameter(HttpServletRequest request) {
+		
+		System.out.println("myParameter = " + request.getParameter("more_data"));
+		
+		DatatablesCriterias criterias = DatatablesCriterias.getFromRequest(request);
+		DataSet<Person> persons = personService.findPersonsWithDatatablesCriterias(criterias);
+		return DatatablesResponse.build(persons, criterias);
+	}
 }
