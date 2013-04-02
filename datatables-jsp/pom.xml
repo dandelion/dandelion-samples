@@ -14,7 +14,7 @@
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
       <!-- Dependencies -->
-      <dandelion.datatables.version>0.8.9-SNAPSHOT</dandelion.datatables.version>
+      <dandelion.datatables.version>0.8.11-SNAPSHOT</dandelion.datatables.version>
       <spring.version>3.2.0.RELEASE</spring.version>
       <hibernate.version>4.1.9.Final</hibernate.version>
 
