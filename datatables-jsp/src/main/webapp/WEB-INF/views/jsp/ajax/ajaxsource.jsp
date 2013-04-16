@@ -10,15 +10,12 @@
 
 <tab:tab>
    <tab:demo>
-      <datatables:table id="myTableId" url="/persons" row="person">
+      <datatables:table id="myTableId" url="/persons">
          <datatables:column title="Id" property="id" />
          <datatables:column title="FirstName" property="firstName" />
          <datatables:column title="LastName" property="lastName" />
          <datatables:column title="City" property="address.town.name" />
          <datatables:column title="Mail" property="mail" />
-         <datatables:column title="Action">
-            <a class="btn btn-mini" onclick="alert('$[person.id]');">Delete</a>
-         </datatables:column>
       </datatables:table>
    </tab:demo>
    <tab:taglib>
