@@ -31,7 +31,7 @@
    <!-- DataTables4j servlet definition -->
    <servlet>
       <servlet-name>datatablesController</servlet-name>
-      <servlet-class>com.github.datatables4j.plugins.backward.servlet.DatatablesServlet</servlet-class>
+      <servlet-class>com.github.dandelion.datatables.extras.servlet2.servlet.DatatablesServlet</servlet-class>
    </servlet>
 
    <!-- DataTables4j servlet mapping -->
@@ -43,7 +43,7 @@
    <!-- DataTables4j filter definition -->
    <filter>
       <filter-name>datatablesFilter</filter-name>
-      <filter-class>com.github.datatables4j.plugins.backward.filter.DatatablesFilter</filter-class>
+      <filter-class>com.github.dandelion.datatables.extras.servlet2.filter.DatatablesFilter</filter-class>
    </filter>
 
    <!-- DataTables4j filter mapping -->
