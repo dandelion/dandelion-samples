@@ -10,9 +10,9 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>DataTables4j Demo Servlet 2.x</title>
+<title>Dandelion-DataTables Demo Servlet 2.x</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="DataTables4j demo that uses the backward compatibility module for Servlet 2.x">
+<meta name="description" content="Dandelion-DataTables demo that uses the backward compatibility module for Servlet 2.x">
 <meta name="author" content="Thibault Duchateau">
 
 <!-- Le styles -->
@@ -54,7 +54,7 @@ body {
          <div class="container">
             <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span>
                <span class="icon-bar"></span>
-            </a> <a class="brand" href="${home}">DataTables4j Demo Servlet 2.x</a>
+            </a> <a class="brand" href="${home}">Dandelion-DataTables Demo Servlet 2.x</a>
             <div class="nav-collapse collapse">
                <ul class="nav">
                   <li class="active"><a href="${home}">Home</a></li>
