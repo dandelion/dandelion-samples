@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix="datatables" uri="http://github.com/datatables4j"%>
+<%@ taglib prefix="datatables" uri="http://github.com/dandelion/datatables" %>
 
 <c:url value="/" var="home" />
 <c:url value="/demo/basic" var="basic" />
@@ -55,7 +55,7 @@ body {
          <div class="container">
             <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span>
                <span class="icon-bar"></span>
-            </a> <a class="brand" href="${home}">DataTables4j Demo Servlet 2.x</a>
+            </a> <a class="brand" href="${home}">Dandelion-DataTables Demo Servlet 2.x</a>
             <div class="nav-collapse collapse">
                <ul class="nav">
                   <li><a href="${home}">Home</a></li>
