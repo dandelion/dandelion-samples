@@ -21,7 +21,7 @@
       <div class="row-fluid">
          <div class="span12">
 
-            <table id="myTable" dt:table="true" dt:export="xls,csv">
+            <table id="myTable" dt:table="true" dt:export="'xls,csv'">
                <thead>
                   <tr>
                      <th>Id</th>
@@ -31,7 +31,7 @@
                      <th>Mail</th>
                   </tr>
                </thead>
-               <tbody dt:csv:class="btn" dt:xls:class="btn" dt:csv:label="custom label for CSV" dt:xls:label="custom label for XLS">
+               <tbody dt:csv:class="'btn'" dt:xls:class="'btn'" dt:csv:label="'custom label for CSV'" dt:xls:label="'custom label for XLS'">
                   <tr th:each="person : ${persons}">
                      <td th:text="${person.id}">1</td>
                      <td th:text="${person.firstName}">John</td>

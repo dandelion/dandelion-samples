@@ -21,7 +21,7 @@
       <div class="row-fluid">
          <div class="span12">
 
-            <table id="myTable" dt:table="true" dt:export="pdf,xls,csv" dt:exportLinks="top_right,bottom_right">
+            <table id="myTable" dt:table="true" dt:export="'pdf,xls,csv'" dt:exportLinks="'top_right,bottom_right'">
                <thead>
                   <tr>
                      <th>Id</th>
@@ -31,7 +31,7 @@
                      <th>Mail</th>
                   </tr>
                </thead>
-               <tbody dt:csv:class="btn btn-success" dt:xls:class="btn btn-info" dt:pdf:class="btn btn-warning">
+               <tbody dt:csv:class="'btn btn-success'" dt:xls:class="'btn btn-info'" dt:pdf:class="'btn btn-warning'">
                   <tr th:each="person : ${persons}">
                      <td th:text="${person.id}">1</td>
                      <td th:text="${person.firstName}">John</td>
