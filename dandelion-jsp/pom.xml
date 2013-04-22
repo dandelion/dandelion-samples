@@ -20,7 +20,7 @@
     </licenses>
 
     <properties>
-        <dandelion.version>0.1.0-SNAPSHOT</dandelion.version>
+        <dandelion.version>0.1.0</dandelion.version>
         <dandelion.webanalytics.version>0.1.0-SNAPSHOT</dandelion.webanalytics.version>
     </properties>
 
