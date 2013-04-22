@@ -21,7 +21,7 @@
 
     <properties>
         <dandelion.version>0.1.0</dandelion.version>
-        <dandelion.webanalytics.version>0.1.0-SNAPSHOT</dandelion.webanalytics.version>
+        <dandelion.webanalytics.version>0.1.0</dandelion.webanalytics.version>
     </properties>
 
     <dependencies>
