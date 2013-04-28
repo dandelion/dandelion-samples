@@ -30,7 +30,7 @@
 
 package com.github.dandelion.thymeleaf;
 
-import com.github.dandelion.core.asset.delegate.DelegateContent;
+import com.github.dandelion.core.asset.wrapper.DelegateContent;
 
 import javax.servlet.http.HttpServletRequest;
 

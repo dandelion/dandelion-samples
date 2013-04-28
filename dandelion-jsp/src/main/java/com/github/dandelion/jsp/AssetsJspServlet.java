@@ -30,8 +30,8 @@
 
 package com.github.dandelion.jsp;
 
-import com.github.dandelion.core.asset.AssetsRequestContext;
-import com.github.dandelion.core.asset.delegate.DelegateLocationWrapper;
+import com.github.dandelion.core.asset.web.AssetsRequestContext;
+import com.github.dandelion.core.asset.wrapper.DelegateLocationWrapper;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
