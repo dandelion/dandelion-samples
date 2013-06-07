@@ -2,7 +2,7 @@
     "assets": [
         {
             "locations": {
-                "local": "js/asset5.js"
+                "webapp": "js/asset5.js"
             }, 
             "name": "asset5", 
             "type": "js", 

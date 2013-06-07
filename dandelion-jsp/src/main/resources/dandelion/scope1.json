@@ -2,7 +2,7 @@
     "assets": [
         {
             "locations": {
-                "local": "js/asset1.js"
+                "webapp": "js/asset1.js"
             }, 
             "name": "asset1", 
             "type": "js", 
@@ -10,7 +10,7 @@
         }, 
         {
             "locations": {
-                "local": "css/color-red.css"
+                "webapp": "css/color-red.css"
             }, 
             "name": "color", 
             "type": "css", 
@@ -18,7 +18,7 @@
         }, 
         {
             "locations": {
-                "local": "js/asset2.js"
+                "webapp": "js/asset2.js"
             }, 
             "name": "asset2", 
             "type": "js", 
