@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.dandelion</groupId>
-    <artifactId>demo-dandelion-thymeleaf</artifactId>
-    <version>0.1.0-SNAPSHOT</version>
+    <groupId>com.github.dandelion.demo</groupId>
+    <artifactId>dandelion-thymeleaf</artifactId>
+    <version>0.2.0</version>
     <packaging>war</packaging>
 
     <name>Dandelion :: Samples :: Thymeleaf</name>
@@ -38,7 +38,7 @@
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
-            <version>1.0.9</version>
+            <version>1.0.13</version>
         </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>
