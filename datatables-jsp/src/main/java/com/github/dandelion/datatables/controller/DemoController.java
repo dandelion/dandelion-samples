@@ -83,11 +83,6 @@ public class DemoController {
 		return "themes." + page;
 	}
 
-	@RequestMapping(value = "/styling/{page}")
-	public String goToStylingExample(@PathVariable String page) {
-		return "styling." + page;
-	}
-	
 	@RequestMapping(value = "/styling/bootstrap/{page}")
 	public String goToStylingBootstrapExample(@PathVariable String page) {
 		return "styling.bootstrap." + page;
@@ -96,6 +91,11 @@ public class DemoController {
 	@RequestMapping(value = "/styling/jqueryui/{page}")
 	public String goToStylingJqueyuiExample(@PathVariable String page) {
 		return "styling.jqueryui." + page;
+	}
+
+	@RequestMapping(value = "/styling/{page}")
+	public String goToStylingExample(@PathVariable String page) {
+		return "styling." + page;
 	}
 	
 	@RequestMapping(value = "/plugins/{page}")

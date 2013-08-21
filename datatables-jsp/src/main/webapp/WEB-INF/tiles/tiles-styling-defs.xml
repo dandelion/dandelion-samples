@@ -3,33 +3,34 @@
         "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
 <tiles-definitions>
 
-    <definition name="stylingLayout" extends="mainLayout">
-        <put-attribute name="sidebar" value="/WEB-INF/views/jsp/common/sidebar/sidebarStyling.jsp" cascade="true"/>
-        <put-attribute name="tabStyling" value="active" cascade="true" />
-        <put-attribute name="title" value="Styling - Dandelion-DataTables"/>
-    </definition>
+	<definition name="stylingLayout" extends="mainLayout">
+		<put-attribute name="sidebar" value="/WEB-INF/views/jsp/common/sidebar/sidebarStyling.jsp" cascade="true" />
+		<put-attribute name="tabStyling" value="active" cascade="true" />
+		<put-attribute name="title" value="Styling - Dandelion-DataTables" />
+	</definition>
 
-    <definition name="emptyLayout" extends="stylingLayout">
-        <put-attribute name="tabStyling" value="active" cascade="true" />
-        <put-attribute name="sidebar" value="/WEB-INF/views/jsp/common/sidebar/sidebarStyling.jsp" cascade="true"/>
-        <put-attribute name="assets" value="" cascade="true"/>
-    </definition>
+	<definition name="emptyLayout" extends="stylingLayout">
+		<put-attribute name="tabStyling" value="active" cascade="true" />
+		<put-attribute name="sidebar" value="/WEB-INF/views/jsp/common/sidebar/sidebarStyling.jsp" cascade="true" />
+		<put-attribute name="assets" value="" cascade="true" />
+	</definition>
 
-   <definition name="styling.bootstrap.*" extends="emptyLayout">
-      <put-attribute name="content" value="/WEB-INF/views/jsp/styling/bootstrap/{1}.jsp" cascade="true" />
-   </definition>
-   
-   <definition name="styling.jqueryui.*" extends="emptyLayout">
-      <put-attribute name="content" value="/WEB-INF/views/jsp/styling/jqueryui/{1}.jsp" cascade="true" />
-   </definition>
-   <!--
-    <definition name="styling.bootstrap2*" extends="emptyLayout">
-        <put-attribute name="content" value="/WEB-INF/views/jsp/styling/bootstrap/bootstrap2.jsp"/>
-    </definition>
-    <definition name="styling.jqui*" template="/WEB-INF/views/jsp/styling/jqueryui/jqui{1}.jsp"/>
- -->
-    <definition name="styling.*" extends="stylingLayout">
-        <put-attribute name="content" value="/WEB-INF/views/jsp/styling/{1}.jsp"/>
-    </definition>
+	<definition name="jquiLayout" extends="stylingLayout">
+		<put-attribute name="tabStyling" value="active" cascade="true" />
+		<put-attribute name="sidebar" value="/WEB-INF/views/jsp/common/sidebar/sidebarStyling.jsp" cascade="true" />
+		<put-attribute name="assets" value="/WEB-INF/views/jsp/styling/jqueryui/layout_jqui.jsp" cascade="true" />
+	</definition>
+	
+	<definition name="styling.bootstrap.*" extends="emptyLayout">
+		<put-attribute name="content" value="/WEB-INF/views/jsp/styling/bootstrap/{1}.jsp" cascade="true" />
+	</definition>
+
+	<definition name="styling.jqueryui.*" extends="jquiLayout">
+		<put-attribute name="content" value="/WEB-INF/views/jsp/styling/jqueryui/{1}.jsp" cascade="true" />
+	</definition>
+
+	<definition name="styling.*" extends="stylingLayout">
+		<put-attribute name="content" value="/WEB-INF/views/jsp/styling/{1}.jsp" />
+	</definition>
 
 </tiles-definitions>
