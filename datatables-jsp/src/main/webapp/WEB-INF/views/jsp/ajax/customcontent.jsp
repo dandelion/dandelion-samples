@@ -17,9 +17,12 @@
 		return '<a class="btn btn-mini" href="/delete/' + full.id + '">Test</a>';
 	}
 </script>
+
+<c:url var="datasource" value="/persons1" />
+
 <tab:tab>
    <tab:demo>
-      <datatables:table id="myTableId" url="/persons1" serverSide="true" processing="true">
+      <datatables:table id="myTableId" url="${datasource}" serverSide="true" processing="true">
          <datatables:column title="Id" property="id" />
          <datatables:column title="FirstName" property="firstName" />
          <datatables:column title="LastName" property="lastName" />

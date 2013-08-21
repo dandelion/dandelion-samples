@@ -7,7 +7,7 @@
 <link href="//ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css" rel="stylesheet" />
 <link href="<c:url value="/css/prettify.css" />" rel="stylesheet" />
 
-<script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.3.min.js"></script>
+<script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.3.js"></script>
 <script src="<c:url value="/js/bootstrap.min.js" />"></script>
 <script src="//ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.js"></script>
 <script src="<c:url value="/js/ga.js" />"></script>

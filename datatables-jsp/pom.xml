@@ -4,7 +4,7 @@
 
    <groupId>com.github.dandelion</groupId>
    <artifactId>demo-datatables-jsp</artifactId>
-   <version>0.8.7</version>
+   <version>0.9.0-SNAPSHOT</version>
    <packaging>war</packaging>
 
    <name>Dandelion :: Samples :: Datatables JSP</name>
@@ -14,7 +14,7 @@
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
       <!-- Dependencies -->
-      <dandelion.datatables.version>0.8.11-SNAPSHOT</dandelion.datatables.version>
+      <dandelion.datatables.version>0.9.0-SNAPSHOT</dandelion.datatables.version>
       <spring.version>3.2.0.RELEASE</spring.version>
       <hibernate.version>4.1.9.Final</hibernate.version>
 
@@ -73,10 +73,18 @@
       </dependency>
 
       <!-- JSTL -->
+      <!-- standard.jar -->
       <dependency>
-         <groupId>jstl</groupId>
+         <groupId>taglibs</groupId>
+         <artifactId>standard</artifactId>
+         <version>1.1.2</version>
+      </dependency>
+
+      <!-- JSTL -->
+      <dependency>
+         <groupId>javax.servlet</groupId>
          <artifactId>jstl</artifactId>
-         <version>1.2</version>
+         <version>1.1.2</version>
       </dependency>
 
       <!-- Servlet -->
@@ -158,7 +166,7 @@
          <artifactId>logback-access</artifactId>
          <version>1.0.9</version>
       </dependency>
-      
+
       <!-- Needed by Cloudbees -->
       <dependency>
          <groupId>commons-logging</groupId>
@@ -187,6 +195,11 @@
                <stopKey>jetty-stop</stopKey>
                <stopPort>9998</stopPort>
             </configuration>
+         </plugin>
+         <plugin>
+            <groupId>org.apache.tomcat.maven</groupId>
+            <artifactId>tomcat7-maven-plugin</artifactId>
+            <version>2.0</version>
          </plugin>
       </plugins>
    </build>

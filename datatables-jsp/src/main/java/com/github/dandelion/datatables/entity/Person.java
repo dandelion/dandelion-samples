@@ -1,5 +1,7 @@
 package com.github.dandelion.datatables.entity;
 
+import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -29,6 +31,16 @@ public class Person {
 	@Column
 	private String mail;
 
+	@Column
+	private Date birthDate;
+	
+	@Column
+	private Long pocketMoney;
+	
+	@OneToOne
+	@JoinColumn(name = "company_id")
+	private Company company;
+	
 	@OneToOne
 	@JoinColumn(name = "address_id")
 	private Address address;
@@ -89,6 +101,28 @@ public class Person {
 	public void setAddress(Address address) {
 		this.address = address;
 	}
-	
-	
+
+	public Date getBirthDate() {
+		return birthDate;
+	}
+
+	public void setBirthDate(Date birthDate) {
+		this.birthDate = birthDate;
+	}
+
+	public Long getPocketMoney() {
+		return pocketMoney;
+	}
+
+	public void setPocketMoney(Long pocketMoney) {
+		this.pocketMoney = pocketMoney;
+	}
+
+	public Company getCompany() {
+		return company;
+	}
+
+	public void setCompany(Company company) {
+		this.company = company;
+	}
 }

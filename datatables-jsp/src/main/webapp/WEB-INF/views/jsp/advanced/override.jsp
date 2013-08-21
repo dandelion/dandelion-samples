@@ -8,31 +8,11 @@
    </div>
 </div>
 
-<tab:tab>
-   <tab:demo>
-      <datatables:table id="myTableId" data="${persons}">
-         <datatables:column title="Id" property="id" />
-         <datatables:column title="FirstName" property="firstName" />
-         <datatables:column title="LastName" property="lastName" />
-         <datatables:column title="City" property="address.town.name" />
-         <datatables:column title="Mail" property="mail" />
-         <datatables:prop name="compressor.enable" value="true" />
-      </datatables:table>
-   </tab:demo>
-   <tab:taglib>
-      <tab:code>
 <datatables:table id="myTableId" data="${persons}">
    <datatables:column title="Id" property="id" />
    <datatables:column title="FirstName" property="firstName" />
    <datatables:column title="LastName" property="lastName" />
    <datatables:column title="City" property="address.town.name" />
    <datatables:column title="Mail" property="mail" />
-   <datatables:prop name="compressor.enable" value="true" />
-</datatables:table></tab:code>
-   </tab:taglib>
-   <tab:thymeleaf>
-      <p class="alert alert-error">
-         <strong>:-(</strong><br /> Not supported yet !
-      </p>
-   </tab:thymeleaf>
-</tab:tab>
+   <datatables:prop name="main.compressor.enable" value="true" />
+</datatables:table>

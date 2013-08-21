@@ -2,14 +2,13 @@
 <!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
 <tiles-definitions>
    
-   <!-- Basic layout -->
    <definition name="pluginLayout" extends="mainLayout">
-      <put-attribute name="sidebar" value="/WEB-INF/views/jsp/common/sidebarPlugin.jsp" cascade="true" />
+      <put-attribute name="sidebar" value="/WEB-INF/views/jsp/common/sidebar/sidebarPlugin.jsp" cascade="true" />
+      <put-attribute name="tabPlugins" value="active" cascade="true" />
+      <put-attribute name="title" value="Plugins - Dandelion-DataTables" />
    </definition>
    
    <definition name="plugins.*" extends="pluginLayout">
-      <put-attribute name="tabPlugins" value="active" />
-      <put-attribute name="title" value="Plugins - Dandelion-DataTables" />
       <put-attribute name="content" value="/WEB-INF/views/jsp/plugins/{1}.jsp" />
    </definition>
 

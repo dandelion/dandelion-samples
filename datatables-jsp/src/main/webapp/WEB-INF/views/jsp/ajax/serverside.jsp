@@ -8,38 +8,11 @@
    </div>
 </div>
 
-<tab:tab>
-   <tab:demo>
-      <datatables:table id="myTableId" url="/persons1" serverSide="true" processing="true">
-         <datatables:column title="Id" property="id" />
-         <datatables:column title="FirstName" property="firstName" />
-         <datatables:column title="LastName" property="lastName" />
-         <datatables:column title="City" property="address.town.name" />
-         <datatables:column title="Mail" property="mail" />
-      </datatables:table>
-   </tab:demo>
-   <tab:taglib>
-      <tab:code>
-<datatables:table id="myTableId" url="/persons1" serverSide="true" processing="true">
+<c:url var="datasource" value="/persons1"></c:url>
+<datatables:table id="myTableId" url="${datasource}" serverSide="true" processing="true">
    <datatables:column title="Id" property="id" />
    <datatables:column title="FirstName" property="firstName" />
    <datatables:column title="LastName" property="lastName" />
    <datatables:column title="City" property="address.town.name" />
    <datatables:column title="Mail" property="mail" />
-</datatables:table></tab:code>
-   </tab:taglib>
-   <tab:thymeleaf>
-      <tab:code>
-<table id="myTableId" dt:table="true" dt:url="/persons1" dt:serverside="true" dt:processing="true">
-   <thead>
-      <tr>
-         <th dt:property="id">Id</th>
-         <th dt:property="firstName">Firstname</th>
-         <th dt:property="lastName">Lastname</th>
-         <th dt:property="address.town.name">City</th>
-         <th dt:property="mail">Mail</th>
-      </tr>
-   </thead>
-</table></tab:code>
-   </tab:thymeleaf>
-</tab:tab>
+</datatables:table>

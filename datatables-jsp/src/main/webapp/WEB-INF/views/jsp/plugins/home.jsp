@@ -3,8 +3,13 @@
 
 <div class="row-fluid">
    <div class="span12">
-      <h3><i class="icon-plus"></i> Plugins</h3>
+      <h3><i class="icon-plus"></i>  Plugins</h3>
       <hr />
+   </div>
+</div>
+
+<div class="row-fluid">
+   <div class="span12">
       <p>
          Please use the opposite menu to browse the examples.
       </p>

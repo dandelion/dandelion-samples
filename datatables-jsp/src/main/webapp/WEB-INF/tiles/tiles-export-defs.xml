@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+   
+   <definition name="exportLayout" extends="mainLayout">
+      <put-attribute name="sidebar" value="/WEB-INF/views/jsp/common/sidebar/sidebarExport.jsp" cascade="true" />
+      <put-attribute name="tabExport" value="active" cascade="true" />
+      <put-attribute name="title" value="Export - Dandelion-DataTables" />
+   </definition>
+   
+   <definition name="export.links.*" extends="exportLayout">
+      <put-attribute name="content" value="/WEB-INF/views/jsp/export/links/{1}.jsp" />
+   </definition>
+
+   <definition name="export.*" extends="exportLayout">
+      <put-attribute name="content" value="/WEB-INF/views/jsp/export/{1}.jsp" />
+   </definition>
+   
+</tiles-definitions>

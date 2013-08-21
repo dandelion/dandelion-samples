@@ -1,8 +1,12 @@
 package com.github.dandelion.datatables.ajax;
 
+import java.io.IOException;
+import java.io.Writer;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -13,6 +17,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.github.dandelion.datatables.core.ajax.DataSet;
 import com.github.dandelion.datatables.core.ajax.DatatablesCriterias;
 import com.github.dandelion.datatables.core.ajax.DatatablesResponse;
+import com.github.dandelion.datatables.core.constants.DTConstants;
 import com.github.dandelion.datatables.entity.Person;
 import com.github.dandelion.datatables.extras.spring3.ajax.DatatablesParams;
 import com.github.dandelion.datatables.service.PersonService;
@@ -37,10 +42,10 @@ public class SpringMvcAjaxController {
 	@RequestMapping(value = "/persons")
 	public @ResponseBody
 	List<Person> findAll(HttpServletRequest request) {
-		return personService.findAll();
+		return personService.findLimited(200);
 	}
 
-	@RequestMapping(value = "/persons1", method = RequestMethod.GET)
+	@RequestMapping(value = "/persons1")
 	public @ResponseBody
 	DatatablesResponse<Person> findAllForDataTables(HttpServletRequest request) {
 		DatatablesCriterias criterias = DatatablesCriterias.getFromRequest(request);
@@ -53,5 +58,17 @@ public class SpringMvcAjaxController {
 	DatatablesResponse<Person> findAllForDataTablesFullSpring(@DatatablesParams DatatablesCriterias criterias) {
 		DataSet<Person> dataSet = personService.findPersonsWithDatatablesCriterias(criterias);
 		return DatatablesResponse.build(dataSet, criterias);
+	}
+	
+	@RequestMapping(value = "/emptyList")
+	public @ResponseBody
+	List<Person> emptyList(HttpServletRequest request) {
+		return new ArrayList<Person>();
+	}
+	
+	@RequestMapping(value = "/nullList")
+	public @ResponseBody
+	List<Person> nullList(HttpServletRequest request) {
+		return null;
 	}
 }

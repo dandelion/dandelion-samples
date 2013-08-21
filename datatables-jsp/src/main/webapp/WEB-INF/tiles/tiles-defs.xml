@@ -4,12 +4,13 @@
 
    <!-- Main layout -->
    <definition name="mainLayout" template="/WEB-INF/views/jsp/common/layout/mainLayout.jsp">
-      <put-attribute name="tabBasic" value="" cascade="true" />
+      <put-attribute name="tabBasics" value="" cascade="true" />
       <put-attribute name="tabAdvanced" value="" cascade="true" />
-      <put-attribute name="tabTheme" value="" cascade="true" />
-      <put-attribute name="tabFeatures" value="" cascade="true" />
+      <put-attribute name="tabThemes" value="" cascade="true" />
+      <put-attribute name="tabExport" value="" cascade="true" />
       <put-attribute name="tabPlugins" value="" cascade="true" />
       <put-attribute name="tabAjax" value="" cascade="true" />
+      <put-attribute name="tabStyling" value="" cascade="true" />
       <put-attribute name="title" value="" cascade="true" />
       <put-attribute name="content" value="" cascade="true" />
       <put-attribute name="navbar" value="/WEB-INF/views/jsp/common/navbar.jsp" cascade="true" />

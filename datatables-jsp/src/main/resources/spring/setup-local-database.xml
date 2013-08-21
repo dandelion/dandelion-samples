@@ -13,6 +13,7 @@
    <jdbc:embedded-database id="dataSource" type="H2" />
 
    <jdbc:initialize-database>
+      <jdbc:script location="classpath:sql/company.sql" />
       <jdbc:script location="classpath:sql/town.sql" />
       <jdbc:script location="classpath:sql/address.sql" />
       <jdbc:script location="classpath:sql/person.sql" />
