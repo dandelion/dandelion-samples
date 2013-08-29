@@ -44,7 +44,7 @@
 
 <div class="masthead">
    <h1>Dandelion-Datatables</h1>
-   <p>Demo application</p>
+   <p>JSP demo application</p>
 </div>
 
 <div class="row-fluid">
@@ -84,7 +84,7 @@
    <div class="span4">
       <i class="icon-plus icon-3x"></i>
       <h2>Plugins</h2>
-      <p>Need to use a DataTables plugin? See how easy it is!
+      <p>Need to use a DataTables plugin? See how easy it is!</p>
       <a class="btn" href="${plugins}/home">View details »</a>
    </div>
 </div>

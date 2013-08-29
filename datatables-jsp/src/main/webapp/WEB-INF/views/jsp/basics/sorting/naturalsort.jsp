@@ -2,7 +2,7 @@
 <%@ include file="../../common/taglib.jsp"%>
 <div class="row-fluid">
    <div class="span12">
-      <h3>Sorting type: natural</h3>
+      <h3>Sorting type: natural, date</h3>
       <br />
    </div>
 </div>

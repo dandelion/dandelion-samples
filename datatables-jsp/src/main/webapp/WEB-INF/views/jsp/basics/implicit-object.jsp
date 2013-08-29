@@ -16,4 +16,7 @@
    <datatables:column title="Mail">
       <a href="mailto:${person.mail}">${person.mail}</a>
    </datatables:column>
+   <datatables:column title="Row index">
+      <c:out value="${person_rowIndex}" />
+   </datatables:column>
 </datatables:table>

@@ -2,7 +2,7 @@
 <%@ include file="../../common/taglib.jsp"%>
 <div class="row-fluid">
    <div class="span12">
-      <h3>Styling pagination: two buttons</h3>
+      <h3>Styling pagination: two button</h3>
       <br />
    </div>
 </div>

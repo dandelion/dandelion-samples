@@ -12,7 +12,7 @@
    <datatables:column title="Id" property="id" />
    <datatables:column title="Firstname" property="firstName" />
    <datatables:column title="LastName" property="lastName" />
-   <datatables:column title="City" property="address.town.name" sortable="false" />
+   <datatables:column title="City" property="address.town.name" />
    <datatables:column title="Mail" property="mail" />
 </datatables:table>
 <br />
@@ -21,6 +21,6 @@
    <datatables:column title="Id" property="id" />
    <datatables:column title="Firstname" property="firstName" />
    <datatables:column title="LastName" property="lastName" />
-   <datatables:column title="City" property="address.town.name" sortable="false" />
+   <datatables:column title="City" property="address.town.name" />
    <datatables:column title="Mail" property="mail" />
 </datatables:table>

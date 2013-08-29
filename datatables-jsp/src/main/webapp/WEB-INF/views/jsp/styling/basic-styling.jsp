@@ -3,7 +3,7 @@
 
 <div class="row-fluid">
    <div class="span12">
-      <h3>Table sorting</h3>
+      <h3>Basic styling</h3>
       <br />
    </div>
 </div>

@@ -3,7 +3,7 @@
 
 <div class="row-fluid">
    <div class="span12">
-      <h3>Table filtering</h3>
+      <h3>Filtering using a number range</h3>
       <hr />
    </div>
 </div>
