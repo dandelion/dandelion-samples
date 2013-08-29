@@ -117,9 +117,4 @@ public class DemoController {
 	public String goToI18nExample(@PathVariable String page) {
 		return "i18n." + page;
 	}
-	
-	@RequestMapping(value = "/dandelion/{page}")
-	public String goToDandelion(@PathVariable String page) {
-		return "dandelion." + page;
-	}
 }

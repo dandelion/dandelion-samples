@@ -1,12 +1,9 @@
 package com.github.dandelion.datatables.ajax;
 
-import java.io.IOException;
-import java.io.Writer;
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -17,7 +14,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.github.dandelion.datatables.core.ajax.DataSet;
 import com.github.dandelion.datatables.core.ajax.DatatablesCriterias;
 import com.github.dandelion.datatables.core.ajax.DatatablesResponse;
-import com.github.dandelion.datatables.core.constants.DTConstants;
 import com.github.dandelion.datatables.entity.Person;
 import com.github.dandelion.datatables.extras.spring3.ajax.DatatablesParams;
 import com.github.dandelion.datatables.service.PersonService;

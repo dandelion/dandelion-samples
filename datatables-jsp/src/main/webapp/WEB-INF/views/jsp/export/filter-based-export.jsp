@@ -13,9 +13,10 @@
    <datatables:column title="FirstName" property="firstName" />
    <datatables:column title="LastName" property="lastName" />
    <datatables:column title="City" property="address.town.name" />
-   <datatables:column title="Mail">
+   <datatables:column title="Mail" display="html">
       <a href="mailto:${person.mail}">${person.mail}</a>
    </datatables:column>
+   <datatables:column title="Mail" display="csv" property="mail" />
    <datatables:export type="csv" cssClass="btn" />
    <datatables:export type="xml" cssClass="btn" />
    <datatables:export type="xls" cssClass="btn" />

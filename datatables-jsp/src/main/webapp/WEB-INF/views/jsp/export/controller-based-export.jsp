@@ -9,12 +9,12 @@
 </div>
 
 <c:url var="datasource" value="/persons2" />
-<c:url var="exportCsvUrl" value="/export.csv" />
+<c:url var="exportCsvUrl" value="/export.csv?titi=toto" />
 <c:url var="exportXmlUrl" value="/export.xml" />
 <c:url var="exportXlsUrl" value="/export.xls" />
 <c:url var="exportPdfUrl" value="/export.pdf" />
 
-<datatables:table id="myFirstTableId" url="${datasource}" serverSide="true" processing="true" export="csv,xml,xls,pdf">
+<datatables:table id="myTableId" url="${datasource}" serverSide="true" processing="true" export="csv,xml,xls,pdf">
    <datatables:column title="Id" property="id" />
    <datatables:column title="FirstName" property="firstName" />
    <datatables:column title="LastName" property="lastName" />
@@ -22,8 +22,8 @@
    <datatables:column title="Mail">
       <a href="mailto:${person.mail}">${person.mail}</a>
    </datatables:column>
-   <datatables:export type="csv" cssClass="btn" url="/demo-datatables-jsp/export.csv" />
-   <datatables:export type="xml" cssClass="btn" url="/demo-datatables-jsp/export.xml" />
-   <datatables:export type="xls" cssClass="btn" url="/demo-datatables-jsp/export.xls" />
-   <datatables:export type="pdf" cssClass="btn" url="/demo-datatables-jsp/export.pdf" />
+   <datatables:export type="csv" cssClass="btn" url="${exportCsvUrl}" method="post" />
+   <datatables:export type="xml" cssClass="btn" url="${exportXmlUrl}" />
+   <datatables:export type="xls" cssClass="btn" url="${exportXlsUrl}" />
+   <datatables:export type="pdf" cssClass="btn" url="${exportPdfUrl}" />
 </datatables:table>
