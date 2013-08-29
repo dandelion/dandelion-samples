@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.github.dandelion.datatables.core.ajax.DatatablesCriterias;
 import com.github.dandelion.datatables.core.exception.ExportException;
@@ -16,6 +17,7 @@ import com.github.dandelion.datatables.core.export.CsvExport;
 import com.github.dandelion.datatables.core.export.ExportConf;
 import com.github.dandelion.datatables.core.export.ExportType;
 import com.github.dandelion.datatables.core.export.ExportUtils;
+import com.github.dandelion.datatables.core.export.HtmlTableBuilder;
 import com.github.dandelion.datatables.core.export.XmlExport;
 import com.github.dandelion.datatables.core.html.HtmlTable;
 import com.github.dandelion.datatables.entity.Person;
@@ -36,12 +38,7 @@ public class ExportController {
 	@Autowired
 	private PersonService personService;
 	
-	/**
-	 * Handles requests to list all accounts for currently logged in user.
-	 * @throws ExportException 
-	 * @throws IOException 
-	 */
-	@RequestMapping(produces = "text/csv")
+	@RequestMapping(produces = "text/csv", method = RequestMethod.POST)
 	public void csv(@DatatablesParams DatatablesCriterias criterias, HttpServletRequest request, HttpServletResponse response) throws ExportException, IOException {
 		
 		List<Person> persons = personService.findPersonsWithDatatablesCriterias(criterias).getRows();
@@ -51,16 +48,15 @@ public class ExportController {
 				.exportClass(new CsvExport())
 				.build();
 
-		HtmlTable table = new HtmlTable.Builder<Person>("tableId", persons, request)
-				.column("id").title("Id")
-				.column("firstName").title("FirstName")
-				.column("lastName").title("LastName")
-				.column("address.town.name").title("City")
-				.column("mail").title("Mail")
-				.column("birthDate").format("{0,date,dd/MM/yyyy}")
+		HtmlTable table = new HtmlTableBuilder<Person>().newBuilder("tableId", persons, request)
+				.column().fillWithProperty("id").title("Id")
+				.column().fillWithProperty("firstName").title("Firtname")
+				.column().fillWithProperty("lastName").title("Lastname")
+				.column().fillWithProperty("address.town.name").title("City")
+				.column().fillWithProperty("mail").title("Mail")
 				.configureExport(exportCsvConf)
 				.build();
-		
+
 		ExportUtils.renderExport(table, exportCsvConf, response);
 	}
 	
@@ -73,12 +69,12 @@ public class ExportController {
 				.exportClass(new XmlExport())
 				.build();
 		
-		HtmlTable table = new HtmlTable.Builder<Person>("tableId", persons, request)
-				.column("id").title("Id")
-				.column("firstName").title("FirstName")
-				.column("lastName").title("LastName")
-				.column("address.town.name").title("City")
-				.column("mail").title("Mail")
+		HtmlTable table = new HtmlTableBuilder<Person>().newBuilder("tableId", persons, request)
+				.column().fillWithProperty("id").title("Id")
+				.column().fillWithProperty("firstName").title("Firtname")
+				.column().fillWithProperty("lastName").title("Lastname")
+				.column().fillWithProperty("address.town.name").title("City")
+				.column().fillWithProperty("mail").title("Mail")
 				.configureExport(exportXmlConf)
 				.build();
 		
@@ -95,12 +91,12 @@ public class ExportController {
 				.exportClass(new PdfExport())
 				.build();
 		
-		HtmlTable table = new HtmlTable.Builder<Person>("tableId", persons, request)
-				.column("id").title("Id")
-				.column("firstName").title("FirstName")
-				.column("lastName").title("LastName")
-				.column("address.town.name").title("City")
-				.column("mail").title("Mail")
+		HtmlTable table = new HtmlTableBuilder<Person>().newBuilder("tableId", persons, request)
+				.column().fillWithProperty("id").title("Id")
+				.column().fillWithProperty("firstName").title("Firtname")
+				.column().fillWithProperty("lastName").title("Lastname")
+				.column().fillWithProperty("address.town.name").title("City")
+				.column().fillWithProperty("mail").title("Mail")
 				.configureExport(exportPdfConf)
 				.build();
 		
@@ -117,12 +113,12 @@ public class ExportController {
 			.exportClass(new XlsExport())
 			.build();
 		
-		HtmlTable table = new HtmlTable.Builder<Person>("tableId", persons, request)
-				.column("id").title("Id")
-				.column("firstName").title("FirstName")
-				.column("lastName").title("LastName")
-				.column("address.town.name").title("City")
-				.column("mail").title("Mail")
+		HtmlTable table = new HtmlTableBuilder<Person>().newBuilder("tableId", persons, request)
+				.column().fillWithProperty("id").title("Id")
+				.column().fillWithProperty("firstName").title("Firtname")
+				.column().fillWithProperty("lastName").title("Lastname")
+				.column().fillWithProperty("address.town.name").title("City")
+				.column().fillWithProperty("mail").title("Mail")
 				.configureExport(exportXlsConf)
 				.build();
 		
