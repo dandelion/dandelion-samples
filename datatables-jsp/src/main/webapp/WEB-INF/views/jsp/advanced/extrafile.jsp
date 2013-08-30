@@ -8,42 +8,16 @@
    </div>
 </div>
 
-<tab:tab>
-   <tab:demo>
-
-      <p>
-         Lastname filter<br /> <select class="input-medium" id="lastNameChoice">
-            <option value="All">All</option>
-            <option value="Carpenter">Carpenter</option>
-            <option value="Holloway">Holloway</option>
-            <option value="Peck">Peck</option>
-            <option value="Pena">Pena</option>
-            <option value="Wilder">Wilder</option>
-         </select> <i class="icon-arrow-left"></i> try to change the selected item
-      </p>
-<c:url value='/assets/js/datatables.extraFile.js' var="totoimage"/>
-      <datatables:table id="myTableId" data="${persons}">
-         <datatables:column title="Id" property="id" />
-         <datatables:column title="Firstname" property="firstName" />
-         <datatables:column title="LastName" property="lastName" />
-         <datatables:column title="City" property="address.town.name" sortable="false" />
-         <datatables:column title="Mail" property="mail" />
-         <datatables:extraFile src="/assets/js/datatables.extraFile.js" />
-      </datatables:table>
-
-   </tab:demo>
-   <tab:taglib>
-      <tab:code>
 <p>
    Lastname filter<br /> 
    <select class="input-medium" id="lastNameChoice">
       <option value="All">All</option>
-      <option value="Carpenter">Carpenter</option>
+      <option value="Morgan">Morgan</option>
       <option value="Holloway">Holloway</option>
       <option value="Peck">Peck</option>
       <option value="Pena">Pena</option>
       <option value="Wilder">Wilder</option>
-   </select>
+   </select> <i class="icon-arrow-left"></i> try to change the selected item
 </p>
 
 <datatables:table id="myTableId" data="${persons}">
@@ -52,13 +26,5 @@
    <datatables:column title="LastName" property="lastName" />
    <datatables:column title="City" property="address.town.name" sortable="false" />
    <datatables:column title="Mail" property="mail" />
-   <datatables:extraFile src="<c:url value="/js/datatables.extraFile.js" />" />
+   <datatables:extraFile src="/assets/js/datatables.extraFile.js" />
 </datatables:table>
-      </tab:code>
-   </tab:taglib>
-   <tab:thymeleaf>
-      <p class="alert alert-error">
-         <strong>:-(</strong><br /> Not supported yet !
-      </p>
-   </tab:thymeleaf>
-</tab:tab>
