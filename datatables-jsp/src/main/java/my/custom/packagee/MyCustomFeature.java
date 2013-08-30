@@ -12,7 +12,6 @@ public class MyCustomFeature extends AbstractExtension {
 	}
 
 	public void setup(HtmlTable table) throws ExtensionLoadingException {
-		// TODO Auto-generated method stub
 		addParameter(new Parameter("bStateSave", true));
 	}
 }
