@@ -33,7 +33,7 @@ public class DemoController {
 	 */
 	@ModelAttribute("persons")
 	public List<Person> populateTable() {
-		return personService.findLimited(200);
+		return personService.findAll();
 	}
 
 	@RequestMapping(value = "/basics/{page}")
@@ -114,6 +114,16 @@ public class DemoController {
 	@RequestMapping(value = "/export/options/{page}")
 	public String goToExportOptionExample(@PathVariable String page) {
 		return "export.options." + page;
+	}
+	
+	@RequestMapping(value = "/export/dom/{page}")
+	public String goToDomExportExample(@PathVariable String page) {
+		return "export.dom." + page;
+	}
+	
+	@RequestMapping(value = "/export/ajax/{page}")
+	public String goToAjaxExportExample(@PathVariable String page) {
+		return "export.ajax." + page;
 	}
 	
 	@RequestMapping(value = "/i18n/{page}")

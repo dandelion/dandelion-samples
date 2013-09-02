@@ -15,5 +15,5 @@
    <datatables:column title="City" property="address.town.name" />
    <datatables:column title="Mail" property="mail" />
    <datatables:export type="csv" cssClass="btn btn-success" cssStyle="myStyle"/>
-   <datatables:export type="xml" cssClass="btn btn-info" label="XML export !" />
+   <datatables:export type="xml" cssClass="btn btn-info" label="XML export" />
 </datatables:table>

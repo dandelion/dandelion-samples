@@ -65,12 +65,12 @@ public class PersonDao {
 		StringBuilder queryBuilder = new StringBuilder("SELECT p FROM Person p");
 
 		/**
-		 * 1st step : global and individual column filtering
+		 * Step 1: global and individual column filtering
 		 */
 		queryBuilder.append(DaoUtils.getFilterQuery(criterias));
 		
 		/**
-		 * 3rd step : sorting
+		 * Step 2: sorting
 		 */
 		if (criterias.hasOneSortedColumn()) {
 
@@ -92,7 +92,7 @@ public class PersonDao {
 		TypedQuery<Person> query = entityManager.createQuery(queryBuilder.toString(), Person.class);
 
 		/**
-		 * 4th step : paging
+		 * Step 3: paging
 		 */
 		query.setFirstResult(criterias.getDisplayStart());
 		query.setMaxResults(criterias.getDisplaySize());

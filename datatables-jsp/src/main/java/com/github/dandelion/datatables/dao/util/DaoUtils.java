@@ -26,7 +26,7 @@ public class DaoUtils {
 		List<String> paramList = new ArrayList<String>();
 		
 		/**
-		 * 1st step : global filtering
+		 * Step 1.1: global filtering
 		 */
 		if (StringUtils.isNotBlank(criterias.getSearch()) && criterias.hasOneFilterableColumn()) {
 			queryBuilder.append(" WHERE ");
@@ -48,7 +48,7 @@ public class DaoUtils {
 		}
 
 		/**
-		 * 2nd step : individual column filtering
+		 * Step 2.2: individual column filtering
 		 */
 		if (criterias.hasOneFilterableColumn() && criterias.hasOneFilteredColumn()) {
 			paramList = new ArrayList<String>();

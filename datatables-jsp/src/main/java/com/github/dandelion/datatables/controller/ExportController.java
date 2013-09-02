@@ -38,7 +38,7 @@ public class ExportController {
 	@Autowired
 	private PersonService personService;
 	
-	@RequestMapping(produces = "text/csv", method = RequestMethod.POST)
+	@RequestMapping(produces = "text/csv")
 	public void csv(@DatatablesParams DatatablesCriterias criterias, HttpServletRequest request, HttpServletResponse response) throws ExportException, IOException {
 		
 		List<Person> persons = personService.findPersonsWithDatatablesCriterias(criterias).getRows();
