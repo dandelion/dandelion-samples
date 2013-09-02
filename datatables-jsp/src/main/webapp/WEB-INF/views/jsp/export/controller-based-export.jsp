@@ -9,7 +9,7 @@
 </div>
 
 <c:url var="datasource" value="/persons2" />
-<c:url var="exportCsvUrl" value="/export.csv?titi=toto" />
+<c:url var="exportCsvUrl" value="/export.csv" />
 <c:url var="exportXmlUrl" value="/export.xml" />
 <c:url var="exportXlsUrl" value="/export.xls" />
 <c:url var="exportPdfUrl" value="/export.pdf" />

@@ -1,4 +1,4 @@
-package com.github.dandelion.datatables.ajax;
+package com.github.dandelion.datatables.controller.ajax;
 
 import java.util.ArrayList;
 import java.util.List;

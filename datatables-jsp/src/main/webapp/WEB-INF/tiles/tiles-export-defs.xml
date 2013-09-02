@@ -12,6 +12,10 @@
       <put-attribute name="content" value="/WEB-INF/views/jsp/export/links/{1}.jsp" />
    </definition>
 
+	<definition name="export.options.*" extends="exportLayout">
+      <put-attribute name="content" value="/WEB-INF/views/jsp/export/options/{1}.jsp" />
+   </definition>
+   
    <definition name="export.*" extends="exportLayout">
       <put-attribute name="content" value="/WEB-INF/views/jsp/export/{1}.jsp" />
    </definition>

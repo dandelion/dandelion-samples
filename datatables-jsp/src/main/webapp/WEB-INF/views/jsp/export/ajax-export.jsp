@@ -3,7 +3,7 @@
 
 <div class="row-fluid">
    <div class="span12">
-      <h3>Export</h3>
+      <h3>Export using AJAX sources</h3>
       <br />
    </div>
 </div>

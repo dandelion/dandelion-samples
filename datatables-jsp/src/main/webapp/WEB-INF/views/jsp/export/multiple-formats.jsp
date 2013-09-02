@@ -8,7 +8,7 @@
    </div>
 </div>
 
-<datatables:table id="myThirdTableId" data="${persons}" row="person" export="pdf,xls,csv">
+<datatables:table id="myTableId" data="${persons}" row="person" export="pdf,xls,csv">
    <datatables:column title="Id" property="id" />
    <datatables:column title="FirstName" property="firstName" />
    <datatables:column title="LastName" property="lastName" />

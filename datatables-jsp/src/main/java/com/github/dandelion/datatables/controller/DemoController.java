@@ -34,8 +34,6 @@ public class DemoController {
 	@ModelAttribute("persons")
 	public List<Person> populateTable() {
 		return personService.findLimited(200);
-//		return new ArrayList<Person>();
-//		return null;
 	}
 
 	@RequestMapping(value = "/basics/{page}")
@@ -111,6 +109,11 @@ public class DemoController {
 	@RequestMapping(value = "/export/links/{page}")
 	public String goToCustomExportLinkExample(@PathVariable String page) {
 		return "export.links." + page;
+	}
+	
+	@RequestMapping(value = "/export/options/{page}")
+	public String goToExportOptionExample(@PathVariable String page) {
+		return "export.options." + page;
 	}
 	
 	@RequestMapping(value = "/i18n/{page}")
