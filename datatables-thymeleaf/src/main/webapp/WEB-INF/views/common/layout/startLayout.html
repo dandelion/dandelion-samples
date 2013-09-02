@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout">
+
+<head layout:fragment="header">
+
+<title>Dandelion-Datatables Thymeleaf demo</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+<link th:href="@{/css/font-awesome.min.css}" rel="stylesheet" />
+<link th:href="@{/css/custom.css}" rel="stylesheet" />
+<link th:href="@{/css/index.css}" rel="stylesheet" />
+<link href="//ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css" rel="stylesheet" />
+<link th:href="@{/css/prettify.css}" rel="stylesheet" />
+
+<script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.3.min.js"></script>
+<script th:src="@{/js/bootstrap.min.js}"></script>
+<script src="//ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.js"></script>
+<script th:src="@{/js/ga.js}"></script>
+<script th:src="@{/js/custom.js}"></script>
+<script th:src="@{/js/prettify.js}"></script>
+
+</head>
+
+<body>
+   <div th:include="common/navbar::navbar" th:remove="tag"></div>
+   <div class="container">
+      <div class="marketing" style="text-align:center;">
+         <div layout:fragment="content"></div>
+         <hr />
+         <footer>
+            <div layout:fragment="footer" th:remove="tag"></div>
+         </footer>
+      </div>
+   </div>
+</body>
+</html>

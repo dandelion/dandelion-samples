@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+   <div th:fragment="navbar">
+      <a href="https://github.com/dandelion/dandelion-samples">
+         <img style="position: fixed; top: 0; right: 0; border: 0; z-index: 1500;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" />
+      </a>
+      <div class="navbar navbar-fixed-top">
+         <div class="navbar-inner">
+            <div class="container" style="padding-left:25px;">
+               <a class="brand" th:href="@{/}" style="margin-left:5px;">Dandelion-Datatables</a>
+               <div class="nav-collapse collapse">
+                  <ul class="nav">
+                     <li><a th:href="@{/basics/home}"><i class="icon-leaf"></i> Basics</a></li>
+                     <li><a th:href="@{/styling/home}"><i class="icon-magic"></i> Styling</a></li>
+                     <li><a th:href="@{/ajax/home}"><i class="icon-refresh"></i> AJAX</a></li>
+                     <li><a th:href="@{/export/home}"><i class="icon-file-text-alt"></i> Export</a></li>
+                     <li><a th:href="@{/advanced/home}"><i class="icon-certificate"></i> Advanced usage</a></li>
+                     <li><a th:href="@{/plugins/home}"><i class="icon-plus"></i> Plugins</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>

@@ -2,12 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout"
    xmlns:dt="http://www.thymeleaf.org/dandelion/datatables" layout:decorator="common/layout/ajaxLayout">
 
-<head>
-<title>AJAX example - AJAX source</title>
-</head>
-
 <body>
-
    <div layout:fragment="content">
 
       <div class="row-fluid">
@@ -17,22 +12,18 @@
          </div>
       </div>
 
-      <div class="row-fluid">
-         <div class="span12">
-
-            <table id="myTableId" dt:table="true" dt:url="'/persons'">
-               <thead>
-                  <tr>
-                     <th dt:property="'id'">Id</th>
-                     <th dt:property="'firstName'">Firstname</th>
-                     <th dt:property="'lastName'">Lastname</th>
-                     <th dt:property="'address.town.name'">City</th>
-                     <th dt:property="'mail'">Mail</th>
-                  </tr>
-               </thead>
-            </table>
-         </div>
-      </div>
+      <table id="myTableId" dt:table="true" dt:url="@{/persons}">
+         <thead>
+            <tr>
+               <th dt:property="'id'">Id</th>
+               <th dt:property="'firstName'">Firstname</th>
+               <th dt:property="'lastName'">Lastname</th>
+               <th dt:property="'address.town.name'">City</th>
+               <th dt:property="'mail'">Mail</th>
+            </tr>
+         </thead>
+      </table>
+            
    </div>
 </body>
 </html>

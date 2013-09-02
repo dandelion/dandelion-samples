@@ -3,21 +3,16 @@
    layout:decorator="common/layout/mainLayout">
 
 <body>
-
    <div layout:fragment="sidebar">
-
-      <div class="span2 bs-docs-sidebar">
-         <ul class="nav nav-list bs-docs-sidenav affix">
-            <li><a th:href="@{/ajax/ajaxsource}"><i class="icon-chevron-right"></i> AJAX source</a></li>
-            <li><a th:href="@{/ajax/nullvalue}"><i class="icon-chevron-right"></i> Handling null values</a></li>
-            <li><a th:href="@{/ajax/serverside}"><i class="icon-chevron-right"></i> Server-side processing</a></li>
-            <li><a th:href="@{/ajax/pipeliningdata}"><i class="icon-chevron-right"></i> Pipelining data</a></li>
-            <li><a th:href="@{/ajax/customrendering}"><i class="icon-chevron-right"></i> Custom rendering</a></li>
-            <li><a th:href="@{/ajax/additionalparameters}"><i class="icon-chevron-right"></i> Additional AJAX parameters</a></li>
-            <li><a th:href="@{/ajax/customrequest}"><i class="icon-chevron-right"></i> Custom AJAX request</a></li>
-         </ul>
-      </div>
-
+      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display: block; position: static;">
+         <li><a th:href="@{/ajax/ajaxsource}">AJAX source</a></li>
+         <li><a th:href="@{/ajax/nullvalue}">Handling null values</a></li>
+         <li><a th:href="@{/ajax/serverside}">Server-side processing</a></li>
+         <li><a th:href="@{/ajax/pipeliningdata}">Pipelining data</a></li>
+         <li><a th:href="@{/ajax/customrendering}">Custom rendering</a></li>
+         <li><a th:href="@{/ajax/additionalparameters}">Additional AJAX parameters</a></li>
+         <li><a th:href="@{/ajax/customrequest}">Custom AJAX request</a></li>
+      </ul>
    </div>
 </body>
 </html>

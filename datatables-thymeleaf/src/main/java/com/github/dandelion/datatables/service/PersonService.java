@@ -30,7 +30,7 @@ public interface PersonService {
 
 	/**
 	 * <p>
-	 * Query used to populate the DataTables that display the list of persons.
+	 * Query used to populate the DataTable that displays the list of persons.
 	 * 
 	 * @param criterias
 	 *            The DataTables criterias used to filter the persons.

@@ -1,5 +1,4 @@
 function myRequest(sSource, aoData, fnCallback, oSettings) {
-
 	oSettings.jqXHR = $.ajax({
 		"dataType" : 'json',
 		"type" : "GET",

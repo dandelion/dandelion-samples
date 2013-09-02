@@ -14,8 +14,8 @@
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
       <!-- Dependencies -->
-      <dandelion.datatables.version>0.8.11</dandelion.datatables.version>
-      <thymeleaf.version>2.0.16</thymeleaf.version>
+      <dandelion.datatables.version>0.9.0-SNAPSHOT</dandelion.datatables.version>
+      <thymeleaf.version>2.0.18</thymeleaf.version>
       <thymeleaf.layout.version>1.0.5</thymeleaf.layout.version>
       <spring.version>3.2.2.RELEASE</spring.version>
       <hibernate.version>4.1.9.Final</hibernate.version>

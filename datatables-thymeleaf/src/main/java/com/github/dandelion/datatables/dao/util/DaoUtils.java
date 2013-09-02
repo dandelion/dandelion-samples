@@ -4,10 +4,9 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import org.apache.commons.lang.StringUtils;
-
 import com.github.dandelion.datatables.core.ajax.ColumnDef;
 import com.github.dandelion.datatables.core.ajax.DatatablesCriterias;
+import com.github.dandelion.datatables.core.util.StringUtils;
 
 /**
  * 
@@ -27,7 +26,7 @@ public class DaoUtils {
 		List<String> paramList = new ArrayList<String>();
 		
 		/**
-		 * 1st step : global filtering
+		 * Step 1.1: global filtering
 		 */
 		if (StringUtils.isNotBlank(criterias.getSearch()) && criterias.hasOneFilterableColumn()) {
 			queryBuilder.append(" WHERE ");
@@ -49,7 +48,7 @@ public class DaoUtils {
 		}
 
 		/**
-		 * 2nd step : individual column filtering
+		 * Step 1.2: individual column filtering
 		 */
 		if (criterias.hasOneFilterableColumn() && criterias.hasOneFilteredColumn()) {
 			paramList = new ArrayList<String>();

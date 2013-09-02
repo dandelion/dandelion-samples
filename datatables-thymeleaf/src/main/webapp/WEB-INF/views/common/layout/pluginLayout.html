@@ -1,18 +1,14 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout"
-   layout:decorator="common/layout/mainLayout">
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout" layout:decorator="common/layout/mainLayout">
 
 <body>
-
    <div layout:fragment="sidebar">
 
-      <div class="span2 bs-docs-sidebar">
-         <ul class="nav nav-list bs-docs-sidenav affix">
-            <li><a th:href="@{/plugins/colreorder}"><i class="icon-chevron-right"></i> ColReorder</a></li>
-            <li><a th:href="@{/plugins/scroller}"><i class="icon-chevron-right"></i> Scroller</a></li>
-            <li><a th:href="@{/plugins/fixedheader}"><i class="icon-chevron-right"></i> FixedHeader</a></li>
-         </ul>
-      </div>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display: block; position: static;">
+         <li><a th:href="@{/plugins/colreorder}">ColReorder</a></li>
+         <li><a th:href="@{/plugins/scroller}">Scroller</a></li>
+         <li><a th:href="@{/plugins/fixedheader}">FixedHeader</a></li>
+      </ul>
 
    </div>
 </body>
