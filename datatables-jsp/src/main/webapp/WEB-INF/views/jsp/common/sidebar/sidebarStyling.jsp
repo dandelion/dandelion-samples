@@ -3,7 +3,13 @@
 <c:url value="/styling" var="stylingUrl" />
 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display: block; position: static;">
    <li><a href="${stylingUrl}/basic-styling">Basic styling</a></li>
-   <li><a href="${stylingUrl}/bootstrap/home">Bootstrap 2 theme</a></li>
+   <li class="dropdown-submenu"><a href="#">Bootstrap 2 theme</a>
+      <ul class="dropdown-menu">
+         <li><a href="${stylingUrl}/bootstrap/bootstrap2">Bootstrap 2</a></li>
+         <li><a href="${stylingUrl}/bootstrap/tablecloth-dark">Tablecloth - Dark</a></li>
+         <li><a href="${stylingUrl}/bootstrap/tablecloth-stats">Tablecloth - Stats</a></li>
+         <li><a href="${stylingUrl}/bootstrap/tablecloth-paper">Tablecloth - Paper</a></li>
+      </ul></li>
    <li class="dropdown-submenu"><a href="#">jQueryUI theme</a>
       <ul class="dropdown-menu">
          <li><a href="${stylingUrl}/jqueryui/jqui_blacktie">Black tie</a></li>
