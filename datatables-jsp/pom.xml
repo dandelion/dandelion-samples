@@ -4,7 +4,7 @@
 
    <groupId>com.github.dandelion</groupId>
    <artifactId>demo-datatables-jsp</artifactId>
-   <version>0.9.0-SNAPSHOT</version>
+   <version>0.9.0</version>
    <packaging>war</packaging>
 
    <name>Dandelion :: Samples :: Datatables JSP</name>

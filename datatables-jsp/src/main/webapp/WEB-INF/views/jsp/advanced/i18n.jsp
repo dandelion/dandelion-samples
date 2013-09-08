@@ -9,9 +9,7 @@
 </div>
 
 <datatables:table id="myTableId" data="${persons}" confGroup="group1" row="person">
-   <datatables:column>
-      <c:out value="${person.id}" />
-   </datatables:column>
+   <datatables:column titleKey="table.header.id" property="id" />
    <datatables:column titleKey="table.header.firstname" property="firstName" />
    <datatables:column titleKey="table.header.lastname" property="lastName" />
    <datatables:column titleKey="table.header.city" property="address.town.name" sortable="false" />
