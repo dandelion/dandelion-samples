@@ -37,7 +37,7 @@ public class SpringMvcAjaxController {
 
 	@RequestMapping(value = "/persons")
 	public @ResponseBody
-	List<Person> findAll(HttpServletRequest request) {
+	List<Person> findAll() {
 		return personService.findLimited(200);
 	}
 

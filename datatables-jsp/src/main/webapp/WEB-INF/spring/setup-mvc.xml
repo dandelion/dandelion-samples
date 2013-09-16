@@ -19,7 +19,8 @@
 	<!-- MESSAGE EXTERNALIZATION/INTERNATIONALIZATION -->
 	<!-- Standard Spring MessageSource implementation -->
 	<!-- **************************************************************** -->
-	<bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+	<bean id="messageSource"
+		class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
 		<property name="basename" value="classpath:messages" />
 		<property name="defaultEncoding" value="UTF-8" />
 	</bean>
@@ -29,7 +30,8 @@
 	<!-- **************************************************************** -->
 	<mvc:annotation-driven>
 		<mvc:argument-resolvers>
-			<bean class="com.github.dandelion.datatables.extras.spring3.ajax.DatatablesCriteriasMethodArgumentResolver" />
+			<bean
+				class="com.github.dandelion.datatables.extras.spring3.ajax.DatatablesCriteriasMethodArgumentResolver" />
 		</mvc:argument-resolvers>
 	</mvc:annotation-driven>
 
