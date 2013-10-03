@@ -1,0 +1,14 @@
+{
+    "assets": [
+        {
+            "locations": {
+                "delegate": "your-ip.js"
+            }, 
+            "name": "ip", 
+            "type": "js", 
+            "version": "latest"
+        }
+    ], 
+    "parent": "scope1", 
+    "scope": "delegateContentIP"
+}

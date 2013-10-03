@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:ddl="http://www.thymeleaf.org/dandelion">
+<head>
+    <title>Dandelion Assets on Thymeleaf</title>
+</head>
+<!--
+add 'scope3' to the context but exclude 'asset3' during rendering
+and render the assets from context
+-->
+<body ddl:assets-scopes="scope3">
+<b>This page load scopes "scope1, scope2 and scope3" but without "asset3".</b>
+<br/><br/>
+You must see some alert from loaded js assets :
+<ul ddl:assets-excludedAssets="asset3">
+    <li>I am the Asset1 from Scope1</li>
+    <li>I am the Asset2 from Scope1</li>
+    <li>I am the Asset4 from Scope2</li>
+    <li>I am the Asset5 from Scope3</li>
+</ul>
+And <span class="color-red">this text must be in red</span><br/>
+And an usage of <b>delegate content</b> asset is setup in this sample, the result is an alert with with the "x-forwarded-for" header.
+</body>
+</html>

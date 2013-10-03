@@ -1,0 +1,13 @@
+{
+    "assets": [
+        {
+            "locations": {
+                "webapp": "js/asset5.js"
+            }, 
+            "name": "asset5", 
+            "type": "js", 
+            "version": "5"
+        }
+    ], 
+    "scope": "scope3"
+}
