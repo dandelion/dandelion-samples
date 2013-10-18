@@ -1,5 +1,4 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
-<%@ taglib prefix="dandelion" uri="http://github.com/dandelion" %>
 
 <table class="footer">
     <tr>

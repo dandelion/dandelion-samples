@@ -1,4 +1,5 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="dandelion" uri="http://github.com/dandelion" %>
 
 <!--
 PetClinic :: a Spring Framework demonstration
