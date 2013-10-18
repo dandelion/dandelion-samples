@@ -1,0 +1,22 @@
+{
+    "scope" : "jqueryui",
+    "parent": "jquery",
+    "assets": [
+		{
+		    "name": "jqueryui",
+		    "version": "1.9.2",
+		    "type": "js",
+		    "locations": {
+		        "webjars": "/webjars/jquery-ui/1.9.2/js/jquery-ui-1.9.2.custom.js"
+		    }
+		},
+		{
+		    "name": "jqueryui",
+		    "version": "1.9.2",
+		    "type": "css",
+		    "locations": {
+		        "webjars": "/webjars/jquery-ui/1.9.2/css/smoothness/jquery-ui-1.9.2.custom.css"
+		    }
+		}
+    ]
+}
