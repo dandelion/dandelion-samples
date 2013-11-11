@@ -1,0 +1,22 @@
+{
+    "scope" : "bootstrap",
+    "parent": "jquery",
+    "assets": [
+        {
+            "name": "bootstrap",
+            "version": "2.2.2",
+            "type": "js",
+            "locations": {
+                "webapp": "/js/bootstrap.min.js"
+            }
+        },
+        {
+            "name": "bootstrap",
+            "version": "2.2.2",
+            "type": "css",
+            "locations": {
+                "webapp": "/css/bootstrap.min.css"
+            }
+        }
+    ]
+}

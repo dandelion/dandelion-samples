@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+
+	<definition name="stylingLayout" extends="mainLayout">
+		<put-attribute name="sidebar" value="/WEB-INF/views/jsp/common/sidebar/sidebarStyling.jsp" cascade="true" />
+		<put-attribute name="tabStyling" value="active" cascade="true" />
+		<put-attribute name="title" value="Styling - Dandelion-DataTables" />
+	</definition>
+
+	<definition name="emptyLayout" extends="stylingLayout">
+		<put-attribute name="tabStyling" value="active" cascade="true" />
+		<put-attribute name="sidebar" value="/WEB-INF/views/jsp/common/sidebar/sidebarStyling.jsp" cascade="true" />
+		<put-attribute name="assets" value="" cascade="true" />
+	</definition>
+
+	<definition name="jquiLayout" extends="stylingLayout">
+		<put-attribute name="tabStyling" value="active" cascade="true" />
+		<put-attribute name="sidebar" value="/WEB-INF/views/jsp/common/sidebar/sidebarStyling.jsp" cascade="true" />
+		<put-attribute name="assets" value="/WEB-INF/views/jsp/styling/jqueryui/layout_jqui.jsp" cascade="true" />
+	</definition>
+	
+	<definition name="styling.bootstrap.*" extends="emptyLayout">
+		<put-attribute name="content" value="/WEB-INF/views/jsp/styling/bootstrap/{1}.jsp" cascade="true" />
+	</definition>
+
+	<definition name="styling.jqueryui.*" extends="jquiLayout">
+		<put-attribute name="content" value="/WEB-INF/views/jsp/styling/jqueryui/{1}.jsp" cascade="true" />
+	</definition>
+
+	<definition name="styling.*" extends="stylingLayout">
+		<put-attribute name="content" value="/WEB-INF/views/jsp/styling/{1}.jsp" />
+	</definition>
+
+</tiles-definitions>
