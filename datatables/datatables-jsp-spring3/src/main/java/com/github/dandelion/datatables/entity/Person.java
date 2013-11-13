@@ -1,66 +1,85 @@
 package com.github.dandelion.datatables.entity;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
 
 /**
  * A typical Person entity.
  * 
  * @author tduchateau
  */
-@Entity
 public class Person {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long id;
-
-	@Column
+	private int id;
 	private String firstName;
-
-	@Column
 	private String lastName;
-
-	@Column
 	private String mail;
-
-	@Column
 	private Date birthDate;
-	
-	@Column
-	private Long pocketMoney;
-	
-	@OneToOne
-	@JoinColumn(name = "company_id")
+	private String salary;
 	private Company company;
-	
-	@OneToOne
-	@JoinColumn(name = "address_id")
 	private Address address;
 
 	public Person() {
 
 	}
 
-	public Person(Long id, String firstName, String lastName, String mail) {
+	public Person(int id, String firstName, String lastName, String mail, Address address) {
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.mail = mail;
+		this.address = address;
+	}
+	
+	public Person(int id, String firstName, String lastName, String mail) {
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.mail = mail;
 	}
 
-	public Long getId() {
+		public Person(int id, String firstName, String lastName, String mail, String birthDate, String salary, String companyName, String street, String townName, String townPostcode) throws ParseException{
+		
+		Company company = new Company();
+		company.setName(companyName);
+		Town town = new Town();
+		town.setName(townName);
+		town.setPostcode(townPostcode);
+		Address address = new Address(street);
+		address.setTown(town);
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.mail = mail;
+		this.birthDate = new SimpleDateFormat("yyyy-MM-dd").parse(birthDate);
+		this.salary = salary;
+		this.company = company;
+		this.address = address;
+	}
+
+	public Person(int id, String firstName, String lastName, String mail, String birthDate, String salary, int companyId, String companyName, int addressId, String street, int townId, String townName, String townPostcode) throws ParseException{
+		
+		Company company = new Company(companyId, companyName);
+		Town town = new Town(townId, townName, townPostcode);
+		Address address = new Address(street);
+		address.setId(addressId);
+		address.setTown(town);
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.mail = mail;
+		this.birthDate = new SimpleDateFormat("YYYY-mm-dd").parse(birthDate);
+		this.salary = salary;
+		this.company = company;
+		this.address = address;
+	}
+	
+	public int getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
@@ -110,12 +129,12 @@ public class Person {
 		this.birthDate = birthDate;
 	}
 
-	public Long getPocketMoney() {
-		return pocketMoney;
+	public String getSalary() {
+		return salary;
 	}
 
-	public void setPocketMoney(Long pocketMoney) {
-		this.pocketMoney = pocketMoney;
+	public void setSalary(String salary) {
+		this.salary = salary;
 	}
 
 	public Company getCompany() {

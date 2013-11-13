@@ -9,12 +9,12 @@
 </head>
 <body>
    <tiles:insertAttribute name="navbar" />
-   <div class="container-fluid">
+   <div class="container">
       <div class="row-fluid">
-         <div class="span2">
-            <tiles:insertAttribute name="sidebar" />
-         </div>
-         <div class="span10" style="min-height: 550px;">
+<!--          <div class="span2"> -->
+<%--             <tiles:insertAttribute name="sidebar" /> --%>
+<!--          </div> -->
+         <div class="span12" style="min-height: 550px;">
             <tiles:insertAttribute name="content" />
          </div>
       </div>

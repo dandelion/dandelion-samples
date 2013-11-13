@@ -1,26 +1,24 @@
 package com.github.dandelion.datatables.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 
-@Entity
 public class Company {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long id;
-	
-	@Column
+	private int id;
 	private String name;
 
-	public Long getId() {
+	public Company(){
+		
+	}
+	public Company(int id, String name){
+		this.id = id;
+		this.name = name;
+	}
+	
+	public int getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 

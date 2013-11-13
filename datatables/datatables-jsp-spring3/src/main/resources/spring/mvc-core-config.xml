@@ -36,15 +36,15 @@
    </mvc:annotation-driven>
 
    <!-- Scan des beans Spring (controlleurs et autres) -->
-   <context:component-scan base-package="com.github.dandelion.datatables.controller,com.github.dandelion.datatables.dao" />
-
-   <import resource="tiles-config.xml" />
-
+   <context:component-scan base-package="com.github.dandelion.datatables.controller" />
 
    <!-- Configures a handler for serving static resources by forwarding to 
       the Servlet container's default Servlet. -->
    <mvc:default-servlet-handler />
-
-   <!-- Dandelion -->
+   
+   <!-- Import views configuration -->
+   <import resource="mvc-view-config.xml" />
+   
+   <!-- Enable the Dandelion controller used to render generated assets -->
    <import resource="classpath:dandelion.xml" />
 </beans>

@@ -1,30 +1,15 @@
 package com.github.dandelion.datatables.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
 
 /**
  * A typical Address entity.
  * 
  * @author tduchateau
  */
-@Entity
 public class Address {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long id;
-
-	@Column
+	private int id;
 	private String street;
-
-	@OneToOne
-	@JoinColumn(name = "town_id")
 	private Town town;
 
 	public Address() {
@@ -35,6 +20,11 @@ public class Address {
 		this.street = street;
 	}
 
+	public Address(String street, Town town) {
+		this.street = street;
+		this.town = town;
+	}
+
 	public Town getTown() {
 		return town;
 	}
@@ -43,11 +33,11 @@ public class Address {
 		this.town = town;
 	}
 
-	public Long getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 

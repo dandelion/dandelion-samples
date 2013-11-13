@@ -15,7 +15,7 @@
          <datatables:column title="FirstName" property="firstName" />
          <datatables:column title="City" property="address.town.name" />
          <datatables:column title="Mail" property="mail" />
-         <datatables:column title="Pocket money" property="pocketMoney" />
+         <datatables:column title="Salary" property="salary" />
          <datatables:column title="Birthdate" property="birthDate" format="{0,date,dd-MM-yyyy}" />
          <datatables:column title="Company" property="company.name" />
       </datatables:table>
