@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC 
+"-//Apache Software Foundation//DTD Struts Configuration 1.3//EN" 
+"http://jakarta.apache.org/struts/dtds/struts-config_1_3.dtd">
+<struts-config>
+
+   <!-- ========== Form Bean Definitions =================================== -->
+   <form-beans>
+      <form-bean name="demoForm"
+         type="org.apache.struts.action.DynaActionForm">
+         <form-property name="methode" type="java.lang.String"></form-property>
+      </form-bean>
+      <form-bean name="helloWorldForm"
+         type="com.github.dandelion.datatables.struts1.common.form.HelloWorldForm" />
+   </form-beans>
+
+   <!-- ========== Global Forward Definitions ============================== -->
+   <global-forwards>
+      <forward name="home" path="/" />
+   </global-forwards>
+
+   <!-- ========== Action Mapping Definitions ============================== -->
+   <action-mappings>
+      <action path="/i18n"
+         type="com.github.dandelion.datatables.struts1.common.action.I18nAction">
+         <forward name="success" path="/WEB-INF/views/i18n.jsp"></forward>
+      </action>
+
+      <action path="/helloWorld"
+         type="com.github.dandelion.datatables.struts1.common.action.HelloWorldAction"
+         name="helloWorldForm">
+         <forward name="success" path="/HelloWorld.jsp" />
+      </action>
+      <action path="/dom"
+         type="com.github.dandelion.datatables.struts1.common.action.HelloWorldAction"
+         name="helloWorldForm">
+         <forward name="success" path="/WEB-INF/views/dom.jsp" />
+      </action>
+   </action-mappings>
+
+   <!-- ========== Message Resources Definitions =========================== -->
+   <message-resources parameter="ApplicationResources" />
+</struts-config>
