@@ -5,7 +5,7 @@ A sample which shows how to use the DataTables' extras supported by Dandelion-Da
 
 ## In this sample
 
-<table width="100%">
+<table style="width:100%;">
 	<tbody>
 		<tr>
 			<td style="width:40%;"><strong>Technical stack</strong></td>
