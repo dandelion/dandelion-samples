@@ -3,24 +3,52 @@ datatables-jsp-plugins
 
 A sample which shows how to use the DataTables plugins as Scroller or ColReoder.
 
-See below the full list of features contained in this sample.
+## In this sample
 
-## Technical stack
+<table>
+	<thead>
+	
+	</thead>
+	<tbody>
+		<tr>
+			<td>Technical stack</td>
+			<td>
+				<ul>
+				   <li>JSP</li>
+				   <li>JSTL</li>
+				   <li>Dandelion-Datatables 1.10.0</li>
+				   <li>Spring 3.2.4.RELEASE</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>Data source type</td>
+			<td>DOM</td>
+		</tr>
+		<tr>
+			<td>Datatables' features</td>
+			<td>
+				<ul>
+					<li>Scroller plugin - <a href="http://dandelion.github.io/datatables/tutorials/plugins/scroller.html">Doc</a></li>
+ 					<li>ColReorder plugin - <a href="http://dandelion.github.io/datatables/tutorials/plugins/colreorder.html">Doc</a></li>
+ 					<li>FixedHeader plugin - <a href="http://dandelion.github.io/datatables/tutorials/plugins/fixedheader.html">Doc</a></li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>Dandelion features</td>
+			<td>
+				<ul>
+					<li>AssetServlet (lien doc)</li>
+				</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
 
- - JSP
- - Dandelion-Datatables 0.10.0-SNAPSHOT
- - Spring 3.2.4.RELEASE
- - JSTL
+## Running this sample app
 
-## Features
-
- - Scroller plugin
- - ColReorder plugin
- - FixedHeader plugin
-
-## Running the sample app
-
-Using __Tomcat__ :
+Using __Apache Tomcat__ :
 
     mvn tomcat7:run
 
