@@ -3,16 +3,18 @@
 <%@ taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles"%>
 <%@ taglib prefix="dandelion" uri="http://github.com/dandelion" %>
 
-<dandelion:assets scopes="dandelion-demo,bootstrap" />
+<dandelion:assets scopes="sample,bootstrap" />
 
 <c:url value="/" var="home" />
-<c:url value="/basics" var="basicsUrl" />
+<c:url value="/sorting" var="sortingUrl" />
+<c:url value="/filtering" var="filteringUrl" />
+<c:url value="/paging" var="pagingUrl" />
+<c:url value="/scrolling" var="scrollingUrl" />
 <c:url value="/advanced" var="advancedUrl" />
-<c:url value="/export" var="exportUrl" />
-<c:url value="/themes" var="themes" />
+<c:url value="/multiple-tables" var="multipleTablesUrl" />
 <c:url value="/styling" var="stylingUrl" />
-<c:url value="/features" var="features" />
-<c:url value="/plugins" var="pluginsUrl" />
+<c:url value="/dom-positioning" var="domPositioningUrl" />
+<c:url value="/column-rendering" var="columnRenderingUrl" />
 
 <!DOCTYPE html>
 <html lang="en">
@@ -35,124 +37,80 @@
             <div class="nav-collapse collapse navbar-responsive-collapse">
                <ul class="nav">
                   <li class="dropdown">
-                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Basics <b class="caret"></b></a>
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sorting <b class="caret"></b></a>
                      <ul class="dropdown-menu">
-                        <li><a href="${basicsUrl}/default-configuration">Default configuration</a></li>
-                        <li class="dropdown-submenu"><a href="#">Feature enablement</a>
-                           <ul class="dropdown-menu">
-                              <li><a href="${basicsUrl}/feature-enablement/info">Display table informations</a></li>
-                              <li><a href="${basicsUrl}/feature-enablement/sorting">Enable/disable sorting</a></li>
-                              <li><a href="${basicsUrl}/feature-enablement/paging">Enable/disable paging</a></li>
-                              <li><a href="${basicsUrl}/feature-enablement/lengthchanging">Enable/disable length changing</a></li>
-                           </ul></li>
-                        <li class="dropdown-submenu"><a href="#">Sorting</a>
-                           <ul class="dropdown-menu">
-                              <li><a href="${basicsUrl}/sorting/individualcolumnsorting">Individual column sorting</a></li>
-                              <li><a href="${basicsUrl}/sorting/sortinginit">Sorting initialization</a></li>
-                              <li><a href="${basicsUrl}/sorting/sortingdirectioncontrol">Sorting direction control</a></li>
-                              <li><a href="${basicsUrl}/sorting/naturalsort">Sorting type: natural, date</a></li>
-                           </ul></li>
-                        <li class="dropdown-submenu"><a href="#">Filtering</a>
-                           <ul class="dropdown-menu">
-                              <li><a href="${basicsUrl}/filtering/extraform">Using an extra form</a></li>
-                              <li><a href="${basicsUrl}/filtering/input">Using input fields</a></li>
-                              <li><a href="${basicsUrl}/filtering/select">Using a drop-down list</a></li>
-                              <li><a href="${basicsUrl}/filtering/select-with-values">Using a drop-down list with custom values</a></li>
-                              <li><a href="${basicsUrl}/filtering/filterplaceholder">Using different filter placeholders</a></li>
-                              <li><a href="${basicsUrl}/filtering/exclude-column-from-global-filtering">Exclude column from global filtering</a></li>
-                           </ul></li>
-                        <li class="dropdown-submenu"><a href="#">Paging</a>
-                           <ul class="dropdown-menu">
-                              <li><a href="${basicsUrl}/paging/bootstrap">Bootstrap</a></li>
-                              <li><a href="${basicsUrl}/paging/four_button">Four button</a></li>
-                              <li><a href="${basicsUrl}/paging/full_numbers">Full numbers</a></li>
-                              <li><a href="${basicsUrl}/paging/input">Input</a></li>
-                              <li><a href="${basicsUrl}/paging/listbox">Listbox</a></li>
-                              <li><a href="${basicsUrl}/paging/scrolling">Scrolling</a></li>
-                              <li><a href="${basicsUrl}/paging/two_button">Two button</a></li>
-                           </ul></li>
-                        <li><a href="${basicsUrl}/appear">Changing the appearance</a></li>
-                        <li><a href="${basicsUrl}/default-content">Default content</a></li>
-                        <li><a href="${basicsUrl}/custom-content">Custom column content</a></li>
-                        <li><a href="${basicsUrl}/implicit-object">Using implicit object</a></li>
-                        <li><a href="${basicsUrl}/custom-header">Custom column head</a></li>
-                        <li class="dropdown-submenu"><a href="#">Scrolling</a>
-                           <ul class="dropdown-menu">
-                              <li><a href="${basicsUrl}/scrolling/scroll-horizontal">Horizontal scrolling</a></li>
-                              <li><a href="${basicsUrl}/scrolling/scroll-vertical">Vertical scrolling</a></li>
-                           </ul>
-                        </li>
-                        <li><a href="${basicsUrl}/multiple">Multiple tables</a></li>
+                        <li><a href="${sortingUrl}/enable-disable-sorting">Enable/disable sorting</a></li>
+                        <li><a href="${sortingUrl}/individualcolumnsorting">Individual column sorting</a></li>
+                        <li><a href="${sortingUrl}/sortinginit">Sorting initialization</a></li>
+                        <li><a href="${sortingUrl}/sortingdirectioncontrol">Sorting direction control</a></li>
+                        <li><a href="${sortingUrl}/naturalsort">Sorting type: natural, date</a></li>
                      </ul>
                   </li>
                   <li class="dropdown">
-                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Styling <b class="caret"></b></a>
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Filtering <b class="caret"></b></a>
                      <ul class="dropdown-menu">
-                        <li><a href="${stylingUrl}/basic-styling">Basic styling</a></li>
-                        <li class="dropdown-submenu"><a href="#">Bootstrap 2 theme</a>
-                           <ul class="dropdown-menu">
-                              <li><a href="${stylingUrl}/bootstrap/bootstrap2">Bootstrap 2</a></li>
-                              <li><a href="${stylingUrl}/bootstrap/bootstrap2-responsive">Bootstrap 2 responsive</a></li>
-                              <li><a href="${stylingUrl}/bootstrap/tablecloth-dark">Tablecloth - Dark</a></li>
-                              <li><a href="${stylingUrl}/bootstrap/tablecloth-stats">Tablecloth - Stats</a></li>
-                              <li><a href="${stylingUrl}/bootstrap/tablecloth-paper">Tablecloth - Paper</a></li>
-                           </ul></li>
-                        <li class="dropdown-submenu"><a href="#">jQueryUI theme</a>
-                           <ul class="dropdown-menu">
-                              <li><a href="${stylingUrl}/jqueryui/jqui_blacktie">Black tie</a></li>
-                           </ul>
-                        </li>
+                        <li><a href="${filteringUrl}/enable-disable-filtering">Enable/disable filtering</a></li>
+                        <li><a href="${filteringUrl}/extraform">Using an extra form</a></li>
+                        <li><a href="${filteringUrl}/input">Using input fields</a></li>
+                        <li><a href="${filteringUrl}/select">Using a drop-down list</a></li>
+                        <li><a href="${filteringUrl}/select-with-values">Using a drop-down list with custom values</a></li>
+                        <li><a href="${filteringUrl}/filterplaceholder">Using different filter placeholders</a></li>
+                        <li><a href="${filteringUrl}/exclude-column-from-global-filtering">Exclude column from global filtering</a></li>
                      </ul>
                   </li>
                   <li class="dropdown">
-                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Advanced <b class="caret"></b></a>
-                     <ul class="dropdown-menu">   
-                        <li><a href="${advancedUrl}/rowid">Row id</a></li>
-                        <li><a href="${advancedUrl}/i18n">I18n with Spring</a></li>
-                        <li><a href="${advancedUrl}/extrafile">Extra Javascript files</a></li>
-                        <li><a href="${advancedUrl}/extraconf">Extra DataTables configuration</a></li>
-                        <li><a href="${advancedUrl}/callbacks">Using callbacks</a></li>
-                        <li><a href="${advancedUrl}/override">Overriding default configuration</a></li>
-                        <li><a href="${advancedUrl}/dynamic-attributes">Dynamic attributes</a></li>
-                        <li><a href="${advancedUrl}/configuration-group">Configuration group</a></li>
-                        <li><a href="${advancedUrl}/custom-extension">Custom extension</a></li>
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Paging <b class="caret"></b></a>
+                     <ul class="dropdown-menu">
+                        <li><a href="${pagingUrl}/enable-disable-paging">Enable/disable paging</a></li>
+                        <li><a href="${pagingUrl}/bootstrap">Bootstrap</a></li>
+                        <li><a href="${pagingUrl}/four_button">Four button</a></li>
+                        <li><a href="${pagingUrl}/full_numbers">Full numbers</a></li>
+                        <li><a href="${pagingUrl}/input">Input</a></li>
+                        <li><a href="${pagingUrl}/listbox">Listbox</a></li>
+                        <li><a href="${pagingUrl}/scrolling">Scrolling</a></li>
+                        <li><a href="${pagingUrl}/two_button">Two button</a></li>
                      </ul>
                   </li>
                   <li class="dropdown">
-                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Plugins <b class="caret"></b></a>
-                     <ul class="dropdown-menu">   
-                        <li><a href="${pluginsUrl}/colreorder">ColReorder</a></li>
-                        <li><a href="${pluginsUrl}/scroller">Scroller</a></li>
-                        <li><a href="${pluginsUrl}/fixedheader">FixedHeader</a></li>
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Scrolling <b class="caret"></b></a>
+                     <ul class="dropdown-menu">
+                        <li><a href="${scrollingUrl}/scroll-horizontal">Horizontal scrolling</a></li>
+                        <li><a href="${scrollingUrl}/scroll-vertical">Vertical scrolling</a></li>
+                        <li><a href="${scrollingUrl}/scroll-both">Both</a></li>
                      </ul>
                   </li>
                   <li class="dropdown">
-                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Export <b class="caret"></b></a>
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Column rendering <b class="caret"></b></a>
                      <ul class="dropdown-menu">   
-                        <li><a href="${exportUrl}/export-activation">Export activation</a></li>
-                        <li><a href="${exportUrl}/multiple-formats">Export in multiple formats</a></li>
-                        <li class="dropdown-submenu"><a href="#">Customizing export links</a>
-                           <ul class="dropdown-menu">
-                              <li><a href="${exportUrl}/links/style">Link style</a></li>
-                              <li><a href="${exportUrl}/links/position">Link position</a></li>
-                           </ul>
-                        </li>
-                        <li class="dropdown-submenu"><a href="#">Using DOM sources</a>
-                           <ul class="dropdown-menu">
-                              <li><a href="${exportUrl}/dom/filter-based-export">Filter-based export</a></li>
-                              <li><a href="${exportUrl}/dom/controller-based-export">Controller-based export</a></li>
-                              <li><a href="${exportUrl}/dom/customizing-column-content">Customizing column content</a></li>
-                           </ul>
-                        </li>
-                        <li class="dropdown-submenu"><a href="#">Export options</a>
-                           <ul class="dropdown-menu">
-                              <li><a href="${exportUrl}/options/export-file-name">Export file name</a></li>
-                              <li><a href="${exportUrl}/options/column-auto-sizing">Column auto-sizing</a></li>
-                              <li><a href="${exportUrl}/options/include-header">Include header</a></li>
-                           </ul>
-                        </li>
+                        <li><a href="${columnRenderingUrl}/column-default-content">Column default content</a></li>
+                        <li><a href="${columnRenderingUrl}/column-custom-content">Column custom content</a></li>
+                        <li><a href="${columnRenderingUrl}/implicit-object">Using implicit object</a></li>
+                        <li><a href="${columnRenderingUrl}/column-custom-header">Column custom header</a></li>
                      </ul>
                   </li>
+                  <li><a href="${multipleTablesUrl}">Multiple tables</a></li>
+                  <li><a href="${stylingUrl}">Styling</a></li>
+                  <li><a href="${domPositioningUrl}">DOM positioning</a></li>
+<!--                   <li class="dropdown"> -->
+<!--                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Basics <b class="caret"></b></a> -->
+<!--                      <ul class="dropdown-menu"> -->
+<%--                         <li><a href="${basicsUrl}/default-configuration">Default configuration</a></li> --%>
+<!--                         <li class="dropdown-submenu"><a href="#">Feature enablement</a> -->
+<!--                            <ul class="dropdown-menu"> -->
+<%--                               <li><a href="${basicsUrl}/feature-enablement/info">Display table informations</a></li> --%>
+<%--                               <li><a href="${basicsUrl}/feature-enablement/sorting">Enable/disable sorting</a></li> --%>
+<%--                               <li><a href="${basicsUrl}/feature-enablement/paging">Enable/disable paging</a></li> --%>
+<%--                               <li><a href="${basicsUrl}/feature-enablement/lengthchanging">Enable/disable length changing</a></li> --%>
+<!--                            </ul></li> -->
+<!--                      </ul> -->
+<!--                   </li> -->
+<!--                   <li class="dropdown"> -->
+<!--                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Misc. <b class="caret"></b></a> -->
+<!--                      <ul class="dropdown-menu">    -->
+<%--                         <li><a href="${advancedUrl}/rowid">Applying row ids</a></li> --%>
+<%--                         <li><a href="${basicsUrl}/appear">Changing the appearance</a></li> --%>
+<!--                      </ul> -->
+<!--                   </li> -->
                </ul>
                <ul class="nav pull-right">
                   <li class="dropdown">
@@ -167,10 +125,8 @@
                   </li>
                </ul>
             </div>
-            <!-- /.nav-collapse -->
          </div>
       </div>
-      <!-- /navbar-inner -->
    </div>
 
    <div class="container">

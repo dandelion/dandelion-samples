@@ -1,36 +1,32 @@
-Dandelion-Datatables Spring3 sample
+datatables-jsp-basics
 =================================================================
 
-A sample which shows the basics of Dandelion-Datatables: feature enablement, sorting, filtering, paging and more.
-
-See below the full list of features contained in this sample.
+A sample which shows the basics of Dandelion-Datatables: feature enablement, sorting, filtering, paging and more. See the full list below.
 
 ## Technical stack
 
  - JSP
- - Dandelion-Datatables 0.10.0-SNAPSHOT
- - Spring 3.2.4.RELEASE
- - Apache Tiles 2.2.2
  - JSTL
+ - Dandelion-Datatables 1.10.0
+ - Spring 3.2.4.RELEASE
 
 ## Features
-
+		
  - Data source type: DOM
  - Feature enablement
- - DOM positionning
  - Sorting
  - Filtering
  - Paging
  - Scrolling
+ - Column rendering
+ - DOM positioning
  - Multiple tables
- - Styling
- - Row ID
- - Callbacks
- - Dynamic attributes
+ - Basic styling
+ - AssetServlet (lien doc)
 
-## Running the sample app
+## Running this sample
 
-Using __Tomcat__ :
+Using __Apache Tomcat__ :
 
     mvn tomcat7:run
 
@@ -38,7 +34,7 @@ Using __Jetty__:
 
     mvn jetty:run
 
-You can then access the sample here: [http://localhost:9090/datatables-jsp-spring3](http://localhost:9090/datatables-jsp-spring3)
+You can then access the sample here: [http://localhost:9090/datatables-jsp-basics](http://localhost:9090/datatables-jsp-basics)
 
 ## Bug/improvement
 

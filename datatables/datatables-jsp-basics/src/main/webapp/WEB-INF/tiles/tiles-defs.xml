@@ -6,5 +6,25 @@
    <definition name="layout" template="/WEB-INF/views/common/layout.jsp">
       <put-attribute name="content" value="" cascade="true" />
    </definition>
-   
+
+   <!-- Index -->
+   <definition name="index" extends="layout">
+      <put-attribute name="content" value="/index.jsp" />
+   </definition>
+
+   <!-- Multiple tables -->
+   <definition name="multiple-tables" extends="layout">
+      <put-attribute name="content" value="/WEB-INF/views/multiple-tables.jsp" />
+   </definition>
+
+   <!-- DOM positioning -->
+   <definition name="dom-positioning" extends="layout">
+      <put-attribute name="content" value="/WEB-INF/views/dom-positioning.jsp" />
+   </definition>
+
+   <!-- Styling -->
+   <definition name="styling" extends="layout">
+      <put-attribute name="content" value="/WEB-INF/views/styling.jsp" />
+   </definition>
+
 </tiles-definitions>
