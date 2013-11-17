@@ -11,7 +11,7 @@
    <description>Parent of all Dandelion-Datatables' samples</description>
 
    <modules>
-      <module>datatables-jsp-spring3</module>
+      <module>datatables-jsp-basics</module>
       <module>datatables-jsp-spring3-jpa-ajax</module>
       <module>datatables-jsp-spring3-data-jpa-ajax</module>
       <module>datatables-jsp-struts1</module>
@@ -32,6 +32,7 @@
       <tiles.version>2.2.2</tiles.version>
       <servlet-api.version>3.0.1</servlet-api.version>
       <thymeleaf.version>2.0.18</thymeleaf.version>
+      <thymeleaf.layout.version>1.0.5</thymeleaf.layout.version>
       <thymeleaf.tiles2.version>2.0.0</thymeleaf.tiles2.version>
       <spring.version>3.2.4.RELEASE</spring.version>
       <struts1.version>1.3.10</struts1.version>
@@ -177,6 +178,11 @@
             <artifactId>thymeleaf-extras-tiles2</artifactId>
             <version>${thymeleaf.tiles2.version}</version>
          </dependency>
+         <dependency>
+            <groupId>nz.net.ultraq.web.thymeleaf</groupId>
+            <artifactId>thymeleaf-layout-dialect</artifactId>
+            <version>${thymeleaf.layout.version}</version>
+         </dependency>
 
          <!-- Tiles -->
          <dependency>
@@ -264,8 +270,7 @@
                <version>${jetty-maven-plugin.version}</version>
                <configuration>
                   <connectors>
-                     <connector
-                        implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
+                     <connector implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
                         <port>9090</port>
                         <maxIdleTime>60000</maxIdleTime>
                      </connector>

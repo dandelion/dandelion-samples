@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+   
+   <definition name="basics.filtering.*" extends="layout">
+      <put-attribute name="content" value="/WEB-INF/views/basics/filtering/{1}.jsp" cascade="true" />
+   </definition>
+   
+   <definition name="basics.paging.*" extends="layout">
+      <put-attribute name="content" value="/WEB-INF/views/basics/paging/{1}.jsp" />
+   </definition>
+   
+   <definition name="basics.sorting.*" extends="layout">
+      <put-attribute name="content" value="/WEB-INF/views/basics/sorting/{1}.jsp" />
+   </definition>
+   
+   <definition name="basics.featureenablement.*" extends="layout">
+      <put-attribute name="content" value="/WEB-INF/views/basics/featureenablement/{1}.jsp" />
+   </definition>
+   
+   <definition name="basics.scrolling.*" extends="layout">
+      <put-attribute name="content" value="/WEB-INF/views/basics/scrolling/{1}.jsp" />
+   </definition>
+   
+   <definition name="basics.*" extends="layout">
+      <put-attribute name="content" value="/WEB-INF/views/basics/{1}.jsp" />
+   </definition>
+   
+</tiles-definitions>
