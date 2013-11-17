@@ -17,7 +17,7 @@
       <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
    </listener>
 
-   <!-- Spring MVC servlet definition -->
+   <!-- Spring MVC servlet definition and mapping -->
    <servlet>
       <servlet-name>spring</servlet-name>
       <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -27,13 +27,22 @@
       </init-param>
       <load-on-startup>1</load-on-startup>
    </servlet>
-
-   <!-- Spring MVC servlet mapping -->
    <servlet-mapping>
       <servlet-name>spring</servlet-name>
       <url-pattern>/</url-pattern>
    </servlet-mapping>
-
+   
+   <!-- Dandelion servlet definition and mapping -->
+   <servlet>
+      <servlet-name>dandelionServlet</servlet-name>
+      <servlet-class>com.github.dandelion.core.asset.web.AssetServlet</servlet-class>
+      <load-on-startup>2</load-on-startup>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>dandelionServlet</servlet-name>
+      <url-pattern>/dandelion-assets/*</url-pattern>
+   </servlet-mapping>
+   
    <!-- Dandelion filter definition and mapping -->
    <filter>
       <filter-name>dandelion</filter-name>

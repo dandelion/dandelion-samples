@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.github.dandelion.datatables.entity.Person;
+import com.github.dandelion.datatables.model.Person;
 
 /**
  * Service that manages the persons.

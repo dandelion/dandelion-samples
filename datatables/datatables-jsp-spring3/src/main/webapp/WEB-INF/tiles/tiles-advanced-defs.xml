@@ -2,14 +2,8 @@
 <!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
 <tiles-definitions>
    
-   <definition name="advancedLayout" extends="mainLayout">
-      <put-attribute name="sidebar" value="/WEB-INF/views/jsp/common/sidebar/sidebarAdvanced.jsp" cascade="true" />
-      <put-attribute name="tabAdvanced" value="active" cascade="true" />
-      <put-attribute name="title" value="Advanced - Dandelion-DataTables" />
-   </definition>
-   
-   <definition name="advanced.*" extends="advancedLayout">
-      <put-attribute name="content" value="/WEB-INF/views/jsp/advanced/{1}.jsp" />
+   <definition name="advanced.*" extends="mainLayout">
+      <put-attribute name="content" value="/WEB-INF/views/advanced/{1}.jsp" />
    </definition>
 
 </tiles-definitions>
