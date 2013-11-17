@@ -12,7 +12,11 @@
 
    <modules>
       <module>datatables-jsp-basics</module>
-      <module>datatables-jsp-spring3-jpa-ajax</module>
+      <module>datatables-jsp-themes</module>
+      <module>datatables-jsp-plugins</module>
+      <module>datatables-jsp-configuration-groups</module>
+      <module>datatables-jsp-custom-extension</module>
+      <module>datatables-jsp-ajax-spring3-jpa</module>
       <module>datatables-jsp-spring3-data-jpa-ajax</module>
       <module>datatables-jsp-struts1</module>
       <module>datatables-jsp-struts2</module>
