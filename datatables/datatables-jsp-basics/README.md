@@ -8,7 +8,7 @@ A sample which shows the basics of Dandelion-Datatables: feature enablement, sor
  - JSP
  - JSTL
  - Dandelion-Datatables 1.10.0
- - Spring 3.2.4.RELEASE
+ - Spring 3.2.5.RELEASE
 
 ## Features
 		
