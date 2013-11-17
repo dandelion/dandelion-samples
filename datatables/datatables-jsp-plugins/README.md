@@ -1,18 +1,15 @@
 datatables-jsp-plugins
 =================================================================
 
-A sample which shows how to use the DataTables plugins as Scroller or ColReoder.
+A sample which shows how to use the DataTables' extras supported by Dandelion-Datatables, such as [Scroller](http://datatables.net/extras/scroller/) or [ColReorder](http://datatables.net/extras/colreorder/).
 
 ## In this sample
 
-<table>
-	<thead>
-	
-	</thead>
+<table width="100%">
 	<tbody>
 		<tr>
-			<td>Technical stack</td>
-			<td>
+			<td style="width:40%;"><strong>Technical stack</strong></td>
+			<td style="width:60%;">
 				<ul>
 				   <li>JSP</li>
 				   <li>JSTL</li>
@@ -46,7 +43,7 @@ A sample which shows how to use the DataTables plugins as Scroller or ColReoder.
 	</tbody>
 </table>
 
-## Running this sample app
+## Running this sample
 
 Using __Apache Tomcat__ :
 
@@ -56,7 +53,7 @@ Using __Jetty__:
 
     mvn jetty:run
 
-You can then access the sample here: [http://localhost:9090/datatables-jsp-spring3](http://localhost:9090/datatables-jsp-spring3)
+You can then access the sample here: [http://localhost:9090/datatables-jsp-plugins](http://localhost:9090/datatables-jsp-plugins)
 
 ## Bug/improvement
 
