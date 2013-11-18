@@ -6,7 +6,7 @@ A sample which shows how to use the DataTables' extras supported by Dandelion-Da
 ## Technical stack
 
  - JSP
- - JSTL
+ - JSTL 1.2
  - Dandelion-Datatables 1.10.0
  - Spring 3.2.5.RELEASE
 

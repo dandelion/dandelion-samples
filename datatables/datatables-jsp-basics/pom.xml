@@ -11,7 +11,7 @@
    <artifactId>datatables-jsp-basics</artifactId>
    <packaging>war</packaging>
 
-   <name>Dandelion :: Samples :: Datatables JSP</name>
+   <name>Dandelion :: Samples :: Datatables :: datatables-jsp-basics</name>
 
    <properties>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

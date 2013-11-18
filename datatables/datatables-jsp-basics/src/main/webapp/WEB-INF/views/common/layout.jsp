@@ -3,6 +3,7 @@
 <%@ taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles"%>
 <%@ taglib prefix="dandelion" uri="http://github.com/dandelion" %>
 
+<!-- Enables 2 scopes on all pages: sample and bootstrap -->
 <dandelion:assets scopes="sample,bootstrap" />
 
 <c:url value="/" var="home" />
@@ -20,7 +21,7 @@
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>datatables-jsp-spring3</title>
+<title>datatables-jsp-basics</title>
 </head>
 <body>
    
@@ -49,7 +50,7 @@
                   <li class="dropdown">
                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Filtering <b class="caret"></b></a>
                      <ul class="dropdown-menu">
-                        <li><a href="${filteringUrl}/enable-disable-filtering">Enable/disable filtering</a></li>
+                        <li><a href="${filteringUrl}/enable-disable-global-filtering">Enable/disable global filtering</a></li>
                         <li><a href="${filteringUrl}/extraform">Using an extra form</a></li>
                         <li><a href="${filteringUrl}/input">Using input fields</a></li>
                         <li><a href="${filteringUrl}/select">Using a drop-down list</a></li>
@@ -62,13 +63,15 @@
                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Paging <b class="caret"></b></a>
                      <ul class="dropdown-menu">
                         <li><a href="${pagingUrl}/enable-disable-paging">Enable/disable paging</a></li>
-                        <li><a href="${pagingUrl}/bootstrap">Bootstrap</a></li>
-                        <li><a href="${pagingUrl}/four_button">Four button</a></li>
-                        <li><a href="${pagingUrl}/full_numbers">Full numbers</a></li>
-                        <li><a href="${pagingUrl}/input">Input</a></li>
-                        <li><a href="${pagingUrl}/listbox">Listbox</a></li>
-                        <li><a href="${pagingUrl}/scrolling">Scrolling</a></li>
-                        <li><a href="${pagingUrl}/two_button">Two button</a></li>
+                        <li><a href="${pagingUrl}/defining-length-menu-options">Defining length menu options</a></li>
+                        <li><a href="${pagingUrl}/enable-disable-length-menu">enable/disable length menu</a></li>
+                        <li><a href="${pagingUrl}/bootstrap">Pagination style: Bootstrap</a></li>
+                        <li><a href="${pagingUrl}/four_button">Pagination style: Four button</a></li>
+                        <li><a href="${pagingUrl}/full_numbers">Pagination style: Full numbers</a></li>
+                        <li><a href="${pagingUrl}/input">Pagination style: Input</a></li>
+                        <li><a href="${pagingUrl}/listbox">Pagination style: Listbox</a></li>
+                        <li><a href="${pagingUrl}/scrolling">Pagination style: Scrolling</a></li>
+                        <li><a href="${pagingUrl}/two_button">Pagination style: Two button</a></li>
                      </ul>
                   </li>
                   <li class="dropdown">

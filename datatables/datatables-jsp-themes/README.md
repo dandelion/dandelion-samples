@@ -8,9 +8,9 @@ See below the full list of features contained in this sample.
 ## Technical stack
 
  - JSP
+ - JSTL 1.2
  - Apache Tiles 2.2.2
- - JSTL
- - Dandelion-Datatables 0.10.0-SNAPSHOT
+ - Dandelion-Datatables 0.10.0
  - Spring 3.2.5.RELEASE
 
 ## Features
