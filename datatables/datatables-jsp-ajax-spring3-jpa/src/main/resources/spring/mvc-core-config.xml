@@ -7,13 +7,10 @@
       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
    <!-- Import Dandelion configuration -->
+   <import resource="classpath:dandelion-datatables.xml" />
+
    <!-- Enables scanning for @Controller annotations -->
-   <mvc:annotation-driven>
-      <mvc:argument-resolvers>
-         <bean
-            class="com.github.dandelion.datatables.extras.spring3.ajax.DatatablesCriteriasMethodArgumentResolver" />
-      </mvc:argument-resolvers>
-   </mvc:annotation-driven>
+   <mvc:annotation-driven />
    
    <!-- Configures an @Controller which is used to render Dandelion assets -->
    <import resource="classpath:dandelion.xml" />
@@ -23,8 +20,6 @@
    <mvc:resources location="/assets/css/" mapping="/css/**" />
    <mvc:resources location="/assets/js/" mapping="/js/**" />
    <mvc:resources location="/assets/font/" mapping="/font/**" />
-   
-<!--    <import resource="classpath:dandelion-datatables.xml" /> -->
    
 
    <!-- Enables scanning for @Controller annotations -->
@@ -36,8 +31,4 @@
    
    <!-- Import views configuration -->
    <import resource="mvc-view-config.xml" />
-   
-   <!-- Import Dandelion configuration -->
-<!--    <import resource="classpath:dandelion.xml" /> -->
-<!--    <import resource="classpath:dandelion-datatables.xml" /> -->
 </beans>
