@@ -12,6 +12,7 @@
 
    <modules>
       <module>datatables-jsp-basics</module>
+      <module>datatables-jsp-advanced</module>
       <module>datatables-jsp-themes</module>
       <module>datatables-jsp-plugins</module>
       <module>datatables-jsp-configuration-groups</module>
@@ -38,10 +39,11 @@
       <thymeleaf.version>2.0.18</thymeleaf.version>
       <thymeleaf.layout.version>1.0.5</thymeleaf.layout.version>
       <thymeleaf.tiles2.version>2.0.0</thymeleaf.tiles2.version>
+      <sitemesh3.version>3.0-alpha-2</sitemesh3.version>
       <spring.version>3.2.4.RELEASE</spring.version>
       <struts1.version>1.3.10</struts1.version>
       <struts2.version>2.1.8</struts2.version>
-      <hibernate.version>4.1.9.Final</hibernate.version>
+      <hibernate.version>4.2.7.Final</hibernate.version>
 
       <!-- Maven plugins -->
       <maven-compiler-plugin.version>3.0</maven-compiler-plugin.version>
@@ -208,6 +210,13 @@
             <groupId>org.apache.tiles</groupId>
             <artifactId>tiles-servlet</artifactId>
             <version>${tiles.version}</version>
+         </dependency>
+
+         <!-- Sitemesh -->
+         <dependency>
+            <groupId>org.sitemesh</groupId>
+            <artifactId>sitemesh</artifactId>
+            <version>${sitemesh3.version}</version>
          </dependency>
 
          <!-- Hibernate as JPA implementation -->
