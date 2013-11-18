@@ -7,6 +7,7 @@ A sample which shows how to use an AJAX source, with or without server-side proc
 
  - JSP 
  - JSTL 1.2
+ - Apache Tiles 2.2.2
  - Dandelion-Datatables 1.10.0
  - Jackson 1.9.11
  - Spring 3.2.5.RELEASE

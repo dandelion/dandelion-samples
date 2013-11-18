@@ -15,9 +15,10 @@ See below the full list of features contained in this sample.
 
 ## Features
 
- - Bootstrap2 theme
- - Bootstrap2 Responsive theme
- - Bootstrap2 Tablecloth themes
+ - Bootstrap 2 theme
+ - Bootstrap 2 Responsive theme
+ - Bootstrap 2 Tablecloth themes
+ - Bootstrap 3 theme
  - jQueryUI theme
 
 ## Running the sample app
@@ -30,7 +31,7 @@ Using __Jetty__:
 
     mvn jetty:run
 
-You can then access the sample here: [http://localhost:9090/datatables-jsp-spring3](http://localhost:9090/datatables-jsp-spring3)
+You can then access the sample here: [http://localhost:9090/datatables-jsp-themes](http://localhost:9090/datatables-jsp-themes)
 
 ## Bug/improvement
 
