@@ -7,4 +7,9 @@
       <put-attribute name="content" value="" cascade="true" />
    </definition>
    
+   <!-- Main layout -->
+   <definition name="layoutBootstrap3" template="/WEB-INF/views/common/layout-bootstrap3.jsp">
+      <put-attribute name="content" value="" cascade="true" />
+   </definition>
+   
 </tiles-definitions>

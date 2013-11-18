@@ -3,8 +3,8 @@
 <%@ taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles"%>
 <%@ taglib prefix="dandelion" uri="http://github.com/dandelion" %>
 
-<!-- Enables 2 scopes on all pages: sample and bootstrap -->
-<dandelion:assets scopes="sample,bootstrap" />
+<%-- Enables 2 scopes on all pages: sample and bootstrap2 --%>
+<dandelion:assets scopes="sample,bootstrap2" />
 
 <c:url value="/" var="home" />
 <c:url value="/sorting" var="sortingUrl" />
@@ -67,6 +67,7 @@
                         <li><a href="${pagingUrl}/enable-disable-length-menu">enable/disable length menu</a></li>
                         <li><a href="${pagingUrl}/bootstrap">Pagination style: Bootstrap</a></li>
                         <li><a href="${pagingUrl}/four_button">Pagination style: Four button</a></li>
+                        <li><a href="${pagingUrl}/bootstrap_four_button">Pagination style: Bootstrap four button</a></li>
                         <li><a href="${pagingUrl}/full_numbers">Pagination style: Full numbers</a></li>
                         <li><a href="${pagingUrl}/input">Pagination style: Input</a></li>
                         <li><a href="${pagingUrl}/listbox">Pagination style: Listbox</a></li>

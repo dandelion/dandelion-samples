@@ -42,6 +42,11 @@ public class SampleController {
 		return "bootstrap2." + page;
 	}
 	
+	@RequestMapping(value = "/bootstrap3/{page}")
+	public String goToBootstrap3Example(@PathVariable String page) {
+		return "bootstrap3." + page;
+	}
+	
 	@RequestMapping(value = "/jqueryui/{page}")
 	public String goToBasicJqueryuiExample(@PathVariable String page) {
 		return "jqueryui." + page;

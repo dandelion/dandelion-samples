@@ -22,7 +22,7 @@ import com.github.dandelion.datatables.service.PersonService;
  */
 @Controller
 @RequestMapping(method = RequestMethod.GET)
-public class DemoController {
+public class SampleController {
 
 	@Autowired
 	private PersonService personService;

@@ -3,8 +3,8 @@
 <%@ taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles"%>
 <%@ taglib prefix="dandelion" uri="http://github.com/dandelion" %>
 
-<!-- Enables 2 scopes on all pages: sample and bootstrap -->
-<dandelion:assets scopes="sample,bootstrap" />
+<!-- Enables 2 scopes on all pages: sample and bootstrap2 -->
+<dandelion:assets scopes="sample,bootstrap2" />
 
 <c:url value="/" var="home" />
 <c:url value="/ajax" var="ajaxUrl" />

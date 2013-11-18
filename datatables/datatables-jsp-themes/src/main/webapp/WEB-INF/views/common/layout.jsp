@@ -3,17 +3,19 @@
 <%@ taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles"%>
 <%@ taglib prefix="dandelion" uri="http://github.com/dandelion" %>
 
-<dandelion:assets scopes="sample,bootstrap" />
+<%-- Enables 2 scopes on all pages: sample and bootstrap2 --%>
+<dandelion:assets scopes="sample,bootstrap2" />
 
 <c:url value="/" var="home" />
 <c:url value="/bootstrap2" var="bs2Url" />
+<c:url value="/bootstrap3" var="bs3Url" />
 <c:url value="/jqueryui" var="jquiUrl" />
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>datatables-jsp-spring3</title>
+<title>datatables-jsp-themes</title>
 </head>
 <body>
    
@@ -32,11 +34,17 @@
                   <li class="dropdown">
                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bootstrap 2 <b class="caret"></b></a>
                      <ul class="dropdown-menu">
-                        <li><a href="${bs2Url}/default">Default theme</a></li>
+                        <li><a href="${bs2Url}/default">Bootstrap 2 activation</a></li>
                         <li><a href="${bs2Url}/bootstrap2-responsive">Bootstrap 2 responsive</a></li>
                         <li><a href="${bs2Url}/tablecloth-dark">Tablecloth - Dark</a></li>
                         <li><a href="${bs2Url}/tablecloth-stats">Tablecloth - Stats</a></li>
                         <li><a href="${bs2Url}/tablecloth-paper">Tablecloth - Paper</a></li>
+                     </ul>
+                  </li>
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bootstrap 3 <b class="caret"></b></a>
+                     <ul class="dropdown-menu">
+                        <li><a href="${bs3Url}/default">Bootstrap 3 activation</a></li>
                      </ul>
                   </li>
                   <li class="dropdown">
