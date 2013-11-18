@@ -1,13 +1,13 @@
 {
-    "scope" : "dandelion-demo",
+    "scope" : "sample",
     "parent": "none",
     "assets": [
 		{
-		    "name": "custom",
+		    "name": "application",
 		    "version": "",
 		    "type": "css",
 		    "locations": {
-		        "webapp": "/assets/css/custom.css"
+		        "webapp": "/css/application.css"
 		    }
 		}
     ]

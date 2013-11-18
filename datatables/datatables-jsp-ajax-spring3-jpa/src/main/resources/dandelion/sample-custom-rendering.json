@@ -1,0 +1,14 @@
+{
+    "scope" : "custom-rendering",
+    "parent": "none",
+    "assets": [
+		{
+		    "name": "custom-rendering",
+		    "version": "1.0.0",
+		    "type": "js",
+		    "locations": {
+		        "webapp": "/js/custom-rendering.js"
+		    }
+		}
+    ]
+}
