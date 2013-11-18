@@ -20,8 +20,7 @@ import com.github.dandelion.datatables.service.PersonService;
 
 /**
  * <p>
- * Spring MVC controller that exposes Web Services that are consumed by
- * DataTables.
+ * Spring MVC controller that exposes Web Services consumed by DataTables.
  * <p>
  * Given that Datatables only consumes JSON for now, it is crucial that Jackson
  * is in the webapp classpath for the POJO convertion in JSON format.

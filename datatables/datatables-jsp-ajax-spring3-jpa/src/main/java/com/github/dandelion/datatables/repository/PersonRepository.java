@@ -5,6 +5,11 @@ import java.util.List;
 import com.github.dandelion.datatables.core.ajax.DatatablesCriterias;
 import com.github.dandelion.datatables.model.Person;
 
+/**
+ * Repository interface for the <code>Person</code> domain object.
+ * 
+ * @author Thibault Duchateau
+ */
 public interface PersonRepository {
 
 	/**
@@ -28,7 +33,7 @@ public interface PersonRepository {
 	 *            (maxResult, filtering, paging, ...)
 	 * @return a filtered list of persons.
 	 */
-	public List<Person> findPersonWithDatatablesCriterias(DatatablesCriterias criterias) ;
+	public List<Person> findPersonWithDatatablesCriterias(DatatablesCriterias criterias);
 
 	/**
 	 * <p>

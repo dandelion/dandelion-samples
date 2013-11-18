@@ -2,16 +2,14 @@ package com.github.dandelion.datatables.service;
 
 import java.util.List;
 
-import org.springframework.stereotype.Service;
-
 import com.github.dandelion.datatables.model.Person;
 
 /**
- * Service that manages the persons.
+ * <p>
+ * Person service mostly used as a facade for all controllers.
  * 
- * @author tduchateau
+ * @author Thibault Duchateau
  */
-@Service
 public interface PersonService {
 
 	/**

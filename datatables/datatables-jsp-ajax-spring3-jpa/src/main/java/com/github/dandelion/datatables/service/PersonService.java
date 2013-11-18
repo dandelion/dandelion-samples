@@ -9,7 +9,7 @@ import com.github.dandelion.datatables.model.Person;
 /**
  * Service that manages the persons.
  * 
- * @author tduchateau
+ * @author Thibault Duchateau
  */
 public interface PersonService {
 

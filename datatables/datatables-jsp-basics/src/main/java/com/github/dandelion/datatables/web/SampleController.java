@@ -15,23 +15,24 @@ import com.github.dandelion.datatables.model.Person;
 import com.github.dandelion.datatables.service.PersonService;
 
 /**
- * Controllers for the all demo examples.
+ * <p>
+ * Controller for all examples contained in the sample.
  * 
  * @author Thibault Duchateau
  */
 @Controller
 @RequestMapping(method = RequestMethod.GET)
-public class DemoController {
+public class SampleController {
 
 	@Autowired
 	private PersonService personService;
 
 	/**
 	 * <p>
-	 * This model attribute populates all the tables that use client-side
-	 * processing, i.e. all DOM examples and also AJAX source.
+	 * Populates the model with the domain objects. Used in all examples that
+	 * use a DOM source.
 	 * 
-	 * @return the entire set of persons.
+	 * @return a list of persons for display.
 	 */
 	@ModelAttribute("persons")
 	public List<Person> populateTable() {

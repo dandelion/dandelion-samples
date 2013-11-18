@@ -1,4 +1,4 @@
-package com.github.dandelion.datatables.repository;
+package com.github.dandelion.datatables.repository.jpa;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -9,11 +9,11 @@ import com.github.dandelion.datatables.core.ajax.ColumnDef;
 import com.github.dandelion.datatables.core.ajax.DatatablesCriterias;
 
 /**
- * 
+ * Utility methods used to build query.
  *
  * @author Thibault Duchateau
  */
-public class DaoUtils {
+public class PersonRepositoryUtils {
 
 	/**
 	 * 

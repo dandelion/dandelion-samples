@@ -1,14 +1,24 @@
-package com.github.dandelion.datatables.repository;
+package com.github.dandelion.datatables.repository.memory;
 
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
 import com.github.dandelion.datatables.model.Person;
+import com.github.dandelion.datatables.repository.PersonRepository;
 
-public class PersonFakeDao {
+/**
+ * <p>
+ * In-memory implementation of the {@link PersonRepository}.
+ * 
+ * @author Thibault Duchateau
+ */
+@Repository
+public class PersonMemoryRepository implements PersonRepository {
 
-public static List<Person> persons;
+	private static List<Person> persons;
 	
 	static {
 		persons = new ArrayList<Person>();
@@ -516,11 +526,23 @@ public static List<Person> persons;
 			persons.add(new Person(500,"Montana","Holder","blandit@tellus.ca","1979-02-22","€171,780","Google","7422 Eu, Av.","Hattem","80553"));
 
 		} catch (ParseException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
 
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	public List<Person> findAll() {
+		return persons;
+	}
 
-
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	public List<Person> findLimited(int maxResult) {
+		return persons.subList(0, maxResult);
 	}
 }

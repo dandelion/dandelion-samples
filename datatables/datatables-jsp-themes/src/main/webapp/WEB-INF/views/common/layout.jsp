@@ -3,7 +3,7 @@
 <%@ taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles"%>
 <%@ taglib prefix="dandelion" uri="http://github.com/dandelion" %>
 
-<dandelion:assets scopes="dandelion-demo,bootstrap" />
+<dandelion:assets scopes="sample,bootstrap" />
 
 <c:url value="/" var="home" />
 <c:url value="/bootstrap2" var="bs2Url" />

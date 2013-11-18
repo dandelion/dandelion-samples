@@ -14,7 +14,6 @@ import org.springframework.stereotype.Repository;
 import com.github.dandelion.datatables.core.ajax.ColumnDef;
 import com.github.dandelion.datatables.core.ajax.DatatablesCriterias;
 import com.github.dandelion.datatables.model.Person;
-import com.github.dandelion.datatables.repository.DaoUtils;
 import com.github.dandelion.datatables.repository.PersonRepository;
 
 /**
@@ -64,7 +63,7 @@ public class PersonJpaRepository implements PersonRepository {
 		/**
 		 * Step 1: global and individual column filtering
 		 */
-		queryBuilder.append(DaoUtils.getFilterQuery(criterias));
+		queryBuilder.append(PersonRepositoryUtils.getFilterQuery(criterias));
 
 		/**
 		 * Step 2: sorting
@@ -110,7 +109,7 @@ public class PersonJpaRepository implements PersonRepository {
 
 		StringBuilder queryBuilder = new StringBuilder("SELECT p FROM Person p");
 
-		queryBuilder.append(DaoUtils.getFilterQuery(criterias));
+		queryBuilder.append(PersonRepositoryUtils.getFilterQuery(criterias));
 
 		Query query = entityManager.createQuery(queryBuilder.toString());
 		return Long.parseLong(String.valueOf(query.getResultList().size()));

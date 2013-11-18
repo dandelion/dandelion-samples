@@ -11,12 +11,13 @@ import com.github.dandelion.datatables.model.Person;
 import com.github.dandelion.datatables.repository.PersonRepository;
 
 /**
- * Implementation of the Person service.
+ * <p>
+ * Mostly used as a facade for all controllers.
  * 
  * @author tduchateau
  */
 @Service
-public class PersonServiceJpaImpl implements PersonService {
+public class PersonServiceImpl implements PersonService {
 
 	@Autowired
 	private PersonRepository personRepository;
