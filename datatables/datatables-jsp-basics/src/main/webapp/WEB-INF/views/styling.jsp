@@ -5,8 +5,7 @@
    <div class="span12">
       <h3>Basic styling</h3>
       <p>This example shows how to apply some style on the cells.</p>
-      <p>In this example:
-      <p>
+      <p>In this example:</p>
       <ul>
          <li>The <strong>City</strong> column is centered using <code>cssStyle="text-align:center;"</code>
             , which update the "th" tag of the column.

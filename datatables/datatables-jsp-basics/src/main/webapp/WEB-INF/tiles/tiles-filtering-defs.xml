@@ -3,7 +3,7 @@
 <tiles-definitions>
    
    <definition name="filtering.*" extends="layout">
-      <put-attribute name="content" value="/WEB-INF/views/filtering/{1}.jsp" />
+      <put-attribute name="content" value="/WEB-INF/views/basics/filtering/{1}.jsp" />
    </definition>
 
 </tiles-definitions>

@@ -38,51 +38,58 @@
             <div class="nav-collapse collapse navbar-responsive-collapse">
                <ul class="nav">
                   <li class="dropdown">
-                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sorting <b class="caret"></b></a>
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Basics <b class="caret"></b></a>
                      <ul class="dropdown-menu">
-                        <li><a href="${sortingUrl}/enable-disable-sorting">Enable/disable sorting</a></li>
-                        <li><a href="${sortingUrl}/individualcolumnsorting">Individual column sorting</a></li>
-                        <li><a href="${sortingUrl}/sortinginit">Sorting initialization</a></li>
-                        <li><a href="${sortingUrl}/sortingdirectioncontrol">Sorting direction control</a></li>
-                        <li><a href="${sortingUrl}/naturalsort">Sorting type: natural, date</a></li>
+                        <li class="dropdown-submenu">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sorting <b class="caret"></b></a>
+                           <ul class="dropdown-menu">
+                              <li><a href="${sortingUrl}/enable-disable-sorting">Enable/disable sorting</a></li>
+                              <li><a href="${sortingUrl}/individualcolumnsorting">Individual column sorting</a></li>
+                              <li><a href="${sortingUrl}/sortinginit">Sorting initialization</a></li>
+                              <li><a href="${sortingUrl}/sortingdirectioncontrol">Sorting direction control</a></li>
+                              <li><a href="${sortingUrl}/naturalsort">Sorting type: natural, date</a></li>
+                           </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Filtering <b class="caret"></b></a>
+                           <ul class="dropdown-menu">
+                              <li><a href="${filteringUrl}/enable-disable-global-filtering">Enable/disable global filtering</a></li>
+                              <li><a href="${filteringUrl}/extraform">Using an extra form</a></li>
+                              <li><a href="${filteringUrl}/input">Using input fields</a></li>
+                              <li><a href="${filteringUrl}/select">Using a drop-down list</a></li>
+                              <li><a href="${filteringUrl}/select-with-values">Using a drop-down list with custom values</a></li>
+                              <li><a href="${filteringUrl}/filterplaceholder">Using different filter placeholders</a></li>
+                              <li><a href="${filteringUrl}/exclude-column-from-global-filtering">Exclude column from global filtering</a></li>
+                           </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Paging <b class="caret"></b></a>
+                           <ul class="dropdown-menu">
+                              <li><a href="${pagingUrl}/enable-disable-paging">Enable/disable paging</a></li>
+                              <li><a href="${pagingUrl}/defining-length-menu-options">Defining length menu options</a></li>
+                              <li><a href="${pagingUrl}/enable-disable-length-menu">enable/disable length menu</a></li>
+                              <li><a href="${pagingUrl}/bootstrap">Pagination style: Bootstrap</a></li>
+                              <li><a href="${pagingUrl}/four_button">Pagination style: Four button</a></li>
+                              <li><a href="${pagingUrl}/bootstrap_four_button">Pagination style: Bootstrap four button</a></li>
+                              <li><a href="${pagingUrl}/full_numbers">Pagination style: Full numbers</a></li>
+                              <li><a href="${pagingUrl}/bootstrap_full_numbers">Pagination style: Bootstrap full numbers</a></li>
+                              <li><a href="${pagingUrl}/input">Pagination style: Input</a></li>
+                              <li><a href="${pagingUrl}/listbox">Pagination style: Listbox</a></li>
+                              <li><a href="${pagingUrl}/scrolling">Pagination style: Scrolling</a></li>
+                              <li><a href="${pagingUrl}/two_button">Pagination style: Two button</a></li>
+                           </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Scrolling <b class="caret"></b></a>
+                           <ul class="dropdown-menu">
+                              <li><a href="${scrollingUrl}/scroll-horizontal">Horizontal scrolling</a></li>
+                              <li><a href="${scrollingUrl}/scroll-vertical">Vertical scrolling</a></li>
+                              <li><a href="${scrollingUrl}/scroll-both">Both</a></li>
+                           </ul>
+                        </li>
                      </ul>
                   </li>
-                  <li class="dropdown">
-                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Filtering <b class="caret"></b></a>
-                     <ul class="dropdown-menu">
-                        <li><a href="${filteringUrl}/enable-disable-global-filtering">Enable/disable global filtering</a></li>
-                        <li><a href="${filteringUrl}/extraform">Using an extra form</a></li>
-                        <li><a href="${filteringUrl}/input">Using input fields</a></li>
-                        <li><a href="${filteringUrl}/select">Using a drop-down list</a></li>
-                        <li><a href="${filteringUrl}/select-with-values">Using a drop-down list with custom values</a></li>
-                        <li><a href="${filteringUrl}/filterplaceholder">Using different filter placeholders</a></li>
-                        <li><a href="${filteringUrl}/exclude-column-from-global-filtering">Exclude column from global filtering</a></li>
-                     </ul>
-                  </li>
-                  <li class="dropdown">
-                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Paging <b class="caret"></b></a>
-                     <ul class="dropdown-menu">
-                        <li><a href="${pagingUrl}/enable-disable-paging">Enable/disable paging</a></li>
-                        <li><a href="${pagingUrl}/defining-length-menu-options">Defining length menu options</a></li>
-                        <li><a href="${pagingUrl}/enable-disable-length-menu">enable/disable length menu</a></li>
-                        <li><a href="${pagingUrl}/bootstrap">Pagination style: Bootstrap</a></li>
-                        <li><a href="${pagingUrl}/four_button">Pagination style: Four button</a></li>
-                        <li><a href="${pagingUrl}/bootstrap_four_button">Pagination style: Bootstrap four button</a></li>
-                        <li><a href="${pagingUrl}/full_numbers">Pagination style: Full numbers</a></li>
-                        <li><a href="${pagingUrl}/input">Pagination style: Input</a></li>
-                        <li><a href="${pagingUrl}/listbox">Pagination style: Listbox</a></li>
-                        <li><a href="${pagingUrl}/scrolling">Pagination style: Scrolling</a></li>
-                        <li><a href="${pagingUrl}/two_button">Pagination style: Two button</a></li>
-                     </ul>
-                  </li>
-                  <li class="dropdown">
-                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Scrolling <b class="caret"></b></a>
-                     <ul class="dropdown-menu">
-                        <li><a href="${scrollingUrl}/scroll-horizontal">Horizontal scrolling</a></li>
-                        <li><a href="${scrollingUrl}/scroll-vertical">Vertical scrolling</a></li>
-                        <li><a href="${scrollingUrl}/scroll-both">Both</a></li>
-                     </ul>
-                  </li>
+                  
                   <li class="dropdown">
                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Column rendering <b class="caret"></b></a>
                      <ul class="dropdown-menu">   
