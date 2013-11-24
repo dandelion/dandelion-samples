@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+   <div th:fragment="navbar">
+      <a href="https://github.com/dandelion/dandelion-samples">
+         <img style="position: fixed; top: 0; left: 0; border: 0; z-index: 1500;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png" alt="Fork me on GitHub"/>
+      </a>
+      <div class="navbar navbar-fixed-top">
+         <div class="navbar-inner">
+            <div class="container">
+               <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                  <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+               </a> 
+               <a class="brand" th:href="@{/}">datatables-thymeleaf-basics</a>
+               <div class="nav-collapse collapse navbar-responsive-collapse">
+                  <ul class="nav">
+                     <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Basics <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                           <li class="dropdown-submenu">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sorting <b class="caret"></b></a>
+                              <ul class="dropdown-menu">
+                                 <li><a th:href="@{/basics/sorting/enable-disable-sorting}">Enable/disable sorting</a></li>
+                                 <li><a th:href="@{/basics/sorting/individualcolumnsorting}">Individual column sorting</a></li>
+                                 <li><a th:href="@{/basics/sorting/sortinginit}">Sorting initialization</a></li>
+                                 <li><a th:href="@{/basics/sorting/sortingdirectioncontrol}">Sorting direction control</a></li>
+                                 <li><a th:href="@{/basics/sorting/naturalsort}">Sorting type: natural, date</a></li>
+                              </ul>
+                           </li>
+                           <li class="dropdown-submenu">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Filtering <b class="caret"></b></a>
+                              <ul class="dropdown-menu">
+                                 <li><a th:href="@{/basics/filtering/enable-disable-global-filtering}">Enable/disable global filtering</a></li>
+                                 <li><a th:href="@{/basics/filtering/extraform}">Using an extra form</a></li>
+                                 <li><a th:href="@{/basics/filtering/input}">Using input fields</a></li>
+                                 <li><a th:href="@{/basics/filtering/select}">Using a drop-down list</a></li>
+                                 <li><a th:href="@{/basics/filtering/select-with-values}">Using a drop-down list with custom values</a></li>
+                                 <li><a th:href="@{/basics/filtering/filterplaceholder}">Using different filter placeholders</a></li>
+                                 <li><a th:href="@{/basics/filtering/exclude-column-from-global-filtering}">Exclude column from global filtering</a></li>
+                              </ul>
+                           </li>
+                           <li class="dropdown-submenu">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Paging <b class="caret"></b></a>
+                              <ul class="dropdown-menu">
+                                 <li><a th:href="@{/basics/paging/enable-disable-paging}">Enable/disable paging</a></li>
+                                 <li><a th:href="@{/basics/paging/defining-length-menu-options}">Defining length menu options</a></li>
+                                 <li><a th:href="@{/basics/paging/enable-disable-length-menu}">Enable/disable length menu</a></li>
+                                 <li><a th:href="@{/basics/paging/bootstrap}">Pagination style: Bootstrap</a></li>
+                                 <li><a th:href="@{/basics/paging/four_button}">Pagination style: Four button</a></li>
+                                 <li><a th:href="@{/basics/paging/bootstrap_four_button}">Pagination style: Bootstrap four button</a></li>
+                                 <li><a th:href="@{/basics/paging/full_numbers}">Pagination style: Full numbers</a></li>
+                                 <li><a th:href="@{/basics/paging/bootstrap_full_numbers}">Pagination style: Bootstrap full numbers</a></li>
+                                 <li><a th:href="@{/basics/paging/input}">Pagination style: Input</a></li>
+                                 <li><a th:href="@{/basics/paging/listbox}">Pagination style: Listbox</a></li>
+                                 <li><a th:href="@{/basics/paging/scrolling}">Pagination style: Scrolling</a></li>
+                                 <li><a th:href="@{/basics/paging/two_button}">Pagination style: Two button</a></li>
+                              </ul>
+                           </li>
+                           <li class="dropdown-submenu">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Scrolling <b class="caret"></b></a>
+                              <ul class="dropdown-menu">
+                                 <li><a th:href="@{/basics/scrolling/scroll-horizontal}">Horizontal scrolling</a></li>
+                                 <li><a th:href="@{/basics/scrolling/scroll-vertical}">Vertical scrolling</a></li>
+                                 <li><a th:href="@{/basics/scrolling/scroll-both}">Both</a></li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </li>
+                     
+                     <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Column rendering <b class="caret"></b></a>
+                        <ul class="dropdown-menu">   
+                           <li><a th:href="@{/column-rendering/column-default-content}">Column default content</a></li>
+                           <li><a th:href="@{/column-rendering/column-custom-content}">Column custom content</a></li>
+                           <li><a th:href="@{/column-rendering/implicit-object}">Using implicit object</a></li>
+                           <li><a th:href="@{/column-rendering/column-custom-header}">Column custom header</a></li>
+                        </ul>
+                     </li>
+                     <li><a th:href="@{/multiple-tables}">Multiple tables</a></li>
+                     <li><a th:href="@{/styling}">Styling</a></li>
+                     <li><a th:href="@{/dom-positioning}">DOM positioning</a></li>
+                  </ul>
+                  <ul class="nav pull-right">
+                     <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Help
+                           <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                           <li><a href="http://dandelion.github.io/datatables">Documentation</a></li>
+                           <li><a href="http://dandelion-forum.48353.x6.nabble.com/">Forum</a></li>
+                           <li><a href="https://github.com/dandelion/issues/issues">Report an issue</a></li>
+                        </ul>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>

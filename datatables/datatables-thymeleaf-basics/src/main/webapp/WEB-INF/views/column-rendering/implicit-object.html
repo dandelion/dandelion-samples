@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+   xmlns:ddl="http://www.thymeleaf.org/dandelion"
+   xmlns:dt="http://www.thymeleaf.org/dandelion/datatables" ddl:assets-scopes="sample,bootstrap2">
+
+<head th:include="common/head::head" />
+<body>
+   <div th:replace="common/navbar::navbar"></div>
+   <div class="container">
+
+      <div class="row-fluid row-intro">
+         <div class="span12">
+            <h3>Using implicit object</h3>
+         </div>
+      </div>
+
+      <table id="myTable" dt:table="true">
+         <thead>
+            <tr>
+               <th>Id</th>
+               <th>Firstname</th>
+               <th>Lastname</th>
+               <th>City</th>
+               <th>Mail</th>
+               <th>Row index</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr th:each="person,iterStat : ${persons}">
+               <td th:text="${person?.id}">1</td>
+               <td th:text="${person?.firstName}">John</td>
+               <td th:text="${person?.lastName}">Doe</td>
+               <td th:text="${person?.address?.town?.name}">Nobody knows!</td>
+               <td>
+                  <a th:href="${'mailto:' + person?.mail}" th:text="${person?.mail}">john@doe.com</a>
+               </td>
+               <td th:text="${iterStat.index}">0</td>
+            </tr>
+         </tbody>
+      </table>
+
+   </div>
+</body>
+</html>
