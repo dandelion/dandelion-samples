@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+   <modelVersion>4.0.0</modelVersion>
+
+   <parent>
+      <!-- Your own application should inherit from spring-boot-starter-parent -->
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-parent</artifactId>
+      <version>0.5.0.M4</version>
+   </parent>
+
+   <groupId>com.github.dandelion</groupId>
+   <artifactId>datatables-jsp-spring-boot</artifactId>
+   <version>0.10.0-SNAPSHOT</version>
+   <packaging>war</packaging>
+
+   <properties>
+      <spring.boot.version>0.5.0.M4</spring.boot.version>
+      <dandelion.datatables.version>0.10.0-SNAPSHOT</dandelion.datatables.version>
+   </properties>
+
+   <dependencyManagement>
+      <dependencies>
+         <dependency>
+            <groupId>com.github.dandelion</groupId>
+            <artifactId>datatables-bom</artifactId>
+            <version>0.10.0-SNAPSHOT</version>
+            <type>pom</type>
+            <scope>import</scope>
+         </dependency>
+      </dependencies>
+   </dependencyManagement>
+
+   <dependencies>
+      <dependency>
+         <groupId>org.springframework.boot</groupId>
+         <artifactId>spring-boot-starter-web</artifactId>
+         <version>${spring.boot.version}</version>
+      </dependency>
+      <dependency>
+         <groupId>org.apache.tomcat.embed</groupId>
+         <artifactId>tomcat-embed-jasper</artifactId>
+         <version>7.0.42</version>
+      </dependency>
+
+      <dependency>
+         <groupId>com.github.dandelion</groupId>
+         <artifactId>datatables-jsp</artifactId>
+         <version>${dandelion.datatables.version}</version>
+      </dependency>
+      <dependency>
+         <groupId>com.github.dandelion</groupId>
+         <artifactId>datatables-spring3</artifactId>
+         <version>${dandelion.datatables.version}</version>
+      </dependency>
+   </dependencies>
+
+   <build>
+      <plugins>
+         <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+            <version>${spring.boot.version}</version>
+         </plugin>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <configuration>
+               <useSystemClassLoader>false</useSystemClassLoader>
+            </configuration>
+         </plugin>
+      </plugins>
+   </build>
+
+   <!-- Allow access to Spring milestones and snapshots -->
+   <!-- (you don't need this if you are using anything after 0.5.0.RELEASE) -->
+   <repositories>
+      <repository>
+         <id>spring-snapshots</id>
+         <url>http://repo.spring.io/snapshot</url>
+         <snapshots>
+            <enabled>true</enabled>
+         </snapshots>
+      </repository>
+      <repository>
+         <id>spring-milestones</id>
+         <url>http://repo.spring.io/milestone</url>
+         <snapshots>
+            <enabled>true</enabled>
+         </snapshots>
+      </repository>
+   </repositories>
+   <pluginRepositories>
+      <pluginRepository>
+         <id>spring-snapshots</id>
+         <url>http://repo.spring.io/snapshot</url>
+      </pluginRepository>
+      <pluginRepository>
+         <id>spring-milestones</id>
+         <url>http://repo.spring.io/milestone</url>
+      </pluginRepository>
+   </pluginRepositories>
+</project>
