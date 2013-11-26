@@ -11,7 +11,7 @@
    <artifactId>datatables-thymeleaf-basics</artifactId>
    <packaging>war</packaging>
 
-   <name>Dandelion :: Samples :: Datatables Thymeleaf</name>
+   <name>Dandelion :: Samples :: Datatables :: datatables-thymeleaf-basics</name>
 
    <properties>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

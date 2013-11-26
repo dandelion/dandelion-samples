@@ -15,7 +15,8 @@ import com.github.dandelion.datatables.model.Person;
 import com.github.dandelion.datatables.service.PersonService;
 
 /**
- * Controllers for the all demo examples.
+ * <p>
+ * Controller for all examples contained in the sample.
  * 
  * @author Thibault Duchateau
  */
