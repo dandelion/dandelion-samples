@@ -34,7 +34,7 @@
                   <li class="dropdown">
                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bootstrap 2 <b class="caret"></b></a>
                      <ul class="dropdown-menu">
-                        <li><a href="${bs2Url}/default">Bootstrap 2 activation</a></li>
+                        <li><a href="${bs2Url}/bootstrap2-activation">Bootstrap 2 activation</a></li>
                         <li><a href="${bs2Url}/bootstrap2-responsive">Bootstrap 2 responsive</a></li>
                         <li><a href="${bs2Url}/tablecloth-dark">Tablecloth - Dark</a></li>
                         <li><a href="${bs2Url}/tablecloth-stats">Tablecloth - Stats</a></li>
@@ -44,7 +44,7 @@
                   <li class="dropdown">
                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bootstrap 3 <b class="caret"></b></a>
                      <ul class="dropdown-menu">
-                        <li><a href="${bs3Url}/default">Bootstrap 3 activation</a></li>
+                        <li><a href="${bs3Url}/bootstrap3-activation">Bootstrap 3 activation</a></li>
                      </ul>
                   </li>
                   <li class="dropdown">
