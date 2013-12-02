@@ -29,7 +29,7 @@ public class DaoUtils {
 		 * Step 1.1: global filtering
 		 */
 		if (StringUtils.isNotBlank(criterias.getSearch()) && criterias.hasOneFilterableColumn()) {
-			queryBuilder.append(" WHERE ");
+			queryBuilder.append(" WHERE (");
 
 			for (ColumnDef columnDef : criterias.getColumnDefs()) {
 				if (columnDef.isFilterable() && StringUtils.isBlank(columnDef.getSearch())) {
@@ -45,6 +45,7 @@ public class DaoUtils {
 					queryBuilder.append(" OR ");
 				}
 			}
+			queryBuilder.append(" ) ");
 		}
 
 		/**
