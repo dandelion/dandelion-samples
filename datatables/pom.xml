@@ -21,6 +21,7 @@
       <module>datatables-jsp-spring3-data-jpa-ajax</module>
       <module>datatables-jsp-struts1</module>
       <module>datatables-jsp-struts2</module>
+      <module>datatables-jsp-export</module>
       <module>datatables-thymeleaf-spring3</module>
       <module>datatables-thymeleaf-configuration-groups</module>
       <module>datatables-thymeleaf-spring3-tiles2</module>
@@ -36,11 +37,10 @@
       <jstl.version>1.2</jstl.version>
       <tiles.version>2.2.2</tiles.version>
       <servlet-api.version>3.0.1</servlet-api.version>
-      <thymeleaf.version>2.0.18</thymeleaf.version>
-      <thymeleaf.layout.version>1.0.5</thymeleaf.layout.version>
+      <thymeleaf.version>2.1.1.RELEASE</thymeleaf.version>
+      <thymeleaf.layout.version>1.2</thymeleaf.layout.version>
       <thymeleaf.tiles2.version>2.0.0</thymeleaf.tiles2.version>
-      <sitemesh3.version>3.0-alpha-2</sitemesh3.version>
-      <spring.version>3.2.4.RELEASE</spring.version>
+      <spring.version>3.2.5.RELEASE</spring.version>
       <struts1.version>1.3.10</struts1.version>
       <struts2.version>2.1.8</struts2.version>
       <hibernate.version>4.2.7.Final</hibernate.version>
@@ -185,7 +185,7 @@
             <version>${thymeleaf.tiles2.version}</version>
          </dependency>
          <dependency>
-            <groupId>nz.net.ultraq.web.thymeleaf</groupId>
+            <groupId>nz.net.ultraq.thymeleaf</groupId>
             <artifactId>thymeleaf-layout-dialect</artifactId>
             <version>${thymeleaf.layout.version}</version>
          </dependency>

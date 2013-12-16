@@ -1,0 +1,14 @@
+#IDE
+.settings/
+.project
+.classpath
+
+.idea/
+*.iml
+
+#Maven
+target/
+/src/main/java/rebel.xml
+/src/main/resources/rebel.xml
+/src/main/resources/rebel.xml
+/src/main/resources/rebel.xml
