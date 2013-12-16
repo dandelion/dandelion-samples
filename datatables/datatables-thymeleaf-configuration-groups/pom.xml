@@ -1,0 +1,76 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+   <modelVersion>4.0.0</modelVersion>
+
+   <parent>
+      <groupId>com.github.dandelion</groupId>
+      <artifactId>datatables-samples-parent</artifactId>
+      <version>0.10.0-SNAPSHOT</version>
+   </parent>
+
+   <artifactId>datatables-thymeleaf-configuration-groups</artifactId>
+   <packaging>war</packaging>
+
+   <name>Dandelion :: Samples :: Datatables :: datatables-thymeleaf-configuration-groups</name>
+
+   <properties>
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+   </properties>
+
+   <dependencies>
+      <!-- Dandelion-DataTables -->
+      <dependency>
+         <groupId>com.github.dandelion</groupId>
+         <artifactId>datatables-thymeleaf</artifactId>
+      </dependency>
+
+      <!-- Spring -->
+      <dependency>
+         <groupId>org.springframework</groupId>
+         <artifactId>spring-web</artifactId>
+      </dependency>
+      <dependency>
+         <groupId>org.springframework</groupId>
+         <artifactId>spring-webmvc</artifactId>
+      </dependency>
+
+      <!-- Thymeleaf -->
+      <dependency>
+         <groupId>org.thymeleaf</groupId>
+         <artifactId>thymeleaf</artifactId>
+      </dependency>
+      <dependency>
+         <groupId>org.thymeleaf</groupId>
+         <artifactId>thymeleaf-spring3</artifactId>
+      </dependency>
+
+      <!-- Servlet -->
+      <dependency>
+         <groupId>javax.servlet</groupId>
+         <artifactId>javax.servlet-api</artifactId>
+      </dependency>
+
+      <!-- Logging -->
+      <dependency>
+         <groupId>ch.qos.logback</groupId>
+         <artifactId>logback-classic</artifactId>
+      </dependency>
+   </dependencies>
+
+   <build>
+      <plugins>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+         </plugin>
+         <plugin>
+            <groupId>org.mortbay.jetty</groupId>
+            <artifactId>jetty-maven-plugin</artifactId>
+         </plugin>
+         <plugin>
+            <groupId>org.apache.tomcat.maven</groupId>
+            <artifactId>tomcat7-maven-plugin</artifactId>
+         </plugin>
+      </plugins>
+   </build>
+</project>
