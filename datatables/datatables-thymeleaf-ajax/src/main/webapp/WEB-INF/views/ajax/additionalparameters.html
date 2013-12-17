@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout"
+   xmlns:dt="http://www.thymeleaf.org/dandelion/datatables" layout:decorator="common/layout/ajaxLayout">
+
+
+<body>
+   <div layout:fragment="content">
+
+      <script th:src="@{/js/customparams.js}"></script>
+      
+      <div class="row-fluid">
+         <div class="span12">
+            <h3>Custom AJAX request</h3>
+            <br />
+         </div>
+      </div>
+
+      <table id="myTableId" dt:table="true" dt:url="@{/persons3}" dt:serverside="true" dt:serverparams="'getParams'">
+         <thead>
+            <tr>
+               <th dt:property="'id'">Id</th>
+               <th dt:property="'firstName'">Firstname</th>
+               <th dt:property="'lastName'">Lastname</th>
+               <th dt:property="'address.town.name'">City</th>
+               <th dt:property="'mail'">Mail</th>
+            </tr>
+         </thead>
+      </table>
+      
+   </div>
+</body>
+</html>

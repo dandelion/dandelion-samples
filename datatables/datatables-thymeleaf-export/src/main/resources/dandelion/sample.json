@@ -1,0 +1,14 @@
+{
+    "scope" : "sample",
+    "parent": "none",
+    "assets": [
+		{
+		    "name": "application",
+		    "version": "",
+		    "type": "css",
+		    "locations": {
+		        "webapp": "css/application.css"
+		    }
+		}
+    ]
+}
