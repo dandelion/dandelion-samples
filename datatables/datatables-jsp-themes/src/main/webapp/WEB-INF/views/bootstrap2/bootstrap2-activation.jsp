@@ -25,7 +25,7 @@
 
 <div class="row-fluid">
    <div class="span12">
-      <datatables:table id="myTableId" data="${persons}" cssClass="table table-striped table-bordered table-condensed" ext="bootstrap2">
+      <datatables:table id="myTableId" data="${persons}" cssClass="table table-striped table-bordered table-condensed" theme="bootstrap2">
          <datatables:column title="Id" property="id" />
          <datatables:column title="FirstName" property="firstName" />
          <datatables:column title="LastName" property="lastName" />
