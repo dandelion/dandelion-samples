@@ -19,8 +19,8 @@
       <module>datatables-jsp-custom-extension</module>
       <module>datatables-jsp-ajax</module>
       <module>datatables-jsp-spring3-data-jpa-ajax</module>
-      <module>datatables-jsp-struts1</module>
-      <module>datatables-jsp-struts2</module>
+      <module>datatables-jsp-i18n-struts1</module>
+      <module>datatables-jsp-i18n-struts2</module>
       <module>datatables-jsp-export</module>
       <module>datatables-thymeleaf-ajax</module>
       <module>datatables-thymeleaf-spring3</module>

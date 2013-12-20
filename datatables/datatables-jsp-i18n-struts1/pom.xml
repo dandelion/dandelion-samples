@@ -1,0 +1,112 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+   <modelVersion>4.0.0</modelVersion>
+
+   <parent>
+      <groupId>com.github.dandelion</groupId>
+      <artifactId>datatables-samples-parent</artifactId>
+      <version>0.10.0-SNAPSHOT</version>
+   </parent>
+
+   <artifactId>datatables-jsp-i18n-struts1</artifactId>
+   <packaging>war</packaging>
+
+   <name>Dandelion :: Samples :: Datatables JSP</name>
+
+   <properties>
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+   </properties>
+
+   <dependencies>
+      <!-- Dandelion -->
+      <dependency>
+         <groupId>com.github.dandelion</groupId>
+         <artifactId>datatables-jsp</artifactId>
+      </dependency>
+      <dependency>
+         <groupId>com.github.dandelion</groupId>
+         <artifactId>datatables-export-poi</artifactId>
+      </dependency>
+      <dependency>
+         <groupId>com.github.dandelion</groupId>
+         <artifactId>datatables-export-poi-ooxml</artifactId>
+      </dependency>
+      <dependency>
+         <groupId>com.github.dandelion</groupId>
+         <artifactId>datatables-export-itext</artifactId>
+      </dependency>
+      <dependency>
+         <groupId>com.github.dandelion</groupId>
+         <artifactId>datatables-struts1</artifactId>
+      </dependency>
+
+      <!-- Struts 1 -->
+      <dependency>
+         <groupId>org.apache.struts</groupId>
+         <artifactId>struts-core</artifactId>
+      </dependency>
+      <dependency>
+         <groupId>org.apache.struts</groupId>
+         <artifactId>struts-taglib</artifactId>
+      </dependency>
+
+      <!-- JSTL -->
+      <dependency>
+         <groupId>jstl</groupId>
+         <artifactId>jstl</artifactId>
+      </dependency>
+
+      <!-- Servlet -->
+      <dependency>
+         <groupId>javax.servlet</groupId>
+         <artifactId>javax.servlet-api</artifactId>
+         <scope>provided</scope>
+      </dependency>
+
+      <!-- Jackson -->
+      <dependency>
+         <groupId>org.codehaus.jackson</groupId>
+         <artifactId>jackson-mapper-asl</artifactId>
+      </dependency>
+
+      <!-- Hibernate as JPA implementation -->
+      <dependency>
+         <groupId>org.hibernate</groupId>
+         <artifactId>hibernate-core</artifactId>
+      </dependency>
+      <dependency>
+         <groupId>org.hibernate</groupId>
+         <artifactId>hibernate-entitymanager</artifactId>
+      </dependency>
+
+      <!-- Database drivers -->
+      <!-- H2 (local) -->
+      <dependency>
+         <groupId>com.h2database</groupId>
+         <artifactId>h2</artifactId>
+      </dependency>
+
+      <!-- Logging -->
+      <dependency>
+         <groupId>ch.qos.logback</groupId>
+         <artifactId>logback-classic</artifactId>
+      </dependency>
+   </dependencies>
+
+   <build>
+      <plugins>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+         </plugin>
+         <plugin>
+            <groupId>org.mortbay.jetty</groupId>
+            <artifactId>jetty-maven-plugin</artifactId>
+         </plugin>
+         <plugin>
+            <groupId>org.apache.tomcat.maven</groupId>
+            <artifactId>tomcat7-maven-plugin</artifactId>
+         </plugin>
+      </plugins>
+   </build>
+</project>
