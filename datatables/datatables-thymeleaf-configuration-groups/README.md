@@ -5,7 +5,9 @@ A sample which show how to use global and configuration groups in a Thymeleaf an
 
 ## Technology stack
 
+ - Apache Tiles 2.2.2
  - Thymeleaf 2.1.1.RELEASE
+ - Thymeleaf Extra Tiles2 2.1.0.RELEASE
  - Dandelion-Datatables 0.10.0
  - Spring 3.2.5.RELEASE
 
