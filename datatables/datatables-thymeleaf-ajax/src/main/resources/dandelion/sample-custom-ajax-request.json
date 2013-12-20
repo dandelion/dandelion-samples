@@ -1,0 +1,14 @@
+{
+    "scope" : "custom-ajax-request",
+    "parent": "none",
+    "assets": [
+		{
+		    "name": "custom-ajax-request",
+		    "version": "1.0.0",
+		    "type": "js",
+		    "locations": {
+		        "webapp": "/js/custom-ajax-request.js"
+		    }
+		}
+    ]
+}
