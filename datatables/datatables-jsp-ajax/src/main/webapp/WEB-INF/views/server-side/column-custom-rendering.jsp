@@ -4,10 +4,18 @@
 <!-- Update the current scope with extra functions needed for rendering -->
 <dandelion:assets scopes="custom-rendering" />
 
-<div class="row-fluid">
+<div class="row-fluid row-intro">
    <div class="span12">
       <h3>Custom column rendering</h3>
-      <br />
+      <p>Using an AJAX source (with or without server-side processing enabled), the table is
+         initialized client-side, when the response is sent back by the server. Columns are also
+         built client-side, using Javascript.</p>
+      <p>
+         That's why an extra scope is added in this page, allowing Dandelion to load the asset
+         containing the
+         <code>mailify</code>
+         function (used to turn a string into a mailto link).
+      </p>
    </div>
 </div>
 

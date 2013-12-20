@@ -8,12 +8,12 @@
       </encoder>
    </appender>
 
-   <logger name="com.github.dandelion.datatables" level="TRACE" />
-   <logger name="com.github.dandelion" level="DEBUG" />
+   <logger name="com.github.dandelion.datatables" level="ERROR" />
+   <logger name="com.github.dandelion" level="ERROR" />
    <logger name="org.springframework.beans" level="ERROR" />
    <logger name="org.springframework.jdbc" level="ERROR" />
    <logger name="org.springframework" level="ERROR" />
-   <logger name="org.apache.tiles" level="ERROR" />
+   <logger name="org.apache" level="ERROR" />
    <logger name="org.hibernate" level="ERROR" />
 
    <root level="DEBUG">
