@@ -8,25 +8,15 @@
 
       <div class="row-fluid row-intro">
          <div class="span12">
-            <h3>Enabling server-side processing</h3>
-            <p>
-               This example shows a table configured with the
-               <code>datatables.properties</code>
-               file only.
-            </p>
-            <p>
-               Note in the source code that no attribute is required since the
-               <code>global</code>
-               group is always active in all tables.
-            </p>
+            <h3>Server-side processing</h3>
+            <p>The following table is populated using an AJAX source and server-side processing.</p>
          </div>
       </div>
 
       <div class="row-fluid">
          <div class="span12">
 
-            <table id="myTableId" dt:table="true" dt:url="@{/ajax/persons-no-spring}"
-               dt:serverside="true" dt:processing="true">
+            <table id="myTableId" dt:table="true" dt:url="@{/ajax/persons-no-spring}" dt:serverside="true" dt:processing="true">
                <thead>
                   <tr>
                      <th dt:property="'id'">Id</th>
