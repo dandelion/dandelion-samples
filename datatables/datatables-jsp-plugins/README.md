@@ -3,7 +3,7 @@ datatables-jsp-plugins
 
 A sample which shows how to use the DataTables' extras supported by Dandelion-Datatables, such as [Scroller](http://datatables.net/extras/scroller/) or [ColReorder](http://datatables.net/extras/colreorder/).
 
-## Technical stack
+## Technology stack
 
  - JSP
  - JSTL 1.2
@@ -12,7 +12,7 @@ A sample which shows how to use the DataTables' extras supported by Dandelion-Da
 
 ## Features
 		
- - Data source type: DOM
+ - __Data source type__: DOM
  - Scroller plugin - <a href="http://dandelion.github.io/datatables/tutorials/plugins/scroller.html">Doc</a>
  - ColReorder plugin - <a href="http://dandelion.github.io/datatables/tutorials/plugins/colreorder.html">Doc</a>
  - FixedHeader plugin - <a href="http://dandelion.github.io/datatables/tutorials/plugins/fixedheader.html">Doc</a>

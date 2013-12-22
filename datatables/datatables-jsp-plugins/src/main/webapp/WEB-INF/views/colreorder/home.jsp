@@ -30,10 +30,6 @@
             
          </div>
       </div>
-      <hr />
-      <footer>
-         Footer
-      </footer>
    </div>
 </body>
 </html>
