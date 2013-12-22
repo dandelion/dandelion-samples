@@ -13,7 +13,7 @@ A sample which show how to use global and configuration groups in a Thymeleaf an
 
 ## Features
 		
- - Data source type: DOM
+ - __Data source type__: DOM
  - Global configuration
  - Configuration group
  - Configuration local overloading
