@@ -2,7 +2,7 @@
 <%@ include file="../common/taglib.jsp"%>
 
 <%-- Make the ugly row in the thead disappear by removing the DataTables' CSS from the scope --%>
-<%-- <dandelion:assets excludedAssets="datatables-css" /> --%>
+<dandelion:assets excludedAssets="datatables-css" />
 
 <div class="row-fluid row-intro">
    <div class="span12">
@@ -25,12 +25,14 @@
 
 <div class="row-fluid">
    <div class="span12">
-      <datatables:table id="myTableId" data="${persons}" cssClass="table table-dark table-striped table-bordered table-condensed" theme="bootstrap3" themeOption="tablecloth">
+   
+      <datatables:table id="myTableId" data="${persons}" cssClass="table table-striped table-bordered table-condensed" theme="bootstrap3">
          <datatables:column title="Id" property="id" />
          <datatables:column title="FirstName" property="firstName" />
          <datatables:column title="LastName" property="lastName" />
          <datatables:column title="Street" property="address.town.name" />
          <datatables:column title="Mail" property="mail" />
       </datatables:table>
+   
    </div>
 </div>

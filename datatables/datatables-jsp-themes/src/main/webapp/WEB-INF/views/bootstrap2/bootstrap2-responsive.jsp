@@ -19,7 +19,7 @@
 
 <div class="row-fluid">
    <div class="span12">
-      <datatables:table id="myTableId" cssClass="table table-striped table-bordered table-condensed" data="${persons}" ext="bootstrap2,bootstrap2-responsive">
+      <datatables:table id="myTableId" cssClass="table table-striped table-condensed" data="${persons}" theme="bootstrap2" ext="bootstrap2-responsive">
          <datatables:column title="Id" property="id" data-class="expand" />
          <datatables:column title="FirstName" property="firstName" />
          <datatables:column title="LastName" property="lastName" />

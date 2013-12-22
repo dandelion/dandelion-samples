@@ -4,6 +4,16 @@
 <div class="row-fluid row-intro">
    <div class="span12">
       <h3>Bootstrap 2 theme - Tablecloth stats</h3>
+      <p>
+         Some themes designed by <a href="https://github.com/bwsewell">Brian Sewell</a> and developed
+         for <a href="https://github.com/bwsewell/tablecloth">Tablecloth</a> are also supported.
+      </p>
+      <p>
+         Just fill the
+         <code>themeOption</code>
+         attribute with <strong>tablecloth</strong> and add one of the following CSS class to the
+         table: <strong>table-dark</strong>, <strong>table-paper</strong> or <strong>table-stats</strong>.
+      </p>
    </div>
 </div>
 

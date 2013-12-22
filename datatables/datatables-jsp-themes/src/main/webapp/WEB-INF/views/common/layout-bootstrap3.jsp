@@ -56,7 +56,7 @@
                <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">jQueryUI <b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                     <li><a href="${jquiUrl}/jqui_blacktie">Black tie</a></li>
+                     <li><a href="${jquiUrl}/theme-roller">ThemeRoller support</a></li>
                   </ul>
                </li>
             </ul>
@@ -83,10 +83,6 @@
             <tiles:insertAttribute name="content" />
          </div>
       </div>
-      <hr />
-      <footer>
-         Footer
-      </footer>
    </div>
 </body>
 </html>

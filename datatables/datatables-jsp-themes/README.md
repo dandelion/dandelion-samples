@@ -3,9 +3,7 @@ datatables-jsp-themes
 
 A sample which shows how to apply CSS themes on your tables.
 
-See below the full list of features contained in this sample.
-
-## Technical stack
+## Technology stack
 
  - JSP
  - JSTL 1.2
@@ -15,11 +13,12 @@ See below the full list of features contained in this sample.
 
 ## Features
 
- - Bootstrap 2 theme
- - Bootstrap 2 Responsive theme
- - Bootstrap 2 Tablecloth themes
- - Bootstrap 3 theme
- - jQueryUI theme
+ - __Data source type__: DOM
+ - [Bootstrap 2](http://getbootstrap.com/2.3.2/) theme
+ - [Bootstrap 2](http://getbootstrap.com/2.3.2/) Responsive theme (based on [datatables-responsive](https://github.com/Comanche/datatables-responsive) by [Comanche](https://github.com/Comanche))
+ - [Tablecloth](https://github.com/bwsewell/tablecloth) integration (Bootstrap 2 compatible)
+ - [Bootstrap 3](http://getbootstrap.com/) theme
+ - jQueryUI theme ([ThemeRoller](http://jqueryui.com/themeroller/) support)
 
 ## Running the sample app
 

@@ -7,7 +7,10 @@
 <div class="row-fluid row-intro">
    <div class="span12">
       <h3>Bootstrap 2 theme</h3>
-      <p>This example shows how easily the Bootstrap framework can be integrated.</p>
+      <p>
+         This example shows how easily the <a href="http://getbootstrap.com/2.3.2/">Bootstrap v2
+            framework</a> can be integrated.
+      </p>
       <p>Note that we made the black row in the thead disappear. To do that, we used the
          Dandelion JSP taglib to modify the active scopes by excluding the Datatables' CSS as
          follows:</p>
