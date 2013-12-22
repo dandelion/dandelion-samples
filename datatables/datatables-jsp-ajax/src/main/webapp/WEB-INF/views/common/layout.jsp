@@ -41,6 +41,7 @@
                         <li><a href="${serverSideUrl}/pipelining-data">Pipelining data</a></li>
                         <li><a href="${serverSideUrl}/pipelining-data-with-custom-pipesize">Pipelining data with custom pipe size</a></li>
                         <li><a href="${serverSideUrl}/column-custom-rendering">Column custom rendering</a></li>
+                        <li><a href="${serverSideUrl}/custom-ajax-request">Custom AJAX request</a></li>
                      </ul>
                   </li>
                   <li class="dropdown">
@@ -74,10 +75,6 @@
             <tiles:insertAttribute name="content" />
          </div>
       </div>
-      <hr />
-      <footer>
-         Footer
-      </footer>
    </div>
 </body>
 </html>

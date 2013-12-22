@@ -21,6 +21,7 @@ A sample which shows how to use an AJAX source, with or without server-side proc
  - AJAX source + server-side processing
  - Pipelining data (with and without custom pipe size)
  - Custom rendering
+ - Custom AJAX requests
  - Delayed filtering (min length)
  - Delayed filtering (time)
 
@@ -34,7 +35,7 @@ Using __Jetty__:
 
     mvn jetty:run
 
-You can then access the sample here: [http://localhost:9090/datatables-jsp-ajax](http://localhost:9090/datatables-jsp)
+You can then access the sample here: [http://localhost:9090/datatables-jsp-ajax](http://localhost:9090/datatables-jsp-ajax)
 
 Note that you can also access the H2 web server here: [http://localhost:9091/](http://localhost:9091/). Just type `jdbc:h2:mem:dataSource` in the JDBC URL.
 
