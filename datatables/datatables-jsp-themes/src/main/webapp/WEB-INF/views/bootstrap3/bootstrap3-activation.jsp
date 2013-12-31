@@ -4,7 +4,7 @@
 <%-- Make the ugly row in the thead disappear by removing the DataTables' CSS from the scope --%>
 <dandelion:assets excludedAssets="datatables-css" />
 
-<div class="row-fluid row-intro">
+<div class="row row-intro">
    <div class="span12">
       <h3>Bootstrap 3 theme</h3>
       <p>This example shows how easily the Bootstrap framework can be integrated.</p>
@@ -23,7 +23,7 @@
    </div>
 </div>
 
-<div class="row-fluid">
+<div class="row">
    <div class="span12">
    
       <datatables:table id="myTableId" data="${persons}" cssClass="table table-striped table-bordered table-condensed" theme="bootstrap3">
