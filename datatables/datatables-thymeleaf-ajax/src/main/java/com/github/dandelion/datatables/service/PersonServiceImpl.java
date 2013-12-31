@@ -11,28 +11,29 @@ import com.github.dandelion.datatables.model.Person;
 import com.github.dandelion.datatables.repository.PersonRepository;
 
 /**
- * Implementation of the Person service.
+ * <p>
+ * Mostly used as a facade for all controllers.
  * 
  * @author tduchateau
  */
 @Service
-public class PersonServiceJpaImpl implements PersonService {
+public class PersonServiceImpl implements PersonService {
 
 	@Autowired
-	private PersonRepository personDao;
+	private PersonRepository personRepository;
 
 	/**
 	 * {@inheritDoc}
 	 */
 	public List<Person> findAll() {
-		return personDao.findAll();
+		return personRepository.findAll();
 	}
 
 	/**
 	 * {@inheritDoc}
 	 */
 	public List<Person> findLimited(int maxResult) {
-		return personDao.findLimited(maxResult);
+		return personRepository.findLimited(maxResult);
 	}
 
 	/**
@@ -40,9 +41,9 @@ public class PersonServiceJpaImpl implements PersonService {
 	 */
 	public DataSet<Person> findPersonsWithDatatablesCriterias(DatatablesCriterias criterias) {
 
-		List<Person> persons = personDao.findPersonWithDatatablesCriterias(criterias);
-		Long count = personDao.getTotalCount();
-		Long countFiltered = personDao.getFilteredCount(criterias);
+		List<Person> persons = personRepository.findPersonWithDatatablesCriterias(criterias);
+		Long count = personRepository.getTotalCount();
+		Long countFiltered = personRepository.getFilteredCount(criterias);
 
 		return new DataSet<Person>(persons, count, countFiltered);
 	}

@@ -2,8 +2,6 @@ package com.github.dandelion.datatables.service;
 
 import java.util.List;
 
-import org.springframework.stereotype.Service;
-
 import com.github.dandelion.datatables.core.ajax.DataSet;
 import com.github.dandelion.datatables.core.ajax.DatatablesCriterias;
 import com.github.dandelion.datatables.model.Person;
@@ -11,9 +9,8 @@ import com.github.dandelion.datatables.model.Person;
 /**
  * Service that manages the persons.
  * 
- * @author tduchateau
+ * @author Thibault Duchateau
  */
-@Service
 public interface PersonService {
 
 	/**
@@ -30,7 +27,7 @@ public interface PersonService {
 
 	/**
 	 * <p>
-	 * Query used to populate the DataTable that displays the list of persons.
+	 * Query used to populate the DataTables that display the list of persons.
 	 * 
 	 * @param criterias
 	 *            The DataTables criterias used to filter the persons.

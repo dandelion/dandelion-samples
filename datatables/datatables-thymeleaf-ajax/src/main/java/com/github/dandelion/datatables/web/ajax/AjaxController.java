@@ -51,7 +51,6 @@ public class AjaxController {
 	@RequestMapping(value = "/persons")
 	public @ResponseBody
 	DatatablesResponse<Person> findAllForDataTablesFullSpring(@DatatablesParams DatatablesCriterias criterias) {
-		System.out.println("criterias = " + criterias);
 		DataSet<Person> dataSet = personService.findPersonsWithDatatablesCriterias(criterias);
 		return DatatablesResponse.build(dataSet, criterias);
 	}

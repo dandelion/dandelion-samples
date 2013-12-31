@@ -1,13 +1,13 @@
 {
-    "scope" : "custom-ajax-request",
+    "scope" : "filtering",
     "parent": "none",
     "assets": [
 		{
-		    "name": "custom-ajax-request",
+		    "name": "filtering-examples",
 		    "version": "1.0.0",
 		    "type": "js",
 		    "locations": {
-		        "webapp": "/js/custom-ajax-request.js"
+		        "webapp": "/js/filtering.js"
 		    }
 		}
     ]

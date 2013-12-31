@@ -11,3 +11,8 @@ function myRequest(sSource, aoData, fnCallback, oSettings) {
 		}
 	});
 }
+
+function customReload() {
+	alert("Custom reload!");
+	oTable_myTableId.fnReloadAjax();
+}

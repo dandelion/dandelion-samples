@@ -1,13 +1,13 @@
 {
-    "scope" : "custom-ajax-request",
+    "scope" : "ajax",
     "parent": "none",
     "assets": [
 		{
-		    "name": "custom-ajax-request",
+		    "name": "ajax",
 		    "version": "1.0.0",
 		    "type": "js",
 		    "locations": {
-		        "webapp": "/js/custom-ajax-request.js"
+		        "webapp": "/js/ajax.js"
 		    }
 		}
     ]
