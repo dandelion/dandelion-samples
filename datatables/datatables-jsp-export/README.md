@@ -20,6 +20,7 @@ See below the full list of features contained in this sample.
  - Filter-based export (DOM sources)
  - Controller-based export (DOM and AJAX sources)
  - Customized column content
+ - Customized export
 
 ## Running the sample app
 

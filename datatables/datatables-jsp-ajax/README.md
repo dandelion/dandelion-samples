@@ -12,7 +12,7 @@ A sample which shows how to use an AJAX source, with or without server-side proc
  - Jackson 1.9.11
  - Spring 3.2.5.RELEASE
  - Hibernate 4.2.7.Final / JPA 2.0
- - H2 database (in-memory)
+ - H2 database
 
 ## Features
 		
