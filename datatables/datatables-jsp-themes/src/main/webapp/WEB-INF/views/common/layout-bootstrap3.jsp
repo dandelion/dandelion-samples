@@ -22,7 +22,7 @@
       <img style="position: fixed; top: 0; left: 0; border: 0; z-index: 1500;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png" alt="Fork me on GitHub"/>
    </a>
    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container"
+      <div class="container">
          <!-- Brand and toggle get grouped for better mobile display -->
          <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -66,7 +66,7 @@
                      <b class="caret"></b>
                   </a>
                   <ul class="dropdown-menu">
-                     <li><a href="http://dandelion.github.io/datatables">Documentation</a>
+                     <li><a href="http://dandelion.github.io/datatables">Documentation</a></li>
                      <li><a href="http://dandelion-forum.48353.x6.nabble.com/">Forum</a></li>
                      <li><a href="https://github.com/dandelion/issues/issues">Report an issue</a></li>
                   </ul>
