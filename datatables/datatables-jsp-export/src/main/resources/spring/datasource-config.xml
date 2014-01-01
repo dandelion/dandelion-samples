@@ -12,7 +12,7 @@
    <!-- JPA EntityManagerFactory -->
    <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
       <property name="dataSource" ref="dataSource" />
-      <property name="persistenceUnitName" value="Ddl2DtPU" />
+      <property name="persistenceUnitName" value="DdlDtPU" />
       <property name="packagesToScan" value="com.github.dandelion.datatables.model" />
       <property name="jpaVendorAdapter">
          <bean id="jpaVendorAdapter" class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">

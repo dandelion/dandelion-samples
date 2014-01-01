@@ -13,26 +13,28 @@
    <div class="container">
       <div class="row-fluid row-intro">
          <div class="span12">
-            <h3>DOM sources / Controller-based export</h3>
-            <p>If you have the necessary plumbing server-side, you can also export from a controller
-               with a DOM source. The export file will be much more precise than with a filter since
-               you will see in the export exactly what you see in the browser.</p>
+            <h3>AJAX sources / Controller-based export</h3>
+            <p>
+               All exports in this example use a custom export URL. Each URL is mapped to a
+               corresponding method in the
+               <code>ExportController</code>
+               class.
+            </p>
          </div>
       </div>
       
       <div class="row-fluid">
          <div class="span12">
 
-            <datatables:table id="myTableId" data="${persons}" row="person" export="csv,xml,xls,pdf">
-               <datatables:column title="Id" property="id" id="toto" />
+            <datatables:table id="myTableId" url="/persons" serverSide="true" processing="true" export="pdf,csv,xls,xml">
+               <datatables:column title="Id" property="id" />
                <datatables:column title="FirstName" property="firstName" />
                <datatables:column title="LastName" property="lastName" />
                <datatables:column title="City" property="address.town.name" />
-               <datatables:column title="Mail">
-                  <a href="mailto:${person.mail}">${person.mail}</a>
-               </datatables:column>
-               <datatables:export type="csv" cssClass="btn" url="/export.csv" method="post"  />
+               <datatables:column title="Mail" property="mail" />
+               <datatables:column title="Birth date" property="birthDate" renderFunction="moment,custom-rendering#toDate" />
                <datatables:export type="xml" cssClass="btn" url="/export.xml" />
+               <datatables:export type="csv" cssClass="btn" url="/export.csv" />
                <datatables:export type="xls" cssClass="btn" url="/export.xls" />
                <datatables:export type="pdf" cssClass="btn" url="/export.pdf" />
             </datatables:table>

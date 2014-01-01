@@ -35,7 +35,7 @@ public class Person {
 	private Date birthDate;
 	
 	@Column
-	private Long pocketMoney;
+	private Long salary;
 	
 	@OneToOne
 	@JoinColumn(name = "company_id")
@@ -88,12 +88,6 @@ public class Person {
 		this.mail = mail;
 	}
 
-	@Override
-	public String toString() {
-		return "Person [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName
-				+ ", mail=" + mail + ", address=" + address + "]";
-	}
-
 	public Address getAddress() {
 		return address;
 	}
@@ -110,12 +104,12 @@ public class Person {
 		this.birthDate = birthDate;
 	}
 
-	public Long getPocketMoney() {
-		return pocketMoney;
+	public Long getSalary() {
+		return salary;
 	}
 
-	public void setPocketMoney(Long pocketMoney) {
-		this.pocketMoney = pocketMoney;
+	public void setSalary(Long salary) {
+		this.salary = salary;
 	}
 
 	public Company getCompany() {

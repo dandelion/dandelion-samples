@@ -3,24 +3,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <jsp:include page="common/head.jsp"/>
+<jsp:include page="common/head.jsp" />
 </head>
 <body>
-   
-   <jsp:include page="common/navbar.jsp"/>
+
+   <jsp:include page="common/navbar.jsp" />
 
    <div class="container">
       <div class="row-fluid">
-         <div class="span12" style="min-height: 550px;">
-            
-            In this sample:
-            
-         </div>
+         <div class="span12">Feel free to browse the sample using the navbar!</div>
       </div>
-      <hr />
-      <footer>
-         Footer
-      </footer>
+
    </div>
 </body>
 </html>

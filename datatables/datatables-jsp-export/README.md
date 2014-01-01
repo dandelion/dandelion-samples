@@ -5,28 +5,21 @@ A sample which shows how to export data using both DOM and AJAX sources, based o
 
 See below the full list of features contained in this sample.
 
-## Technical stack
+## Technology stack
 
  - JSP
- - Dandelion-Datatables 0.10.0-SNAPSHOT
- - Spring 3.2.4.RELEASE
- - Apache Tiles 2.2.2
- - JSTL
+ - Dandelion-Datatables 0.10.0
+ - Jackson 1.9.11
+ - Spring 3.2.5.RELEASE
+ - Hibernate 4.2.7.Final / JPA 2.0
+ - H2 database
 
 ## Features
 
- - Data source type: DOM
- - Feature enablement
- - DOM positionning
- - Sorting
- - Filtering
- - Paging
- - Scrolling
- - Multiple tables
- - Styling
- - Row ID
- - Callbacks
- - Dynamic attributes
+ - __Data source type__: AJAX + server-side processing
+ - Filter-based export (DOM sources)
+ - Controller-based export (DOM and AJAX sources)
+ - Customized column content
 
 ## Running the sample app
 
@@ -39,6 +32,8 @@ Using __Jetty__:
     mvn jetty:run
 
 You can then access the sample here: [http://localhost:9090/datatables-jsp-export](http://localhost:9090/datatables-jsp-export)
+
+Note that you can also access the H2 web server here: [http://localhost:9091/](http://localhost:9091/). Just type `jdbc:h2:mem:dataSource` in the JDBC URL.
 
 ## Bug/improvement
 

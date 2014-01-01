@@ -13,25 +13,23 @@
    <div class="container">
       <div class="row-fluid row-intro">
          <div class="span12">
-            <h3>DOM sources / Customizing export content</h3>
-            <p>In this example, the "Mail" column contains clickable links whereas the export
-               doens't.</p>
+            <h3>Totally custom export</h3>
+            <p>In this example, the table is exportable in the custom format "myFormat". The export
+               configuration is built inside the controller before the rendering.</p>
          </div>
       </div>
       
       <div class="row-fluid">
          <div class="span12">
 
-            <datatables:table id="myTableId" data="${persons}" row="person" export="xlsx">
+            <datatables:table id="myTableId" url="/persons" serverSide="true" processing="true" export="myFormat">
                <datatables:column title="Id" property="id" />
                <datatables:column title="FirstName" property="firstName" />
                <datatables:column title="LastName" property="lastName" />
                <datatables:column title="City" property="address.town.name" />
-               <datatables:column title="Mail" display="html">
-                  <a href="mailto:${person.mail}">${person.mail}</a>
-               </datatables:column>
-               <datatables:column title="Mail" property="mail" display="xlsx" />
-               <datatables:export type="xlsx" autoSize="true" cssClass="btn"/>
+               <datatables:column title="Mail" property="mail" />
+               <datatables:column title="Birth date" property="birthDate" renderFunction="moment,custom-rendering#toDate" />
+               <datatables:export type="myFormat" cssClass="btn" url="/myExport.myFormat" orientation="portrait"/>
             </datatables:table>
 
          </div>

@@ -13,25 +13,29 @@
    <div class="container">
       <div class="row-fluid row-intro">
          <div class="span12">
-            <h3>DOM sources / Customizing export content</h3>
-            <p>In this example, the "Mail" column contains clickable links whereas the export
-               doens't.</p>
+            <h3>Links style</h3>
+            <p>
+               You can move apply some CSS on export using the
+               <code>cssStyle</code>
+               and
+               <code>cssClass</code>
+               table attributes.
+            </p>
          </div>
       </div>
       
       <div class="row-fluid">
          <div class="span12">
 
-            <datatables:table id="myTableId" data="${persons}" row="person" export="xlsx">
+            <datatables:table id="myTableId" url="/persons" serverSide="true" processing="true" export="pdf,xls">
                <datatables:column title="Id" property="id" />
                <datatables:column title="FirstName" property="firstName" />
                <datatables:column title="LastName" property="lastName" />
                <datatables:column title="City" property="address.town.name" />
-               <datatables:column title="Mail" display="html">
-                  <a href="mailto:${person.mail}">${person.mail}</a>
-               </datatables:column>
-               <datatables:column title="Mail" property="mail" display="xlsx" />
-               <datatables:export type="xlsx" autoSize="true" cssClass="btn"/>
+               <datatables:column title="Mail" property="mail" />
+               <datatables:column title="Birth date" property="birthDate" renderFunction="moment,custom-rendering#toDate" />
+               <datatables:export type="pdf" cssClass="btn btn-info" url="/export.pdf" />
+               <datatables:export type="xls" cssClass="btn btn-success" url="/export.xls" />
             </datatables:table>
 
          </div>
