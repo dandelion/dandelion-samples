@@ -25,6 +25,7 @@
       <module>datatables-thymeleaf-ajax</module>
       <module>datatables-thymeleaf-spring3</module>
       <module>datatables-thymeleaf-themes</module>
+      <module>datatables-thymeleaf-plugins</module>
       <module>datatables-thymeleaf-configuration-groups</module>
       <module>datatables-thymeleaf-export</module>
       <module>datatables-thymeleaf-spring3-tiles2</module>
