@@ -11,14 +11,14 @@
       <div class="row-fluid row-intro">
          <div class="span12">
             <h3>Basic styling</h3>
-            <p>This example shows how to apply some style on the cells.</p>
+            <p>There's nothing magical here. Actually</p>
             <p>In this example:</p>
             <ul>
-               <li>The <strong>City</strong> column is centered using <code>cssStyle="text-align:center;"</code>
+               <li>The <strong>City</strong> column is centered using inlined CSS <code>style="text-align:center;"</code>
                   , which update the "th" tag of the column.
                </li>
-               <li>All the body cells of the <strong>Mail</strong> column are centered using <code>cssCellStyle="text-align:center;"</code>
-                  whereas a CSS class has been applied on the "th" cell using <code>cssClass="myCustomClass"</code>.
+               <li>All the body cells of the <strong>Mail</strong> column are centered using <code>style="text-align:center;"</code>
+                  whereas a CSS class has been applied on the "th" cell using <code>class="myCustomClass"</code>.
                </li>
             </ul>
          </div>
@@ -27,14 +27,14 @@
       <div class="row-fluid">
          <div class="span12">
 
-            <table id="myTableId" dt:table="true" dt:dom="'t'">
+            <table id="myTableId" dt:table="true">
                <thead>
                   <tr>
                      <th>Id</th>
                      <th>Firstname</th>
                      <th>Lastname</th>
-                     <th>City</th>
-                     <th>Mail</th>
+                     <th style="text-align:center;">City</th>
+                     <th class="myCustomClass">Mail</th>
                      <th>Actions</th>
                   </tr>
                </thead>
@@ -43,8 +43,8 @@
                      <td th:text="${person.id}">1</td>
                      <td th:text="${person.firstName}">John</td>
                      <td th:text="${person.lastName}">Doe</td>
-                     <td th:text="${person.address != null and person.address.town != null} ? ${person.address.town.name} : ''">Nobody knows !</td>
-                     <td th:text="${person.mail}">john@doe.com</td>
+                     <td th:text="${person.address != null and person.address.town != null} ? ${person.address.town.name} : ''" style="text-align:center;">Nobody knows !</td>
+                     <td th:text="${person.mail}" style="text-align:center;">john@doe.com</td>
                      <td>
                         <a th:onclick="'alert(\'Person ' + ${person.id} + ' deleted!\');'" class="btn btn-mini" title="Remove"><i class="icon-trash"></i></a>
                         <a th:onclick="'alert(\'Person ' + ${person.id} + ' edited!\');'" class="btn btn-mini" title="Edit"><i class="icon-edit"></i></a>
