@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org"
-   xmlns:ddl="http://www.thymeleaf.org/dandelion"
-   xmlns:dt="http://www.thymeleaf.org/dandelion/datatables" ddl:assets-scopes="sample,bootstrap2">
+<html xmlns:th="http://www.thymeleaf.org" xmlns:dt="http://www.thymeleaf.org/dandelion/datatables">
 
 <head th:include="common/head::head" />
 <body>
@@ -12,7 +10,9 @@
          <div class="span12">
             <h3>Scroller</h3>
             <p>
-               The following examples shows how to use the <a href="http://dandelion.github.io/datatables/tutorials/basics/dom-positionning.html">DOM positioning</a> feature. 
+               The following examples shows how to use the <a
+                  href="http://dandelion.github.io/datatables/tutorials/basics/dom-positionning.html">DOM
+                  positioning</a> feature.
             </p>
          </div>
       </div>
@@ -38,10 +38,10 @@
                      <td th:text="${person.lastName}">Doe</td>
                      <td th:text="${person?.address?.town?.name}">Nobody knows!</td>
                      <td th:text="${person.mail}">john@doe.com</td>
-                     <td>
-                        <a th:onclick="'alert(\'Person ' + ${person.id} + ' deleted!\');'" class="btn btn-mini" title="Remove"><i class="icon-trash"></i></a>
-                        <a th:onclick="'alert(\'Person ' + ${person.id} + ' edited!\');'" class="btn btn-mini" title="Edit"><i class="icon-edit"></i></a>
-                     </td>
+                     <td><a th:onclick="'alert(\'Person ' + ${person.id} + ' deleted!\');'"
+                        class="btn btn-mini" title="Remove"><i class="icon-trash"></i></a> <a
+                        th:onclick="'alert(\'Person ' + ${person.id} + ' edited!\');'"
+                        class="btn btn-mini" title="Edit"><i class="icon-edit"></i></a></td>
                   </tr>
                </tbody>
             </table>
