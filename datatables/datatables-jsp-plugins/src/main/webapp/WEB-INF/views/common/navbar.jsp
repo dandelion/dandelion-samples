@@ -20,19 +20,19 @@
                <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">FixedHeader <b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                     <li><a href="${fixedheaderUrl}/home">Default configuration</a></li>
+                     <li><a href="${fixedheaderUrl}/default-configuration">Default configuration</a></li>
                   </ul>
                </li>
                <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Scroller <b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                     <li><a href="${scrollerUrl}/home">Default configuration</a></li>
+                     <li><a href="${scrollerUrl}/default-configuration">Default configuration</a></li>
                   </ul>
                </li>
                <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">ColReorder <b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                     <li><a href="${colreorderUrl}/home">Default configuration</a></li>
+                     <li><a href="${colreorderUrl}/default-configuration">Default configuration</a></li>
                   </ul>
                </li>
             </ul>
