@@ -11,20 +11,23 @@
             <h3>Custom AJAX request</h3>
             <p>This example show how to customize the AJAX call made against the server to populate
                the table. A message shoud appear once the table redrawed.</p>
+            <p>
+               Note the use of the special syntax: <code>scopeToLoad#functionName</code>.
+            </p>
          </div>
       </div>
 
       <div class="row-fluid">
-         <div class="span12" ddl:assets-scopes="custom-rendering,custom-ajax-request">
+         <div class="span12">
 
-            <table id="myTableId" dt:table="true" dt:url="@{/ajax/persons}" dt:serverside="true" dt:processing="true" dt:serverdata="'myRequest'">
+            <table id="myTableId" dt:table="true" dt:url="@{/ajax/persons}" dt:serverside="true" dt:processing="true" dt:serverdata="'ajax#myRequest'">
                <thead>
                   <tr>
                      <th dt:property="'id'">Id</th>
                      <th dt:property="'firstName'">Firstname</th>
                      <th dt:property="'lastName'">Lastname</th>
                      <th dt:property="'address.town.name'">City</th>
-                     <th dt:property="'mail'" dt:renderFunction="'mailify'">Mail</th>
+                     <th dt:property="'mail'" dt:renderFunction="'custom-rendering#mailify'">Mail</th>
                   </tr>
                </thead>
             </table>
