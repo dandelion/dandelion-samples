@@ -18,17 +18,16 @@
       <module>datatables-jsp-configuration-groups</module>
       <module>datatables-jsp-custom-extension</module>
       <module>datatables-jsp-ajax</module>
-      <module>datatables-jsp-spring3-data-jpa-ajax</module>
       <module>datatables-jsp-i18n-struts1</module>
       <module>datatables-jsp-i18n-struts2</module>
       <module>datatables-jsp-export</module>
-      <module>datatables-thymeleaf-ajax</module>
-      <module>datatables-thymeleaf-spring3</module>
+      <module>datatables-thymeleaf-basics</module>
       <module>datatables-thymeleaf-themes</module>
       <module>datatables-thymeleaf-plugins</module>
       <module>datatables-thymeleaf-configuration-groups</module>
+      <module>datatables-thymeleaf-ajax</module>
       <module>datatables-thymeleaf-export</module>
-      <module>datatables-thymeleaf-spring3-tiles2</module>
+      <module>datatables-thymeleaf-extension</module>
    </modules>
 
    <properties>
@@ -42,7 +41,7 @@
       <tiles.version>2.2.2</tiles.version>
       <servlet-api.version>3.0.1</servlet-api.version>
       <thymeleaf.version>2.1.1.RELEASE</thymeleaf.version>
-      <thymeleaf.layout.version>1.2</thymeleaf.layout.version>
+      <thymeleaf.layout.version>1.2.1</thymeleaf.layout.version>
       <thymeleaf.tiles2.version>2.1.0.RELEASE</thymeleaf.tiles2.version>
       <spring.version>3.2.5.RELEASE</spring.version>
       <struts1.version>1.3.10</struts1.version>
