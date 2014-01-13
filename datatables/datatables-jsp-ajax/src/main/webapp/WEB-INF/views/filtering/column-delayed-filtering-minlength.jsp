@@ -1,9 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="../common/taglib.jsp"%>
 
-<!-- Update the current scope with extra functions needed for rendering -->
-<dandelion:assets scopes="custom-rendering" />
-
 <div class="row-fluid row-intro">
    <div class="span12">
       <h3>Column delayed filtering with min length</h3>
@@ -20,7 +17,7 @@
          <datatables:column title="FirstName" property="firstName" />
          <datatables:column title="LastName" property="lastName" />
          <datatables:column title="City" property="address.town.name" filterable="true" filterMinLength="3" />
-         <datatables:column title="Mail" property="mail" renderFunction="mailify" />
+         <datatables:column title="Mail" property="mail" renderFunction="custom-rendering#mailify" />
       </datatables:table>
       
    </div>

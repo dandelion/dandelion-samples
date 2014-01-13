@@ -1,0 +1,14 @@
+{
+    "scope" : "ajax",
+    "parent": "none",
+    "assets": [
+		{
+		    "name": "ajax",
+		    "version": "1.0.0",
+		    "type": "js",
+		    "locations": {
+		        "webapp": "/js/ajax.js"
+		    }
+		}
+    ]
+}

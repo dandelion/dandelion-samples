@@ -37,11 +37,13 @@
                   <li class="dropdown">
                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Server-side processing <b class="caret"></b></a>
                      <ul class="dropdown-menu">
-                        <li><a href="${serverSideUrl}/index">Enabling server-side processing</a></li>
+                        <li><a href="${serverSideUrl}/enabling-server-side-processing">Enabling server-side processing</a></li>
                         <li><a href="${serverSideUrl}/pipelining-data">Pipelining data</a></li>
                         <li><a href="${serverSideUrl}/pipelining-data-with-custom-pipesize">Pipelining data with custom pipe size</a></li>
                         <li><a href="${serverSideUrl}/column-custom-rendering">Column custom rendering</a></li>
                         <li><a href="${serverSideUrl}/custom-ajax-request">Custom AJAX request</a></li>
+                        <li><a href="${serverSideUrl}/data-default-reloading">Data default reloading</a></li>
+                        <li><a href="${serverSideUrl}/data-custom-reloading">Data custom reloading</a></li>
                      </ul>
                   </li>
                   <li class="dropdown">
@@ -49,6 +51,8 @@
                      <ul class="dropdown-menu">
                         <li><a href="${filteringUrl}/column-delayed-filtering-minlength">Column delayed filtering with min length</a></li>
                         <li><a href="${filteringUrl}/global-delayed-filtering">Global delayed filtering</a></li>
+                        <li><a href="${filteringUrl}/filtering-onclick">Filtering on click</a></li>
+                        <li><a href="${filteringUrl}/filtering-onclick-with-external-form">Filtering on click with external form</a></li>
                      </ul>
                   </li>
                </ul>

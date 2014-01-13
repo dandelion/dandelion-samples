@@ -16,6 +16,9 @@
          <code>mailify</code>
          function (used to turn a string into a mailto link).
       </p>
+      <p>
+         Note the use of the special syntax: <code>scopeToLoad#functionName</code>.
+      </p>
    </div>
 </div>
 
@@ -24,5 +27,5 @@
    <datatables:column title="FirstName" property="firstName" />
    <datatables:column title="LastName" property="lastName" />
    <datatables:column title="City" property="address.town.name" />
-   <datatables:column title="Mail" property="mail" renderFunction="mailify" />
+   <datatables:column title="Mail" property="mail" renderFunction="custom-rendering#mailify" />
 </datatables:table>
