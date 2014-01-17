@@ -63,7 +63,3 @@
 </tr>
 </tbody>
 </table>
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/dandelion/dandelion-samples/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
