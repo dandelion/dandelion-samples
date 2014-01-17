@@ -1,22 +1,47 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" xmlns:dt="http://www.thymeleaf.org/dandelion/datatables"
-   xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorator="common/layout">
+<html xmlns:th="http://www.thymeleaf.org" 
+      xmlns:dt="http://www.thymeleaf.org/dandelion/datatables"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" 
+      layout:decorator="common/layout">
 
 <body>
    <div layout:fragment="content">
       <div class="row-fluid row-intro">
          <div class="span12">
-            <h3>Extension</h3>
+            <h3>Activating a custom extension</h3>
+            <p>As for plugin (Scroller, FixedHeader), you can also plug-in your own extension.</p>
             <p>
-               This example shows a table configured with the
-               <code>datatables.properties</code>
-               file only.
+               The table below has been modified by the extension
+               <code>com.github.dandelion.datatables.web.extension.MyAwesomeExtension</code>
+               in several ways:
             </p>
-            <p>
-               Note in the source code that no attribute is required since the
-               <code>global</code>
-               group is always active in all tables.
-            </p>
+            <ul>
+               <li>First in the DataTables configuration:
+                  <ul>
+                     <li>the <code>sDom</code> parameter has been overriden to only display the
+                        table itself and the pagination control
+                     </li>
+                     <li>the default pagination type has been changed in favour of the <i>four_button</i>
+                        one
+                     </li>
+                  </ul>
+               </li>
+               <li>Next in the HTML markup:
+                  <ul>
+                     <li>A CSS class <code>myClass</code> has been assigned to the <code>&lt;table&gt;</code>
+                        tag
+                     </li>
+                  </ul>
+               </li>
+               <li>And also the assets loaded in the page:
+                  <ul>
+                     <li>Because of the <i>four_button</i> pagination type, which requires
+                        extra Javascript code. So the scope <code>ddl-dt-paging-fourbutton</code>
+                        has been added to the current request.
+                     </li>
+                  </ul>
+               </li>
+            </ul>
          </div>
       </div>
 
@@ -43,7 +68,7 @@
                      <td th:text="${person?.firstName}">John</td>
                      <td th:text="${person?.address?.town?.name}">Nobody knows!</td>
                      <td th:text="${person?.mail}">john@doe.com</td>
-                     <td th:text="${person?.salary}">€1000</td>
+                     <td th:text="${'&euro;' + person?.salary}">&euro;1000</td>
                      <td th:text="${#dates.format(person?.birthDate, 'dd-MM-yyyy')}">23-10-1980</td>
                      <td th:text="${person?.company?.name}">Amazon</td>
                   </tr>
