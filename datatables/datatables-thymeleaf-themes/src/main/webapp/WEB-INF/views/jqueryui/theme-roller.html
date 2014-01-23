@@ -2,10 +2,7 @@
    <div class="span12">
       <h3>ThemeRoller</h3>
       <p>
-         In the following example, the "black-tie" theme option from <a href="http://jqueryui.com/themeroller/">ThemeRoller</a> has been selected.
-      </p>
-      <p>
-         Much more theme options are available. See the <a href="http://dandelion.github.io/datatables/docs/ref/configuration#cssconfiguration">documentation</a>.
+         In the following example, you can easily change to another theme among the available themes from <a href="http://jqueryui.com/themeroller/">ThemeRoller</a>.
       </p>
    </div>
 </div>
@@ -13,7 +10,38 @@
 <div class="row-fluid">
    <div class="span12">
 
-      <table id="myTableId" dt:table="true" dt:theme="jqueryui" dt:themeOption="blacktie">
+      <p>
+         Choose a theme option:
+         <select id="themeRoller" onchange="myFunc();">
+            <option value="">Default theme</option>
+            <option value="blacktie" th:selected="${themeName == 'blacktie'}">blacktie</option>
+            <option value="blitzer" th:selected="${themeName == 'blitzer'}">blitzer</option>
+            <option value="cupertino" th:selected="${themeName == 'cupertino'}">cupertino</option>
+            <option value="darkhive" th:selected="${themeName == 'darkhive'}">darkhive</option>
+            <option value="dotluv" th:selected="${themeName == 'dotluv'}">dotluv</option>
+            <option value="eggplant" th:selected="${themeName == 'eggplant'}">eggplant</option>
+            <option value="excitebike" th:selected="${themeName == 'excitebike'}">excitebike</option>
+            <option value="flick" th:selected="${themeName == 'flick'}">flick</option>
+            <option value="hotsneaks" th:selected="${themeName == 'hotsneaks'}">hotsneaks</option>
+            <option value="humanity" th:selected="${themeName == 'humanity'}">humanity</option>
+            <option value="lefrog" th:selected="${themeName == 'lefrog'}">lefrog</option>
+            <option value="mintchoc" th:selected="${themeName == 'mintchoc'}">mintchoc</option>
+            <option value="overcast" th:selected="${themeName == 'overcast'}">overcast</option>
+            <option value="peppergrinder" th:selected="${themeName == 'peppergrinder'}">peppergrinder</option>
+            <option value="redmond" th:selected="${themeName == 'redmond'}">redmond</option>
+            <option value="smoothness" th:selected="${themeName == 'smoothness'}">smoothness</option>
+            <option value="southstreet" th:selected="${themeName == 'southstreet'}">southstreet</option>
+            <option value="start" th:selected="${themeName == 'start'}">start</option>
+            <option value="sunny" th:selected="${themeName == 'sunny'}">sunny</option>
+            <option value="swankypurse" th:selected="${themeName == 'swankypurse'}">swankypurse</option>
+            <option value="trontastic" th:selected="${themeName == 'trontastic'}">trontastic</option>
+            <option value="uidarkness" th:selected="${themeName == 'uidarkness'}">uidarkness</option>
+            <option value="uilightness" th:selected="${themeName == 'uilightness'}">uilightness</option>
+            <option value="vader" th:selected="${themeName == 'vader'}">vader</option>
+         </select>
+      </p>
+      
+      <table id="myTableId" dt:table="true" dt:theme="jqueryui" dt:themeOption="${themeName}">
          <thead>
             <tr>
                <th>Id</th>
@@ -33,12 +61,17 @@
                <td th:text="${person?.firstName}">John</td>
                <td th:text="${person?.address?.town?.name}">Nobody knows!</td>
                <td th:text="${person?.mail}">john@doe.com</td>
-               <td th:text="${person?.salary}">€1000</td>
+               <td th:text="${person?.salary} + '&euro;'">€1000</td>
                <td th:text="${#dates.format(person?.birthDate, 'dd-MM-yyyy')}">23-10-1980</td>
                <td th:text="${person?.company?.name}">Amazon</td>
             </tr>
          </tbody>
       </table>
-
+      
+      <script>
+      function myFunc(){
+    	  window.location='/datatables-thymeleaf-themes/jqueryui/theme-roller?theme=' + document.getElementById('themeRoller').value;
+      }
+      </script>
    </div>
 </div>

@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.github.dandelion.core.utils.StringUtils;
 import com.github.dandelion.datatables.model.Person;
 import com.github.dandelion.datatables.service.PersonService;
 
@@ -54,8 +55,14 @@ public class SampleController {
 		return "bootstrap3." + page;
 	}
 	
+	
 	@RequestMapping(value = "/jqueryui/{page}")
-	public String goToBasicJqueryuiExample(@PathVariable String page) {
+	public String goToBasicJqueryuiExample(@PathVariable String page, HttpServletRequest request) {
+		String themeName = request.getParameter("theme");
+		if(StringUtils.isNotBlank(themeName)){
+			request.setAttribute("themeName", themeName);
+		}
+		
 		return "jqueryui." + page;
 	}
 }
