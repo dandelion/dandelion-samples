@@ -1,0 +1,14 @@
+{
+	"scope": "scope1",
+	"parent" : "jquery",
+    "assets": [
+        {
+            "name": "asset1", 
+            "type": "js", 
+            "version": "1.0.0",
+        	"locations": {
+        		"webapp": "assets/js/asset1.js"
+        	}
+        }
+    ]
+}
