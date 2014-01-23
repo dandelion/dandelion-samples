@@ -30,96 +30,122 @@ import com.github.dandelion.datatables.service.PersonService;
  * @author Thibault Duchateau
  */
 @Controller
-@RequestMapping(value = "/export")
 public class ExportController {
 	
 	@Autowired
 	private PersonService personService;
 	
-	@RequestMapping(produces = "text/csv")
+	@RequestMapping(value = "/export", produces = "text/csv")
 	public void csv(@DatatablesParams DatatablesCriterias criterias, HttpServletRequest request, HttpServletResponse response) throws ExportException, IOException {
 		
+		// Get data to export
 		List<Person> persons = personService.findPersonsWithDatatablesCriterias(criterias).getRows();
 		
+		// Build the export configuration
+		// The custom format "myFormat" is just a wrapper around pdf
 		ExportConf exportCsvConf = new ExportConf.Builder("csv")
 				.header(true)
-				.exportClass(new CsvExport().getClass().getName())
+				.exportClass(new CsvExport())
 				.build();
 
-		HtmlTable table = new HtmlTableBuilder<Person>().newBuilder("tableId", persons, request)
+		// Build the table to export from the data and the export configuration
+		HtmlTable table = new HtmlTableBuilder<Person>().newBuilder("tableId", persons, request, exportCsvConf)
 				.column().fillWithProperty("id").title("Id")
 				.column().fillWithProperty("firstName").title("Firtname")
 				.column().fillWithProperty("lastName").title("Lastname")
 				.column().fillWithProperty("address.town.name").title("City")
 				.column().fillWithProperty("mail").title("Mail")
-				.configureExport(exportCsvConf)
+				.column().fillWithProperty("birthDate", "{0,date,dd-MM-yyyy}").title("BirthDate")
 				.build();
 
+		// Render the export in the browser
 		ExportUtils.renderExport(table, exportCsvConf, response);
 	}
 	
-	@RequestMapping(produces = "application/xml")
+	@RequestMapping(value = "/export", produces = "application/xml")
 	public void xml(@DatatablesParams DatatablesCriterias criterias, HttpServletRequest request, HttpServletResponse response) throws ExportException, IOException {
 		
 		List<Person> persons = personService.findPersonsWithDatatablesCriterias(criterias).getRows();
 		
 		ExportConf exportXmlConf = new ExportConf.Builder("xml")
-				.exportClass(new XmlExport().getClass().getName())
+				.exportClass(new XmlExport())
 				.build();
 		
-		HtmlTable table = new HtmlTableBuilder<Person>().newBuilder("tableId", persons, request)
+		HtmlTable table = new HtmlTableBuilder<Person>().newBuilder("tableId", persons, request, exportXmlConf)
 				.column().fillWithProperty("id").title("Id")
 				.column().fillWithProperty("firstName").title("Firtname")
 				.column().fillWithProperty("lastName").title("Lastname")
 				.column().fillWithProperty("address.town.name").title("City")
 				.column().fillWithProperty("mail").title("Mail")
-				.configureExport(exportXmlConf)
+				.column().fillWithProperty("birthDate", "{0,date,dd-MM-yyyy}").title("BirthDate")
 				.build();
 		
 		ExportUtils.renderExport(table, exportXmlConf, response);
 	}
 	
-	@RequestMapping(produces = "application/pdf")
+	@RequestMapping(value = "/export", produces = "application/pdf")
 	public void pdf(@DatatablesParams DatatablesCriterias criterias, HttpServletRequest request, HttpServletResponse response) throws ExportException, IOException {
 		
 		List<Person> persons = personService.findPersonsWithDatatablesCriterias(criterias).getRows();
 		
 		ExportConf exportPdfConf = new ExportConf.Builder("pdf")
 				.header(true)
-				.exportClass(new PdfExport().getClass().getName())
+				.exportClass(new PdfExport())
 				.build();
-		
+
 		HtmlTable table = new HtmlTableBuilder<Person>().newBuilder("tableId", persons, request)
 				.column().fillWithProperty("id").title("Id")
 				.column().fillWithProperty("firstName").title("Firtname")
 				.column().fillWithProperty("lastName").title("Lastname")
 				.column().fillWithProperty("address.town.name").title("City")
 				.column().fillWithProperty("mail").title("Mail")
-				.configureExport(exportPdfConf)
+				.column().fillWithProperty("birthDate", "{0,date,dd-MM-yyyy}").title("BirthDate")
 				.build();
 		
 		ExportUtils.renderExport(table, exportPdfConf, response);
 	}
 	
-	@RequestMapping(produces = "application/vnd.ms-excel")
+	@RequestMapping(value = "/export", produces = "application/vnd.ms-excel")
 	public void xls(@DatatablesParams DatatablesCriterias criterias, HttpServletRequest request, HttpServletResponse response) throws ExportException, IOException {
 		
 		List<Person> persons = personService.findPersonsWithDatatablesCriterias(criterias).getRows();
 		
 		ExportConf exportXlsConf = new ExportConf.Builder("xls")
 			.header(true)
-			.exportClass(new XlsExport().getClass().getName())
+			.exportClass(new XlsExport())
 			.build();
 		
-		HtmlTable table = new HtmlTableBuilder<Person>().newBuilder("tableId", persons, request)
+		HtmlTable table = new HtmlTableBuilder<Person>().newBuilder("tableId", persons, request, exportXlsConf)
 				.column().fillWithProperty("id").title("Id")
 				.column().fillWithProperty("firstName").title("Firtname")
 				.column().fillWithProperty("lastName").title("Lastname")
 				.column().fillWithProperty("address.town.name").title("City")
 				.column().fillWithProperty("mail").title("Mail")
-				.configureExport(exportXlsConf)
+				.column().fillWithProperty("birthDate", "{0,date,dd-MM-yyyy}").title("BirthDate")
 				.build();
 		
 		ExportUtils.renderExport(table, exportXlsConf, response);
+	}
+	
+	@RequestMapping(value = "/export-custom-content")
+	public void pdfWithCustomContent(@DatatablesParams DatatablesCriterias criterias, HttpServletRequest request, HttpServletResponse response) throws ExportException, IOException {
+		
+		List<Person> persons = personService.findPersonsWithDatatablesCriterias(criterias).getRows();
+		
+		ExportConf exportPdfConf = new ExportConf.Builder("pdf")
+				.header(true)
+				.exportClass(new PdfExport())
+				.build();
+
+		HtmlTable table = new HtmlTableBuilder<Person>().newBuilder("tableId", persons, request)
+				.column().fillWithProperty("id").title("Id")
+				.column().fillWith("This is the firstName! =>").andProperty("firstName").title("Firtname")
+				.column().fillWithProperty("lastName").and(" <= And this was the lastName!").title("Lastname")
+				.column().fillWithProperty("address.town.name").title("City")
+				.column().fillWithProperty("mail").title("Mail")
+				.column().fillWithProperty("birthDate", "{0,date,dd-MM-yyyy}").title("BirthDate")
+				.build();
+		
+		ExportUtils.renderExport(table, exportPdfConf, response);
 	}
 }

@@ -53,4 +53,14 @@ public class SampleController {
 	public String goToAjaxExample(@PathVariable String page) {
 		return "ajax/" + page;
 	}
+	
+	@RequestMapping(value = "/options/{page}")
+	public String goToExportOptionsExample(@PathVariable String page) {
+		return "options/" + page;
+	}
+	
+	@RequestMapping(value = "/custom/{page}")
+	public String goToAllOtherPage(@PathVariable String page) {
+		return "custom/" + page;
+	}
 }

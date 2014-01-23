@@ -6,6 +6,9 @@
       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
+   <!-- Import Dandelion configuration -->
+   <import resource="classpath:dandelion-datatables.xml" />
+   
    <!-- Enables scanning for @Controller annotations -->
    <mvc:annotation-driven />
    

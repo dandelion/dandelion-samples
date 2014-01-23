@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+      xmlns:dt="http://www.thymeleaf.org/dandelion/datatables">
+
+<head th:include="common/head::head" />
+<body>
+   <div th:replace="common/navbar::navbar"></div>
+   <div class="container">
+
+      <div class="row-fluid row-intro">
+         <div class="span12">
+            <h3>DOM sources / Controller-based export</h3>
+            <p>If you have the necessary plumbing server-side, you can also export from a
+               controller with a DOM source. The export file will be much more precise than with a
+               filter since you will see in the export exactly what you see in the browser.</p>
+         </div>
+      </div>
+
+      <div class="row-fluid">
+         <div class="span12">
+
+            <div dt:conf="myTableId">
+               <div dt:confType="export" dt:type="pdf" dt:cssClass="btn"></div>
+               <div dt:confType="export" dt:type="csv" dt:cssClass="btn"></div>
+               <div dt:confType="export" dt:type="xls" dt:cssClass="btn"></div>
+               <div dt:confType="export" dt:type="xml" dt:cssClass="btn"></div>
+            </div>
+
+            <table id="myTableId" dt:table="true" dt:export="pdf,csv,xls,xml">
+               <thead>
+                  <tr>
+                     <th dt:property="id">Id</th>
+                     <th dt:property="firstName">Firstname</th>
+                     <th dt:property="lastName">Lastname</th>
+                     <th dt:property="address.town.name">City</th>
+                     <th dt:property="mail">Mail</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr th:each="person : ${persons}">
+                     <td th:text="${person.id}">1</td>
+                     <td th:text="${person.firstName}">John</td>
+                     <td th:text="${person.lastName}">Doe</td>
+                     <td th:text="${person?.address?.town?.name}">Nobody knows!</td>
+                     <td th:text="${person.mail}">john@doe.com</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div>
+   </div>
+</body>
+</html>
