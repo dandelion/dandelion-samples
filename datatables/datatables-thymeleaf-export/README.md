@@ -1,20 +1,24 @@
 datatables-thymeleaf-export
 =================================================================
 
-A sample which show how to use global and configuration groups in a Thymeleaf and Spring-based project.
+A sample which shows how to export data using both DOM and AJAX sources, based on Spring3.
 
 ## Technology stack
 
  - Thymeleaf 2.1.1.RELEASE
  - Dandelion-Datatables 0.10.0
+ - Jackson 1.9.11
  - Spring 3.2.5.RELEASE
-
+ - Hibernate 4.2.7.Final / JPA 2.0
+ - H2 database
+ 
 ## Features
-		
- - Data source type: DOM
- - Global configuration
- - Configuration group
- - Configuration local overloading
+
+ - __Data source type__: DOM + AJAX + server-side processing
+ - Filter-based export (DOM sources)
+ - Controller-based export (DOM and AJAX sources)
+ - Customized column content
+ - Customized export
 
 ## Running this sample
 
@@ -26,7 +30,7 @@ Using __Jetty__:
 
     mvn jetty:run
 
-You can then access the sample here: [http://localhost:9090/datatables-thymeleaf-configuration-groups](http://localhost:9090/datatables-thymeleaf-configuration-groups)
+You can then access the sample here: [http://localhost:9090/datatables-thymeleaf-export](http://localhost:9090/datatables-thymeleaf-export)
 
 ## Bug/improvement
 
