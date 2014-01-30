@@ -1,6 +1,6 @@
-<!doctype html>
-<html xmlns:th="http://www.thymeleaf.org" xmlns:ddl="http://www.thymeleaf.org/dandelion"
-   xmlns:dt="http://www.thymeleaf.org/dandelion/datatables" ddl:assets-scopes="sample,bootstrap2">
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:dt="http://www.thymeleaf.org/dandelion/datatables">
 
 <head th:include="common/head::head" />
 <body>
@@ -23,7 +23,7 @@
                <th>Id</th>
                <th>Firstname</th>
                <th>Lastname</th>
-               <th dt:filterable="true" dt:filtertype="select" dt:filtervalues="'myPredefinedValues'">City</th>
+               <th dt:filterable="true" dt:filtertype="select" dt:filtervalues="myPredefinedValues">City</th>
                <th>Mail</th>
             </tr>
          </thead>

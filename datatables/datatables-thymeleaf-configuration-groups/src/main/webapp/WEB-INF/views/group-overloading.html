@@ -28,7 +28,7 @@
          </thead>
          <tbody>
             <tr th:each="person : ${persons}">
-               <td th:text="${person.id}">1</td>
+               <td th:text="${person?.id}">1</td>
                <td th:text="${person?.lastName}">Doe</td>
                <td th:text="${person?.firstName}">John</td>
             </tr>
@@ -48,7 +48,7 @@
          </thead>
          <tbody>
             <tr th:each="person : ${persons}">
-               <td th:text="${person.id}">1</td>
+               <td th:text="${person?.id}">1</td>
                <td th:text="${person?.lastName}">Doe</td>
                <td th:text="${person?.firstName}">John</td>
             </tr>

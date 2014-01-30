@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" xmlns:ddl="http://www.thymeleaf.org/dandelion"
-   xmlns:dt="http://www.thymeleaf.org/dandelion/datatables" ddl:assets-scopes="sample,bootstrap2">
+<html xmlns:th="http://www.thymeleaf.org" 
+      xmlns:dt="http://www.thymeleaf.org/dandelion/datatables">
 
 <head th:include="common/head::head" />
 <body>
@@ -32,12 +32,12 @@
                </thead>
                <tbody>
                   <tr th:each="person : ${persons}">
-                     <td th:text="${person.id}">1</td>
+                     <td th:text="${person?.id}">1</td>
                      <td th:text="${person?.lastName}">Doe</td>
                      <td th:text="${person?.firstName}">John</td>
                      <td th:text="${person?.address?.town?.name}">Nobody knows!</td>
                      <td th:text="${person?.mail}">john@doe.com</td>
-                     <td th:text="${person?.salary}">€1000</td>
+                     <td th:text="${'&euro;' + person?.salary}">&euro;1000</td>
                      <td th:text="${#dates.format(person?.birthDate, 'dd-MM-yyyy')}">23-10-1980</td>
                      <td th:text="${person?.company?.name}">Amazon</td>
                   </tr>

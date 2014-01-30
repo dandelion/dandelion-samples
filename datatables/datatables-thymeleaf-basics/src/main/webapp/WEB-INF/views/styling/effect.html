@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org"
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" 
       xmlns:dt="http://www.thymeleaf.org/dandelion/datatables">
 
 <head th:include="common/head::head" />
@@ -9,24 +9,27 @@
 
       <div class="row-fluid row-intro">
          <div class="span12">
-            <h3>Sorting types: natural, date</h3>
+            <h3>Applying effect</h3>
+            <p>
+               If you wish, you can apply a "fadein" effect to the table and change the effect duration.
+            </p>
+            <p>
+               The table below will fade in in 1500ms.
+            </p>
          </div>
       </div>
-   
+
       <div class="row-fluid">
          <div class="span12">
-               
-            <table id="myTableId" dt:table="true">
+
+            <table id="myTableId" dt:table="true" dt:appear="fadein,1500">
                <thead>
                   <tr>
                      <th>Id</th>
-                     <th>FirstName</th>
-                     <th>LastName</th>
+                     <th>Firstname</th>
+                     <th>Lastname</th>
                      <th>City</th>
-                     <th dt:sortType="natural">Mail</th>
-                     <th dt:sortType="date">Birthdate</th>
-                     <th dt:sortType="natural">Pocket money</th>
-                     <th>Company</th>
+                     <th>Mail</th>
                   </tr>
                </thead>
                <tbody>
@@ -36,13 +39,10 @@
                      <td th:text="${person?.lastName}">Doe</td>
                      <td th:text="${person?.address?.town?.name}">Nobody knows!</td>
                      <td th:text="${person?.mail}">john@doe.com</td>
-                     <td th:text="${#dates.format(person?.birthDate, 'dd/MM/yyyy')}">00/12/2000</td>
-                     <td th:text="${'&euro;' + person?.salary}">€100</td>
-                     <td th:text="${person?.company?.name}">Company</td>
                   </tr>
                </tbody>
             </table>
-      
+            
          </div>
       </div>
    </div>

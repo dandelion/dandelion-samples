@@ -33,14 +33,14 @@
          <div class="span12">
 
             <table id="myTableId" dt:table="true" dt:url="@{/ajax/persons}"
-               dt:serverside="true" dt:processing="true" dt:reloadSelector="'#reload'">
+               dt:serverside="true" dt:processing="true" dt:reloadSelector="#reload">
                <thead>
                   <tr>
-                     <th dt:property="'id'">Id</th>
-                     <th dt:property="'firstName'">Firstname</th>
-                     <th dt:property="'lastName'">Lastname</th>
-                     <th dt:property="'address.town.name'">City</th>
-                     <th dt:property="'mail'">Mail</th>
+                     <th dt:property="id">Id</th>
+                     <th dt:property="firstName">Firstname</th>
+                     <th dt:property="lastName">Lastname</th>
+                     <th dt:property="address.town.name">City</th>
+                     <th dt:property="mail">Mail</th>
                   </tr>
                </thead>
             </table>

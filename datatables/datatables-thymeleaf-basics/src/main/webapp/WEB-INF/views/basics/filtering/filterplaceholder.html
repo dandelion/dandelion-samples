@@ -1,6 +1,6 @@
-<!doctype html>
-<html xmlns:th="http://www.thymeleaf.org" xmlns:ddl="http://www.thymeleaf.org/dandelion"
-   xmlns:dt="http://www.thymeleaf.org/dandelion/datatables" ddl:assets-scopes="sample,bootstrap2">
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:dt="http://www.thymeleaf.org/dandelion/datatables">
 
 <head th:include="common/head::head" />
 <body>
@@ -10,6 +10,13 @@
       <div class="row-fluid row-intro">
          <div class="span12">
             <h3>Filtering using different filter placeholders</h3>
+            <p>
+               By default, as soon as a column is filterable, filtering elements will be added in
+               the tfoot but you can configure the filter placeholder.
+            </p>
+            <p>
+               In this example, the filtering elements are added after the first header row.
+            </p>
          </div>
       </div>
 

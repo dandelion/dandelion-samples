@@ -39,19 +39,19 @@
       </div>
 
       <div class="row-fluid">
-         <div class="span12" ddl:assets-scopes="custom-rendering,filtering,moment,bootstrap-datepicker">
+         <div class="span12" ddl:assets-scopes="filtering,moment,bootstrap-datepicker">
 
-            <table id="myTableId" dt:table="true" dt:url="@{/ajax/persons}" dt:serverside="true" dt:processing="true" dt:filterplaceholder="none" dt:filterSelector="'#filterButton'" dt:filterClearSelector="'#filterClearButton'">
+            <table id="myTableId" dt:table="true" dt:url="@{/ajax/persons}" dt:serverside="true" dt:processing="true" dt:filterplaceholder="none" dt:filterSelector="#filterButton" dt:filterClearSelector="#filterClearButton">
                <thead>
                   <tr>
-                     <th dt:property="'id'" dt:name="'id'">Id</th>
-                     <th dt:property="'firstName'" dt:name="'firstName'" dt:filterable="true" dt:selector="'#firstNameFilter'">Firstname</th>
-                     <th dt:property="'lastName'" dt:name="'lastName'" dt:filterable="true"  dt:selector="'#lastNameFilter'">Lastname</th>
-                     <th dt:property="'address.town.name'" dt:name="'town'" dt:filterable="true" dt:selector="'#cityFilter'">City</th>
-                     <th dt:property="'mail'" dt:name="'mail'" dt:renderFunction="'mailify'">Mail</th>
-                     <th dt:property="'salary'" dt:name="'salary'" dt:filterable="true" dt:selector="'#salaryFilter'" dt:filterType="number_range" dt:filterCssClass="input-small">Salary</th>
-                     <th dt:property="'birthDate'" dt:name="'birthDate'" dt:renderFunction="toDate" dt:filterable="true" dt:filterType="date_range" dt:filterDateFormat="'yyyy-mm-dd'" dt:filterCssClass="input-small" dt:selector="'#birthDateFilter'">BirthDate</th>
-                     <th dt:property="'company.name'" dt:name="'company'" dt:filterable="true" dt:selector="'#company'" dt:filterType="select" dt:filterValues="predefinedValues">Company</th>
+                     <th dt:property="id" dt:name="id">Id</th>
+                     <th dt:property="firstName" dt:name="firstName" dt:filterable="true" dt:selector="#firstNameFilter">Firstname</th>
+                     <th dt:property="lastName" dt:name="lastName" dt:filterable="true"  dt:selector="#lastNameFilter">Lastname</th>
+                     <th dt:property="address.town.name" dt:name="town" dt:filterable="true" dt:selector="#cityFilter">City</th>
+                     <th dt:property="mail" dt:name="mail" dt:renderFunction="mailify">Mail</th>
+                     <th dt:property="salary" dt:name="salary" dt:renderFunction="custom-rendering#toCurrency" dt:filterable="true" dt:selector="#salaryFilter" dt:filterType="number_range" dt:filterCssClass="input-small">Salary</th>
+                     <th dt:property="birthDate" dt:name="birthDate" dt:renderFunction="custom-rendering#toDate" dt:filterable="true" dt:filterType="date_range" dt:filterDateFormat="yyyy-mm-dd" dt:filterCssClass="input-small" dt:selector="#birthDateFilter">BirthDate</th>
+                     <th dt:property="company.name" dt:name="company" dt:filterable="true" dt:selector="#company" dt:filterType="select" dt:filterValues="predefinedValues">Company</th>
                   </tr>
                </thead>
             </table>

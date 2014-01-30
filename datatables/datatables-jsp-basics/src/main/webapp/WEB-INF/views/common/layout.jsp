@@ -45,7 +45,8 @@
                            <ul class="dropdown-menu">
                               <li><a href="${sortingUrl}/enable-disable-sorting">Enable/disable sorting</a></li>
                               <li><a href="${sortingUrl}/individualcolumnsorting">Individual column sorting</a></li>
-                              <li><a href="${sortingUrl}/sortinginit">Sorting initialization</a></li>
+                              <li><a href="${sortingUrl}/default-sorting-init">Default sorting initialization</a></li>
+                              <li><a href="${sortingUrl}/custom-sorting-init">Custom sorting initialization</a></li>
                               <li><a href="${sortingUrl}/sortingdirectioncontrol">Sorting direction control</a></li>
                               <li><a href="${sortingUrl}/naturalsort">Sorting type: natural, date</a></li>
                            </ul>
@@ -54,12 +55,13 @@
                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Filtering <b class="caret"></b></a>
                            <ul class="dropdown-menu">
                               <li><a href="${filteringUrl}/enable-disable-global-filtering">Enable/disable global filtering</a></li>
-                              <li><a href="${filteringUrl}/extraform">Using an extra form</a></li>
                               <li><a href="${filteringUrl}/input">Using input fields</a></li>
                               <li><a href="${filteringUrl}/select">Using a drop-down list</a></li>
                               <li><a href="${filteringUrl}/select-with-values">Using a drop-down list with custom values</a></li>
                               <li><a href="${filteringUrl}/filterplaceholder">Using different filter placeholders</a></li>
+                              <li><a href="${filteringUrl}/external-form">Using an external form</a></li>
                               <li><a href="${filteringUrl}/exclude-column-from-global-filtering">Exclude column from global filtering</a></li>
+                              <li><a href="${filteringUrl}/filtering-onclick">Filtering on click</a></li>
                            </ul>
                         </li>
                         <li class="dropdown-submenu">

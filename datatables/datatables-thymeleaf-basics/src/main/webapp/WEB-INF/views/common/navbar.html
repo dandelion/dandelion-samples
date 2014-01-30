@@ -21,9 +21,10 @@
                               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sorting <b class="caret"></b></a>
                               <ul class="dropdown-menu">
                                  <li><a th:href="@{/basics/sorting/enable-disable-sorting}">Enable/disable sorting</a></li>
-                                 <li><a th:href="@{/basics/sorting/individualcolumnsorting}">Individual column sorting</a></li>
-                                 <li><a th:href="@{/basics/sorting/sortinginit}">Sorting initialization</a></li>
-                                 <li><a th:href="@{/basics/sorting/sortingdirectioncontrol}">Sorting direction control</a></li>
+                                 <li><a th:href="@{/basics/sorting/individual-column-sorting}">Individual column sorting</a></li>
+                                 <li><a th:href="@{/basics/sorting/sorting-init}">Sorting initialization</a></li>
+                                 <li><a th:href="@{/basics/sorting/sorting-init-with-custom-order}">Sorting initialization with custom order</a></li>
+                                 <li><a th:href="@{/basics/sorting/sorting-direction-control}">Sorting direction control</a></li>
                                  <li><a th:href="@{/basics/sorting/naturalsort}">Sorting type: natural, date</a></li>
                               </ul>
                            </li>
@@ -31,12 +32,13 @@
                               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Filtering <b class="caret"></b></a>
                               <ul class="dropdown-menu">
                                  <li><a th:href="@{/basics/filtering/enable-disable-global-filtering}">Enable/disable global filtering</a></li>
-                                 <li><a th:href="@{/basics/filtering/extraform}">Using an extra form</a></li>
+                                 <li><a th:href="@{/basics/filtering/external-form}">Using an external form</a></li>
                                  <li><a th:href="@{/basics/filtering/input}">Using input fields</a></li>
                                  <li><a th:href="@{/basics/filtering/select}">Using a drop-down list</a></li>
                                  <li><a th:href="@{/basics/filtering/select-with-values}">Using a drop-down list with custom values</a></li>
                                  <li><a th:href="@{/basics/filtering/filterplaceholder}">Using different filter placeholders</a></li>
                                  <li><a th:href="@{/basics/filtering/exclude-column-from-global-filtering}">Exclude column from global filtering</a></li>
+                                 <li><a th:href="@{/basics/filtering/filtering-onclick}">Filtering onclick</a></li>
                               </ul>
                            </li>
                            <li class="dropdown-submenu">
@@ -61,12 +63,10 @@
                               <ul class="dropdown-menu">
                                  <li><a th:href="@{/basics/scrolling/scroll-horizontal}">Horizontal scrolling</a></li>
                                  <li><a th:href="@{/basics/scrolling/scroll-vertical}">Vertical scrolling</a></li>
-                                 <li><a th:href="@{/basics/scrolling/scroll-both}">Both</a></li>
                               </ul>
                            </li>
                         </ul>
                      </li>
-                     
                      <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Column rendering <b class="caret"></b></a>
                         <ul class="dropdown-menu">   
@@ -77,7 +77,13 @@
                         </ul>
                      </li>
                      <li><a th:href="@{/multiple-tables}">Multiple tables</a></li>
-                     <li><a th:href="@{/styling}">Styling</a></li>
+                     <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Styling <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                           <li><a th:href="@{/styling/styling}">Styling</a></li>
+                           <li><a th:href="@{/styling/effect}">Applying effects</a></li>
+                        </ul>
+                     </li>
                      <li><a th:href="@{/dom-positioning}">DOM positioning</a></li>
                   </ul>
                   <ul class="nav pull-right">

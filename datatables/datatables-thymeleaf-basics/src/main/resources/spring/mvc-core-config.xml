@@ -13,7 +13,7 @@
    <context:component-scan base-package="com.github.dandelion.datatables.web" />
 
    <!-- Dispatcher configuration for serving static resources -->
-   <mvc:resources location="/assets/img/" mapping="/img/**" />
+   <mvc:resources location="/assets/images/" mapping="/images/**" />
    <mvc:resources location="/assets/css/" mapping="/css/**" />
    <mvc:resources location="/assets/js/" mapping="/js/**" />
 

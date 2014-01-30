@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" xmlns:dt="http://www.thymeleaf.org/dandelion/datatables">
+<html xmlns:th="http://www.thymeleaf.org" 
+      xmlns:dt="http://www.thymeleaf.org/dandelion/datatables">
 
 <head th:include="common/head::head" />
 <body>
@@ -27,17 +28,17 @@
                      <th>Actions</th>
                   </tr>
                </thead>
-               <tbody th:remove="all-but-first">
+               <tbody>
                   <tr th:each="person : ${persons}">
-                     <td th:text="${person.id}">1</td>
-                     <td th:text="${person.firstName}">John</td>
-                     <td th:text="${person.lastName}">Doe</td>
+                     <td th:text="${person?.id}">1</td>
+                     <td th:text="${person?.firstName}">John</td>
+                     <td th:text="${person?.lastName}">Doe</td>
                      <td th:text="${person?.address?.town?.name}">Nobody knows!</td>
-                     <td th:text="${person.mail}">john@doe.com</td>
-                     <td><a th:onclick="'alert(\'Person ' + ${person.id} + ' deleted!\');'"
-                        class="btn btn-mini" title="Remove"><i class="icon-trash"></i></a> <a
-                        th:onclick="'alert(\'Person ' + ${person.id} + ' edited!\');'"
-                        class="btn btn-mini" title="Edit"><i class="icon-edit"></i></a></td>
+                     <td th:text="${person?.mail}">john@doe.com</td>
+                     <td>
+                        <a th:onclick="'alert(\'Person ' + ${person.id} + ' deleted!\');'" class="btn btn-mini" title="Remove"><i class="icon-trash"></i></a> 
+                        <a th:onclick="'alert(\'Person ' + ${person.id} + ' edited!\');'" class="btn btn-mini" title="Edit"><i class="icon-edit"></i></a>
+                     </td>
                   </tr>
                </tbody>
             </table>
