@@ -1,6 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="../common/taglib.jsp"%>
 
+<!-- Update the current scope with extra functions needed for rendering -->
+<dandelion:assets scopes="bootstrap-datepicker" />
+
 <div class="row-fluid row-intro">
    <div class="span12">
       <h3>Filtering on click with an external form</h3>
@@ -23,10 +26,8 @@
       <div id="lastNameFilter"></div>
       <div id="cityFilter"></div>
       <div id="companyFilter"></div>
-      Salary:
-      <div id="salaryFilter"></div>
-      BirthDate:
-      <div id="birthDateFilter"></div>
+      Salary: <div id="salaryFilter"></div>
+      BirthDate: <div id="birthDateFilter"></div>
    </div>
    <div class="span6">
       <a id="filterButton" class="btn btn-large btn-primary">Apply filters</a> 
@@ -37,15 +38,15 @@
 <div class="row-fluid">
    <div class="span12">
 
-      <datatables:table id="myTableId" url="/persons" serverSide="true" processing="true" filterPlaceholder="none" filterSelector="filterButton" filterClearSelector="#filterClearButton">
+      <datatables:table id="myTableId" url="/persons" serverSide="true" processing="true" filterPlaceholder="none" filterSelector="#filterButton" filterClearSelector="#filterClearButton">
          <datatables:column title="Id" name="id" property="id" />
-         <datatables:column title="FirstName" name="firstName" property="firstName" selector="firstNameFilter" />
-         <datatables:column title="LastName" name="lastName" property="lastName" selector="lastNameFilter" />
-         <datatables:column title="City" name="city" property="address.town.name" selector="#cityFilter" filterable="true" filterCssClass="input-medium" />
+         <datatables:column title="FirstName" name="firstName" property="firstName" selector="#firstNameFilter" />
+         <datatables:column title="LastName" name="lastName" property="lastName" selector="#lastNameFilter" />
+         <datatables:column title="City" name="city" property="address.town.name" filterable="true" filterCssClass="input-medium" selector="#cityFilter" />
          <datatables:column title="Mail" name="mail" property="mail" renderFunction="custom-rendering#mailify" />
-         <datatables:column title="Salary" name="salary" property="salary" selector="#salaryFilter" filterType="number_range" filterCssClass="input-small" />
-         <datatables:column title="BirthDate" name="birthDate" renderFunction="toDate" filterable="true" filterType="date_range" filterCssClass="input-small" selector="#birthDateFilter" />
-         <datatables:column title="Company" name="company" property="company.name" filterable="true" selector="#company" filterType="select" filterValues="filtering#predefinedValues" />
+         <datatables:column title="Salary" name="salary" property="salary" renderFunction="custom-rendering#toCurrency" filterable="true" filterType="number_range" filterCssClass="input-small" selector="#salaryFilter" />
+         <datatables:column title="BirthDate" name="birthDate" property="birthDate" renderFunction="moment,custom-rendering#toDate" filterable="true" filterType="date_range" filterDateFormat="yyyy-mm-dd" filterCssClass="input-small" selector="#birthDateFilter" />
+         <datatables:column title="Company" name="company" property="company.name" filterable="true" filterType="select" filterValues="filtering#predefinedValues" selector="#companyFilter" />
       </datatables:table>
             
    </div>

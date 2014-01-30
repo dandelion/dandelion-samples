@@ -3,5 +3,9 @@ function mailify(data, type, full) {
 }
 
 function toDate(data, type, full) {
-	return moment(new Date(data)).format('YYYY/MM/DD');
+	return moment(new Date(data)).format('YYYY-MM-DD');
+}
+
+function toCurrency(data, type, full) {
+	return "&euro;" + data;
 }

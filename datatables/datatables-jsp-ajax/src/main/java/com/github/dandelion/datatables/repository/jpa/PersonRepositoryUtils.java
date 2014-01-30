@@ -61,9 +61,29 @@ public class PersonRepositoryUtils {
 			}
 
 			for (ColumnDef columnDef : criterias.getColumnDefs()) {
-				if (columnDef.isFilterable() && StringUtils.isNotBlank(columnDef.getSearch())) {
-					paramList.add(" LOWER(p." + columnDef.getName()
-							+ ") LIKE '%?%'".replace("?", columnDef.getSearch().toLowerCase()));
+				if (columnDef.isFilterable()){
+					if (StringUtils.isNotBlank(columnDef.getSearchFrom())) {
+						if (columnDef.getName().equalsIgnoreCase("birthDate")) {
+							paramList.add("p." + columnDef.getName() + " >= '" + columnDef.getSearchFrom() + "'");
+						}
+						else {
+							paramList.add("p." + columnDef.getName() + " >= " + columnDef.getSearchFrom());
+						}
+					}
+
+					if (StringUtils.isNotBlank(columnDef.getSearchTo())) {
+						if (columnDef.getName().equalsIgnoreCase("birthDate")) {
+							paramList.add("p." + columnDef.getName() + " < '" + columnDef.getSearchTo() + "'");
+						}
+						else {
+							paramList.add("p." + columnDef.getName() + " < " + columnDef.getSearchTo());
+						}
+					}
+					
+					if(StringUtils.isNotBlank(columnDef.getSearch())) {
+						paramList.add(" LOWER(p." + columnDef.getName()
+								+ ") LIKE '%?%'".replace("?", columnDef.getSearch().toLowerCase()));
+					}
 				}
 			}
 
