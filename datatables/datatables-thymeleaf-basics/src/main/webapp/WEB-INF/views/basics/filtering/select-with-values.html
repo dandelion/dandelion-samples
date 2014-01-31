@@ -9,13 +9,19 @@
    
       <div class="row-fluid row-intro">
          <div class="span12">
-            <h3>Filtering using drop-down lists</h3>
+            <h3>Filtering using drop-down lists of predefined values</h3>
+            <p>
+               In this sample, the drop-down list used for filtering has been populated with
+               predefined values.
+            </p>
+            <p>
+               Note that we accessed the Javascript array of predefined values with the special
+               syntax:
+               <code>scopeName#javascriptObject</code>
+               .
+            </p>
          </div>
       </div>
-
-      <script>
-         var myPredefinedValues = ['Kalken', 'Sheffield', 'Oostende'];
-      </script>
 
       <table id="myTableId" dt:table="true">
          <thead>
@@ -23,7 +29,7 @@
                <th>Id</th>
                <th>Firstname</th>
                <th>Lastname</th>
-               <th dt:filterable="true" dt:filtertype="select" dt:filtervalues="myPredefinedValues">City</th>
+               <th dt:filterable="true" dt:filTertype="select" dt:filterValues="filtering#myPredefinedValues">City</th>
                <th>Mail</th>
             </tr>
          </thead>

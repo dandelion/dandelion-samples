@@ -10,6 +10,10 @@
       <div class="row-fluid row-intro">
          <div class="span12">
             <h3>Filtering onclick</h3>
+            <p>
+               The default behaviour of DataTables is to filter on keypress. But it this sample you
+               can apply the filters on a button click!
+            </p>
          </div>
       </div>
 
@@ -18,7 +22,7 @@
 
             <div dt:conf="myTableId">
                <div dt:confType="extrahtml" dt:uid="0" dt:cssStyle="float:right;">
-                  <a id="filterButton" value="Filter" class="btn btn-primary">Apply filters</a>
+                  <a id="filterButton" value="Filter" class="btn btn-primary" style="margin-right:5px;">Apply filters</a>
                   <a id="filterClearButton" value="Filter" class="btn btn-inverse">Clear filters</a>
                </div>
             </div>      
@@ -27,7 +31,7 @@
                <thead>
                   <tr>
                      <th dt:name="id">Id</th>
-                     <th dt:filterable="true" dt:name="firstname" dt:filtertype="select">Firstname</th>
+                     <th dt:filterable="true" dt:name="firstname" dt:filterType="select">Firstname</th>
                      <th dt:filterable="true" dt:name="lastname" >Lastname</th>
                      <th dt:filterable="true" dt:name="city" >City</th>
                      <th dt:name="mail" >Mail</th>

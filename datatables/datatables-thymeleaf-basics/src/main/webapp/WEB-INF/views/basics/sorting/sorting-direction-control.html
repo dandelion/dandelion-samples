@@ -10,6 +10,13 @@
       <div class="row-fluid row-intro">
          <div class="span12">
             <h3>Sorting direction control</h3>
+            <p>
+               This example shows that you can apply some sorting constraints to the columns.
+            </p>
+            <p>
+               The "City" column can be sorted in "ASC" and "DESC" directions whereas the "Mail"
+               column can only be sorted "DESC" direction.
+            </p>
          </div>
       </div>
 
@@ -22,8 +29,8 @@
                      <th dt:sortable="false">Id</th>
                      <th>Firstname</th>
                      <th>Lastname</th>
-                     <th dt:sortdir="asc,desc" >City</th>
-                     <th dt:sortdir="desc" >Mail</th>
+                     <th dt:sortDir="asc,desc" >City</th>
+                     <th dt:sortDir="desc" >Mail</th>
                   </tr>
                </thead>
                <tbody>

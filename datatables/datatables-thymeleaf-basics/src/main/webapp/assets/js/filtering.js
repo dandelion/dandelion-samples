@@ -1,0 +1,1 @@
+var myPredefinedValues = ['Portland', 'Strasbourg', 'Stonewall'];

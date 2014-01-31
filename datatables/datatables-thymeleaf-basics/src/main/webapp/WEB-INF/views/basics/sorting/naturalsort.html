@@ -10,6 +10,18 @@
       <div class="row-fluid row-intro">
          <div class="span12">
             <h3>Sorting types: natural, date</h3>
+            <p>
+               In this example, different sort types have been applied.
+            </p>
+            <p>
+               First in the "BirthDate" column: the "date" sort type is used, handy for the uk format: dd/mm/yy.
+            </p>
+            <p>
+               In both "Mail" and "Salary" columns, the "natural" sort type is used. Internally it
+               uses the
+               <a href="https://code.google.com/p/js-naturalsort/">naturalSort()</a> function by Jim
+               Palmer to provide natural sorting in DataTables.
+            </p>
          </div>
       </div>
    
@@ -25,7 +37,7 @@
                      <th>City</th>
                      <th dt:sortType="natural">Mail</th>
                      <th dt:sortType="date">Birthdate</th>
-                     <th dt:sortType="natural">Pocket money</th>
+                     <th dt:sortType="natural">Salary</th>
                      <th>Company</th>
                   </tr>
                </thead>
@@ -36,7 +48,7 @@
                      <td th:text="${person?.lastName}">Doe</td>
                      <td th:text="${person?.address?.town?.name}">Nobody knows!</td>
                      <td th:text="${person?.mail}">john@doe.com</td>
-                     <td th:text="${#dates.format(person?.birthDate, 'dd/MM/yyyy')}">00/12/2000</td>
+                     <td th:text="${#dates.format(person?.birthDate, 'yyyy/MM/dd')}">00/12/2000</td>
                      <td th:text="${'&euro;' + person?.salary}">€100</td>
                      <td th:text="${person?.company?.name}">Company</td>
                   </tr>
