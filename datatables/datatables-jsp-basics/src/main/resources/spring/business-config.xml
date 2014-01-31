@@ -8,6 +8,5 @@
    <!-- **************************************************************** -->
    <!-- SPRING ANNOTATION PROCESSING -->
    <!-- **************************************************************** -->
-   <context:component-scan
-      base-package="com.github.dandelion.datatables.service,com.github.dandelion.datatables.repository" />
+   <context:component-scan base-package="com.github.dandelion.datatables.service,com.github.dandelion.datatables.repository" />
 </beans>

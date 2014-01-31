@@ -3,17 +3,16 @@ datatables-jsp-basics
 
 A sample which shows the basics of Dandelion-Datatables: feature enablement, sorting, filtering, paging and more. See the full list below.
 
-## Technical stack
+## Technology stack
 
  - JSP
- - JSTL 1.2
  - Apache Tiles 2.2.2
- - Dandelion-Datatables 1.10.0
- - Spring 3.2.5.RELEASE
+ - Dandelion-Datatables 0.10.0
+ - Spring 3.2.7.RELEASE
 
 ## Features
-		
- - Data source type: DOM
+
+ - __Data source type__: DOM
  - Feature enablement
  - Sorting
  - Filtering
@@ -23,7 +22,6 @@ A sample which shows the basics of Dandelion-Datatables: feature enablement, sor
  - DOM positioning
  - Multiple tables
  - Basic styling
- - AssetServlet (lien doc)
 
 ## Running this sample
 

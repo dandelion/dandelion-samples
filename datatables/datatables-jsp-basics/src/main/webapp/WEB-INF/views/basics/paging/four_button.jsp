@@ -6,10 +6,17 @@
       <h3>Styling pagination: four button</h3>
    </div>
 </div>
-<datatables:table id="fourbutton" data="${persons}" paginationType="four_button">
-   <datatables:column title="Id" property="id" />
-   <datatables:column title="FirstName" property="firstName" />
-   <datatables:column title="LastName" property="lastName" />
-   <datatables:column title="City" property="address.town.name" />
-   <datatables:column title="Mail" property="mail" />
-</datatables:table>
+
+<div class="row-fluid">
+   <div class="span12">
+
+      <datatables:table id="fourbutton" data="${persons}" paginationType="four_button">
+         <datatables:column title="Id" property="id" />
+         <datatables:column title="FirstName" property="firstName" />
+         <datatables:column title="LastName" property="lastName" />
+         <datatables:column title="City" property="address.town.name" />
+         <datatables:column title="Mail" property="mail" />
+      </datatables:table>
+
+   </div>
+</div>

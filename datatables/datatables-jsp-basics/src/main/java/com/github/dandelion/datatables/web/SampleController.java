@@ -79,8 +79,8 @@ public class SampleController {
 		return "dom-positioning";
 	}
 	
-	@RequestMapping(value = "/styling")
-	public String goToStylingExample() {
-		return "styling";
+	@RequestMapping(value = "/styling/{page}")
+	public String goToStylingExample(@PathVariable String page) {
+		return "styling." + page;
 	}
 }

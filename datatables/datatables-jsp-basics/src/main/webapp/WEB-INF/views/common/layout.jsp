@@ -11,7 +11,6 @@
 <c:url value="/filtering" var="filteringUrl" />
 <c:url value="/paging" var="pagingUrl" />
 <c:url value="/scrolling" var="scrollingUrl" />
-<c:url value="/advanced" var="advancedUrl" />
 <c:url value="/multiple-tables" var="multipleTablesUrl" />
 <c:url value="/styling" var="stylingUrl" />
 <c:url value="/dom-positioning" var="domPositioningUrl" />
@@ -44,10 +43,10 @@
                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sorting <b class="caret"></b></a>
                            <ul class="dropdown-menu">
                               <li><a href="${sortingUrl}/enable-disable-sorting">Enable/disable sorting</a></li>
-                              <li><a href="${sortingUrl}/individualcolumnsorting">Individual column sorting</a></li>
-                              <li><a href="${sortingUrl}/default-sorting-init">Default sorting initialization</a></li>
-                              <li><a href="${sortingUrl}/custom-sorting-init">Custom sorting initialization</a></li>
-                              <li><a href="${sortingUrl}/sortingdirectioncontrol">Sorting direction control</a></li>
+                              <li><a href="${sortingUrl}/individual-column-sorting">Individual column sorting</a></li>
+                              <li><a href="${sortingUrl}/sorting-init">Default sorting initialization</a></li>
+                              <li><a href="${sortingUrl}/sorting-init-with-custom-order">Custom sorting initialization</a></li>
+                              <li><a href="${sortingUrl}/sorting-direction-control">Sorting direction control</a></li>
                               <li><a href="${sortingUrl}/naturalsort">Sorting type: natural, date</a></li>
                            </ul>
                         </li>
@@ -102,28 +101,14 @@
                      </ul>
                   </li>
                   <li><a href="${multipleTablesUrl}">Multiple tables</a></li>
-                  <li><a href="${stylingUrl}">Styling</a></li>
+                  <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Styling <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                           <li><a href="${stylingUrl}/styling">Styling</a></li>
+                           <li><a href="${stylingUrl}/effect">Applying effects</a></li>
+                        </ul>
+                     </li>
                   <li><a href="${domPositioningUrl}">DOM positioning</a></li>
-<!--                   <li class="dropdown"> -->
-<!--                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Basics <b class="caret"></b></a> -->
-<!--                      <ul class="dropdown-menu"> -->
-<%--                         <li><a href="${basicsUrl}/default-configuration">Default configuration</a></li> --%>
-<!--                         <li class="dropdown-submenu"><a href="#">Feature enablement</a> -->
-<!--                            <ul class="dropdown-menu"> -->
-<%--                               <li><a href="${basicsUrl}/feature-enablement/info">Display table informations</a></li> --%>
-<%--                               <li><a href="${basicsUrl}/feature-enablement/sorting">Enable/disable sorting</a></li> --%>
-<%--                               <li><a href="${basicsUrl}/feature-enablement/paging">Enable/disable paging</a></li> --%>
-<%--                               <li><a href="${basicsUrl}/feature-enablement/lengthchanging">Enable/disable length changing</a></li> --%>
-<!--                            </ul></li> -->
-<!--                      </ul> -->
-<!--                   </li> -->
-<!--                   <li class="dropdown"> -->
-<!--                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Misc. <b class="caret"></b></a> -->
-<!--                      <ul class="dropdown-menu">    -->
-<%--                         <li><a href="${advancedUrl}/rowid">Applying row ids</a></li> --%>
-<%--                         <li><a href="${basicsUrl}/appear">Changing the appearance</a></li> --%>
-<!--                      </ul> -->
-<!--                   </li> -->
                </ul>
                <ul class="nav pull-right">
                   <li class="dropdown">
@@ -148,10 +133,6 @@
             <tiles:insertAttribute name="content" />
          </div>
       </div>
-      <hr />
-      <footer>
-         Footer
-      </footer>
    </div>
 </body>
 </html>

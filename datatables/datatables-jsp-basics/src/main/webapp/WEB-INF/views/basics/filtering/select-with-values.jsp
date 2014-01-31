@@ -1,26 +1,29 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="../../common/taglib.jsp"%>
 
-<div class="row-fluid">
+<div class="row-fluid row-intro">
    <div class="span12">
-      <h3>Filtering using drop-down lists with predefined values</h3>
-      <br />
+      <h3>Filtering using drop-down lists of predefined values</h3>
+      <p>In this sample, the drop-down list used for filtering has been populated with
+         predefined values.</p>
+      <p>
+         Note that we accessed the Javascript array of predefined values with the special syntax:
+         <code>scopeName#javascriptObject</code>
+         .
+      </p>
    </div>
 </div>
 
-<script>
-// 	var myPredefinedValues = ['Kalken', 'Sheffield', 'Oostende'];
-	var myPredefinedValues = [{"value":"Kalken", "label":"label1"},{"value":"Sheffield", "label":"label2"},{"value":"Sheffield", "label":"label3"}];
-</script>
+<div class="row-fluid">
+   <div class="span12">
 
-<c:url var="datasource" value="/persons1"></c:url>
-<datatables:table id="myTableId" url="${datasource}" serverSide="true" processing="true">
-   <datatables:column title="Id" property="id" />
-   <datatables:column title="FirstName" property="firstName" />
-   <datatables:column title="LastName" property="lastName" />
-   <datatables:column title="City" property="address.town.name" filterable="true" filterType="select" filterValues="myPredefinedValues"/>
-   <datatables:column title="Mail" property="mail" />
-   <datatables:column title="Birthdate" property="birthDate" format="{0,date,dd/MM/yyyy}" />
-   <datatables:column title="Pocket money" property="pocketMoney" />
-   <datatables:column title="Company" property="company.name" />
-</datatables:table>
+      <datatables:table id="myTableId" data="${persons}">
+         <datatables:column title="Id" property="id" />
+         <datatables:column title="FirstName" property="firstName" />
+         <datatables:column title="LastName" property="lastName" />
+         <datatables:column title="City" property="address.town.name" filterable="true" filterType="select" filterValues="filtering#myPredefinedValues" />
+         <datatables:column title="Mail" property="mail" />
+      </datatables:table>
+
+   </div>
+</div>

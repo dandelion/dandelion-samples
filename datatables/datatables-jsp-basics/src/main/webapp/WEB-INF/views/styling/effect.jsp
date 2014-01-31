@@ -1,25 +1,25 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ include file="../../common/taglib.jsp"%>
+<%@ include file="../common/taglib.jsp"%>
 
 <div class="row-fluid row-intro">
    <div class="span12">
-      <h3>Filtering using a number range</h3>
+      <h3>Applying effect</h3>
+      <p>If you wish, you can apply a "fadein" effect to the table and change the effect
+         duration.</p>
+      <p>The table below will fade in in 1500ms.</p>
    </div>
 </div>
 
 <div class="row-fluid">
    <div class="span12">
-
-      <datatables:table id="myThirdTableId" data="${persons}">
-         <datatables:column title="Id" property="id" />
+   
+      <datatables:table id="myTableId" data="${persons}" appear="fadein,1500">
+         <datatables:column title="Id" property="id" sortable="false" />
          <datatables:column title="FirstName" property="firstName" />
          <datatables:column title="LastName" property="lastName" />
          <datatables:column title="City" property="address.town.name" />
          <datatables:column title="Mail" property="mail" />
-         <datatables:column title="Birthdate" property="birthDate" format="{0,date,dd/MM/yyyy}" sortType="natural" />
-         <datatables:column title="Pocket money" property="pocketMoney" filterable="true" filterType="number_range" />
-         <datatables:column title="Company" property="company.name" />
       </datatables:table>
-
+   
    </div>
 </div>

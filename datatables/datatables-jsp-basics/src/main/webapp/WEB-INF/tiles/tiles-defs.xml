@@ -22,9 +22,4 @@
       <put-attribute name="content" value="/WEB-INF/views/dom-positioning.jsp" />
    </definition>
 
-   <!-- Styling -->
-   <definition name="styling" extends="layout">
-      <put-attribute name="content" value="/WEB-INF/views/styling.jsp" />
-   </definition>
-
 </tiles-definitions>

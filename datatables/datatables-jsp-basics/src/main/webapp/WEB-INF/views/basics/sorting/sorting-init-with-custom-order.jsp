@@ -3,17 +3,19 @@
 
 <div class="row-fluid row-intro">
    <div class="span12">
-      <h3>Styling pagination: Bootstrap full numbers</h3>
+      <h3>Sorting initialization with custom order</h3>
+      <p>In this example, the sorting is initialized first in the "City" column, then in the
+         "FirstName" column.</p>
    </div>
 </div>
 
 <div class="row-fluid">
    <div class="span12">
 
-      <datatables:table id="myTableId" data="${persons}" paginationType="bootstrap_full_numbers">
+      <datatables:table id="myTableId" data="${persons}">
          <datatables:column title="Id" property="id" />
-         <datatables:column title="FirstName" property="firstName" />
-         <datatables:column title="LastName" property="lastName" />
+         <datatables:column title="FirstName" property="firstName" sortInitDirection="desc" sortInitOrder="1" />
+         <datatables:column title="LastName" property="lastName" sortInitDirection="asc" sortInitOrder="0" />
          <datatables:column title="City" property="address.town.name" />
          <datatables:column title="Mail" property="mail" />
       </datatables:table>
