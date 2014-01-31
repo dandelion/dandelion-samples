@@ -41,7 +41,7 @@ Note that you can also access the H2 web server here: [http://localhost:9091/](h
 
 ## Bug/improvement
 
-Please report it using the general issue tracker: [https://github.com/dandelion/issues/issues](https://github.com/dandelion/issues/issues)
+Please report it using the general issue tracker: [https://github.com/dandelion/dandelion-samples/issues](https://github.com/dandelion/dandelion-samples/issues)
 
 =
 The [Dandelion team](http://dandelion.github.io/team/).

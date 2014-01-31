@@ -32,7 +32,7 @@ You can then access the sample here: [http://localhost:9090/datatables-thymeleaf
 
 ## Bug/improvement
 
-Please report it using the general issue tracker: [https://github.com/dandelion/issues/issues](https://github.com/dandelion/issues/issues)
+Please report it using the general issue tracker: [https://github.com/dandelion/dandelion-samples/issues](https://github.com/dandelion/dandelion-samples/issues)
 
 =
 The [Dandelion team](http://dandelion.github.io/team/).

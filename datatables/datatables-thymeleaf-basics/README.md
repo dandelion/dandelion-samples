@@ -3,15 +3,15 @@ datatables-thymeleaf-basics
 
 A sample which shows the basics of Dandelion-Datatables when using Thymeleaf: feature enablement, sorting, filtering, paging and more. See the full list below.
 
-## Technical stack
+## Technology stack
 
  - Thymeleaf 2.1.1.RELEASE
  - Dandelion-Datatables 0.10.0
  - Spring 3.2.5.RELEASE
 
 ## Features
-		
- - Data source type: DOM
+
+ - __Data source type__: DOM
  - Feature enablement
  - Sorting
  - Filtering
@@ -21,7 +21,6 @@ A sample which shows the basics of Dandelion-Datatables when using Thymeleaf: fe
  - DOM positioning
  - Multiple tables
  - Basic styling
- - AssetServlet (lien doc)
 
 ## Running this sample
 
@@ -37,7 +36,7 @@ You can then access the sample here: [http://localhost:9090/datatables-thymeleaf
 
 ## Bug/improvement
 
-Please report it using the general issue tracker: [https://github.com/dandelion/issues/issues](https://github.com/dandelion/issues/issues)
+Please report it using the general issue tracker: [https://github.com/dandelion/dandelion-samples/issues](https://github.com/dandelion/dandelion-samples/issues)
 
 =
 The [Dandelion team](http://dandelion.github.io/team/).
