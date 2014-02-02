@@ -1,0 +1,14 @@
+{
+    "scope" : "callbacks",
+    "parent": "none",
+    "assets": [
+		{
+		    "name": "callbacks",
+		    "version": "1.0.0",
+		    "type": "js",
+		    "locations": {
+		        "webapp": "/js/callbacks.js"
+		    }
+		}
+    ]
+}

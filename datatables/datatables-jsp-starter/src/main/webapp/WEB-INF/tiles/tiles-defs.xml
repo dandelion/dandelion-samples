@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+
+   <!-- Main layout -->
+   <definition name="layout" template="/WEB-INF/views/common/layout.jsp">
+      <put-attribute name="content" value="" cascade="true" />
+   </definition>
+
+   <!-- Index -->
+   <definition name="index" extends="layout">
+      <put-attribute name="content" value="/index.jsp" />
+   </definition>
+
+</tiles-definitions>
