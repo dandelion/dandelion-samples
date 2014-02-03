@@ -1,0 +1,46 @@
+{
+    "scope" : "petclinic",
+    "parent": "none",
+    "assets": [
+		{
+		    "name": "petclinic",
+		    "version": "1.0.0",
+		    "type": "css",
+		    "locations": {
+		        "webapp": "/resources/css/petclinic.css"
+		    }
+		},
+		{
+		    "name": "jquery-js",
+		    "version": "2.0.3",
+		    "type": "js",
+		    "locations": {
+		        "webjars": "/webjars/jquery/2.0.3/jquery.js"
+		    }
+		},
+		{
+		    "name": "jqueryui-core",
+		    "version": "1.10.3",
+		    "type": "js",
+		    "locations": {
+		        "webjars": "/webjars/jquery-ui/1.10.3/ui/jquery.ui.core.js"
+		    }
+		},
+		{
+		    "name": "jqueryui-datepicker",
+		    "version": "1.10.3",
+		    "type": "js",
+		    "locations": {
+		        "webjars": "/webjars/jquery-ui/1.10.3/ui/jquery.ui.datepicker.js"
+		    }
+		},
+		{
+		    "name": "jqueryui-css",
+		    "version": "1.10.3",
+		    "type": "css",
+		    "locations": {
+		        "webjars": "/webjars/jquery-ui/1.10.3/themes/base/jquery-ui.css"
+		    }
+		}
+    ]
+}
