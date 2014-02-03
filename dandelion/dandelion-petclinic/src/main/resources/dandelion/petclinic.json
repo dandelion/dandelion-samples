@@ -15,7 +15,7 @@
 		    "version": "2.0.3",
 		    "type": "js",
 		    "locations": {
-		        "webjars": "/webjars/jquery/2.0.3/jquery.js"
+		        "webjars": "jquery.js"
 		    }
 		},
 		{
@@ -23,7 +23,7 @@
 		    "version": "1.10.3",
 		    "type": "js",
 		    "locations": {
-		        "webjars": "/webjars/jquery-ui/1.10.3/ui/jquery.ui.core.js"
+		        "webjars": "jquery.ui.core.js"
 		    }
 		},
 		{
@@ -31,7 +31,7 @@
 		    "version": "1.10.3",
 		    "type": "js",
 		    "locations": {
-		        "webjars": "/webjars/jquery-ui/1.10.3/ui/jquery.ui.datepicker.js"
+		        "webjars": "jquery.ui.datepicker.js"
 		    }
 		},
 		{
@@ -39,7 +39,7 @@
 		    "version": "1.10.3",
 		    "type": "css",
 		    "locations": {
-		        "webjars": "/webjars/jquery-ui/1.10.3/themes/base/jquery-ui.css"
+		        "webjars": "jquery-ui.css"
 		    }
 		}
     ]
