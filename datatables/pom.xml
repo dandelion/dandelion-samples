@@ -20,7 +20,7 @@
       <module>datatables-jsp-i18n-struts1</module>
       <module>datatables-jsp-i18n-struts2</module>
       <module>datatables-jsp-export</module>
-      <module>datatables-thymeleaf-basics</module>
+      <module>datatables-thymeleaf-starter</module>
       <module>datatables-thymeleaf-themes</module>
       <module>datatables-thymeleaf-plugins</module>
       <module>datatables-thymeleaf-configuration-groups</module>

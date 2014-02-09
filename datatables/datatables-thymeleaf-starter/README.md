@@ -1,4 +1,4 @@
-datatables-thymeleaf-basics
+datatables-thymeleaf-starter
 =================================================================
 
 A sample which shows the basics of Dandelion-Datatables when using Thymeleaf: feature enablement, sorting, filtering, paging and more. See the full list below.
@@ -21,6 +21,10 @@ A sample which shows the basics of Dandelion-Datatables when using Thymeleaf: fe
  - DOM positioning
  - Multiple tables
  - Basic styling
+ - Callbacks
+ - Row ID
+ - Dynamic attributes
+ - Extra HTML / extra JS
 
 ## Running this sample
 

@@ -1,4 +1,4 @@
-datatables-jsp-basics
+datatables-jsp-starter
 =================================================================
 
 A sample which shows the basics of Dandelion-Datatables: feature enablement, sorting, filtering, paging and more. See the full list below.

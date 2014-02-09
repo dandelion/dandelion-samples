@@ -106,7 +106,7 @@
                         </ul>
                      </li>
                   <li class="dropdown">
-                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Advanced <b class="caret"></b></a>
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Advanced usage <b class="caret"></b></a>
                      <ul class="dropdown-menu">   
                         <li><a href="${advancedUrl}/multiple-tables">Multiple tables</a></li>
                         <li><a href="${advancedUrl}/callbacks">Callbacks</a></li>

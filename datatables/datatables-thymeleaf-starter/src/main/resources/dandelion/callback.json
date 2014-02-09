@@ -1,13 +1,13 @@
 {
-    "scope" : "filtering",
+    "scope" : "callbacks",
     "parent": "none",
     "assets": [
 		{
-		    "name": "application",
+		    "name": "callbacks",
 		    "version": "1.0.0",
 		    "type": "js",
 		    "locations": {
-		        "webapp": "/js/filtering.js"
+		        "webapp": "/assets/js/callbacks.js"
 		    }
 		}
     ]

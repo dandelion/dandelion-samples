@@ -49,6 +49,11 @@ public class SampleController {
 		return "basics/sorting/" + page;
 	}
 	
+	@RequestMapping(value = "/advanced/{page}")
+	public String goToAdvancedExample(@PathVariable String page) {
+		return "advanced/" + page;
+	}
+	
 	@RequestMapping(value = "/basics/filtering/{page}")
 	public String goToFilteringExample(@PathVariable String page) {
 		return "basics/filtering/" + page;
@@ -62,6 +67,11 @@ public class SampleController {
 	@RequestMapping(value = "/basics/scrolling/{page}")
 	public String goToScrollingExample(@PathVariable String page) {
 		return "basics/scrolling/" + page;
+	}
+
+	@RequestMapping(value = "/basics/{page}")
+	public String goToBasicsExample(@PathVariable String page) {
+		return "basics/" + page;
 	}
 	
 	@RequestMapping(value = "/column-rendering/{page}")

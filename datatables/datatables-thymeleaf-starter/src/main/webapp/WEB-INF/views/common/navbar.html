@@ -11,7 +11,7 @@
                <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-responsive-collapse">
                   <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
                </a> 
-               <a class="brand" th:href="@{/}">datatables-thymeleaf-basics</a>
+               <a class="brand" th:href="@{/}">datatables-thymeleaf-starter</a>
                <div class="nav-collapse collapse navbar-responsive-collapse">
                   <ul class="nav">
                      <li class="dropdown">
@@ -65,6 +65,7 @@
                                  <li><a th:href="@{/basics/scrolling/scroll-vertical}">Vertical scrolling</a></li>
                               </ul>
                            </li>
+                           <li><a th:href="@{/basics/dom-positioning}">DOM positioning</a></li>
                         </ul>
                      </li>
                      <li class="dropdown">
@@ -75,7 +76,6 @@
                            <li><a th:href="@{/column-rendering/column-custom-header}">Column custom header</a></li>
                         </ul>
                      </li>
-                     <li><a th:href="@{/multiple-tables}">Multiple tables</a></li>
                      <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Styling <b class="caret"></b></a>
                         <ul class="dropdown-menu">
@@ -83,7 +83,15 @@
                            <li><a th:href="@{/styling/effect}">Applying effects</a></li>
                         </ul>
                      </li>
-                     <li><a th:href="@{/dom-positioning}">DOM positioning</a></li>
+                     <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Advanced usage <b class="caret"></b></a>
+                        <ul class="dropdown-menu">   
+                           <li><a th:href="@{/advanced/multiple-tables}">Multiple tables</a></li>
+                           <li><a th:href="@{/advanced/callbacks}">Callbacks</a></li>
+                           <li><a th:href="@{/advanced/extra-js}">Extra Javascript</a></li>
+                           <li><a th:href="@{/advanced/extra-html}">Extra HTML snippet</a></li>
+                        </ul>
+                     </li>
                   </ul>
                   <ul class="nav pull-right">
                      <li class="dropdown">
