@@ -7,7 +7,7 @@
 		    "version": "",
 		    "type": "css",
 		    "locations": {
-		        "webapp": "/css/application.css"
+		        "webapp": "/assets/css/application.css"
 		    }
 		}
     ]
