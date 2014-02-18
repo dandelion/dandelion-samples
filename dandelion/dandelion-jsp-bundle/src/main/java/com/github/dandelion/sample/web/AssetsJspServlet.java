@@ -17,7 +17,7 @@ public class AssetsJspServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		// Add to assets request context the scope1 and scope2
-		AssetRequestContext.get(request).addScopes("scope1,scope2").addScopes("delegateContentIP");
+		AssetRequestContext.get(request).addBundles("scope1,scope2").addBundles("delegateContentIP");
 
 		// go to the jsp
 		getServletContext().getRequestDispatcher("/WEB-INF/pages/assets.jsp").forward(request, response);

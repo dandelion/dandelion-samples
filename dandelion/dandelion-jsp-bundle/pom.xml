@@ -9,10 +9,10 @@
       <version>0.10.0-SNAPSHOT</version>
    </parent>
 
-   <artifactId>dandelion-jsp-scope</artifactId>
+   <artifactId>dandelion-jsp-bundle</artifactId>
    <packaging>war</packaging>
 
-   <name>Dandelion :: Samples :: Scope</name>
+   <name>Dandelion :: Samples :: Bundle</name>
 
    <properties>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

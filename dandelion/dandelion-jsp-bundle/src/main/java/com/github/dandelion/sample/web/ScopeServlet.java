@@ -19,7 +19,7 @@ public class ScopeServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		String[] loadedScopes = AssetRequestContext.get(request).getScopes(true);
+		String[] loadedScopes = AssetRequestContext.get(request).getBundles(true);
 		List<Asset> loadedAssets = AssetStack.assetsFor(loadedScopes);
 
 		request.setAttribute("loadedScopes", loadedScopes);
@@ -32,7 +32,7 @@ public class ScopeServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException,
 			IOException {
 		String newScope = String.valueOf(request.getParameter("newScope"));
-		AssetRequestContext.get(request).addScope(newScope);
+		AssetRequestContext.get(request).addBundle(newScope);
 		doGet(request, response);
 	}
 }

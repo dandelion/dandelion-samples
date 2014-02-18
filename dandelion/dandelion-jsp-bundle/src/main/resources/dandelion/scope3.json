@@ -1,5 +1,5 @@
 {
-	"scope": "scope3",
+	"bundle": "bundle3",
 	"parent" : "jquery",
     "assets": [
         {
