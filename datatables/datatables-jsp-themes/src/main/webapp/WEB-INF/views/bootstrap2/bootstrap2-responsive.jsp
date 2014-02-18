@@ -1,8 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="../common/taglib.jsp"%>
 
-<%-- Make the ugly row in the thead disappear by removing the DataTables' CSS from the scope --%>
-<dandelion:assets excludedAssets="datatables-css" />
+<%-- Make the ugly row in the thead disappear by removing the DataTables' CSS from the bundle --%>
+<dandelion:asset exclude="datatables-css" />
+
 
 <div class="row-fluid row-intro">
    <div class="span12">

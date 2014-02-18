@@ -1,5 +1,5 @@
 {
-    "scope" : "filtering",
+    "bundle" : "filtering",
     "parent": "none",
     "assets": [
 		{

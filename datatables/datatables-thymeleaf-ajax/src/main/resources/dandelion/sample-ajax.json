@@ -1,5 +1,5 @@
 {
-    "scope" : "ajax",
+    "bundle" : "ajax",
     "parent": "none",
     "assets": [
 		{

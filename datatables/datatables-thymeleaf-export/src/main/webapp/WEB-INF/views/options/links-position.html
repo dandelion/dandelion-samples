@@ -12,8 +12,7 @@
             <h3>Links position</h3>
             <p>
                You can move the export links around the table and duplicate them by using the
-               <code>exportLinks</code>
-               table attribute.
+               <code>dt:dom</code> attribute.
             </p>
             <p>In this example, the export links are displayed at top right and bottom right.</p>
          </div>
@@ -27,7 +26,7 @@
                <div dt:confType="export" dt:type="xls" dt:cssClass="btn" dt:url="@{/export.xls}"></div>
             </div>
             
-            <table id="myTableId" dt:table="true" dt:url="@{/persons}" dt:serverside="true" dt:processing="true" dt:export="pdf,xls" dt:exportLinks="top_right,bottom_right">
+            <table id="myTableId" dt:table="true" dt:url="@{/persons}" dt:serverside="true" dt:processing="true" dt:export="pdf,xls" dt:dom="lEfrtiEp">
                <thead>
                   <tr>
                      <th dt:property="id">Id</th>

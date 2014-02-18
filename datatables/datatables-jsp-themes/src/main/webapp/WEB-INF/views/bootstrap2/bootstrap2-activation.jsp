@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="../common/taglib.jsp"%>
 
-<%-- Make the ugly row in the thead disappear by removing the DataTables' CSS from the scope --%>
-<dandelion:assets excludedAssets="datatables-css" />
+<%-- Make the ugly row in the thead disappear by removing the DataTables' CSS from the bundle --%>
+<dandelion:asset exclude="datatables-css" />
 
 <div class="row-fluid row-intro">
    <div class="span12">
@@ -12,10 +12,10 @@
             framework</a> can be integrated.
       </p>
       <p>Note that we made the black row in the thead disappear. To do that, we used the
-         Dandelion JSP taglib to modify the active scopes by excluding the Datatables' CSS as
+         Dandelion JSP taglib to modify the active bundles by excluding the Datatables' CSS as
          follows:</p>
       <p>
-         <code>&lt;dandelion:assets excludedAssets="datatables-css" /></code>
+         <code>&lt;dandelion:asset exclude="datatables-css" /></code>
       </p>
       <p>
          As a consequence, we lost the sorting icons. But you could of course get them back by using

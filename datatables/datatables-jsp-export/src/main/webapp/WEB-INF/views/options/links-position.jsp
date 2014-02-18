@@ -16,8 +16,7 @@
             <h3>Links position</h3>
             <p>
                You can move the export links around the table and duplicate them by using the
-               <code>exportLinks</code>
-               table attribute.
+               <code>dom</code> attribute.
             </p>
             <p>In this example, the export links are displayed at top right and bottom right.</p>
          </div>
@@ -26,7 +25,7 @@
       <div class="row-fluid">
          <div class="span12">
 
-            <datatables:table id="myTableId" url="/persons" serverSide="true" processing="true" export="pdf,xls" exportLinks="top_right,bottom_right">
+            <datatables:table id="myTableId" url="/persons" serverSide="true" processing="true" export="pdf,xls" dom="lEfrtiEp">
                <datatables:column title="Id" property="id" />
                <datatables:column title="FirstName" property="firstName" />
                <datatables:column title="LastName" property="lastName" />

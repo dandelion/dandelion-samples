@@ -1,5 +1,5 @@
 {
-    "scope" : "custom-rendering",
+    "bundle" : "custom-rendering",
     "parent": "none",
     "assets": [
 		{

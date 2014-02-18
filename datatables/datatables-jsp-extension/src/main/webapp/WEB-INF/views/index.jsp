@@ -42,7 +42,7 @@
                <li>And also the assets loaded in the page:
                   <ul>
                      <li>Because of the <i>four_button</i> pagination type, which requires
-                        extra Javascript code. So the scope <code>ddl-dt-paging-fourbutton</code>
+                        extra Javascript code. So the bundle <code>ddl-dt-paging-fourbutton</code>
                         has been added to the current request.
                      </li>
                   </ul>
