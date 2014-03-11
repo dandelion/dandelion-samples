@@ -1,38 +1,49 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
+<c:url var="reloadUrl" value="/asset-graph" />
 
 <!DOCTYPE html>
 <html>
 <head>
-<jsp:include page="WEB-INF/views/common/head.jsp" />
+<jsp:include page="common/head.jsp" />
 </head>
 <body>
 
-   <jsp:include page="WEB-INF/views/common/navbar.jsp" />
+   <jsp:include page="common/navbar.jsp" />
 
    <div class="container">
       <div class="row-fluid">
          <div class="span12">
-            <h2>Welcome to Dandelion!</h2>
+            <h2>Default bundles</h2>
             <p>
-               As you can see, this page uses the
-               <a href="http://getbootstrap.com/2.3.2/">Bootstrap v2 theme</a> but also custom CSS.
+               As you can see, this application uses the
+               <a href="http://getbootstrap.com/2.3.2/">Bootstrap v2 framework</a> and also custom
+               CSS.
             </p>
             <p>
-               All the CSS code is loaded using the default active scopes configured in the
-               <code>src/main/resources/dandelion/dandelion.properties</code> file: <i>bootstrap2</i> and <i>sample</i>.
-               file.
+               This is done thanks to the <code>src/main/resources/dandelion/dandelion.properties</code> file which contains:
+<pre>
+bundle.includes=sample,bootstrap2
+</pre>               
             </p>
-         </div>
-      </div>
-      
-      <div class="row-fluid">
-         <div class="span12">
-            <h3>The <i>bootstrap2</i> scope</h3>
             <p>
-               The first scope <i>bootstrap2</i>:
+               The
+               <code>bundle.includes</code>
+               configuration allows you to activate bundle permanently. Thus both <i>sample</i> and
+               <i>bootstrap2</i> will be loaded in every page.
+            </p>
+            <p>
+               Let's take a closer look at these bundles.
+            </p>
+            
+            <br />
+            <h4><i>bootstrap2</i> bundle</h4>
+            <p>
+               The first bundle <i>bootstrap2</i>:
             </p>
             <ul>
-               <li>has a parent scope called <i>jquery</i></li>
+               <li>declares <i>jquery</i> as a dependency</li>
                <li>defines only one CSS to be loaded: <code>bootstrap.min.css</code></li>
             </ul>
             <p>
@@ -47,17 +58,14 @@
 <pre>
 &lt;script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js" >&lt;/script>
 </pre>
-         </div>
-      </div>
       
-      <div class="row-fluid">
-         <div class="span12">
-            <h3>The <i>sample</i> scope</h3>
+            <br />
+            <h4><i>sample</i> bundle</h4>
             <p>
-               The second scope active by default is <i>sample</i>. This scope:
+               The second bundle active by default is <i>sample</i>. This bundle:
             </p>
             <ul>
-               <li>has a parent scope called <i>none</i>, i.e. it has no parent</li>
+               <li>has no dependency</li>
                <li>defines only one CSS to be loaded: <code>application.css</code>, containing CSS code that must be loaded everywhere in the application</li>
             </ul>
             <p>
@@ -67,7 +75,7 @@
 </pre>
             </p>
             <p>
-               Note that this CSS file above is loaded in first because it has no parent a.k.a. dependency required.
+               Note that this CSS file above is loaded in first because it has no dependency.
             </p>
          </div>
       </div>

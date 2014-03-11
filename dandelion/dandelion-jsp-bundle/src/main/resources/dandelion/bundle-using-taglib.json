@@ -1,0 +1,14 @@
+{
+	"bundle": "bundle-using-taglib",
+	"dependencies" : [ "jquery" ],
+    "assets": [
+        {
+            "name": "asset-taglib", 
+            "type": "js", 
+            "version": "0.10.0",
+        	"locations": {
+        		"webapp": "/assets/js/asset-taglib.js"
+        	}
+        }
+    ]
+}

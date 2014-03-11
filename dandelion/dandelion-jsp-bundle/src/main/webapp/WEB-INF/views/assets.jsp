@@ -10,7 +10,7 @@
     <title>Dandelion Assets on JSP</title>
 </head>
 <body>
-<b>This page load scopes "scope1, scope2 and scope3" but without "asset3".</b>
+<b>This page load the bundles "bundle1, bundle2 and bundle3" but without the "asset3".</b>
 <br/><br/>
 You must see some alert from loaded js assets :
 <ul>

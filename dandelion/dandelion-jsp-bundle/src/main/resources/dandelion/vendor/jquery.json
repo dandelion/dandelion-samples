@@ -1,13 +1,12 @@
 {
     "bundle" : "jquery",
-    "parent": "none",
     "assets": [
 		{
 		    "name": "jquery",
 		    "version": "1.10.2",
 		    "type": "js",
 		    "locations": {
-		        "remote": "//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"
+		        "cdn": "//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"
 		    }
 		}
     ]
