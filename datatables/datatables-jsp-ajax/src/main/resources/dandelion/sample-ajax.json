@@ -1,10 +1,9 @@
 {
     "bundle" : "ajax",
-    "parent": "none",
     "assets": [
 		{
 		    "name": "ajax",
-		    "version": "1.0.0",
+		    "version": "0.10.0",
 		    "type": "js",
 		    "locations": {
 		        "webapp": "/assets/js/ajax.js"

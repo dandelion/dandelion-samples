@@ -1,10 +1,9 @@
 {
     "bundle" : "custom-rendering",
-    "parent": "none",
     "assets": [
 		{
 		    "name": "custom-rendering",
-		    "version": "1.0.0",
+		    "version": "0.10.0",
 		    "type": "js",
 		    "locations": {
 		        "webapp": "/assets/js/custom-rendering.js"

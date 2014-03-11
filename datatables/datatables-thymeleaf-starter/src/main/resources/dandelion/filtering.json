@@ -1,9 +1,8 @@
 {
     "bundle" : "filtering",
-    "parent": "none",
     "assets": [
 		{
-		    "name": "application",
+		    "name": "custom-filtering",
 		    "version": "1.0.0",
 		    "type": "js",
 		    "locations": {

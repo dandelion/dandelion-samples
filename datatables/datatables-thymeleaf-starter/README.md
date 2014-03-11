@@ -36,7 +36,7 @@ Using __Jetty__:
 
     mvn jetty:run
 
-You can then access the sample here: [http://localhost:9090/datatables-thymeleaf-basics](http://localhost:9090/datatables-thymeleaf-basics)
+You can then access the sample here: [http://localhost:9090/datatables-thymeleaf-starter](http://localhost:9090/datatables-thymeleaf-starter)
 
 ## Bug/improvement
 

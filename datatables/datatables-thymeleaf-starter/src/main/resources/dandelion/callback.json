@@ -1,6 +1,5 @@
 {
     "bundle" : "callbacks",
-    "parent": "none",
     "assets": [
 		{
 		    "name": "callbacks",

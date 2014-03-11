@@ -2,7 +2,7 @@
 <%@ include file="../common/taglib.jsp"%>
 
 <!-- Update the current scope with extra functions needed for rendering -->
-<dandelion:assets scopes="custom-rendering" />
+<dandelion:bundle include="custom-rendering" />
 
 <div class="row-fluid row-intro">
    <div class="span12">

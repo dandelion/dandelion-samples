@@ -1,9 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="../common/taglib.jsp"%>
 
-<!-- Update the current scope with extra functions needed for rendering -->
-<dandelion:assets scopes="bootstrap-datepicker" />
-
 <div class="row-fluid row-intro">
    <div class="span12">
       <h3>Filtering on click with an external form</h3>
@@ -45,7 +42,7 @@
          <datatables:column title="City" name="city" property="address.town.name" filterable="true" filterCssClass="input-medium" selector="#cityFilter" />
          <datatables:column title="Mail" name="mail" property="mail" renderFunction="custom-rendering#mailify" />
          <datatables:column title="Salary" name="salary" property="salary" renderFunction="custom-rendering#toCurrency" filterable="true" filterType="number_range" filterCssClass="input-small" selector="#salaryFilter" />
-         <datatables:column title="BirthDate" name="birthDate" property="birthDate" renderFunction="moment,custom-rendering#toDate" filterable="true" filterType="date_range" filterDateFormat="yyyy-mm-dd" filterCssClass="input-small" selector="#birthDateFilter" />
+         <datatables:column title="BirthDate" name="birthDate" property="birthDate" renderFunction="moment,custom-rendering,bootstrap-datepicker#toDate" filterable="true" filterType="date_range" filterDateFormat="yyyy-mm-dd" filterCssClass="input-small" selector="#birthDateFilter" />
          <datatables:column title="Company" name="company" property="company.name" filterable="true" filterType="select" filterValues="filtering#predefinedValues" selector="#companyFilter" />
       </datatables:table>
             

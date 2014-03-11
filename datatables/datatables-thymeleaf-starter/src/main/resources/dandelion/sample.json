@@ -1,6 +1,5 @@
 {
     "bundle" : "sample",
-    "parent": "none",
     "assets": [
 		{
 		    "name": "application",
