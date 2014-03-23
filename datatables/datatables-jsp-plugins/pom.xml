@@ -27,10 +27,6 @@
          <groupId>com.github.dandelion</groupId>
          <artifactId>datatables-spring3</artifactId>
       </dependency>
-      <dependency>
-         <groupId>com.github.dandelion</groupId>
-         <artifactId>dandelion-spring3</artifactId>
-      </dependency>
 
       <!-- Spring -->
       <dependency>
