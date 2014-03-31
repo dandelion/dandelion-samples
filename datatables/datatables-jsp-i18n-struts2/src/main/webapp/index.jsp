@@ -10,7 +10,7 @@
 
    <div class="container">
       <div class="row-fluid">
-         <div class="span12">Feel free to browse the sample using the navbar!</div>
+         <div class="span12">Feel free to browse the examples using the navbar!</div>
       </div>
    </div>
 </body>
