@@ -6,9 +6,6 @@
       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-   <!-- **************************************************************** -->
-   <!-- SPRING ANNOTATION PROCESSING -->
-   <!-- **************************************************************** -->
    <mvc:annotation-driven>
       <mvc:argument-resolvers>
          <bean
@@ -16,23 +13,9 @@
       </mvc:argument-resolvers>
    </mvc:annotation-driven>
 
-   <!-- Scan des beans Spring (controlleurs et autres) -->
    <context:component-scan base-package="com.github.dandelion.datatables.web" />
 
-   <!-- **************************************************************** -->
-   <!-- RESOURCE FOLDERS CONFIGURATION -->
-   <!-- Dispatcher configuration for serving static resources -->
-   <!-- **************************************************************** -->
-   <mvc:resources location="/assets/img/" mapping="/img/**" />
-   <mvc:resources location="/assets/css/" mapping="/css/**" />
-   <mvc:resources location="/assets/js/" mapping="/js/**" />
-   <mvc:resources location="/assets/font/" mapping="/font/**" />
-
-   <!-- Configures a handler for serving static resources by forwarding to 
-      the Servlet container's default Servlet. -->
    <mvc:default-servlet-handler />
 
-   <!-- Import views configuration -->
    <import resource="mvc-view-config.xml" />
-
 </beans>

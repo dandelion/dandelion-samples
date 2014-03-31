@@ -6,9 +6,6 @@
       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-   <!-- **************************************************************** -->
-   <!-- SPRING ANNOTATION PROCESSING -->
-   <!-- **************************************************************** -->
    <mvc:annotation-driven>
       <mvc:argument-resolvers>
          <bean
@@ -16,7 +13,6 @@
       </mvc:argument-resolvers>
    </mvc:annotation-driven>
 
-   <!-- Scan des beans Spring (controlleurs et autres) -->
    <context:component-scan base-package="com.github.dandelion.datatables.web" />
 
    <!-- Configures a handler for serving static resources by forwarding to 
@@ -25,7 +21,4 @@
 
    <!-- Import views configuration -->
    <import resource="mvc-view-config.xml" />
-
-   <!-- Enable the Dandelion controller used to render generated assets -->
-<!--    <import resource="classpath:dandelion.xml" /> -->
 </beans>

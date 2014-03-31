@@ -15,14 +15,6 @@
    <!-- Enables scanning for @Controller annotations -->
    <context:component-scan base-package="com.github.dandelion.datatables.web" />
 
-   <!-- Configures an @Controller which is used to render Dandelion assets -->
-   <import resource="classpath:dandelion.xml" />
-
-   <!-- Dispatcher configuration for serving static resources -->
-   <mvc:resources location="/assets/img/" mapping="/img/**" />
-   <mvc:resources location="/assets/css/" mapping="/css/**" />
-   <mvc:resources location="/assets/js/" mapping="/js/**" />
-
    <!-- Configures a handler for serving static resources by forwarding to 
       the Servlet container's default Servlet. -->
    <mvc:default-servlet-handler />
