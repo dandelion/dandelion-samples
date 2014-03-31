@@ -1,13 +1,12 @@
 {
     "bundle" : "filtering",
-    "parent": "none",
     "assets": [
 		{
-		    "name": "application",
-		    "version": "1.0.0",
+		    "name": "filtering",
+		    "version": "0.10.0",
 		    "type": "js",
 		    "locations": {
-		        "webapp": "/js/filtering.js"
+		        "webapp": "/assets/js/filtering.js"
 		    }
 		}
     ]

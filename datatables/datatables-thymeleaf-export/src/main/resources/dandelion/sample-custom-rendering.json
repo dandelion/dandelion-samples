@@ -6,7 +6,7 @@
 		    "version": "0.10.0",
 		    "type": "js",
 		    "locations": {
-		        "webapp": "/js/custom-rendering.js"
+		        "webapp": "/assets/js/custom-rendering.js"
 		    }
 		}
     ]

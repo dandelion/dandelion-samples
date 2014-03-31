@@ -2,7 +2,7 @@
     "bundle" : "custom-rendering",
     "assets": [
 		{
-		    "name": "custom-rendering",
+		    "name": "sample-custom-rendering",
 		    "version": "0.10.0",
 		    "type": "js",
 		    "locations": {

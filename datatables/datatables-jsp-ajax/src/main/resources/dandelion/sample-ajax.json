@@ -2,7 +2,7 @@
     "bundle" : "ajax",
     "assets": [
 		{
-		    "name": "ajax",
+		    "name": "sample-ajax",
 		    "version": "0.10.0",
 		    "type": "js",
 		    "locations": {

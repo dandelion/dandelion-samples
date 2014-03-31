@@ -2,7 +2,7 @@
     "bundle" : "filtering",
     "assets": [
 		{
-		    "name": "filtering-examples",
+		    "name": "sample-filtering",
 		    "version": "0.10.0",
 		    "type": "js",
 		    "locations": {

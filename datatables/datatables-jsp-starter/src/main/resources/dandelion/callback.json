@@ -1,10 +1,9 @@
 {
     "bundle" : "callbacks",
-    "parent": "none",
     "assets": [
 		{
 		    "name": "callbacks",
-		    "version": "1.0.0",
+		    "version": "0.10.0",
 		    "type": "js",
 		    "locations": {
 		        "webapp": "/assets/js/callbacks.js"
