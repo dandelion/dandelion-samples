@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
    <modelVersion>4.0.0</modelVersion>
@@ -9,30 +10,26 @@
       <relativePath>../../pom.xml</relativePath>
    </parent>
 
-   <artifactId>datatables-thymeleaf-plugins</artifactId>
+   <artifactId>dandelion-thymeleaf-webjars</artifactId>
    <packaging>war</packaging>
 
-   <name>Dandelion :: Samples :: Datatables :: datatables-thymeleaf-plugins</name>
+   <name>Dandelion :: Samples :: Webjars</name>
 
    <properties>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+      <webjars-jquery.version>1.11.0</webjars-jquery.version>
+      <webjars-bootstrap.version>2.3.2</webjars-bootstrap.version>
    </properties>
 
    <dependencies>
-      <!-- Dandelion-DataTables -->
+      <!-- Dandelion -->
       <dependency>
          <groupId>com.github.dandelion</groupId>
-         <artifactId>datatables-thymeleaf</artifactId>
-      </dependency>
-
-      <!-- Spring -->
-      <dependency>
-         <groupId>org.springframework</groupId>
-         <artifactId>spring-web</artifactId>
+         <artifactId>dandelion-thymeleaf</artifactId>
       </dependency>
       <dependency>
-         <groupId>org.springframework</groupId>
-         <artifactId>spring-webmvc</artifactId>
+         <groupId>com.github.dandelion</groupId>
+         <artifactId>dandelion-webjars</artifactId>
       </dependency>
 
       <!-- Thymeleaf -->
@@ -45,10 +42,34 @@
          <artifactId>thymeleaf-spring3</artifactId>
       </dependency>
 
+      <!-- WebJars -->
+      <dependency>
+         <groupId>org.webjars</groupId>
+         <artifactId>jquery</artifactId>
+         <version>${webjars-jquery.version}</version>
+      </dependency>
+      <dependency>
+         <groupId>org.webjars</groupId>
+         <artifactId>bootstrap</artifactId>
+         <version>${webjars-bootstrap.version}</version>
+      </dependency>
+
+
+      <!-- Spring -->
+      <dependency>
+         <groupId>org.springframework</groupId>
+         <artifactId>spring-web</artifactId>
+      </dependency>
+      <dependency>
+         <groupId>org.springframework</groupId>
+         <artifactId>spring-webmvc</artifactId>
+      </dependency>
+
       <!-- Servlet -->
       <dependency>
          <groupId>javax.servlet</groupId>
          <artifactId>javax.servlet-api</artifactId>
+         <scope>provided</scope>
       </dependency>
 
       <!-- Logging -->

@@ -4,10 +4,11 @@
 
    <parent>
       <groupId>com.github.dandelion</groupId>
-      <artifactId>datatables-samples-parent</artifactId>
+      <artifactId>dandelion-samples-parent</artifactId>
       <version>0.10.0-SNAPSHOT</version>
+      <relativePath>../../pom.xml</relativePath>
    </parent>
-
+   
    <artifactId>datatables-jsp-configuration-groups</artifactId>
    <packaging>war</packaging>
 

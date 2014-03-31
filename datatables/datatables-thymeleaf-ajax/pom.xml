@@ -4,8 +4,9 @@
 
    <parent>
       <groupId>com.github.dandelion</groupId>
-      <artifactId>datatables-samples-parent</artifactId>
+      <artifactId>dandelion-samples-parent</artifactId>
       <version>0.10.0-SNAPSHOT</version>
+      <relativePath>../../pom.xml</relativePath>
    </parent>
 
    <artifactId>datatables-thymeleaf-ajax</artifactId>
@@ -18,6 +19,7 @@
    </properties>
 
    <dependencies>
+   
       <!-- Dandelion-DataTables -->
       <dependency>
          <groupId>com.github.dandelion</groupId>
@@ -38,10 +40,6 @@
       <dependency>
          <groupId>com.github.dandelion</groupId>
          <artifactId>datatables-export-itext</artifactId>
-      </dependency>
-      <dependency>
-         <groupId>com.github.dandelion</groupId>
-         <artifactId>dandelion-spring3</artifactId>
       </dependency>
 
       <!-- Spring -->

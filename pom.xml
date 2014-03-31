@@ -3,30 +3,32 @@
    <modelVersion>4.0.0</modelVersion>
 
    <groupId>com.github.dandelion</groupId>
-   <artifactId>datatables-samples-parent</artifactId>
+   <artifactId>dandelion-samples-parent</artifactId>
    <version>0.10.0-SNAPSHOT</version>
    <packaging>pom</packaging>
 
-   <name>Dandelion :: Samples :: Datatables :: Parent</name>
-   <description>Parent of all Dandelion-Datatables samples</description>
+   <name>Dandelion :: Samples :: Parent</name>
+   <description>Parent of all Dandelion samples</description>
 
    <modules>
-      <module>datatables-jsp-starter</module>
-      <module>datatables-jsp-themes</module>
-      <module>datatables-jsp-plugins</module>
-      <module>datatables-jsp-configuration-groups</module>
-      <module>datatables-jsp-extension</module>
-      <module>datatables-jsp-ajax</module>
-      <module>datatables-jsp-i18n-struts1</module>
-      <module>datatables-jsp-i18n-struts2</module>
-      <module>datatables-jsp-export</module>
-      <module>datatables-thymeleaf-starter</module>
-      <module>datatables-thymeleaf-themes</module>
-      <module>datatables-thymeleaf-plugins</module>
-      <module>datatables-thymeleaf-configuration-groups</module>
-      <module>datatables-thymeleaf-ajax</module>
-      <module>datatables-thymeleaf-export</module>
-      <module>datatables-thymeleaf-extension</module>
+      <module>dandelion/dandelion-jsp-bundle</module>
+      <module>dandelion/dandelion-thymeleaf-webjars</module>
+      <module>datatables/datatables-jsp-starter</module>
+      <module>datatables/datatables-jsp-themes</module>
+      <module>datatables/datatables-jsp-plugins</module>
+      <module>datatables/datatables-jsp-configuration-groups</module>
+      <module>datatables/datatables-jsp-extension</module>
+      <module>datatables/datatables-jsp-ajax</module>
+      <module>datatables/datatables-jsp-i18n-struts1</module>
+      <module>datatables/datatables-jsp-i18n-struts2</module>
+      <module>datatables/datatables-jsp-export</module>
+      <module>datatables/datatables-thymeleaf-starter</module>
+      <module>datatables/datatables-thymeleaf-themes</module>
+      <module>datatables/datatables-thymeleaf-plugins</module>
+      <module>datatables/datatables-thymeleaf-configuration-groups</module>
+      <module>datatables/datatables-thymeleaf-ajax</module>
+      <module>datatables/datatables-thymeleaf-export</module>
+      <module>datatables/datatables-thymeleaf-extension</module>
    </modules>
 
    <properties>
@@ -59,8 +61,39 @@
 
    <dependencyManagement>
       <dependencies>
-
          <!-- Dandelion -->
+         <dependency>
+            <groupId>com.github.dandelion</groupId>
+            <artifactId>dandelion-jsp</artifactId>
+            <version>${dandelion.version}</version>
+         </dependency>
+         <dependency>
+            <groupId>com.github.dandelion</groupId>
+            <artifactId>dandelion-thymeleaf</artifactId>
+            <version>${dandelion.version}</version>
+         </dependency>
+         <dependency>
+            <groupId>com.github.dandelion</groupId>
+            <artifactId>dandelion-spring3</artifactId>
+            <version>${dandelion.version}</version>
+         </dependency>
+         <dependency>
+            <groupId>com.github.dandelion</groupId>
+            <artifactId>dandelion-ehcache</artifactId>
+            <version>${dandelion.version}</version>
+         </dependency>
+         <dependency>
+            <groupId>com.github.dandelion</groupId>
+            <artifactId>dandelion-webjars</artifactId>
+            <version>${dandelion.version}</version>
+         </dependency>
+         <dependency>
+            <groupId>com.github.dandelion</groupId>
+            <artifactId>dandelion-yuicompressor</artifactId>
+            <version>${dandelion.version}</version>
+         </dependency>
+         
+         <!-- Dandelion-Datatables -->
          <dependency>
             <groupId>com.github.dandelion</groupId>
             <artifactId>datatables-jsp</artifactId>
@@ -105,16 +138,6 @@
             <groupId>com.github.dandelion</groupId>
             <artifactId>datatables-struts2</artifactId>
             <version>${dandelion.datatables.version}</version>
-         </dependency>
-         <dependency>
-            <groupId>com.github.dandelion</groupId>
-            <artifactId>dandelion-spring3</artifactId>
-            <version>${dandelion.version}</version>
-         </dependency>
-         <dependency>
-            <groupId>com.github.dandelion</groupId>
-            <artifactId>dandelion-ehcache</artifactId>
-            <version>${dandelion.version}</version>
          </dependency>
 
          <!-- Spring -->
