@@ -11,7 +11,7 @@
    <description>Parent of all Dandelion samples</description>
 
    <modules>
-      <module>dandelion/dandelion-jsp-bundle</module>
+      <module>dandelion/dandelion-jsp-starter</module>
       <module>dandelion/dandelion-thymeleaf-webjars</module>
       <module>datatables/datatables-jsp-starter</module>
       <module>datatables/datatables-jsp-themes</module>

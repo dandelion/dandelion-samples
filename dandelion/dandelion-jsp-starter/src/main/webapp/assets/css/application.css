@@ -1,0 +1,15 @@
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+.row-intro {
+	margin-bottom: 30px;
+}
+
+.section-title {
+	padding-top: 10px;
+	padding-bottom: 5px;
+	margin: 10px 0 15px;
+	border-bottom: 1px solid #eeeeee;
+}
