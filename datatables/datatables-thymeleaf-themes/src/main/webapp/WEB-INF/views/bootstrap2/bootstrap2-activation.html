@@ -9,7 +9,7 @@
          Dandelion Thymeleaf dialect to modify the active scopes by excluding the Datatables' CSS as
          follows:</p>
       <p>
-         <code>ddl:assets-excludedAssets="datatables-css"</code>
+         <code>ddl:css-excludes="datatables"</code>
       </p>
       <p>
          As a consequence, we lost the sorting icons. But you could of course get them back by using
@@ -21,7 +21,7 @@
 </div>
 
 <div class="row-fluid">
-   <div class="span12" ddl:assets-excludedAssets="datatables-css">
+   <div class="span12" ddl:css-excludes="datatables">
    
       <div dt:conf="myTableId">
          <div dt:confType="extrahtml" dt:uid="0" dt:cssStyle="float:right;">
