@@ -7,9 +7,9 @@
       <p>
          Thanks to the
          <code>&lt;datatables:extraJs&gt;</code>
-         , all assets bundled in the scope
+         , all assets from the bundle
          <code>filtering</code>
-         have been added in the
+         have been added to the
          <code>beforeall</code>
          placeholder, i.e. before any generated configuration.
       </p>
@@ -25,7 +25,7 @@
          <datatables:column title="LastName" property="lastName" />
          <datatables:column title="City" property="address.town.name" filterable="true" filterType="select" filterValues="myPredefinedValues" />
          <datatables:column title="Mail" property="mail" />
-         <datatables:extraJs scopes="filtering" insert="beforeall" />
+         <datatables:extraJs bundles="filtering" insert="beforeall" />
       </datatables:table>
 
    </div>

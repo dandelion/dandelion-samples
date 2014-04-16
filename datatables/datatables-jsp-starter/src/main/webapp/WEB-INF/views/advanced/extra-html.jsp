@@ -9,7 +9,7 @@
          <code>&lt;datatables:extraHtml&gt;</code>
          tag and the
          <code>dom</code>
-         table attribute, two more controls have been easily added to the table bellow.
+         table attribute, two more controls have been easily added to the table below.
       </p>
    </div>
 </div>

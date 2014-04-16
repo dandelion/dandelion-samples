@@ -1,6 +1,7 @@
 package com.github.dandelion.datatables.model;
 
 import java.util.Date;
+import java.util.Map;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -9,6 +10,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
+import javax.persistence.Transient;
 
 /**
  * A typical Person entity.
@@ -45,6 +47,9 @@ public class Person {
 	@JoinColumn(name = "address_id")
 	private Address address;
 
+	@Transient
+	private Map<String, String> map;
+	
 	public Person() {
 
 	}
@@ -119,4 +124,14 @@ public class Person {
 	public void setCompany(Company company) {
 		this.company = company;
 	}
+
+	public Map<String, String> getMap() {
+		return map;
+	}
+
+	public void setMap(Map<String, String> map) {
+		this.map = map;
+	}
+	
+	
 }
