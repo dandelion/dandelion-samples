@@ -5,18 +5,14 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="joda" uri="http://www.joda.org/joda/time/tags" %>
+<%@ taglib prefix="dandelion" uri="http://github.com/dandelion" %>
 
 <html lang="en">
-
+<dandelion:bundle include="datepicker" />
 <jsp:include page="../fragments/headTag.jsp"/>
 
 
 <body>
-<script>
-    $(function () {
-        $("#date").datepicker({ dateFormat: 'yy/mm/dd'});
-    });
-</script>
 <div class="container">
     <jsp:include page="../fragments/bodyHeader.jsp"/>
     <h2><c:if test="${visit['new']}">New </c:if>Visit</h2>

@@ -4,18 +4,13 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="petclinic" tagdir="/WEB-INF/tags" %>
-
+<%@ taglib prefix="dandelion" uri="http://github.com/dandelion" %>
 
 <html lang="en">
-
+<dandelion:bundle include="datepicker" />
 <jsp:include page="../fragments/headTag.jsp"/>
 <body>
 
-<script>
-    $(function () {
-        $("#birthDate").datepicker({ dateFormat: 'yy/mm/dd'});
-    });
-</script>
 <div class="container">
     <jsp:include page="../fragments/bodyHeader.jsp"/>
     <c:choose>
@@ -36,7 +31,6 @@
                class="form-horizontal">
         <div class="control-group" id="owner">
             <label class="control-label">Owner </label>
-
             <c:out value="${pet.owner.firstName} ${pet.owner.lastName}"/>
         </div>
         <petclinic:inputField label="Name" name="name"/>

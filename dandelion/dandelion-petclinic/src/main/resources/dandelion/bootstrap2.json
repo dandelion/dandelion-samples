@@ -1,0 +1,11 @@
+{
+   "bundle" : "bootstrap2",
+   "assets": [{
+      "name": "bootstrap2",
+      "version": "2.3.0",
+      "type": "css",
+      "locations": {
+         "webjar": "bootstrap.css"
+      }
+   }]
+}

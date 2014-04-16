@@ -1,0 +1,11 @@
+{
+   "bundle" : "jquery",
+   "assets": [{
+      "name": "jquery",
+      "version": "2.0.3",
+      "type": "js",
+      "locations": {
+         "webjar": "jquery.js"
+      }
+   }]
+}

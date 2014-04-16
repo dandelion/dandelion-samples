@@ -1,0 +1,33 @@
+{
+   "bundle" : "datepicker",
+   "dependencies" : [ "petclinic" ],
+   "assets": [{
+      "name": "jqueryui-core",
+      "version": "1.10.3",
+      "type": "js",
+      "locations": {
+          "webjar": "jquery.ui.core.js"
+      }
+   }, {
+      "name": "jqueryui-datepicker",
+      "version": "1.10.3",
+      "type": "js",
+      "locations": {
+          "webjar": "jquery.ui.datepicker.js"
+      }
+   }, {
+      "name": "jqueryui",
+      "version": "1.10.3",
+      "type": "css",
+      "locations": {
+          "webjar": "jquery-ui.css"
+      }
+   }, {
+      "name": "pets",
+      "version": "1.0.0",
+      "type": "js",
+      "locations": {
+          "webapp": "/resources/js/pets.js"
+      }
+   }]
+}

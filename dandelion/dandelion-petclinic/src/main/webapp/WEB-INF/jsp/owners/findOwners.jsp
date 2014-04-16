@@ -4,9 +4,10 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ taglib prefix="dandelion" uri="http://github.com/dandelion" %>
 
 <html lang="en">
-
+<dandelion:asset jsExcludes="bootstrap2" />
 <jsp:include page="../fragments/headTag.jsp"/>
 
 <body>

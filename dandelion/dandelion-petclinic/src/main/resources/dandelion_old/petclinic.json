@@ -1,0 +1,25 @@
+{
+   "bundle" : "petclinic",
+   "assets": [{
+      "name": "bootstrap2-css",
+      "version": "2.3.0",
+      "type": "css",
+      "locations": {
+         "webjars": "bootstrap.css"
+      }
+   }, {
+      "name": "petclinic",
+      "version": "1.0.0",
+      "type": "css",
+      "locations": {
+         "webapp": "/resources/css/petclinic.css"
+      }
+   }, {
+      "name": "jquery-js",
+      "version": "2.0.3",
+      "type": "js",
+      "locations": {
+         "webjars": "jquery.js"
+      }
+   }]
+}
