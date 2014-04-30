@@ -20,10 +20,10 @@
                asset graph of a request. You will be able to see all the active bundles for the
                current request and how assets are injected into the page.</p>
             <p>
-               Just manually add the <code>showDandelionGraph</code> parameter to the URL.
+               Just manually add the <code>showGraph</code> parameter to the URL.
             </p>
             <p class="text-center">
-               <a href="?showDandelionGraph" class="btn btn-large btn-primary">Try with this page</a>
+               <a href="?showGraph" class="btn btn-large btn-primary">Try with this page</a>
             </p>
             <p>
                Feel free to test it in all other pages of this sample application!
