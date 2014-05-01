@@ -8,7 +8,7 @@
 <%@ taglib prefix="dandelion" uri="http://github.com/dandelion" %>
 
 <html lang="en">
-<dandelion:bundle include="datepicker" />
+<dandelion:bundle includes="datepicker" />
 <jsp:include page="../fragments/headTag.jsp"/>
 
 

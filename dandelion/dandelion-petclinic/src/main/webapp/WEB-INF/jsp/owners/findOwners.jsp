@@ -7,7 +7,7 @@
 <%@ taglib prefix="dandelion" uri="http://github.com/dandelion" %>
 
 <html lang="en">
-<dandelion:asset jsExcludes="bootstrap2" />
+
 <jsp:include page="../fragments/headTag.jsp"/>
 
 <body>
