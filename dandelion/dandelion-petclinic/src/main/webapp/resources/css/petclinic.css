@@ -8,9 +8,9 @@
     width: 100%;
 }
 
-input[type="text"] {
-    height: 25px;
-}
+/* input[type="text"] { */
+/*     height: 25px; */
+/* } */
 
 .navbar .nav > li > a {
     color: #000000;
