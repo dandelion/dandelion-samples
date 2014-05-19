@@ -1,0 +1,21 @@
+{
+    "bundle" : "sample-asset-locators",
+    "assets": [
+		{
+		    "name": "asset-webapp",
+		    "version": "1.0.0",
+		    "type": "js",
+		    "locations": {
+		        "webapp": "/assets/js/asset-webapp.js"
+		    }
+		},
+		{
+		    "name": "asset-classpath",
+		    "version": "1.0.0",
+		    "type": "js",
+		    "locations": {
+		        "classpath": "asset-classpath.js"
+		    }
+		}
+    ]
+}
