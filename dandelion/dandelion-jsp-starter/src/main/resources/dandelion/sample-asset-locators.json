@@ -16,14 +16,6 @@
 		    "locations": {
 		        "classpath": "asset-classpath.js"
 		    }
-		},
-		{
-		    "name": "asset-jar",
-		    "version": "1.0.0",
-		    "type": "js",
-		    "locations": {
-		        "jar": "sample/asset-jar.js"
-		    }
 		}
     ]
 }

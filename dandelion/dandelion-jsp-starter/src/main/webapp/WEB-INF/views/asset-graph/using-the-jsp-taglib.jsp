@@ -19,16 +19,16 @@
             <h2 class="section-title">Interacting with the asset graph</h2>
             <h3>Using the JSP taglib</h3>
             <p>In this example, a bundle is activated using the JSP taglib:
+            </p>
 <pre>
 &lt;dandelion:bundle include="bundle-using-taglib" />
 </pre>
-            </p>
             <p>
                As a consequence, the following script is injected in the HTML source code:
-<pre>
-&lt;script src="/dandelion-jsp-starter/assets/js/asset-taglib.js">&lt;/script>
-</pre>
             </p>
+<pre>
+&lt;script src="/dandelion-jsp-starter/assets/js/asset-taglib.js"&gt;&lt;/script&gt;
+</pre>
          </div>
       </div>
       

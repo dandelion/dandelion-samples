@@ -16,6 +16,9 @@
       <div class="row-fluid">
          <div class="span12">
             <h2 class="section-title">Asset locators</h2>
+            <p>
+            	In this example, a sample called <i>sample-asset-locators</i> is loaded. 
+            </p>
             <div id="msg"></div>
          </div>
       </div>

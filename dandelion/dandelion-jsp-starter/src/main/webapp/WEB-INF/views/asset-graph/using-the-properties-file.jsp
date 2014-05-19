@@ -20,9 +20,9 @@
             <h3>Using the properties file</h3>
             <p>The <code>dandelion.properties</code> file allows you to interact with the asset graph in multiple ways:</p>
             <ul>
-               <li>You can include (or exclude) one or more bundle permanently using
+               <li>You can include (or exclude) one or more bundles permanently using
                   respectively the <code>bundle.includes</code> (or <code>bundle.excludes</code>)
-                  the configuration
+                  configuration property
                </li>
                <li>You can also excludes JS or CSS files permanently using both <code>asset.js.excludes</code>
                   and <code>asset.css.excludes</code></li>

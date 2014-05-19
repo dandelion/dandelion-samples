@@ -1,8 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
-<c:url var="reloadUrl" value="/asset-graph" />
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,15 +36,14 @@
                This bundle:
             </p>
             <ul>
-               <li>declares <i>jquery</i> as a dependency</li>
-               <li>defines only one CSS to be loaded: <code>bootstrap.css</code></li>
+               <li>defines only one JS to be loaded: <code>jquery.js</code></li>
             </ul>
             <p>
                As a consequence, if you take a look at the end of the <code>&lt;body&gt;</code> section in the HTML source code, you can see:
-<pre>
-&lt;script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.js">&lt;/script>
-</pre>
             </p>
+<pre>
+&lt;script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.js"&gt;&lt;/script&gt;
+</pre>
             
             <br />
             <h4><i>bootstrap2</i> bundle</h4>
@@ -62,7 +59,7 @@
                As a consequence, if you take a look at the <code>&lt;body&gt;</code> section in the HTML source code:
             </p>
 <pre>
-&lt;script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.js" >&lt;/script>
+&lt;script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.js"&gt;&lt;/script&gt;
 </pre>
             <p>
                Note that since the <i>jquery</i> bundle is declared as a dependency of
@@ -74,7 +71,7 @@
             <h4><i>sample</i> bundle</h4>
             <p>Configured in: <code>src/main/resources/dandelion/sample.json</code></p>
             <p>
-               The second bundle:
+               This last bundle:
             </p>
             <ul>
                <li>has no dependency</li>
@@ -82,10 +79,10 @@
             </ul>
             <p>
                As a consequence, if you take a look at the page sources, you have in the <code>head</code> section:
-<pre>
-&lt;link rel="stylesheet" href="http://localhost:8080/dandelion-jsp-scope/assets/css/application.css" />
-</pre>
             </p>
+<pre>
+&lt;link rel="stylesheet" href="/dandelion-jsp-starter/assets/css/application.css" /&gt;
+</pre>
             <p>
                Note that this CSS file above is loaded in first because it has no dependency.
             </p>
