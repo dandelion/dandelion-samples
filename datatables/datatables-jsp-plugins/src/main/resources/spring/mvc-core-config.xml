@@ -18,4 +18,5 @@
    <mvc:default-servlet-handler />
 
    <import resource="mvc-view-config.xml" />
+   
 </beans>

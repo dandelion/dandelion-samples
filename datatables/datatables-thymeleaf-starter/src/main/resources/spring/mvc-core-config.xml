@@ -6,16 +6,9 @@
       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-   <!-- Enables scanning for @Controller annotations -->
    <mvc:annotation-driven />
-   
-   <!-- Enables scanning for @Controller annotations -->
    <context:component-scan base-package="com.github.dandelion.datatables.web" />
-
-   <!-- Configures a handler for serving static resources by forwarding to the Servlet container's default 
-      Servlet. -->
    <mvc:default-servlet-handler />
-
-   <!-- Import views configuration -->
    <import resource="mvc-view-config.xml" />
+
 </beans>
