@@ -5,11 +5,11 @@ A sample which shows how to apply CSS themes on your tables.
 
 ## Technology stack
 
- - Thymeleaf 2.1.1.RELEASE
+ - Thymeleaf 2.1.3.RELEASE
  - Thymeleaf Extra Tiles2 2.1.0.RELEASE
  - Apache Tiles 2.2.2
  - Dandelion-Datatables 0.10.0
- - Spring 3.2.5.RELEASE
+ - Spring 3.2.8.RELEASE
 
 ## Features
 		
@@ -18,6 +18,7 @@ A sample which shows how to apply CSS themes on your tables.
  - [Bootstrap 2](http://getbootstrap.com/2.3.2/) Responsive theme (based on [datatables-responsive](https://github.com/Comanche/datatables-responsive) by [Comanche](https://github.com/Comanche))
  - [Tablecloth](https://github.com/bwsewell/tablecloth) integration (Bootstrap 2 compatible)
  - [Bootstrap 3](http://getbootstrap.com/) theme
+ - [Bootstrap 3](http://getbootstrap.com/) Responsive theme (based on [datatables-responsive](https://github.com/Comanche/datatables-responsive) by [Comanche](https://github.com/Comanche))
  - jQueryUI theme ([ThemeRoller](http://jqueryui.com/themeroller/) support)
 
 ## Running this sample
@@ -34,7 +35,7 @@ You can then access the sample here: [http://localhost:9090/datatables-thymeleaf
 
 ## Bug/improvement
 
-Please report it using the general issue tracker: [https://github.com/dandelion/dandelion-samples/issues](https://github.com/dandelion/dandelion-samples/issues)
+Please report it using the issue tracker dedicated to all sample apps: [https://waffle.io/dandelion/dandelion-samples](https://waffle.io/dandelion/dandelion-samples)
 
 =
 The [Dandelion team](http://dandelion.github.io/team/).

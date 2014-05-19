@@ -29,7 +29,7 @@ You can then access the sample here: [http://localhost:9090/dandelion-jsp-scope]
 
 ## Bug/improvement
 
-Please report it using the general issue tracker: [https://github.com/dandelion/dandelion-samples/issues](https://github.com/dandelion/dandelion-samples/issues)
+Please report it using the issue tracker dedicated to all sample apps: [https://waffle.io/dandelion/dandelion-samples](https://waffle.io/dandelion/dandelion-samples)
 
 =
 The [Dandelion team](http://dandelion.github.io/team/).

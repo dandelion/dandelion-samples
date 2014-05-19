@@ -5,11 +5,11 @@ A sample which shows how to use an AJAX source with server-side processing based
 
 ## Technology stack
 
- - Thymeleaf 2.1.1.RELEASE
+ - Thymeleaf 2.1.3.RELEASE
  - Dandelion-Datatables 0.10.0
- - Jackson 1.9.11
- - Spring 3.2.5.RELEASE
- - Hibernate 4.2.7.Final / JPA 2.0
+ - Jackson 1.9.13
+ - Spring 3.2.8.RELEASE
+ - Hibernate 4.3.5.Final / JPA 2.0
  - H2 database
 
 ## Features
@@ -42,7 +42,7 @@ Note that you can also access the H2 web server here: [http://localhost:9091/](h
 
 ## Bug/improvement
 
-Please report it using the general issue tracker: [https://github.com/dandelion/dandelion-samples/issues](https://github.com/dandelion/dandelion-samples/issues)
+Please report it using the issue tracker dedicated to all sample apps: [https://waffle.io/dandelion/dandelion-samples](https://waffle.io/dandelion/dandelion-samples)
 
 =
 The [Dandelion team](http://dandelion.github.io/team/).

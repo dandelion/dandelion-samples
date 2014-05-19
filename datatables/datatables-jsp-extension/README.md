@@ -9,7 +9,7 @@ A sample which show how to use the extension mechanism.
  - JSTL 1.2
  - Apache Tiles 2.2.2
  - Dandelion-Datatables 0.10.0
- - Spring 3.2.5.RELEASE
+ - Spring 3.2.8.RELEASE
 
 ## Features
 		
@@ -30,7 +30,7 @@ You can then access the sample here: [http://localhost:9090/datatables-jsp-exten
 
 ## Bug/improvement
 
-Please report it using the general issue tracker: [https://github.com/dandelion/dandelion-samples/issues](https://github.com/dandelion/dandelion-samples/issues)
+Please report it using the issue tracker dedicated to all sample apps: [https://waffle.io/dandelion/dandelion-samples](https://waffle.io/dandelion/dandelion-samples)
 
 =
 The [Dandelion team](http://dandelion.github.io/team/).

@@ -6,10 +6,10 @@ A sample which show how to use global and configuration groups in a Thymeleaf an
 ## Technology stack
 
  - Apache Tiles 2.2.2
- - Thymeleaf 2.1.1.RELEASE
+ - Thymeleaf 2.1.3.RELEASE
  - Thymeleaf Extra Tiles2 2.1.0.RELEASE
  - Dandelion-Datatables 0.10.0
- - Spring 3.2.5.RELEASE
+ - Spring 3.2.8.RELEASE
 
 ## Features
 		
@@ -32,7 +32,7 @@ You can then access the sample here: [http://localhost:9090/datatables-thymeleaf
 
 ## Bug/improvement
 
-Please report it using the general issue tracker: [https://github.com/dandelion/dandelion-samples/issues](https://github.com/dandelion/dandelion-samples/issues)
+Please report it using the issue tracker dedicated to all sample apps: [https://waffle.io/dandelion/dandelion-samples](https://waffle.io/dandelion/dandelion-samples)
 
 =
 The [Dandelion team](http://dandelion.github.io/team/).
