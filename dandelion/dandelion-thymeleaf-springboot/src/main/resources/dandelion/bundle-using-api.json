@@ -1,0 +1,14 @@
+{
+	"bundle": "bundle-using-api",
+	"dependencies" : [ "jquery" ],
+    "assets": [
+        {
+            "name": "asset-api", 
+            "type": "js", 
+            "version": "0.10.0",
+        	"locations": {
+        		"webapp": "/assets/js/asset-api.js"
+        	}
+        }
+    ]
+}

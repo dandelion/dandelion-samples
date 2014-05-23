@@ -1,0 +1,14 @@
+{
+	"bundle": "bundle-using-the-dialect",
+	"dependencies" : [ "jquery" ],
+    "assets": [
+        {
+            "name": "asset-dialect", 
+            "type": "js", 
+            "version": "0.10.0",
+        	"locations": {
+        		"webapp": "/assets/js/asset-dialect.js"
+        	}
+        }
+    ]
+}
