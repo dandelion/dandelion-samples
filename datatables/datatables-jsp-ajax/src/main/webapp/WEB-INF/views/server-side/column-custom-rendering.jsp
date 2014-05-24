@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="../common/taglib.jsp"%>
 
-<!-- Update the current scope with extra functions needed for rendering -->
-<dandelion:assets scopes="custom-rendering" />
+<!-- Update the current bundle graph with extra functions needed for rendering -->
+<dandelion:bundle includes="custom-rendering" />
 
 <div class="row-fluid row-intro">
    <div class="span12">
@@ -17,7 +17,7 @@
          function (used to turn a string into a mailto link).
       </p>
       <p>
-         Note the use of the special syntax: <code>scopeToLoad#functionName</code>.
+         Note the use of the special syntax: <code>bundleToInclude#functionName</code>.
       </p>
    </div>
 </div>

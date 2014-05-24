@@ -10,9 +10,9 @@
             href="http://datatables.net/plug-ins/api#fnReloadAjax">fnReloadAjax</a> is made.
       </p>
       <p>
-         Note that the scope
+         Note that the bundle
          <code>ddl-dt-ajax-reload</code>
-         is automatically added to the current request.
+         is automatically included in the current request.
       </p>
    </div>
 </div>
