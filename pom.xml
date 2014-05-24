@@ -13,7 +13,6 @@
    <modules>
       <module>dandelion/dandelion-jsp-starter</module>
       <module>dandelion/dandelion-thymeleaf-starter</module>
-      <module>dandelion/dandelion-thymeleaf-webjars</module>
       <module>datatables/datatables-jsp-starter</module>
       <module>datatables/datatables-jsp-themes</module>
       <module>datatables/datatables-jsp-plugins</module>
