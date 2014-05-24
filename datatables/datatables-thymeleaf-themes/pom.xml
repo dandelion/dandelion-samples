@@ -5,7 +5,7 @@
    <parent>
       <groupId>com.github.dandelion</groupId>
       <artifactId>dandelion-samples-parent</artifactId>
-      <version>0.10.0-SNAPSHOT</version>
+      <version>0.10.0</version>
       <relativePath>../../pom.xml</relativePath>
    </parent>
 
@@ -24,6 +24,10 @@
          <groupId>com.github.dandelion</groupId>
          <artifactId>datatables-thymeleaf</artifactId>
       </dependency>
+<!--       <dependency> -->
+<!--          <groupId>com.github.dandelion</groupId> -->
+<!--          <artifactId>dandelion-ehcache</artifactId> -->
+<!--       </dependency> -->
 
       <!-- Spring -->
       <dependency>
@@ -72,6 +76,13 @@
          <groupId>ch.qos.logback</groupId>
          <artifactId>logback-classic</artifactId>
       </dependency>
+      
+<!--       <dependency> -->
+<!--    <groupId>net.sf.ehcache</groupId> -->
+<!--    <artifactId>ehcache-core</artifactId> -->
+<!--    <version>2.6.9</version> -->
+<!-- </dependency> -->
+            
    </dependencies>
 
    <build>
