@@ -2,7 +2,7 @@
 <%@ include file="../common/taglib.jsp"%>
 
 <%-- Make the ugly row in the thead disappear by removing the DataTables' CSS from the bundle --%>
-<dandelion:asset exclude="datatables-css" />
+<dandelion:asset cssExcludes="datatables" />
 
 <div class="row-fluid row-intro">
    <div class="span12">
@@ -15,7 +15,7 @@
          Dandelion JSP taglib to modify the active bundles by excluding the Datatables' CSS as
          follows:</p>
       <p>
-         <code>&lt;dandelion:asset exclude="datatables-css" /></code>
+         <code>&lt;dandelion:asset cssExcludes="datatables" /></code>
       </p>
       <p>
          As a consequence, we lost the sorting icons. But you could of course get them back by using

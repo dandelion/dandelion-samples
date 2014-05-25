@@ -4,7 +4,7 @@
 <%@ taglib prefix="dandelion" uri="http://github.com/dandelion" %>
 
 <%-- Enables 2 bundles on all pages: sample and bootstrap2 --%>
-<dandelion:bundle include="sample,bootstrap2" />
+<dandelion:bundle includes="sample,bootstrap2" />
 
 <c:url value="/" var="home" />
 <c:url value="/bootstrap2" var="bs2Url" />
@@ -45,6 +45,7 @@
                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bootstrap 3 <b class="caret"></b></a>
                      <ul class="dropdown-menu">
                         <li><a href="${bs3Url}/bootstrap3-activation">Bootstrap 3 activation</a></li>
+                        <li><a href="${bs3Url}/bootstrap3-responsive">Bootstrap 3 responsive</a></li>
                      </ul>
                   </li>
                   <li class="dropdown">
@@ -62,7 +63,7 @@
                      <ul class="dropdown-menu">
                         <li><a href="http://dandelion.github.io/datatables">Documentation</a>
                         <li><a href="http://dandelion-forum.48353.x6.nabble.com/">Forum</a></li>
-                        <li><a href="https://github.com/dandelion/dandelion-samples/issues">Report an issue</a></li>
+                        <li><a href="https://waffle.io/dandelion/dandelion-samples">Report an issue</a></li>
                      </ul>
                   </li>
                </ul>

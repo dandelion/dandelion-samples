@@ -6,7 +6,7 @@
 
 <div class="row row-intro">
    <div class="span12">
-      <h3>Bootstrap 3 theme</h3>
+      <h3>Bootstrap 3 responsive theme</h3>
       <p>This example shows how easily the Bootstrap framework can be integrated.</p>
       <p>Note that we made the black row in the thead disappear. To do that, we used the
          Dandelion JSP taglib to modify the active scopes by excluding the Datatables' CSS as
@@ -26,12 +26,12 @@
 <div class="row">
    <div class="span12">
    
-      <datatables:table id="myTableId" data="${persons}" cssClass="table table-striped table-bordered table-condensed" theme="bootstrap3">
-         <datatables:column title="Id" property="id" />
+      <datatables:table id="myTableId" data="${persons}" cssClass="table table-striped table-bordered" theme="bootstrap3" ext="bootstrap3-responsive">
+         <datatables:column title="Id" property="id" data-class="expand" />
          <datatables:column title="FirstName" property="firstName" />
          <datatables:column title="LastName" property="lastName" />
-         <datatables:column title="Street" property="address.town.name" />
-         <datatables:column title="Mail" property="mail" />
+         <datatables:column title="Street" property="address.town.name" data-hide="phone,tablet" />
+         <datatables:column title="Mail" property="mail" data-hide="phone,tablet" />
       </datatables:table>
    
    </div>

@@ -2,8 +2,6 @@ package com.github.dandelion.datatables.web;
 
 import java.util.List;
 
-import javax.servlet.http.HttpServletRequest;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -40,7 +38,7 @@ public class SampleController {
 	}
 
 	@RequestMapping(value = "/")
-	public String goToIndex(HttpServletRequest request) {
+	public String goToIndex() {
 		return "index";
 	}
 	
