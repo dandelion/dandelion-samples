@@ -28,7 +28,7 @@ A sample which shows how to use an AJAX source with server-side processing based
 
 ## Running this sample
 
-Using __Apache Tomcat__ :
+Using __Apache Tomcat__:
 
     mvn tomcat7:run
 

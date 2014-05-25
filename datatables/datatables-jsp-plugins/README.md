@@ -20,7 +20,7 @@ A sample which shows how to use the DataTables' extras supported by Dandelion-Da
 
 ## Running this sample
 
-Using __Apache Tomcat__ :
+Using __Apache Tomcat__:
 
     mvn tomcat7:run
 

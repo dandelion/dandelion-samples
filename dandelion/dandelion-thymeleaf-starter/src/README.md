@@ -18,7 +18,7 @@ A sample application which shows the key concepts around Dandelion: assets, asse
 
 ## Running this sample
 
-Using __Apache Tomcat__ :
+Using __Apache Tomcat__:
 
     mvn tomcat7:run
 

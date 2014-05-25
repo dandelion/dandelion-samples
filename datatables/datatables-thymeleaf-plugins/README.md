@@ -18,7 +18,7 @@ A sample which shows how to use with Thymeleaf the DataTables' extras supported 
 
 ## Running this sample
 
-Using __Apache Tomcat__ :
+Using __Apache Tomcat__:
 
     mvn tomcat7:run
 

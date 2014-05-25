@@ -20,7 +20,7 @@ A sample which show how to configure tables using the configuration properties.
 
 ## Running this sample
 
-Using __Apache Tomcat__ :
+Using __Apache Tomcat__:
 
     mvn tomcat7:run
 

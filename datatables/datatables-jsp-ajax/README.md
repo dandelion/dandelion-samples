@@ -24,10 +24,11 @@ A sample which shows how to use an AJAX source, with or without server-side proc
  - Custom AJAX requests
  - Delayed filtering (min length)
  - Delayed filtering (time)
+ - Data reloading (default & custom)
 
 ## Running this sample
 
-Using __Apache Tomcat__ :
+Using __Apache Tomcat__:
 
     mvn tomcat7:run
 

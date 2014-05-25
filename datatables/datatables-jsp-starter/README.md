@@ -29,7 +29,7 @@ A sample which shows the basics of Dandelion-Datatables: feature enablement, sor
 
 ## Running this sample
 
-Using __Apache Tomcat__ :
+Using __Apache Tomcat__:
 
     mvn tomcat7:run
 

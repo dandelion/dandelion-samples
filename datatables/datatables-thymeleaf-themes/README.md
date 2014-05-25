@@ -23,7 +23,7 @@ A sample which shows how to apply CSS themes on your tables.
 
 ## Running this sample
 
-Using __Apache Tomcat__ :
+Using __Apache Tomcat__:
 
     mvn tomcat7:run
 

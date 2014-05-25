@@ -22,7 +22,7 @@ A sample which shows how to export data using both DOM and AJAX sources, based o
 
 ## Running this sample
 
-Using __Apache Tomcat__ :
+Using __Apache Tomcat__:
 
     mvn tomcat7:run
 

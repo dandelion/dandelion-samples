@@ -20,7 +20,7 @@ A sample which show how to use global and configuration groups in a Thymeleaf an
 
 ## Running this sample
 
-Using __Apache Tomcat__ :
+Using __Apache Tomcat__:
 
     mvn tomcat7:run
 

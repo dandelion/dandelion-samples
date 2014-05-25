@@ -1,14 +1,13 @@
-dandelion-jsp-starter
+dandelion-thymeleaf-starter
 =================================================================
 
 A sample application which shows the key concepts around Dandelion: assets, asset bundles, asset locators, asset graph and the bundle graph viewer.
 
 ## Technology stack
 
- - JSP
- - JSTL 1.2
- - Spring 3.2.8.RELEASE
+ - Thymeleaf 2.1.3.RELEASE
  - Dandelion 0.10.0
+ - Spring 3.2.8.RELEASE
 
 ## Features
 		
@@ -26,7 +25,7 @@ Using __Jetty__:
 
     mvn jetty:run
 
-You can then access the sample here: [http://localhost:9090/dandelion-jsp-starter](http://localhost:9090/dandelion-jsp-starter)
+You can then access the sample here: [http://localhost:9090/dandelion-thymeleaf-starter](http://localhost:9090/dandelion-thymeleaf-starter)
 
 ## Bug/improvement
 

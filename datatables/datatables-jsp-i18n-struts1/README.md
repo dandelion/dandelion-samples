@@ -17,7 +17,7 @@ A sample which shows how to configure Dandelion-Datatables to work with Struts 1
 
 ## Running this sample
 
-Using __Apache Tomcat__ :
+Using __Apache Tomcat__:
 
     mvn tomcat7:run
 

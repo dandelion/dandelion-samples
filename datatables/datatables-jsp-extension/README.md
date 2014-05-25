@@ -18,7 +18,7 @@ A sample which show how to use the extension mechanism.
 
 ## Running this sample
 
-Using __Apache Tomcat__ :
+Using __Apache Tomcat__:
 
     mvn tomcat7:run
 

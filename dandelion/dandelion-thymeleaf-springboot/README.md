@@ -3,7 +3,7 @@ dandelion-thymeleaf-springboot
 
 A sample application which shows the key concepts around Dandelion: assets, asset bundles, asset locators, asset graph and the bundle graph viewer.
 
-## Technical stack
+## Technology stack
 
  - Dandelion 0.10.0
  - Thymeleaf 2.1.2.RELEASE

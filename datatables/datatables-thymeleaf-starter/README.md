@@ -28,7 +28,7 @@ A sample which shows the basics of Dandelion-Datatables when using Thymeleaf: fe
 
 ## Running this sample
 
-Using __Apache Tomcat__ :
+Using __Apache Tomcat__:
 
     mvn tomcat7:run
 
