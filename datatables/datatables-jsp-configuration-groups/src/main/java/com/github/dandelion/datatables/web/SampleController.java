@@ -38,7 +38,7 @@ public class SampleController {
 	}
 
 	@RequestMapping(value = "/")
-	public String goToIndex(@PathVariable String page) {
+	public String goToIndex() {
 		return "index";
 	}
 	
