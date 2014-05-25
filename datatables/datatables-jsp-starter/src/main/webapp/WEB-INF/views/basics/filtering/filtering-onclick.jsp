@@ -19,8 +19,8 @@
          <datatables:column title="City" name="city" property="address.town.name" filterable="true" filterCssClass="input-medium" />
          <datatables:column title="Mail" name="mail" property="mail" />
          <datatables:extraHtml uid="0" cssStyle="float:right;">
-            <a id="filterButton" value="Filter" class="btn btn-primary">Apply filters</a>
-            <a id="filterClearButton" value="Filter" class="btn btn-inverse">Clear filters</a>
+            <a id="filterButton" class="btn btn-primary">Apply filters</a>
+            <a id="filterClearButton" class="btn btn-inverse">Clear filters</a>
          </datatables:extraHtml>
       </datatables:table>
 

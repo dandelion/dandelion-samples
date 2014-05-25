@@ -17,7 +17,7 @@
          <datatables:column title="Id" property="id" />
          <datatables:column title="FirstName" property="firstName" />
          <datatables:column title="LastName" property="lastName" />
-         <datatables:column title="City" property="address.town.name" default=">> Default content <<" />
+         <datatables:column title="City" property="address.town.name" default="Default content" />
          <datatables:column title="Mail" property="mail" />
       </datatables:table>
 
