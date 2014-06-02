@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:tiles="http://www.thymeleaf.org"
+      xmlns:ddl="http://www.thymeleaf.org/dandelion" 
+      xmlns:dt="http://www.thymeleaf.org/dandelion/datatables"
+      ddl:bundle-includes="sample,bootstrap2">
+
+<head>
+   <title>datatables-thymeleaf-javaconfig</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+   <a href="https://github.com/dandelion/dandelion-samples">
+      <img style="position: fixed; top: 0; left: 0; border: 0; z-index: 1500;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png" alt="Fork me on GitHub"/>
+   </a>
+   <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+         <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+               <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+            </a> 
+            <a class="brand" th:href="@{/}">datatables-thymeleaf-javaconfig</a>
+            <div class="nav-collapse collapse navbar-responsive-collapse">
+               <ul class="nav">
+                  
+               </ul>
+               <ul class="nav pull-right">
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Help
+                        <b class="caret"></b>
+                     </a>
+                     <ul class="dropdown-menu">
+                        <li><a href="http://dandelion.github.io/datatables">Documentation</a></li>
+                        <li><a href="http://dandelion-forum.48353.x6.nabble.com/">Forum</a></li>
+                        <li><a href="https://waffle.io/dandelion/dandelion-samples">Report an issue</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+      
+   <div class="container">
+
+      <div class="row-fluid row-intro">
+         <div class="span12">
+            <h3>Default configuration</h3>
+            <p>The following table uses the default configuration.</p>
+            <p>Open your browser debugger and take a look at the generated parameters!</p>
+         </div>
+      </div>
+
+      <div class="row-fluid">
+         <div class="span12">
+            
+            <table id="myTableId" dt:table="true">
+               <thead>
+                  <tr>
+                     <th>Id</th>
+                     <th>LastName</th>
+                     <th>FirstName</th>
+                     <th>City</th>
+                     <th>Mail</th>
+                     <th>Salary</th>
+                     <th>Birthdate</th>
+                     <th>Company</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr th:each="person : ${persons}">
+                     <td th:text="${person?.id}">1</td>
+                     <td th:text="${person?.lastName}">Doe</td>
+                     <td th:text="${person?.firstName}">John</td>
+                     <td th:text="${person?.address?.town?.name}">Nobody knows!</td>
+                     <td th:text="${person?.mail}">john@doe.com</td>
+                     <td th:text="${person?.salary}">&euro;1000</td>
+                     <td th:text="${#dates.format(person?.birthDate, 'dd-MM-yyyy')}">23-10-1980</td>
+                     <td th:text="${person?.company?.name}">Amazon</td>
+                  </tr>
+               </tbody>
+            </table>
+
+         </div>
+      </div>
+   </div>
+</body>
+</html>

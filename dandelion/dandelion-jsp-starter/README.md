@@ -7,7 +7,7 @@ A sample application which shows the key concepts around Dandelion: assets, asse
 
  - JSP
  - JSTL 1.2
- - Spring 3.2.8.RELEASE
+ - Spring 3.2.9.RELEASE
  - Dandelion 0.10.0
 
 ## Features

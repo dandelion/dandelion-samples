@@ -10,7 +10,7 @@ See below the full list of features contained in this sample.
  - JSP
  - Dandelion-Datatables 0.10.0
  - Jackson 1.9.13
- - Spring 3.2.8.RELEASE
+ - Spring 3.2.9.RELEASE
  - Hibernate 4.3.5.Final / JPA 2.0
  - H2 database
 

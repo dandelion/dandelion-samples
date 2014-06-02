@@ -9,7 +9,7 @@ A sample which show how to use global and configuration groups in a Thymeleaf an
  - Thymeleaf 2.1.3.RELEASE
  - Thymeleaf Extra Tiles2 2.1.0.RELEASE
  - Dandelion-Datatables 0.10.0
- - Spring 3.2.8.RELEASE
+ - Spring 3.2.9.RELEASE
 
 ## Features
 		

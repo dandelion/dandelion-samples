@@ -8,7 +8,7 @@ A sample which shows how to use an AJAX source with server-side processing based
  - Thymeleaf 2.1.3.RELEASE
  - Dandelion-Datatables 0.10.0
  - Jackson 1.9.13
- - Spring 3.2.8.RELEASE
+ - Spring 3.2.9.RELEASE
  - Hibernate 4.3.5.Final / JPA 2.0
  - H2 database
 

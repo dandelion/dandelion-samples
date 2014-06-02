@@ -9,7 +9,7 @@ A sample which shows how to apply CSS themes on your tables.
  - Thymeleaf Extra Tiles2 2.1.0.RELEASE
  - Apache Tiles 2.2.2
  - Dandelion-Datatables 0.10.0
- - Spring 3.2.8.RELEASE
+ - Spring 3.2.9.RELEASE
 
 ## Features
 		
