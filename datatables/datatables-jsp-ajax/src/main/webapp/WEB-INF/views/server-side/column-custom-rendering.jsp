@@ -1,9 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="../common/taglib.jsp"%>
 
-<!-- Update the current bundle graph with extra functions needed for rendering -->
-<dandelion:bundle includes="custom-rendering" />
-
 <div class="row-fluid row-intro">
    <div class="span12">
       <h3>Custom column rendering</h3>
