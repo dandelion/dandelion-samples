@@ -5,7 +5,7 @@
    <parent>
       <groupId>com.github.dandelion</groupId>
       <artifactId>dandelion-samples-parent</artifactId>
-      <version>0.10.0</version>
+      <version>0.10.1</version>
       <relativePath>../../pom.xml</relativePath>
    </parent>
 
@@ -28,18 +28,6 @@
       <dependency>
          <groupId>com.github.dandelion</groupId>
          <artifactId>datatables-spring3</artifactId>
-      </dependency>
-      <dependency>
-         <groupId>com.github.dandelion</groupId>
-         <artifactId>datatables-export-poi</artifactId>
-      </dependency>
-      <dependency>
-         <groupId>com.github.dandelion</groupId>
-         <artifactId>datatables-export-poi-ooxml</artifactId>
-      </dependency>
-      <dependency>
-         <groupId>com.github.dandelion</groupId>
-         <artifactId>datatables-export-itext</artifactId>
       </dependency>
 
       <!-- Spring -->
