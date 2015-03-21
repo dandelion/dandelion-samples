@@ -19,10 +19,10 @@
    </div>
 </div>
 
-<datatables:table id="myTableId" url="/persons" serverSide="true" processing="true">
+<datatables:table id="myTableId" cssClass="display" url="/ajax/persons" serverSide="true">
    <datatables:column title="Id" property="id" />
    <datatables:column title="FirstName" property="firstName" />
    <datatables:column title="LastName" property="lastName" />
    <datatables:column title="City" property="address.town.name" />
-   <datatables:column title="Mail" property="mail" renderFunction="custom-rendering#mailify" />
+   <datatables:column title="Mail" property="mail" renderFunction="app-custom-rendering#mailify" />
 </datatables:table>

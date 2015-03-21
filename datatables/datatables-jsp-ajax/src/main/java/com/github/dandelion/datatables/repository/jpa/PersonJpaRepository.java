@@ -90,8 +90,8 @@ public class PersonJpaRepository implements PersonRepository {
 		/**
 		 * Step 3: paging
 		 */
-		query.setFirstResult(criterias.getDisplayStart());
-		query.setMaxResults(criterias.getDisplaySize());
+		query.setFirstResult(criterias.getStart());
+		query.setMaxResults(criterias.getLength());
 
 		return query.getResultList();
 	}

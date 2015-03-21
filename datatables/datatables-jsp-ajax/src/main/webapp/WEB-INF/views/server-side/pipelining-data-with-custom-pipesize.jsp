@@ -11,7 +11,7 @@
 <div class="row-fluid">
    <div class="span12">
 
-      <datatables:table id="myTableId" url="/persons" serverSide="true" processing="true" pipelining="true" pipeSize="3">
+      <datatables:table id="myTableId" cssClass="display" url="/ajax/persons" serverSide="true" pipelining="true" pipeSize="3">
          <datatables:column title="Id" property="id" />
          <datatables:column title="FirstName" property="firstName" />
          <datatables:column title="LastName" property="lastName" />

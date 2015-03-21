@@ -1,10 +1,6 @@
 {
-    "bundle" : "ajax",
     "assets": [
 		{
-		    "name": "sample-ajax",
-		    "version": "0.10.0",
-		    "type": "js",
 		    "locations": {
 		        "webapp": "/assets/js/ajax.js"
 		    }

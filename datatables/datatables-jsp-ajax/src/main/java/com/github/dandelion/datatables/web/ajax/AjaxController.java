@@ -28,7 +28,7 @@ import com.github.dandelion.datatables.service.PersonService;
  * @author Thibault Duchateau
  */
 @Controller
-@RequestMapping(method = RequestMethod.GET)
+@RequestMapping(value="/ajax", method = RequestMethod.GET)
 public class AjaxController {
 
 	@Autowired
@@ -51,6 +51,13 @@ public class AjaxController {
 	@RequestMapping(value = "/persons")
 	public @ResponseBody
 	DatatablesResponse<Person> findAllForDataTablesFullSpring(@DatatablesParams DatatablesCriterias criterias) {
+		DataSet<Person> dataSet = personService.findPersonsWithDatatablesCriterias(criterias);
+		return DatatablesResponse.build(dataSet, criterias);
+	}
+	
+	@RequestMapping(value = "/persons-via-post", method = RequestMethod.POST)
+	public @ResponseBody
+	DatatablesResponse<Person> findAllForDataTablesFullSpringViaPost(@DatatablesParams DatatablesCriterias criterias) {
 		DataSet<Person> dataSet = personService.findPersonsWithDatatablesCriterias(criterias);
 		return DatatablesResponse.build(dataSet, criterias);
 	}

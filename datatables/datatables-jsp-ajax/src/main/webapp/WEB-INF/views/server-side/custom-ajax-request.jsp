@@ -18,7 +18,7 @@
 <div class="row-fluid">
    <div class="span12">
 
-      <datatables:table id="myTableId" url="/persons" serverSide="true" processing="true" serverData="ajax#myRequest">
+      <datatables:table id="myTableId" cssClass="display" url="/ajax/persons-via-post" serverSide="true" ajaxParams="app-ajax#myCustomParams">
          <datatables:column title="Id" property="id" />
          <datatables:column title="FirstName" property="firstName" />
          <datatables:column title="LastName" property="lastName" />

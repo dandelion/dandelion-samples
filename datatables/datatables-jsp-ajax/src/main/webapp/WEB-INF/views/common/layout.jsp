@@ -49,7 +49,6 @@
                   <li class="dropdown">
                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Filtering <b class="caret"></b></a>
                      <ul class="dropdown-menu">
-                        <li><a href="${filteringUrl}/column-delayed-filtering-minlength">Column delayed filtering with min length</a></li>
                         <li><a href="${filteringUrl}/global-delayed-filtering">Global delayed filtering</a></li>
                         <li><a href="${filteringUrl}/filtering-onclick">Filtering on click</a></li>
                         <li><a href="${filteringUrl}/filtering-onclick-with-external-form">Filtering on click with external form</a></li>

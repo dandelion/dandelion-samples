@@ -12,7 +12,7 @@
 <div class="row-fluid row-intro">
    <div class="span12">
 
-      <datatables:table id="myTableId" url="/persons-no-server-side">
+      <datatables:table id="myTableId" cssClass="display" url="/ajax/persons-no-server-side">
          <datatables:column title="Id" property="id" />
          <datatables:column title="FirstName" property="firstName" />
          <datatables:column title="LastName" property="lastName" />

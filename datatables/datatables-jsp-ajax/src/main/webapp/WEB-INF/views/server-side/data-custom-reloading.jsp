@@ -28,8 +28,7 @@
 <div class="row-fluid">
    <div class="span12">
 
-      <datatables:table id="myTableId" url="/persons" serverSide="true" processing="true"
-         reloadSelector="#reload" reloadFunction="ajax#customReload">
+      <datatables:table id="myTableId" cssClass="display" url="/ajax/persons" serverSide="true" reloadSelector="#reload" reloadFunction="app-ajax#customReload">
          <datatables:column title="Id" property="id" />
          <datatables:column title="FirstName" property="firstName" />
          <datatables:column title="LastName" property="lastName" />

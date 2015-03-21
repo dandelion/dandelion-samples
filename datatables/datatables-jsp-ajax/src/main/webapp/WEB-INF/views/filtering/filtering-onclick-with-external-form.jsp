@@ -23,8 +23,8 @@
       <div id="lastNameFilter"></div>
       <div id="cityFilter"></div>
       <div id="companyFilter"></div>
-      Salary: <div id="salaryFilter"></div>
-      BirthDate: <div id="birthDateFilter"></div>
+      Firstname: <div id="salaryFilter"><input type="text" /></div>
+      Lastname: <div id="birthDateFilter"><input type="text" /></div>
    </div>
    <div class="span6">
       <a id="filterButton" class="btn btn-large btn-primary">Apply filters</a> 
@@ -35,15 +35,13 @@
 <div class="row-fluid">
    <div class="span12">
 
-      <datatables:table id="myTableId" url="/persons" serverSide="true" processing="true" filterPlaceholder="none" filterSelector="#filterButton" filterClearSelector="#filterClearButton">
+      <datatables:table id="myTableId" url="/ajax/persons" serverSide="true" filterPlaceholder="none" filterSelector="#filterButton" filterClearSelector="#filterClearButton" cssClass="display">
          <datatables:column title="Id" name="id" property="id" />
-         <datatables:column title="FirstName" name="firstName" property="firstName" selector="#firstNameFilter" />
-         <datatables:column title="LastName" name="lastName" property="lastName" selector="#lastNameFilter" />
-         <datatables:column title="City" name="city" property="address.town.name" filterable="true" filterCssClass="input-medium" selector="#cityFilter" />
-         <datatables:column title="Mail" name="mail" property="mail" renderFunction="custom-rendering#mailify" />
-         <datatables:column title="Salary" name="salary" property="salary" renderFunction="custom-rendering#toCurrency" filterable="true" filterType="number_range" filterCssClass="input-small" selector="#salaryFilter" />
-         <datatables:column title="BirthDate" name="birthDate" property="birthDate" renderFunction="moment,custom-rendering,bootstrap-datepicker#toDate" filterable="true" filterType="date_range" filterDateFormat="yyyy-mm-dd" filterCssClass="input-small" selector="#birthDateFilter" />
-         <datatables:column title="Company" name="company" property="company.name" filterable="true" filterType="select" filterValues="filtering#predefinedValues" selector="#companyFilter" />
+         <datatables:column title="FirstName" name="firstName" property="firstName" selector="firstNameFilter" />
+         <datatables:column title="LastName" name="lastName" property="lastName" selector="lastNameFilter" />
+         <datatables:column title="City" name="city" property="address.town.name" filterable="true" filterCssClass="input-medium" selector="cityFilter" />
+         <datatables:column title="Mail" name="mail" property="mail" renderFunction="app-custom-rendering#mailify" />
+         <datatables:column title="Company" name="company" property="company.name" filterable="true" filterType="select" filterValues="app-filtering#predefinedValues" selector="companyFilter" />
       </datatables:table>
             
    </div>

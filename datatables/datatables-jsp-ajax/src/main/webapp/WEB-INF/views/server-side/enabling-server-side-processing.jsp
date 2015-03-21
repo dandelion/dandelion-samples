@@ -11,7 +11,7 @@
 <div class="row-fluid">
    <div class="span12">
    
-      <datatables:table id="myTableId" url="/persons-no-spring" serverSide="true" processing="true">
+      <datatables:table id="myTableId" url="/ajax/persons-no-spring" serverSide="true" cssClass="display">
          <datatables:column title="Id" property="id" />
          <datatables:column title="FirstName" property="firstName" />
          <datatables:column title="LastName" property="lastName" />

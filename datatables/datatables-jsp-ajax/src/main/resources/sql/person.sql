@@ -1,4 +1,4 @@
-INSERT INTO `person` (`id`,`firstName`,`lastName`,`address_id`,`mail`,`birthdate`,`salary`,`company_id`) VALUES (1,'Benedict','Buchanan',null,'fermentum@blanditat.org','1996-08-15',17312,5);
+INSERT INTO `person` (`id`,`firstName`,`lastName`,`address_id`,`mail`,`birthdate`,`salary`,`company_id`) VALUES (1,'Benedict','Buchanan',362,'fermentum@blanditat.org','1996-08-15',17312,5);
 INSERT INTO `person` (`id`,`firstName`,`lastName`,`address_id`,`mail`,`birthdate`,`salary`,`company_id`) VALUES (2,'Anika','Coleman',362,'purus.ac.tellus@Suspendissealiquetsem.org','1992-02-24',170623,2);
 INSERT INTO `person` (`id`,`firstName`,`lastName`,`address_id`,`mail`,`birthdate`,`salary`,`company_id`) VALUES (3,'Portia','Conley',141,'Mauris@eu.edu','1983-05-18',664024,2);
 INSERT INTO `person` (`id`,`firstName`,`lastName`,`address_id`,`mail`,`birthdate`,`salary`,`company_id`) VALUES (4,'Henry','Campos',376,'non.feugiat.nec@penatibuset.com','2013-07-25',605279,3);
