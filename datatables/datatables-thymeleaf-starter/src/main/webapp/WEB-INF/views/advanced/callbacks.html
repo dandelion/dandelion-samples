@@ -27,11 +27,11 @@
          <div class="span12">
             
             <div dt:conf="myTableId">
-               <div dt:confType="callback" dt:type="info" dt:function="callbacks#infoCallback" />
-               <div dt:confType="callback" dt:type="createdRow" dt:function="callbacks#callbackCreatedRow" />
+               <div dt:confType="callback" dt:type="info" dt:function="app-callback#info"></div>
+               <div dt:confType="callback" dt:type="createdRow" dt:function="app-callback#createdRow"></div>
             </div>
             
-            <table id="myTableId" dt:table="true">
+            <table id="myTableId" dt:table="true" class="display">
                <thead>
                   <tr>
                      <th>Id</th>

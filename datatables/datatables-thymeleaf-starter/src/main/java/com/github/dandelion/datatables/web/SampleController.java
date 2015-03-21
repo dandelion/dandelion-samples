@@ -6,6 +6,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -92,5 +93,12 @@ public class SampleController {
 	@RequestMapping(value = "/styling/{page}")
 	public String goToStylingExample(@PathVariable String page) {
 		return "styling/" + page;
+	}
+	
+	@RequestMapping(value = "/ajaxtest", method = RequestMethod.GET)
+	public String showGuestList(Model model) {
+	    model.addAttribute("persons", personService.findLimited(100));
+	    
+	    return "fragments/frag :: resultsList";
 	}
 }

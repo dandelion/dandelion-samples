@@ -17,19 +17,19 @@
             <p>
                Note that we accessed the Javascript array of predefined values with the special
                syntax:
-               <code>scopeName#javascriptObject</code>
+               <code>bundleName#javascriptObject</code>
                .
             </p>
          </div>
       </div>
 
-      <table id="myTableId" dt:table="true">
+      <table id="myTableId" dt:table="true" class="display">
          <thead>
             <tr>
                <th>Id</th>
                <th>Firstname</th>
                <th>Lastname</th>
-               <th dt:filterable="true" dt:filTertype="select" dt:filterValues="filtering#myPredefinedValues">City</th>
+               <th dt:filterable="true" dt:filTertype="select" dt:filterValues="app-filtering#myPredefinedValues">City</th>
                <th>Mail</th>
             </tr>
          </thead>
