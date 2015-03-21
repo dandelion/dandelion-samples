@@ -8,8 +8,8 @@
       </encoder>
    </appender>
 
-   <logger name="com.github.dandelion.datatables" level="ERROR" />
-   <logger name="com.github.dandelion" level="ERROR" />
+   <logger name="com.github.dandelion.datatables" level="DEBUG" />
+   <logger name="com.github.dandelion" level="DEBUG" />
 
    <root level="ERROR">
       <appender-ref ref="STDOUT" />

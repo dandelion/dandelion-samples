@@ -11,7 +11,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.github.dandelion.datatables.core.ajax.DatatablesCriterias;
-import com.github.dandelion.datatables.core.exception.ExportException;
 import com.github.dandelion.datatables.core.export.ExportConf;
 import com.github.dandelion.datatables.core.export.ExportUtils;
 import com.github.dandelion.datatables.core.export.HtmlTableBuilder;
@@ -34,7 +33,7 @@ public class MyExportController {
 	private PersonService personService;
 	
 	@RequestMapping
-	public void export(@DatatablesParams DatatablesCriterias criterias, HttpServletRequest request, HttpServletResponse response) throws ExportException, IOException {
+	public void export(@DatatablesParams DatatablesCriterias criterias, HttpServletRequest request, HttpServletResponse response) throws IOException {
 
 		// Get data to export
 		List<Person> persons = personService.findPersonsWithDatatablesCriterias(criterias).getRows();

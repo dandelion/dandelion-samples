@@ -23,7 +23,7 @@
       <div class="row-fluid">
          <div class="span12">
 
-            <datatables:table id="myTableId" data="${persons}" row="person" export="csv,xml,xls,pdf">
+            <datatables:table id="myTableId" data="${persons}" row="person" export="csv">
                <datatables:column title="Id" property="id" id="toto" />
                <datatables:column title="FirstName" property="firstName" />
                <datatables:column title="LastName" property="lastName" />
@@ -31,10 +31,7 @@
                <datatables:column title="Mail">
                   <a href="mailto:${person.mail}">${person.mail}</a>
                </datatables:column>
-               <datatables:export type="csv" cssClass="btn" url="/export.csv" method="post"  />
-               <datatables:export type="xml" cssClass="btn" url="/export.xml" />
-               <datatables:export type="xls" cssClass="btn" url="/export.xls" />
-               <datatables:export type="pdf" cssClass="btn" url="/export.pdf" />
+               <datatables:export type="csv" cssClass="btn" />
             </datatables:table>
 
          </div>

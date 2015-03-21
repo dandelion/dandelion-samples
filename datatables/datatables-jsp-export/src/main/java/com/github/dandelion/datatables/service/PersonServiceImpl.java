@@ -22,23 +22,14 @@ public class PersonServiceImpl implements PersonService {
 	@Autowired
 	private PersonRepository personRepository;
 
-	/**
-	 * {@inheritDoc}
-	 */
 	public List<Person> findAll() {
 		return personRepository.findAll();
 	}
 
-	/**
-	 * {@inheritDoc}
-	 */
 	public List<Person> findLimited(int maxResult) {
 		return personRepository.findLimited(maxResult);
 	}
 
-	/**
-	 * {@inheritDoc}
-	 */
 	public DataSet<Person> findPersonsWithDatatablesCriterias(DatatablesCriterias criterias) {
 
 		List<Person> persons = personRepository.findPersonWithDatatablesCriterias(criterias);

@@ -33,7 +33,7 @@
                <datatables:column title="LastName" property="lastName" />
                <datatables:column title="City" property="address.town.name" />
                <datatables:column title="Mail" property="mail" />
-               <datatables:column title="Birth date" property="birthDate" renderFunction="moment,custom-rendering#toDate" />
+               <datatables:column title="Birth date" property="birthDate" renderFunction="moment,app-custom-rendering#toDate" />
                <datatables:export type="pdf" cssClass="btn btn-info" url="/export.pdf" />
                <datatables:export type="xls" cssClass="btn btn-success" url="/export.xls" />
             </datatables:table>

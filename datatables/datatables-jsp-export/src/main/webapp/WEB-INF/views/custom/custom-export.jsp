@@ -28,7 +28,7 @@
                <datatables:column title="LastName" property="lastName" />
                <datatables:column title="City" property="address.town.name" />
                <datatables:column title="Mail" property="mail" />
-               <datatables:column title="Birth date" property="birthDate" renderFunction="moment,custom-rendering#toDate" />
+               <datatables:column title="Birth date" property="birthDate" renderFunction="moment,app-custom-rendering#toDate" />
                <datatables:export type="myFormat" cssClass="btn" url="/myExport.myFormat" orientation="portrait"/>
             </datatables:table>
 

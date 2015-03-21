@@ -25,13 +25,13 @@
       <div class="row-fluid">
          <div class="span12">
 
-            <datatables:table id="myTableId" url="/persons" serverSide="true" processing="true" export="pdf,xls" dom="lEfrtiEp">
+            <datatables:table id="myTableId" url="/persons" serverSide="true" export="xls" dom="lEfrtiEp">
                <datatables:column title="Id" property="id" />
                <datatables:column title="FirstName" property="firstName" />
                <datatables:column title="LastName" property="lastName" />
                <datatables:column title="City" property="address.town.name" />
                <datatables:column title="Mail" property="mail" />
-               <datatables:column title="Birth date" property="birthDate" renderFunction="moment,custom-rendering#toDate" />
+               <datatables:column title="Birth date" property="birthDate" renderFunction="moment,app-custom-rendering#toDate" />
                <datatables:export type="pdf" cssClass="btn" url="/export.pdf" />
                <datatables:export type="xls" cssClass="btn" url="/export.xls" />
             </datatables:table>

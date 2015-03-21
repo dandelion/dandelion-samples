@@ -11,7 +11,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.github.dandelion.datatables.core.ajax.DatatablesCriterias;
-import com.github.dandelion.datatables.core.exception.ExportException;
 import com.github.dandelion.datatables.core.export.CsvExport;
 import com.github.dandelion.datatables.core.export.ExportConf;
 import com.github.dandelion.datatables.core.export.ExportUtils;
@@ -36,7 +35,7 @@ public class ExportController {
 	private PersonService personService;
 	
 	@RequestMapping(value = "/export", produces = "text/csv")
-	public void csv(@DatatablesParams DatatablesCriterias criterias, HttpServletRequest request, HttpServletResponse response) throws ExportException, IOException {
+	public void csv(@DatatablesParams DatatablesCriterias criterias, HttpServletRequest request, HttpServletResponse response) throws IOException {
 		
 		// Get data to export
 		List<Person> persons = personService.findPersonsWithDatatablesCriterias(criterias).getRows();
@@ -63,7 +62,7 @@ public class ExportController {
 	}
 	
 	@RequestMapping(value = "/export", produces = "application/xml")
-	public void xml(@DatatablesParams DatatablesCriterias criterias, HttpServletRequest request, HttpServletResponse response) throws ExportException, IOException {
+	public void xml(@DatatablesParams DatatablesCriterias criterias, HttpServletRequest request, HttpServletResponse response) throws IOException {
 		
 		List<Person> persons = personService.findPersonsWithDatatablesCriterias(criterias).getRows();
 		
@@ -84,7 +83,7 @@ public class ExportController {
 	}
 	
 	@RequestMapping(value = "/export", produces = "application/pdf")
-	public void pdf(@DatatablesParams DatatablesCriterias criterias, HttpServletRequest request, HttpServletResponse response) throws ExportException, IOException {
+	public void pdf(@DatatablesParams DatatablesCriterias criterias, HttpServletRequest request, HttpServletResponse response) throws IOException {
 		
 		List<Person> persons = personService.findPersonsWithDatatablesCriterias(criterias).getRows();
 		
@@ -93,7 +92,7 @@ public class ExportController {
 				.exportClass(new PdfExport())
 				.build();
 
-		HtmlTable table = new HtmlTableBuilder<Person>().newBuilder("tableId", persons, request)
+		HtmlTable table = new HtmlTableBuilder<Person>().newBuilder("tableId", persons, request, exportPdfConf)
 				.column().fillWithProperty("id").title("Id")
 				.column().fillWithProperty("firstName").title("Firtname")
 				.column().fillWithProperty("lastName").title("Lastname")
@@ -106,7 +105,7 @@ public class ExportController {
 	}
 	
 	@RequestMapping(value = "/export", produces = "application/vnd.ms-excel")
-	public void xls(@DatatablesParams DatatablesCriterias criterias, HttpServletRequest request, HttpServletResponse response) throws ExportException, IOException {
+	public void xls(@DatatablesParams DatatablesCriterias criterias, HttpServletRequest request, HttpServletResponse response) throws IOException {
 		
 		List<Person> persons = personService.findPersonsWithDatatablesCriterias(criterias).getRows();
 		
@@ -128,7 +127,7 @@ public class ExportController {
 	}
 	
 	@RequestMapping(value = "/export-custom-content")
-	public void pdfWithCustomContent(@DatatablesParams DatatablesCriterias criterias, HttpServletRequest request, HttpServletResponse response) throws ExportException, IOException {
+	public void pdfWithCustomContent(@DatatablesParams DatatablesCriterias criterias, HttpServletRequest request, HttpServletResponse response) throws IOException {
 		
 		List<Person> persons = personService.findPersonsWithDatatablesCriterias(criterias).getRows();
 		

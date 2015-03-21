@@ -31,11 +31,11 @@ package com.github.dandelion.datatables.web.views;
 
 import java.io.OutputStream;
 
-import com.github.dandelion.datatables.core.exception.ExportException;
+import com.github.dandelion.core.DandelionException;
 import com.github.dandelion.datatables.core.export.DatatablesExport;
 import com.github.dandelion.datatables.core.export.ExportConf;
-import com.github.dandelion.datatables.core.export.ReservedFormat;
 import com.github.dandelion.datatables.core.export.ExportConf.Orientation;
+import com.github.dandelion.datatables.core.export.ReservedFormat;
 import com.github.dandelion.datatables.core.html.HtmlColumn;
 import com.github.dandelion.datatables.core.html.HtmlRow;
 import com.github.dandelion.datatables.core.html.HtmlTable;
@@ -84,7 +84,7 @@ public class MyCustomExportClass implements DatatablesExport {
 			sb.append(table.getOriginalId());
 			sb.append("' and with the following export configuration: ");
 			sb.append(exportConf.toString());
-			throw new ExportException(sb.toString(), e);
+			throw new DandelionException(sb.toString(), e);
 		} finally {
 			document.close();
 		}
