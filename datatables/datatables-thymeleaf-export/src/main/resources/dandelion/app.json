@@ -1,0 +1,9 @@
+{
+    "assets": [
+		{
+		    "locations": {
+		        "webapp": "/assets/css/app.css"
+		    }
+		}
+    ]
+}

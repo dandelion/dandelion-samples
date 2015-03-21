@@ -24,14 +24,10 @@
          <div class="span12">
 
             <div dt:conf="myTableId">
-               <div dt:confType="export" dt:type="pdf" dt:cssClass="btn"></div>
-               <div dt:confType="export" dt:type="csv" dt:cssClass="btn"></div>
-               <div dt:confType="export" dt:type="xls" dt:cssClass="btn"></div>
-               <div dt:confType="export" dt:type="xml" dt:cssClass="btn"></div>
-               <div dt:confType="export" dt:type="xlsx" dt:cssClass="btn"></div>
+               <div dt:confType="export" dt:type="csv" dt:cssClass="btn" dt:url="@{/context/customCsvUrl}"></div>
             </div>
 
-            <table id="myTableId" dt:table="true" dt:export="csv,xml,xls,pdf,xlsx">
+            <table id="myTableId" dt:table="true" dt:export="csv">
                <thead>
                   <tr>
                      <th dt:property="id">Id</th>

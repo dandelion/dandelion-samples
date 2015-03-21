@@ -1,0 +1,9 @@
+{
+    "assets": [
+		{
+		    "locations": {
+		        "webapp": "/assets/js/app-custom-rendering.js"
+		    }
+		}
+    ]
+}
