@@ -3,14 +3,14 @@
 
 <div class="row-fluid row-intro">
    <div class="span12">
-      <h3>Styling pagination: listbox</h3>
+      <h3>Styling pagination: Bootstrap full</h3>
    </div>
 </div>
 
 <div class="row-fluid">
    <div class="span12">
 
-      <datatables:table id="listbox" data="${persons}" paginationType="listbox">
+      <datatables:table id="pagingBsFull" data="${persons}" cssClass="display" pagingType="bootstrap_full">
          <datatables:column title="Id" property="id" />
          <datatables:column title="FirstName" property="firstName" />
          <datatables:column title="LastName" property="lastName" />

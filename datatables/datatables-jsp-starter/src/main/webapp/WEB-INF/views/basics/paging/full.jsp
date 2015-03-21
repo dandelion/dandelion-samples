@@ -3,14 +3,14 @@
 
 <div class="row-fluid row-intro">
    <div class="span12">
-      <h3>Styling pagination: scrolling</h3>
+      <h3>Styling pagination: full</h3>
    </div>
 </div>
 
 <div class="row-fluid">
    <div class="span12">
 
-      <datatables:table id="scrolling" data="${persons}" paginationType="scrolling">
+      <datatables:table id="pagingFull" data="${persons}" cssClass="display" pagingType="full">
          <datatables:column title="Id" property="id" />
          <datatables:column title="FirstName" property="firstName" />
          <datatables:column title="LastName" property="lastName" />

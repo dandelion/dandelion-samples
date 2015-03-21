@@ -1,0 +1,10 @@
+{
+    "bundle" : "filtering",
+    "assets": [
+		{
+		    "locations": {
+		        "webapp": "/assets/js/app-filtering.js"
+		    }
+		}
+    ]
+}

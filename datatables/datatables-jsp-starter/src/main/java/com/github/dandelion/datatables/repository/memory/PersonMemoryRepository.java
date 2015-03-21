@@ -24,7 +24,7 @@ public class PersonMemoryRepository implements PersonRepository {
 		persons = new ArrayList<Person>();
 		
 		try {
-			persons.add(new Person(1,"Freya","Fischer","tincidunt.vehicula@accumsan.net","1992-06-20","157,990","Google","257-5409 Orci, St.",null,"87682"));
+			persons.add(new Person(1,"Freya","Fischer","tincidunt.vehicula@accumsan.net",null));
 			persons.add(new Person(2,"Karleigh","Merritt","Morbi.metus@diamlorem.com","1989-10-27","56,911","Facebook","P.O. Box 727, 8117 Elementum, Rd.","Cáceres","41401"));
 			persons.add(new Person(3,"Marah","Livingston","Praesent.luctus@nasceturridiculusmus.ca","2006-11-11","91,433","Yahoo!","309-4063 Imperdiet Road","Signeulx","71949"));
 			persons.add(new Person(4,"Mannix","Hartman","ipsum.primis.in@noncursusnon.org","1992-01-29","447,333","Yahoo!","P.O. Box 953, 2116 Ornare, Street","Herne","21810"));

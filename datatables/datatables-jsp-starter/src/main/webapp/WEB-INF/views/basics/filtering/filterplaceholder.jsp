@@ -13,7 +13,7 @@
 <div class="row-fluid">
    <div class="span12">
    
-      <datatables:table id="myTableId" data="${persons}" filterPlaceholder="head_after">
+      <datatables:table id="myTableId" data="${persons}" cssClass="display" filterPlaceholder="header">
          <datatables:column title="Id" property="id" />
          <datatables:column title="FirstName" property="firstName" filterable="true" />
          <datatables:column title="LastName" property="lastName" filterable="true" filterType="select" />

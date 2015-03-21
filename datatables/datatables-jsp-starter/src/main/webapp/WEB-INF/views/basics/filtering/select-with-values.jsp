@@ -8,7 +8,7 @@
          predefined values.</p>
       <p>
          Note that we accessed the Javascript array of predefined values with the special syntax:
-         <code>scopeName#javascriptObject</code>
+         <code>bundleName#javascriptObject</code>
          .
       </p>
    </div>
@@ -17,7 +17,7 @@
 <div class="row-fluid">
    <div class="span12">
 
-      <datatables:table id="myTableId" data="${persons}">
+      <datatables:table id="myTableId" data="${persons}" cssClass="display">
          <datatables:column title="Id" property="id" />
          <datatables:column title="FirstName" property="firstName" />
          <datatables:column title="LastName" property="lastName" />

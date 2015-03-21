@@ -12,7 +12,7 @@
 <div class="row-fluid">
    <div class="span12">
 
-      <datatables:table id="myTableId" data="${persons}" dom="l0rtip" filterSelector="#filterButton" filterClearSelector="#filterClearButton">
+      <datatables:table id="myTableId" data="${persons}" cssClass="display" dom="l0rtip" filterSelector="#filterButton" filterClearSelector="#filterClearButton" filterPlaceholder="header">
          <datatables:column title="Id" name="id" property="id" />
          <datatables:column title="FirstName" name="firstName" property="firstName" filterable="true" filterType="select" />
          <datatables:column title="LastName" name="lastName" property="lastName" filterable="true" />

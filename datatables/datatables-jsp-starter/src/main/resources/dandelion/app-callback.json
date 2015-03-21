@@ -1,0 +1,10 @@
+{
+    "bundle" : "callbacks",
+    "assets": [
+		{
+		    "locations": {
+		        "webapp": "/assets/js/app-callbacks.js"
+		    }
+		}
+    ]
+}

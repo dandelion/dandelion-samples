@@ -7,7 +7,7 @@
    </div>
 </div>
 
-<datatables:table id="myTableId" data="${persons}" sort="false">
+<datatables:table id="myTableId" data="${persons}" cssClass="display" sortable="false">
    <datatables:column title="Id" property="id" />
    <datatables:column title="FirstName" property="firstName" />
    <datatables:column title="LastName" property="lastName" />

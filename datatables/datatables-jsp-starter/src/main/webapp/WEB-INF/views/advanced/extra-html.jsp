@@ -17,7 +17,7 @@
 <div class="row-fluid">
    <div class="span12">
    
-      <datatables:table id="myTableId" data="${persons}" dom="l0frtip" row="person">
+      <datatables:table id="myTableId" data="${persons}" cssClass="display" dom="l0frtip" row="person">
          <datatables:column title="Id" property="id" />
          <datatables:column title="LastName" property="lastName" />
          <datatables:column title="FirstName" property="firstName" />

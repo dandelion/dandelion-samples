@@ -6,7 +6,7 @@
       <h3>Sorting type: natural, date</h3>
    </div>
 </div>
-<datatables:table id="myTableId" data="${persons}" row="person">
+<datatables:table id="myTableId" data="${persons}" cssClass="display" row="person">
    <datatables:column title="Id" property="id" />
    <datatables:column title="FirstName" property="firstName" />
    <datatables:column title="LastName" property="lastName" />

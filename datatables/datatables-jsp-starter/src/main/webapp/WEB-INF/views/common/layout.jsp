@@ -65,15 +65,13 @@
                               <li><a href="${basicsUrl}/paging/enable-disable-paging">Enable/disable paging</a></li>
                               <li><a href="${basicsUrl}/paging/defining-length-menu-options">Defining length menu options</a></li>
                               <li><a href="${basicsUrl}/paging/enable-disable-length-menu">enable/disable length menu</a></li>
-                              <li><a href="${basicsUrl}/paging/bootstrap">Pagination style: Bootstrap</a></li>
-                              <li><a href="${basicsUrl}/paging/four_button">Pagination style: Four button</a></li>
-                              <li><a href="${basicsUrl}/paging/bootstrap_four_button">Pagination style: Bootstrap four button</a></li>
-                              <li><a href="${basicsUrl}/paging/full_numbers">Pagination style: Full numbers</a></li>
-                              <li><a href="${basicsUrl}/paging/bootstrap_full_numbers">Pagination style: Bootstrap full numbers</a></li>
-                              <li><a href="${basicsUrl}/paging/input">Pagination style: Input</a></li>
-                              <li><a href="${basicsUrl}/paging/listbox">Pagination style: Listbox</a></li>
-                              <li><a href="${basicsUrl}/paging/scrolling">Pagination style: Scrolling</a></li>
-                              <li><a href="${basicsUrl}/paging/two_button">Pagination style: Two button</a></li>
+                              <li><a href="${basicsUrl}/paging/simple">Paging style: Simple</a></li>
+                              <li><a href="${basicsUrl}/paging/simple-numbers">Paging style: Simple numbers</a></li>
+                              <li><a href="${basicsUrl}/paging/full">Paging style: Full</a></li>
+                              <li><a href="${basicsUrl}/paging/full-numbers">Paging style: Full numbers</a></li>
+                              <li><a href="${basicsUrl}/paging/bootstrap-simple">Paging style: Bootstrap simple</a></li>
+                              <li><a href="${basicsUrl}/paging/bootstrap-full">Paging style: Bootstrap full</a></li>
+                              <li><a href="${basicsUrl}/paging/bootstrap-full-numbers">Paging style: Bootstrap full numbers</a></li>
                            </ul>
                         </li>
                         <li class="dropdown-submenu">
@@ -81,7 +79,6 @@
                            <ul class="dropdown-menu">
                               <li><a href="${basicsUrl}/scrolling/scroll-horizontal">Horizontal scrolling</a></li>
                               <li><a href="${basicsUrl}/scrolling/scroll-vertical">Vertical scrolling</a></li>
-                              <li><a href="${basicsUrl}/scrolling/scroll-both">Both</a></li>
                            </ul>
                         </li>
                         <li><a href="${basicsUrl}/dom-positioning">DOM positioning</a></li>

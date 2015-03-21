@@ -20,13 +20,13 @@
 <div class="row-fluid">
    <div class="span12">
 
-      <datatables:table id="myTableId" data="${persons}">
+      <datatables:table id="myTableId" data="${persons}" cssClass="display">
          <datatables:column title="Id" property="id" />
          <datatables:column title="Firstname" property="firstName" />
          <datatables:column title="LastName" property="lastName" />
          <datatables:column title="City" property="address.town.name" />
          <datatables:column title="Mail" property="mail" />
-         <datatables:callback type="info" function="callbacks#infoCallback" />
+         <datatables:callback type="info" function="callbacks#callbackInfo" />
          <datatables:callback type="createdRow" function="callbacks#callbackCreatedRow" />
       </datatables:table>
 

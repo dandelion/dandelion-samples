@@ -13,9 +13,9 @@
       <form>
          <fieldset>
             <legend>Search form</legend>
-            <div id="firstNameFilter"></div>
-            <div id="lastNameFilter"></div>
-            <div id="cityFilter"></div>
+            Firstname: <div id="firstNameFilter"></div>
+            Lastname: <div id="lastNameFilter"></div>
+            City: <div id="cityFilter"></div>
          </fieldset>
       </form>
 
@@ -25,11 +25,11 @@
 <div class="row-fluid">
    <div class="span12">
          
-      <datatables:table id="myTableId" data="${persons}" dom="lrtip" filterPlaceholder="none">
+      <datatables:table id="myTableId" data="${persons}" cssClass="display" dom="lrtip" filterPlaceholder="none">
          <datatables:column title="Id" property="id" />
-         <datatables:column title="FirstName" property="firstName" filterable="true" selector="#firstNameFilter" filterType="select" />
-         <datatables:column title="LastName" property="lastName" filterable="true" selector="#lastNameFilter" />
-         <datatables:column title="City" property="address.town.name" filterable="true" selector="#cityFilter" />
+         <datatables:column title="FirstName" property="firstName" filterable="true" selector="firstNameFilter" filterType="select" />
+         <datatables:column title="LastName" property="lastName" filterable="true" selector="lastNameFilter" />
+         <datatables:column title="City" property="address.town.name" filterable="true" selector="cityFilter" />
          <datatables:column title="Mail" property="mail" />
       </datatables:table>
    

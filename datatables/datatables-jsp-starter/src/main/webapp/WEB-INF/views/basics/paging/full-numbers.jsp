@@ -10,7 +10,7 @@
 <div class="row-fluid">
    <div class="span12">
 
-      <datatables:table id="basic2" data="${persons}" paginationType="full_numbers">
+      <datatables:table id="pagingFullNumbers" data="${persons}" cssClass="display" pagingType="full_numbers">
          <datatables:column title="Id" property="id" />
          <datatables:column title="FirstName" property="firstName" />
          <datatables:column title="LastName" property="lastName" />

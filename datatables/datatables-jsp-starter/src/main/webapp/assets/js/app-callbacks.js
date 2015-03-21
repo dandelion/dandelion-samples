@@ -3,6 +3,6 @@ function callbackCreatedRow(nRow, aData, iDataIndex) {
 		'font-weight' : 'bold'
 	});
 }
-function infoCallback(oSettings, iStart, iEnd, iMax, iTotal, sPre) {
+function callbackInfo(oSettings, iStart, iEnd, iMax, iTotal, sPre) {
 	return iStart + " to " + iEnd;
 }

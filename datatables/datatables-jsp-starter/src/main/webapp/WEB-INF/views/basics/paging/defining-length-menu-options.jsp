@@ -10,7 +10,7 @@
 <div class="row-fluid">
    <div class="span12">
 
-      <datatables:table id="myTableId" data="${persons}" lengthMenu="10,20,30,40,-1;10,20,30,40,'All'">
+      <datatables:table id="myTableId" data="${persons}" cssClass="display" lengthMenu="10,20,30,40,-1;10,20,30,40,'All'">
          <datatables:column title="Id" property="id" />
          <datatables:column title="FirstName" property="firstName" />
          <datatables:column title="LastName" property="lastName" />

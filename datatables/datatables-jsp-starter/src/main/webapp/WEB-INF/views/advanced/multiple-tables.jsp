@@ -12,7 +12,7 @@
 <div class="row-fluid row-intro">
    <div class="span12">
 
-      <datatables:table id="myTableId" data="${persons}">
+      <datatables:table id="myTableId" data="${persons}" cssClass="display">
          <datatables:column title="Id" property="id" />
          <datatables:column title="Firstname" property="firstName" />
          <datatables:column title="LastName" property="lastName" />
@@ -26,7 +26,7 @@
 <div class="row-fluid row-intro">
    <div class="span12">
 
-      <datatables:table id="myOtherTableId" data="${persons}">
+      <datatables:table id="myOtherTableId" data="${persons}" cssClass="display">
          <datatables:column title="Id" property="id" />
          <datatables:column title="Firstname" property="firstName" />
          <datatables:column title="LastName" property="lastName" />

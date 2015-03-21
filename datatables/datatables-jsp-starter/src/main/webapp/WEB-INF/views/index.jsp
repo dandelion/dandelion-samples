@@ -13,7 +13,7 @@
 <div class="row-fluid">
    <div class="span12">
 
-      <datatables:table id="myTableId" data="${persons}">
+      <datatables:table id="myTableId" data="${persons}" cssClass="display">
          <datatables:column title="Id" property="id" />
          <datatables:column title="LastName" property="lastName" />
          <datatables:column title="FirstName" property="firstName" />

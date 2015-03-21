@@ -3,14 +3,14 @@
 
 <div class="row-fluid row-intro">
    <div class="span12">
-      <h3>Styling pagination: Bootstrap full numbers</h3>
+      <h3>Styling pagination: simple numbers</h3>
    </div>
 </div>
 
 <div class="row-fluid">
    <div class="span12">
 
-      <datatables:table id="myTableId" data="${persons}" paginationType="bootstrap_full_numbers">
+      <datatables:table id="pagingSimpleNumbers" data="${persons}" cssClass="display" pagingType="simple_numbers">
          <datatables:column title="Id" property="id" />
          <datatables:column title="FirstName" property="firstName" />
          <datatables:column title="LastName" property="lastName" />

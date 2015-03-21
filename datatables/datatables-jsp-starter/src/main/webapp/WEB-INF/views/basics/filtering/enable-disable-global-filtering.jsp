@@ -12,11 +12,11 @@
 <div class="row-fluid">
    <div class="span12">
 
-      <datatables:table id="myTableId" data="${persons}" filter="false">
+      <datatables:table id="myTableId" data="${persons}" cssClass="display" filterable="false">
          <datatables:column title="Id" property="id" />
          <datatables:column title="FirstName" property="firstName" />
          <datatables:column title="LastName" property="lastName" />
-         <datatables:column title="City" property="address.town.name" searchable="false" filterable="true" />
+         <datatables:column title="City" property="address.town.name" />
          <datatables:column title="Mail" property="mail" />
       </datatables:table>
 

@@ -7,7 +7,7 @@
    </div>
 </div>
 
-<datatables:table id="myTableId" data="${persons}" scrollX="120%">
+<datatables:table id="myTableId" data="${persons}" cssClass="display" scrollX="120%">
    <datatables:column title="Id" property="id" />
    <datatables:column title="FirstName" property="firstName" />
    <datatables:column title="LastName" property="lastName" />
