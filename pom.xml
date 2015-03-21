@@ -4,7 +4,7 @@
 
    <groupId>com.github.dandelion</groupId>
    <artifactId>dandelion-samples-parent</artifactId>
-   <version>0.10.1</version>
+   <version>0.11.0-SNAPSHOT</version>
    <packaging>pom</packaging>
 
    <name>Dandelion :: Samples :: Parent</name>
@@ -37,15 +37,16 @@
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
       <!-- Dependencies -->
-      <dandelion.version>0.10.1</dandelion.version>
+      <dandelion.version>0.11.0-SNAPSHOT</dandelion.version>
       <jstl.version>1.2</jstl.version>
       <tiles.version>2.2.2</tiles.version>
       <servlet-api.version>3.0.1</servlet-api.version>
-      <thymeleaf.version>2.1.3.RELEASE</thymeleaf.version>
+      <thymeleaf.version>2.1.4.RELEASE</thymeleaf.version>
       <thymeleaf.layout.version>1.2.4</thymeleaf.layout.version>
       <thymeleaf.tiles2.version>2.1.1.RELEASE</thymeleaf.tiles2.version>
+      <thymeleaf-extras-tiles2-spring3.version>2.1.1.RELEASE</thymeleaf-extras-tiles2-spring3.version>
       <spring3.version>3.2.10.RELEASE</spring3.version>
-      <spring4.version>4.0.5.RELEASE</spring4.version>
+      <spring4.version>4.1.0.RELEASE</spring4.version>
       <jackson.version>1.9.13</jackson.version>
       <struts1.version>1.3.10</struts1.version>
       <struts2.version>2.1.8</struts2.version>
@@ -244,6 +245,11 @@
             <version>${thymeleaf.tiles2.version}</version>
          </dependency>
          <dependency>
+            <groupId>org.thymeleaf.extras</groupId>
+            <artifactId>thymeleaf-extras-tiles2-spring3</artifactId>
+            <version>${thymeleaf-extras-tiles2-spring3.version}</version>
+         </dependency>
+         <dependency>
             <groupId>nz.net.ultraq.thymeleaf</groupId>
             <artifactId>thymeleaf-layout-dialect</artifactId>
             <version>${thymeleaf.layout.version}</version>
@@ -338,8 +344,7 @@
                <version>${jetty-maven-plugin.version}</version>
                <configuration>
                   <connectors>
-                     <connector
-                        implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
+                     <connector implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
                         <port>9090</port>
                         <maxIdleTime>60000</maxIdleTime>
                      </connector>
@@ -366,9 +371,16 @@
             <plugin>
                <groupId>org.jboss.as.plugins</groupId>
                <artifactId>jboss-as-maven-plugin</artifactId>
-               <version>7.5.Final</version>
+               <version>7.6.Final</version>
                <configuration>
                   <hostname>127.0.0.1</hostname>
+                  <execute-commands>
+                     <commands>
+                        <command>/subsystem=logging/file-handler=debug:add(level=DEBUG,autoflush=true,file={"relative-to"=>"jboss.server.log.dir",
+                           "path"=>"debug.log"})</command>
+                        <command>/subsystem=logging/logger=org.jboss.as:add(level=DEBUG,handlers=[debug])</command>
+                     </commands>
+                  </execute-commands>
                </configuration>
             </plugin>
          </plugins>
