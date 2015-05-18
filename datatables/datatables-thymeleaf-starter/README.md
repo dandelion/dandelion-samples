@@ -36,8 +36,12 @@ Using __Jetty__:
 
     mvn jetty:run
 
-You can then access the sample here: [http://localhost:9090/datatables-thymeleaf-starter](http://localhost:9090/datatables-thymeleaf-starter)
+Using __Docker__:
 
+    docker run -p 9090:8080 dandelion/sample-dt-thymeleaf-starter
+
+You can then access the sample here: [http://localhost:9090/datatables-thymeleaf-starter](http://localhost:9090/datatables-thymeleaf-starter)
+    
 ## Bug/improvement
 
 Please report it using the issue tracker dedicated to all sample apps: [https://waffle.io/dandelion/dandelion-samples](https://waffle.io/dandelion/dandelion-samples)
