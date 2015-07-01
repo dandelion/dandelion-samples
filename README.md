@@ -1,7 +1,8 @@
-Dandelion Samples
+[DEPRECATED] Dandelion Samples
 =================================================================
 
-Here lives plenty of sample applications, each of them focused on a particular Dandelion components, including [Dandelion-Core](http://dandelion.github.io/dandelion).
+This repository is now deprecated.
+It has been splitted up into several repos, one per component. For example: https://github.com/dandelion/dandelion-datatables-samples for Dandelion-Datatables.
 
 =
 The [Dandelion team](http://dandelion.github.io/team/).
