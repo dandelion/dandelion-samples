@@ -46,7 +46,7 @@
       <thymeleaf.tiles2.version>2.1.1.RELEASE</thymeleaf.tiles2.version>
       <thymeleaf-extras-tiles2-spring3.version>2.1.1.RELEASE</thymeleaf-extras-tiles2-spring3.version>
       <spring3.version>3.2.10.RELEASE</spring3.version>
-      <spring4.version>4.1.0.RELEASE</spring4.version>
+      <spring4.version>4.1.7.RELEASE</spring4.version>
       <jackson.version>1.9.13</jackson.version>
       <struts1.version>1.3.10</struts1.version>
       <struts2.version>2.1.8</struts2.version>
