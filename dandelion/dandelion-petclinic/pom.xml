@@ -18,7 +18,7 @@
       <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
       <!-- Spring -->
-      <spring-framework.version>4.0.1.RELEASE</spring-framework.version>
+      <spring-framework.version>4.1.8.RELEASE</spring-framework.version>
       <spring-data-jpa.version>1.4.3.RELEASE</spring-data-jpa.version>
 
 
@@ -43,7 +43,7 @@
       <aspectj.version>1.7.4</aspectj.version>
 
       <!-- Logging -->
-      <logback.version>1.1.0</logback.version>
+      <logback.version>1.2.0</logback.version>
       <slf4j.version>1.7.5</slf4j.version>
 
       <!-- RSS -->
@@ -383,7 +383,7 @@
             <version>3.0</version>
             <configuration>
                <compilerArguments>
-                  <Xlint />
+                  <Xlint/>
                </compilerArguments>
                <verbose>true</verbose>
                <source>${java.version}</source>
